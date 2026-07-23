@@ -26,12 +26,10 @@ function renderPosts(posts) {
   container.innerHTML = posts
     .map(function (post) {
       return (
-        '<article class="post-card">' +
+        '<a class="post-card" href="posts/' + encodeURIComponent(post.slug) + '.html">' +
         '<div class="post-date">' + escapeHtml(post.dateDisplay || post.date) + "</div>" +
-        '<h2><a href="posts/' + encodeURIComponent(post.slug) + '.html">' + escapeHtml(post.title) + "</a></h2>" +
-        '<p class="excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
-        '<a class="btn-read" href="posts/' + encodeURIComponent(post.slug) + '.html">Read Post</a>' +
-        "</article>"
+        "<h2>" + escapeHtml(post.title) + "</h2>" +
+        "</a>"
       );
     })
     .join("");
