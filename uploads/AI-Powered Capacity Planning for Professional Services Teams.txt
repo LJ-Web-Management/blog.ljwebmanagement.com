@@ -1,0 +1,32 @@
+AI-Powered Capacity Planning for Professional Services Teams
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Professional services leaders need to balance signed work, likely pipeline, delivery skills, holidays, project risk, and utilization targets. Many organizations still build that picture through manual spreadsheet updates, which means the plan is already stale when it reaches a staffing meeting.
+
+AI can summarize statements of work, identify anticipated skill needs, and surface patterns in prior project effort. Workflow automation can combine those inputs with current assignments, approved time off, and pipeline stages to show where demand may outrun capacity.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Weak capacity planning creates two expensive outcomes: teams are overcommitted and miss delivery expectations, or teams are underutilized while leaders hesitate to take on work. Both problems undermine margin and employee experience.
+
+A current view of capacity does not promise certainty. It gives leaders a disciplined way to see assumptions, test scenarios, and act before a staffing gap becomes an emergency.
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Build an operating view that preserves uncertainty.
+
+• Convert approved scope into role, effort, and timing assumptions.
+• Separate committed work from weighted pipeline rather than blending them.
+• Compare demand with available capacity by skill, location, and time period.
+• Flag single-person dependencies and projects with incomplete staffing plans.
+• Send leaders a weekly exceptions list with recommended questions to resolve.
+
+Review estimates against actual hours after each project phase. Track forecast accuracy, utilization variance, subcontractor spend, and delayed project starts to improve the underlying model.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+Capacity planning improves when teams automate data collection and make assumptions explicit. Use AI to speed the interpretation of scope, while keeping staffing tradeoffs in the hands of accountable leaders.

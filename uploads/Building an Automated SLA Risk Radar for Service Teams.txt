@@ -1,0 +1,32 @@
+Building an Automated SLA Risk Radar for Service Teams
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Service-level commitments are easy to define and surprisingly difficult to manage in real time. A ticket can look healthy in a dashboard until an unanswered customer reply, a pending vendor dependency, or an ownership change puts it close to breach.
+
+An automated SLA risk radar combines ticket age, priority, next-response deadline, recent customer sentiment, assigned team capacity, and dependency status. AI can summarize the current blockage and propose the next internal action. The result is a practical work queue, not another report that someone has to remember to open.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Missed service commitments damage trust long before they appear in a monthly metric. They create escalations, consume leadership time, and make renewals harder. Teams need early warning while they can still change the outcome.
+
+A risk radar also improves fairness. It brings attention to quiet, aging cases that might otherwise be overshadowed by the most visible escalations.
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Use explainable rules before adding complex predictions.
+
+• Calculate time remaining against each applicable commitment.
+• Detect stalled tickets, repeated transfers, and unanswered customer messages.
+• Score risk using transparent factors that supervisors can inspect.
+• Deliver a shift-start queue with a suggested owner and next action.
+• Escalate only when the current team has not acted within a defined window.
+
+Track prevented breaches, response-time variance, transfer count, and customer updates sent before escalation. Keep the score advisory so experienced service leaders can override it with context.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+The best SLA automation gives teams time to intervene. Build it around visible reasons and actionable next steps, then use the data to improve staffing and handoff practices over time.
