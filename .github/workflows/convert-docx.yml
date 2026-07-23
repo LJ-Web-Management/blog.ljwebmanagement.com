@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "uploads/*.docx"
+      - "uploads/*.txt"
 
 permissions:
   contents: write
