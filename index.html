@@ -32,6 +32,16 @@
     <p>News, insights, and analysis on AI and automation for growing businesses, from LJ Web Management.</p>
   </section>
 
+  <section class="controls-bar">
+    <input type="search" id="search-input" class="search-input" placeholder="Search posts&hellip;" aria-label="Search posts">
+    <select id="sort-select" class="sort-select" aria-label="Sort posts">
+      <option value="date-desc">Date: Newest first</option>
+      <option value="date-asc">Date: Oldest first</option>
+      <option value="title-asc">Name: A to Z</option>
+      <option value="title-desc">Name: Z to A</option>
+    </select>
+  </section>
+
   <section id="posts-list">
     <div class="empty-state">Loading posts&hellip;</div>
   </section>

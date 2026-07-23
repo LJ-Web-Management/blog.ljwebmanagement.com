@@ -1,27 +1,49 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+var allPosts = [];
+var searchInput = document.getElementById("search-input");
+var sortSelect = document.getElementById("sort-select");
+
 fetch("posts.json", { cache: "no-store" })
   .then(function (res) {
     if (!res.ok) throw new Error("Could not load posts.json");
     return res.json();
   })
-  .then(renderPosts)
+  .then(function (posts) {
+    allPosts = posts || [];
+    renderPosts();
+  })
   .catch(function () {
-    renderPosts([]);
+    allPosts = [];
+    renderPosts();
   });
 
-function renderPosts(posts) {
+searchInput.addEventListener("input", renderPosts);
+sortSelect.addEventListener("change", renderPosts);
+
+function renderPosts() {
   var container = document.getElementById("posts-list");
 
-  if (!posts || posts.length === 0) {
+  if (allPosts.length === 0) {
     container.innerHTML =
       '<div class="empty-state">No blog posts yet. Upload a Word document to the <code>uploads</code> folder on GitHub to publish the first one.</div>';
     return;
   }
 
-  posts.sort(function (a, b) {
-    return new Date(b.date) - new Date(a.date);
+  var query = searchInput.value.trim().toLowerCase();
+  var posts = allPosts.filter(function (post) {
+    return (
+      (post.title || "").toLowerCase().indexOf(query) !== -1 ||
+      (post.excerpt || "").toLowerCase().indexOf(query) !== -1
+    );
   });
+
+  posts.sort(getComparator(sortSelect.value));
+
+  if (posts.length === 0) {
+    container.innerHTML = '<div class="empty-state">No posts match your search.</div>';
+    return;
+  }
 
   container.innerHTML = posts
     .map(function (post) {
@@ -33,6 +55,28 @@ function renderPosts(posts) {
       );
     })
     .join("");
+}
+
+function getComparator(sortValue) {
+  switch (sortValue) {
+    case "date-asc":
+      return function (a, b) {
+        return new Date(a.date) - new Date(b.date);
+      };
+    case "title-asc":
+      return function (a, b) {
+        return (a.title || "").localeCompare(b.title || "");
+      };
+    case "title-desc":
+      return function (a, b) {
+        return (b.title || "").localeCompare(a.title || "");
+      };
+    case "date-desc":
+    default:
+      return function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      };
+  }
 }
 
 function escapeHtml(str) {
