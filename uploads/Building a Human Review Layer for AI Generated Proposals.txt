@@ -1,0 +1,23 @@
+Building a Human Review Layer for AI Generated Proposals
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Proposal teams spend significant time locating approved language, adapting past material, and checking that a response matches the buyer's request. AI can accelerate the first draft, but a draft that sounds confident can still contain an outdated capability, unsupported promise, or missed requirement.
+
+A strong workflow retrieves approved content, creates a traceable draft, and sends it through a role-based review. Sales checks customer fit, delivery checks scope, legal checks terms, and an executive owner approves final commitments. The automation records the evidence used and the changes made.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Faster proposal production is useful only when accuracy survives. A review layer protects margin and credibility while allowing teams to respond without rebuilding standard material from scratch.
+
+Measure draft preparation time, review-cycle time, the rate of unsupported claims found before submission, win rate by proposal type, and post-sale scope changes.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Create a curated source library with owners and expiration dates. Restrict the drafting workflow to that library, and require reviewer signoff for pricing, security statements, implementation timelines, and any customer-specific commitment.
+
+Use reviewer edits as feedback. If the same correction appears repeatedly, improve the source content or the drafting instructions.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+AI can make the blank page disappear. A well-designed human review layer ensures the resulting proposal is not only fast, but trustworthy and commercially sound.
