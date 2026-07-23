@@ -1,0 +1,26 @@
+Designing a Human Handoff for AI Customer Support
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+An AI support assistant can answer routine questions at any hour, but its value disappears when a customer gets stuck in a loop. The critical design problem is not simply what the assistant can answer. It is how it recognizes uncertainty and hands the conversation to a person with the right context.
+
+A thoughtful handoff automation captures the customer’s question, actions already taken, account details, sentiment signals, and the assistant’s confidence. It then routes the issue by topic, severity, and customer tier while telling the customer what will happen next.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Customers remember friction more than channel labels. An assistant that escalates promptly can feel helpful; one that repeats an answer can feel dismissive. Support teams also lose time when a transferred case arrives without the conversation history.
+
+Good handoffs protect both customer trust and agent productivity.
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Define escalation triggers before launching: low confidence, repeated question, refund request, accessibility need, security concern, account-specific issue, or strong negative sentiment. Put clear service targets on each queue and give agents a concise transcript summary with links to the original exchange.
+
+Review handoff reasons regularly. Measure containment rate alongside reopen rate, transfer time, customer satisfaction after escalation, and the share of escalated cases that agents classify as necessary.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+The best AI support experience knows when to stop being automated. A respectful, context-rich handoff turns a potential failure into a smoother customer conversation.

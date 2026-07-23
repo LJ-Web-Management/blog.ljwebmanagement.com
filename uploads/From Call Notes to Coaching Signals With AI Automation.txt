@@ -1,0 +1,28 @@
+From Call Notes to Coaching Signals With AI Automation
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Customer-facing teams generate a steady stream of call summaries, chat transcripts, and follow-up notes. Most of that information is stored but rarely reviewed at scale. Managers tend to see only the calls that become complaints or the examples someone happens to share.
+
+AI can convert approved interaction records into a consistent set of coaching signals: recurring objections, promised follow-ups, product questions, escalation language, and moments where a required disclosure may be missing. Those signals can be summarized by team, product line, or time period.
+
+The result is a more complete sample of the work customers actually experience.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Coaching based only on anecdotes is uneven. Reps may receive feedback too late, while patterns in customer confusion remain invisible. A searchable evidence set helps leaders improve scripts, training, and handoffs with less guesswork.
+
+It also creates a clearer boundary: analytics can surface a pattern, but a manager should interpret context before evaluating an employee.
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Choose a small set of defined signals tied to business outcomes, such as a renewal risk phrase or an uncompleted next step. Provide examples of correct and incorrect classification. Store the original interaction alongside the AI summary so reviewers can check accuracy.
+
+Set retention, access, and employee-notice rules before broadening use. Measure follow-up completion, recurring objection rates, quality-assurance agreement, and customer satisfaction after coaching changes.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+AI should help managers find the conversations worth understanding, not turn people into scores. Evidence-backed coaching can improve consistency while preserving human judgment.
