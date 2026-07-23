@@ -1,0 +1,29 @@
+Reducing Meeting Overload With Automated Decision Registers
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Teams often schedule another meeting because they cannot find out what was decided in the last one. Notes may exist, but decisions, owners, deadlines, and assumptions are mixed with discussion. The same issue returns to the agenda, while people who were not present work from partial context.
+
+An automated decision register can turn approved meeting notes or transcripts into proposed decision records. AI can identify the decision, options considered, accountable owner, due date, and open question. The meeting facilitator or decision owner confirms the record before it is shared with the wider team. The confirmed item then links to the relevant project, account, or operating process.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Decision clarity is a form of productivity. When teams can see what has been decided and what remains open, they spend less time reconstructing context and fewer meetings are needed to revisit settled work.
+
+• Decisions are searchable across teams and projects
+• Owners and due dates are less likely to disappear after a call
+• New participants can understand the rationale quickly
+• Leaders can identify decisions that are repeatedly delayed
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Use a consistent decision template and keep the workflow narrow at first. Capture only decisions that create a commitment, change scope, approve spending, or resolve a meaningful tradeoff. Require confirmation before publishing. Send reminders for decisions with upcoming due dates or unresolved follow-up work, and preserve links to the original source notes.
+
+Measure time spent preparing status updates, repeated agenda items, percentage of records confirmed, and follow-up completion rate. A high correction rate is a signal to refine the template or review process.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+Meeting automation should not generate more notes. It should make the commitments already made in meetings visible, reliable, and easy to act on.
