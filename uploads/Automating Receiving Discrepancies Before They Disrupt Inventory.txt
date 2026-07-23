@@ -1,0 +1,30 @@
+Automating Receiving Discrepancies Before They Disrupt Inventory
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+When a shipment arrives, warehouse teams compare purchase orders, packing slips, scans, and the physical goods. Shortages, substitutions, damage, and wrong labels can be recorded in different places or missed during a busy shift. Automation can combine those signals, create a discrepancy case, and notify the right buyer or supplier contact with the supporting evidence.
+
+AI can also turn unstructured receiver notes into consistent issue categories. Physical verification remains essential because inventory records must reflect what actually arrived.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Unresolved receiving problems distort available inventory and delay customer commitments. They also consume buyer time when evidence has to be reconstructed days later.
+
+A connected workflow can:
+- Surface discrepancies while the shipment is still traceable
+- Reduce duplicate data entry across warehouse and purchasing systems
+- Improve supplier scorecards with consistent reasons
+- Protect inventory and margin reporting
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Start with discrepancies already captured in scans or receipts. Match them to the purchase order and expected tolerance, then build a case with quantities, photos, notes, and a recommended owner. Automatically notify only when the evidence meets a defined threshold; otherwise, send it to an internal review queue.
+
+Track time to resolution, adjustment volume, repeat supplier issues, and the percentage of cases with complete evidence. Use the results to improve receiving instructions and supplier conversations.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+Automation cannot count a pallet, but it can keep a verified discrepancy from disappearing into a spreadsheet. The faster the evidence reaches an owner, the less likely inventory surprises become.

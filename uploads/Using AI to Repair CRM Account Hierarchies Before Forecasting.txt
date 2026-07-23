@@ -1,0 +1,30 @@
+Using AI to Repair CRM Account Hierarchies Before Forecasting
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Many CRM systems contain duplicate companies, outdated parent-child relationships, and contacts attached to the wrong account. These flaws look minor until a sales leader tries to forecast a strategic customer, calculate account penetration, or coordinate a renewal. AI can help surface likely relationships by comparing domains, legal names, addresses, ownership references, and historic opportunity notes.
+
+The useful output is not an automatic merge. It is a ranked review queue that explains why two records may belong together and identifies the fields that conflict.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+When account structure is wrong, revenue reporting becomes unreliable. Reps may pursue the same company separately, customer success may miss a related renewal, and leadership may underestimate concentration risk.
+
+An intentional repair process can:
+- Give teams a more complete view of customer value
+- Reduce duplicate outreach and ownership disputes
+- Improve territory planning and pipeline rollups
+- Make forecasts easier to trust
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Define match rules that reflect the business, not just a generic similarity score. For example, a shared email domain may be strong evidence for one market and weak evidence for a franchise network. Have AI propose parent-child links and duplicate candidates, then route each recommendation to a data steward or account owner.
+
+Keep an audit record of the source fields, reviewer, and final action. Measure accepted suggestions, records corrected, and forecast changes caused by hierarchy cleanup. This turns a cleanup project into an ongoing operating control.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+AI can find patterns in messy CRM data quickly, but business owners must define what a customer relationship means. Use it to create a confident review queue before relying on account-level forecasts.
