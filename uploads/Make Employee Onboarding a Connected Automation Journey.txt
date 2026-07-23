@@ -1,0 +1,30 @@
+Make Employee Onboarding a Connected Automation Journey
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+New employees often receive a warm welcome followed by a maze of disconnected tasks. Human resources enters a record, IT provisions access, a manager plans the first week, payroll asks for forms, and the employee searches for policies. Each team may complete its part, yet the new hire experiences the gaps between them.
+
+AI automation can coordinate the journey across those systems. It can create a role-based checklist, identify missing prerequisites, draft personalized but approved guidance, and notify each owner when their task is ready. It does not replace the manager's welcome or HR's judgment. It makes the routine handoffs visible and dependable.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Onboarding affects time to productivity, security, and retention. Late equipment or incorrect access creates a poor first impression, while excessive access creates risk. A connected process helps leaders distinguish a one-off delay from a recurring handoff failure.
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Build around defined employee moments:
+
+• Trigger the workflow from an approved hire record, not an informal email.
+• Use role, location, and start date to select the correct task template.
+• Give HR, IT, payroll, facilities, and the manager one status view with clear owners.
+• Let AI answer routine policy questions from a controlled knowledge source and flag uncertain answers.
+• Revoke temporary setup access and verify completion after the first week.
+
+Access requests, background checks, and policy exceptions still require the right approvals. Audit logs and least-privilege rules should be treated as core requirements, not later enhancements.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+An automated onboarding experience is a promise kept across departments. Measure completion before day one, first-week support requests, and time to productive work to prove that the workflow improves the employee experience.

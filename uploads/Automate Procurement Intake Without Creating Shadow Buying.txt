@@ -1,0 +1,30 @@
+Automate Procurement Intake Without Creating Shadow Buying
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Employees buy software, services, and supplies because they need work done. When procurement intake is confusing or slow, requests move into email, personal cards, and untracked conversations. The business loses visibility before it has a chance to review cost, security, contractual terms, or existing alternatives.
+
+AI automation can make the front door easier to use. It can turn a plain-language request into a structured intake, identify missing information, surface approved suppliers or existing contracts, and send the request through the right review path. The experience becomes simpler for employees while control becomes stronger for the business.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Shadow buying causes duplicate spend and exposes the organization to security and compliance gaps. A well-designed workflow also gives procurement better demand data, making it easier to negotiate and plan rather than respond to emergencies.
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Design the workflow around a helpful request experience:
+
+• Provide one intake form or conversational entry point with clear categories.
+• Use AI to convert the request into fields such as business need, budget, renewal date, and data access.
+• Check an approved catalog and contract repository before starting a new supplier review.
+• Route based on spend, category, data sensitivity, and contract term.
+• Report request cycle time, catalog adoption, duplicate tools avoided, and policy exceptions.
+
+AI-generated summaries should be reviewable, especially for scope and data-use descriptions. Procurement, security, and finance each need explicit ownership for their decision points.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+The strongest procurement automation removes friction from doing the right thing. If employees can request what they need quickly and see progress clearly, the company gains both better compliance and better buying leverage.

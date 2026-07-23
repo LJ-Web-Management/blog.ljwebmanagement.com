@@ -1,0 +1,30 @@
+AI Assisted Invoice Exception Handling for Finance Teams
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Most invoices are routine until one arrives without a purchase order, with a mismatched amount, or from an unfamiliar supplier. Finance teams often spend more time locating the right owner than resolving the discrepancy.
+
+AI-assisted document processing can read invoice fields, compare them with purchase-order and receiving data, and classify exceptions by reason. Automation then routes each item to the budget owner or procurement contact with a concise explanation and a direct approval choice.
+
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Exception handling affects cash flow, supplier relationships, and close deadlines. A visible queue helps finance distinguish a true policy problem from an invoice that simply needs a missing reference.
+
+Benefits may include:
+
+• Fewer invoices stranded in email
+• Faster resolution of low-risk mismatches
+• Better data for vendor and spending reviews
+
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Separate exceptions by confidence and impact. Let automation handle reminders and information gathering, but require people to approve payment changes, new vendor details, and material amount variances. Keep source documents and decision history together.
+
+Track aging by exception type, not just total unpaid invoices. If the same reason appears repeatedly, the right fix may be a purchasing-process change rather than a faster reminder.
+
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+Finance automation earns trust when it makes exceptions easier to see and resolve. Use AI to organize the evidence, and use clear approval rules to protect the payment decision.
