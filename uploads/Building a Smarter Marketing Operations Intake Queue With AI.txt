@@ -1,0 +1,28 @@
+Building a Smarter Marketing Operations Intake Queue With AI
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Marketing operations teams receive a broad mix of requests: campaign changes, list pulls, landing-page edits, event support, and analytics questions. When those requests arrive through email and chat, priorities depend on who asks loudest. AI can standardize the intake by extracting key details, suggesting a request type, and prompting the requester for information that is missing.
+
+The result is not a fully automated marketing strategy. It is a cleaner queue that helps the team spend more time on revenue-supporting work and less time decoding tickets.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Unclear requests lead to rushed launches, inconsistent tracking, and work that cannot be tied back to a business objective. A queue with consistent data gives leaders a factual basis for staffing, service levels, and recurring self-service opportunities.
+
+It also protects the team from silently accepting work that lacks an owner, deadline, audience, or approval path.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Create an intake assistant around a defined service catalog:
+
+- Classify the request against supported services and identify the requesting team.
+- Ask for campaign objective, target audience, due date, and approver when absent.
+- Check that requested channel and tracking conventions match approved standards.
+- Route complete requests by priority rules and present exceptions to an operations lead.
+
+Review a sample of classifications each week, especially when new services appear. Measure incomplete-request rate, time to first useful response, rework after launch, and demand by service type.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+The best marketing operations automation makes demand easier to see and work easier to start. Let AI organize the request, while people keep control of priorities, creative judgment, and final launch decisions.

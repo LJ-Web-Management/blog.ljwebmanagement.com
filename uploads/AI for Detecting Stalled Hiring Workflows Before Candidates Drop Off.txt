@@ -1,0 +1,28 @@
+AI for Detecting Stalled Hiring Workflows Before Candidates Drop Off
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Hiring delays are often visible in an applicant tracking system but difficult to act on. A candidate may wait for interview feedback, a hiring manager may not have reviewed a shortlist, or an offer may sit with an approver. AI can scan workflow timestamps and permitted notes to identify stalled steps, draft a neutral reminder, and present a daily exception list to recruiters.
+
+The point is to improve operational follow-through, not to rank people or make employment decisions. Hiring teams remain responsible for fair evaluation, communication, and compliance.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Slow hiring can cost strong candidates and leave critical roles open longer. It also creates an uneven candidate experience when updates depend on a recruiter manually noticing every overdue step.
+
+A clear exception process helps leaders distinguish a real approval bottleneck from a role that needs to be re-scoped or paused.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Focus on process signals, not candidate inference:
+
+- Monitor agreed service-level clocks for review, interview feedback, and offer approvals.
+- Create a reminder with the role, required action, and deadline, but no unsupported assessment of the candidate.
+- Escalate only after a defined grace period and allow recruiters to suppress reminders for known exceptions.
+- Summarize bottlenecks by stage and team without exposing more applicant data than necessary.
+
+Set access controls carefully and audit generated messages. Measure time in stage, feedback completion, candidate withdrawal during delays, and exception resolution time.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+AI can make a hiring process more responsive by revealing stuck work, not by substituting for human judgment. Use it to protect candidate communication and improve accountable execution around the process.
