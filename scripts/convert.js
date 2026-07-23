@@ -321,15 +321,21 @@ function buildPostPage(title, dateDisplay, bodyHtml) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${escapeHtml(title)} | LJ Web Management Blog</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="../index.html">LJ Web Management</a>
+    <a class="brand" href="../index.html">
+      <img src="../assets/img/lj-logo.webp" alt="LJ Web Management" width="95" height="40">
+    </a>
     <nav>
-      <a href="../index.html">Blog Home</a>
+      <a href="../index.html">Blog</a>
       <a href="https://www.ljwebmanagement.com">Main Site</a>
+      <a href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -346,6 +352,10 @@ ${bodyHtml}
 </main>
 
 <footer class="site-footer">
+  <div class="footer-links">
+    <a href="https://www.ljwebmanagement.com">Main Site</a>
+    <a href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
+  </div>
   &copy; <span id="year">${new Date().getFullYear()}</span> LJ Web Management
 </footer>
 </body>
