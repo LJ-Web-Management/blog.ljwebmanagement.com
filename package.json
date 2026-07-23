@@ -1,0 +1,12 @@
+{
+  "name": "ljwebmanagement-blogpage",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Blog site for LJ Web Management, with Word-document-to-blog-post publishing.",
+  "scripts": {
+    "convert": "node scripts/convert.js"
+  },
+  "dependencies": {
+    "mammoth": "^1.8.0"
+  }
+}
