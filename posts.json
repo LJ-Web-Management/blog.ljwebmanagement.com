@@ -1,1 +1,522 @@
-[]
+[
+  {
+    "title": "AI-Assisted Deal Desks: Turning Complex Sales Approvals Into Faster, Safer Decisions",
+    "slug": "ai-assisted-deal-desks-turning-complex-sales-approvals-into-faster-safer-decisions",
+    "image": "assets/img/posts/ai-assisted-deal-desks-turning-complex-sales-approvals-into-faster-safer-decisions.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate CRM Lead Handoff Quality Checks Before Follow-Up Slips",
+    "slug": "automate-crm-lead-handoff-quality-checks-before-follow-up-slips",
+    "image": "assets/img/posts/automate-crm-lead-handoff-quality-checks-before-follow-up-slips.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Onboarding Handoffs Before Early Momentum Fades",
+    "slug": "automate-customer-onboarding-handoffs-before-early-momentum-fades",
+    "image": "assets/img/posts/automate-customer-onboarding-handoffs-before-early-momentum-fades.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Expense Receipt Reviews Before Policy Exceptions Pile Up",
+    "slug": "automate-expense-receipt-reviews-before-policy-exceptions-pile-up",
+    "image": "assets/img/posts/automate-expense-receipt-reviews-before-policy-exceptions-pile-up.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Month-End Evidence Collection Without Chasing Spreadsheets",
+    "slug": "automate-month-end-evidence-collection-without-chasing-spreadsheets",
+    "image": "assets/img/posts/automate-month-end-evidence-collection-without-chasing-spreadsheets.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate New-Hire Access Readiness Before Day One",
+    "slug": "automate-new-hire-access-readiness-before-day-one",
+    "image": "assets/img/posts/automate-new-hire-access-readiness-before-day-one.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Proposal Risk Review Without Slowing Down Sales",
+    "slug": "automate-proposal-risk-review-without-slowing-down-sales",
+    "image": "assets/img/posts/automate-proposal-risk-review-without-slowing-down-sales.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build AI Content Approval Workflows That Increase Speed Without Losing Governance",
+    "slug": "build-ai-content-approval-workflows-that-increase-speed-without-losing-governance",
+    "image": "assets/img/posts/build-ai-content-approval-workflows-that-increase-speed-without-losing-governance.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build AI-Prepared Customer QBR Briefs That Turn Account Data Into Action",
+    "slug": "build-ai-prepared-customer-qbr-briefs-that-turn-account-data-into-action",
+    "image": "assets/img/posts/build-ai-prepared-customer-qbr-briefs-that-turn-account-data-into-action.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Cash Collection Follow-Up Queue That Respects Customer Context",
+    "slug": "build-a-cash-collection-follow-up-queue-that-respects-customer-context",
+    "image": "assets/img/posts/build-a-cash-collection-follow-up-queue-that-respects-customer-context.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Quality Review System That Improves Customer Service Without Micromanaging",
+    "slug": "build-an-ai-quality-review-system-that-improves-customer-service-without-micromanaging",
+    "image": "assets/img/posts/build-an-ai-quality-review-system-that-improves-customer-service-without-micromanaging.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Review Queue for Website Accessibility Issues",
+    "slug": "build-an-ai-review-queue-for-website-accessibility-issues",
+    "image": "assets/img/posts/build-an-ai-review-queue-for-website-accessibility-issues.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI-Assisted Collections Workflow That Protects Cash Flow",
+    "slug": "build-an-ai-assisted-collections-workflow-that-protects-cash-flow",
+    "image": "assets/img/posts/build-an-ai-assisted-collections-workflow-that-protects-cash-flow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI-Assisted Collections Workflow That Protects Cash and Customer Trust",
+    "slug": "build-an-ai-assisted-collections-workflow-that-protects-cash-and-customer-trust",
+    "image": "assets/img/posts/build-an-ai-assisted-collections-workflow-that-protects-cash-and-customer-trust.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI-Assisted Equipment Calibration Renewal Workflow Before Quality Risk Grows",
+    "slug": "build-an-ai-assisted-equipment-calibration-renewal-workflow-before-quality-risk-grows",
+    "image": "assets/img/posts/build-an-ai-assisted-equipment-calibration-renewal-workflow-before-quality-risk-grows.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI-Assisted Invoice Exception Queue That Protects Cash Flow",
+    "slug": "build-an-ai-assisted-invoice-exception-queue-that-protects-cash-flow",
+    "image": "assets/img/posts/build-an-ai-assisted-invoice-exception-queue-that-protects-cash-flow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an Audit Evidence Collection Workflow Before Review Season Starts",
+    "slug": "build-an-audit-evidence-collection-workflow-before-review-season-starts",
+    "image": "assets/img/posts/build-an-audit-evidence-collection-workflow-before-review-season-starts.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an Explainable AI Lead Routing Audit for Your CRM",
+    "slug": "build-an-explainable-ai-lead-routing-audit-for-your-crm",
+    "image": "assets/img/posts/build-an-explainable-ai-lead-routing-audit-for-your-crm.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Close Accounts Receivable Disputes Faster With an AI Evidence Pack",
+    "slug": "close-accounts-receivable-disputes-faster-with-an-ai-evidence-pack",
+    "image": "assets/img/posts/close-accounts-receivable-disputes-faster-with-an-ai-evidence-pack.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Close the Cash Application Gap With AI-Assisted Remittance Matching",
+    "slug": "close-the-cash-application-gap-with-ai-assisted-remittance-matching",
+    "image": "assets/img/posts/close-the-cash-application-gap-with-ai-assisted-remittance-matching.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Context Without the Handoff Tax: AI Workflows for Better Customer Service Escalations",
+    "slug": "context-without-the-handoff-tax-ai-workflows-for-better-customer-service-escalations",
+    "image": "assets/img/posts/context-without-the-handoff-tax-ai-workflows-for-better-customer-service-escalations.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create a Maintenance Parts Reorder Workflow Before a Repair Becomes a Delay",
+    "slug": "create-a-maintenance-parts-reorder-workflow-before-a-repair-becomes-a-delay",
+    "image": "assets/img/posts/create-a-maintenance-parts-reorder-workflow-before-a-repair-becomes-a-delay.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create a Privacy-Aware Meeting Intelligence Workflow for Business Teams",
+    "slug": "create-a-privacy-aware-meeting-intelligence-workflow-for-business-teams",
+    "image": "assets/img/posts/create-a-privacy-aware-meeting-intelligence-workflow-for-business-teams.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create a Supplier Performance Automation That Finds Risk Before Delivery Slips",
+    "slug": "create-a-supplier-performance-automation-that-finds-risk-before-delivery-slips",
+    "image": "assets/img/posts/create-a-supplier-performance-automation-that-finds-risk-before-delivery-slips.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Inventory Exception Desk Before Small Variances Become Stockouts",
+    "slug": "create-an-ai-inventory-exception-desk-before-small-variances-become-stockouts",
+    "image": "assets/img/posts/create-an-ai-inventory-exception-desk-before-small-variances-become-stockouts.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Knowledge Review Loop That Keeps Internal Procedures Current",
+    "slug": "create-an-ai-knowledge-review-loop-that-keeps-internal-procedures-current",
+    "image": "assets/img/posts/create-an-ai-knowledge-review-loop-that-keeps-internal-procedures-current.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI-Assisted Travel Approval Workflow That Balances Cost, Policy, and Employee Experience",
+    "slug": "create-an-ai-assisted-travel-approval-workflow-that-balances-cost-policy-and-employee-experience",
+    "image": "assets/img/posts/create-an-ai-assisted-travel-approval-workflow-that-balances-cost-policy-and-employee-experience.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Design Website Lead Routing That Responds to Intent, Not Just Form Fields",
+    "slug": "design-website-lead-routing-that-responds-to-intent-not-just-form-fields",
+    "image": "assets/img/posts/design-website-lead-routing-that-responds-to-intent-not-just-form-fields.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "From Spreadsheet Chase to Decision Rhythm: AI Automation for Weekly Executive Reporting",
+    "slug": "from-spreadsheet-chase-to-decision-rhythm-ai-automation-for-weekly-executive-reporting",
+    "image": "assets/img/posts/from-spreadsheet-chase-to-decision-rhythm-ai-automation-for-weekly-executive-reporting.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Govern AI-Assisted Executive Reporting With a Trusted Metric Workflow",
+    "slug": "govern-ai-assisted-executive-reporting-with-a-trusted-metric-workflow",
+    "image": "assets/img/posts/govern-ai-assisted-executive-reporting-with-a-trusted-metric-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "How AI Exception Queues Turn Accounts Payable Into a Faster Decision System",
+    "slug": "how-ai-exception-queues-turn-accounts-payable-into-a-faster-decision-system",
+    "image": "assets/img/posts/how-ai-exception-queues-turn-accounts-payable-into-a-faster-decision-system.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Improve Warehouse Cycle Count Accuracy With an AI-Guided Workflow",
+    "slug": "improve-warehouse-cycle-count-accuracy-with-an-ai-guided-workflow",
+    "image": "assets/img/posts/improve-warehouse-cycle-count-accuracy-with-an-ai-guided-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Keep Internal Answers Reliable With an AI Knowledge Governance Workflow",
+    "slug": "keep-internal-answers-reliable-with-an-ai-knowledge-governance-workflow",
+    "image": "assets/img/posts/keep-internal-answers-reliable-with-an-ai-knowledge-governance-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Make CRM Data Quality a Revenue-Protection Automation",
+    "slug": "make-crm-data-quality-a-revenue-protection-automation",
+    "image": "assets/img/posts/make-crm-data-quality-a-revenue-protection-automation.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Make Cash-Flow Forecast Variance Explanations an Automated Finance Routine",
+    "slug": "make-cash-flow-forecast-variance-explanations-an-automated-finance-routine",
+    "image": "assets/img/posts/make-cash-flow-forecast-variance-explanations-an-automated-finance-routine.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Make Executive Forecasts More Useful With AI-Connected Operating Signals",
+    "slug": "make-executive-forecasts-more-useful-with-ai-connected-operating-signals",
+    "image": "assets/img/posts/make-executive-forecasts-more-useful-with-ai-connected-operating-signals.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Make Field Service Dispatch More Predictable With AI Scheduling",
+    "slug": "make-field-service-dispatch-more-predictable-with-ai-scheduling",
+    "image": "assets/img/posts/make-field-service-dispatch-more-predictable-with-ai-scheduling.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Make Field Service Dispatch More Reliable With AI Job-Readiness Checks",
+    "slug": "make-field-service-dispatch-more-reliable-with-ai-job-readiness-checks",
+    "image": "assets/img/posts/make-field-service-dispatch-more-reliable-with-ai-job-readiness-checks.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Make Interview Scheduling More Reliable With an AI Coordination Workflow",
+    "slug": "make-interview-scheduling-more-reliable-with-an-ai-coordination-workflow",
+    "image": "assets/img/posts/make-interview-scheduling-more-reliable-with-an-ai-coordination-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Modernize Field Service Dispatch With AI-Assisted Exception Routing",
+    "slug": "modernize-field-service-dispatch-with-ai-assisted-exception-routing",
+    "image": "assets/img/posts/modernize-field-service-dispatch-with-ai-assisted-exception-routing.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Practical AI Governance for Small Businesses: Controls That Keep Automation Useful",
+    "slug": "practical-ai-governance-for-small-businesses-controls-that-keep-automation-useful",
+    "image": "assets/img/posts/practical-ai-governance-for-small-businesses-controls-that-keep-automation-useful.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Prioritize Facilities Maintenance Work Orders With AI and Automation",
+    "slug": "prioritize-facilities-maintenance-work-orders-with-ai-and-automation",
+    "image": "assets/img/posts/prioritize-facilities-maintenance-work-orders-with-ai-and-automation.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Route Facilities Work Requests With AI Before Small Issues Become Disruptions",
+    "slug": "route-facilities-work-requests-with-ai-before-small-issues-become-disruptions",
+    "image": "assets/img/posts/route-facilities-work-requests-with-ai-before-small-issues-become-disruptions.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Stop Duplicate Supplier Payments With an AI-Assisted Control Workflow",
+    "slug": "stop-duplicate-supplier-payments-with-an-ai-assisted-control-workflow",
+    "image": "assets/img/posts/stop-duplicate-supplier-payments-with-an-ai-assisted-control-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Call Summaries Into a Retention Early Warning System",
+    "slug": "turn-customer-call-summaries-into-a-retention-early-warning-system",
+    "image": "assets/img/posts/turn-customer-call-summaries-into-a-retention-early-warning-system.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Service Conversations Into Product Improvement Signals",
+    "slug": "turn-customer-service-conversations-into-product-improvement-signals",
+    "image": "assets/img/posts/turn-customer-service-conversations-into-product-improvement-signals.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Employee Training Expirations Into a Risk-Managed Renewal Workflow",
+    "slug": "turn-employee-training-expirations-into-a-risk-managed-renewal-workflow",
+    "image": "assets/img/posts/turn-employee-training-expirations-into-a-risk-managed-renewal-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Field Service Schedule Changes Into an AI-Guided Dispatch Decision",
+    "slug": "turn-field-service-schedule-changes-into-an-ai-guided-dispatch-decision",
+    "image": "assets/img/posts/turn-field-service-schedule-changes-into-an-ai-guided-dispatch-decision.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Invoice Exceptions Into a Faster, More Controlled Workflow",
+    "slug": "turn-invoice-exceptions-into-a-faster-more-controlled-workflow",
+    "image": "assets/img/posts/turn-invoice-exceptions-into-a-faster-more-controlled-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Manufacturing Shift Handover Notes Into an AI Operations Workflow",
+    "slug": "turn-manufacturing-shift-handover-notes-into-an-ai-operations-workflow",
+    "image": "assets/img/posts/turn-manufacturing-shift-handover-notes-into-an-ai-operations-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Meeting Decisions Into an AI-Assisted Action Ownership Workflow",
+    "slug": "turn-meeting-decisions-into-an-ai-assisted-action-ownership-workflow",
+    "image": "assets/img/posts/turn-meeting-decisions-into-an-ai-assisted-action-ownership-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Recurring Support Signals Into Proactive Product Alerts",
+    "slug": "turn-recurring-support-signals-into-proactive-product-alerts",
+    "image": "assets/img/posts/turn-recurring-support-signals-into-proactive-product-alerts.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Website Form Spam Reviews Into a Safer Automation Workflow",
+    "slug": "turn-website-form-spam-reviews-into-a-safer-automation-workflow",
+    "image": "assets/img/posts/turn-website-form-spam-reviews-into-a-safer-automation-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Website Form Submissions Into Qualified Sales Conversations With AI Routing",
+    "slug": "turn-website-form-submissions-into-qualified-sales-conversations-with-ai-routing",
+    "image": "assets/img/posts/turn-website-form-submissions-into-qualified-sales-conversations-with-ai-routing.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Create Seamless Customer Service Handoffs Across Teams",
+    "slug": "use-ai-to-create-seamless-customer-service-handoffs-across-teams",
+    "image": "assets/img/posts/use-ai-to-create-seamless-customer-service-handoffs-across-teams.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Detect Customer-Service Intent Drift Before Queues Overflow",
+    "slug": "use-ai-to-detect-customer-service-intent-drift-before-queues-overflow",
+    "image": "assets/img/posts/use-ai-to-detect-customer-service-intent-drift-before-queues-overflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Find CRM Contact Decay Before It Weakens Customer Relationships",
+    "slug": "use-ai-to-find-crm-contact-decay-before-it-weakens-customer-relationships",
+    "image": "assets/img/posts/use-ai-to-find-crm-contact-decay-before-it-weakens-customer-relationships.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Govern Price Change Requests Without Slowing Commercial Teams",
+    "slug": "use-ai-to-govern-price-change-requests-without-slowing-commercial-teams",
+    "image": "assets/img/posts/use-ai-to-govern-price-change-requests-without-slowing-commercial-teams.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Improve Warehouse Replenishment Before Pick Paths Break Down",
+    "slug": "use-ai-to-improve-warehouse-replenishment-before-pick-paths-break-down",
+    "image": "assets/img/posts/use-ai-to-improve-warehouse-replenishment-before-pick-paths-break-down.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Make Employee Onboarding a Coordinated Operating Workflow",
+    "slug": "use-ai-to-make-employee-onboarding-a-coordinated-operating-workflow",
+    "image": "assets/img/posts/use-ai-to-make-employee-onboarding-a-coordinated-operating-workflow.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Reconcile Field Service Notes With Billing Records",
+    "slug": "use-ai-to-reconcile-field-service-notes-with-billing-records",
+    "image": "assets/img/posts/use-ai-to-reconcile-field-service-notes-with-billing-records.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Review Expense Policy Exceptions Without Slowing Employees Down",
+    "slug": "use-ai-to-review-expense-policy-exceptions-without-slowing-employees-down",
+    "image": "assets/img/posts/use-ai-to-review-expense-policy-exceptions-without-slowing-employees-down.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Cash Application Exceptions Into a Daily Recovery Queue",
+    "slug": "use-ai-to-turn-cash-application-exceptions-into-a-daily-recovery-queue",
+    "image": "assets/img/posts/use-ai-to-turn-cash-application-exceptions-into-a-daily-recovery-queue.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Meeting Decisions Into Accountable Operating Work",
+    "slug": "use-ai-to-turn-meeting-decisions-into-accountable-operating-work",
+    "image": "assets/img/posts/use-ai-to-turn-meeting-decisions-into-accountable-operating-work.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Workforce Scheduling Into a Proactive Operations System",
+    "slug": "use-ai-to-turn-workforce-scheduling-into-a-proactive-operations-system",
+    "image": "assets/img/posts/use-ai-to-turn-workforce-scheduling-into-a-proactive-operations-system.png",
+    "date": "2026-07-24",
+    "dateDisplay": "July 24, 2026",
+    "excerpt": "What Happened"
+  }
+]
