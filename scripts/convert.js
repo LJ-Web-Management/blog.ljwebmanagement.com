@@ -1,14 +1,20 @@
 const fs = require("fs");
 const path = require("path");
 const mammoth = require("mammoth");
+const AdmZip = require("adm-zip");
 
 const ROOT = path.join(__dirname, "..");
 const UPLOADS_DIR = path.join(ROOT, "uploads");
 const PROCESSED_DIR = path.join(UPLOADS_DIR, "processed");
 const POSTS_DIR = path.join(ROOT, "posts");
 const POSTS_JSON = path.join(ROOT, "posts.json");
+const POST_IMAGES_DIR = path.join(ROOT, "assets", "img", "posts");
+const SITE_URL = "https://lj-web-management.github.io/ljwebmanagement-blogpage";
+const LOGO_URL = SITE_URL + "/assets/img/lj-logo.webp";
 
-const SUPPORTED_EXTENSIONS = [".docx", ".txt"];
+const SUPPORTED_EXTENSIONS = [".docx", ".txt", ".zip"];
+const DOC_EXTENSIONS = [".docx", ".txt"];
+const IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".gif"];
 
 // ---------------------------------------------------------------------------
 // "Styled text" detection.
@@ -313,14 +319,29 @@ function uniqueSlug(baseSlug, existingSlugs) {
   return slug;
 }
 
-function buildPostPage(title, dateDisplay, bodyHtml) {
+function buildPostPage(title, dateDisplay, bodyHtml, imagePath) {
+  const featuredImageHtml = imagePath
+    ? `  <div class="post-featured-image">
+    <img src="../${imagePath}" alt="${escapeHtml(title)}" loading="eager">
+  </div>
+`
+    : "";
+
+  const shareImageUrl = imagePath ? SITE_URL + "/" + imagePath : LOGO_URL;
+  const escapedTitle = escapeHtml(title);
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapeHtml(title)} | AI Automation Insights</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+<title>${escapedTitle} | AI Automation Insights</title>
+<link rel="icon" type="image/webp" href="../assets/img/lj-logo.webp">
+<meta property="og:title" content="${escapedTitle}">
+<meta property="og:image" content="${shareImageUrl}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${escapedTitle}">
+<meta name="twitter:image" content="${shareImageUrl}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -346,7 +367,7 @@ function buildPostPage(title, dateDisplay, bodyHtml) {
     <div class="post-date">${escapeHtml(dateDisplay)}</div>
     <h1>${escapeHtml(title)}</h1>
   </div>
-  <article class="post-content">
+${featuredImageHtml}  <article class="post-content">
 ${bodyHtml}
   </article>
 </main>
@@ -383,8 +404,57 @@ ${bodyHtml}
 // Per-file conversion
 // ---------------------------------------------------------------------------
 
+// A zip upload may contain OS cruft alongside the real document/image
+// (e.g. "__MACOSX/" entries or ".DS_Store" from a Mac zip) - ignore those.
+function isJunkEntry(entryName) {
+  const base = path.basename(entryName);
+  return entryName.startsWith("__MACOSX/") || base === ".DS_Store" || base.startsWith("._");
+}
+
+function convertZip(filePath) {
+  const zip = new AdmZip(filePath);
+  const entries = zip.getEntries().filter((e) => !e.isDirectory && !isJunkEntry(e.entryName));
+
+  const docEntry = entries.find((e) =>
+    DOC_EXTENSIONS.includes(path.extname(e.entryName).toLowerCase())
+  );
+  const imageEntry = entries.find((e) =>
+    IMAGE_EXTENSIONS.includes(path.extname(e.entryName).toLowerCase())
+  );
+
+  if (!docEntry) {
+    return Promise.reject(
+      new Error("Zip file does not contain a .docx or .txt document: " + filePath)
+    );
+  }
+
+  const docExt = path.extname(docEntry.entryName).toLowerCase();
+  const docBuffer = docEntry.getData();
+
+  const blocksPromise =
+    docExt === ".docx"
+      ? mammoth.convertToHtml({ buffer: docBuffer }).then((result) => {
+          if (result.messages && result.messages.length) {
+            result.messages.forEach((m) => console.log("  [mammoth] " + m.type + ": " + m.message));
+          }
+          return blocksFromMammothHtml(result.value);
+        })
+      : Promise.resolve(blocksFromPlainText(docBuffer.toString("utf8")));
+
+  return blocksPromise.then((blocks) => {
+    const image = imageEntry
+      ? { buffer: imageEntry.getData(), ext: path.extname(imageEntry.entryName).toLowerCase() }
+      : null;
+    return { blocks, image };
+  });
+}
+
 function convertFile(filePath, filename) {
   const ext = path.extname(filename).toLowerCase();
+
+  if (ext === ".zip") {
+    return convertZip(filePath);
+  }
 
   if (ext === ".docx") {
     return mammoth.convertToHtml({ path: filePath }).then((result) => {
@@ -392,13 +462,13 @@ function convertFile(filePath, filename) {
         result.messages.forEach((m) => console.log("  [mammoth] " + m.type + ": " + m.message));
       }
       const blocks = blocksFromMammothHtml(result.value);
-      return { blocks };
+      return { blocks, image: null };
     });
   }
 
   if (ext === ".txt") {
     const text = fs.readFileSync(filePath, "utf8");
-    return Promise.resolve({ blocks: blocksFromPlainText(text) });
+    return Promise.resolve({ blocks: blocksFromPlainText(text), image: null });
   }
 
   return Promise.reject(new Error("Unsupported file type: " + ext));
@@ -437,7 +507,7 @@ function main() {
       return chain.then(() => {
         const filePath = path.join(UPLOADS_DIR, filename);
         console.log("Converting " + filename + " ...");
-        return convertFile(filePath, filename).then(({ blocks }) => {
+        return convertFile(filePath, filename).then(({ blocks, image }) => {
           const { title, rest } = extractTitle(blocks, titleFromFilename(filename));
           const bodyHtml = buildBodyHtml(rest);
 
@@ -445,12 +515,21 @@ function main() {
           const slug = uniqueSlug(baseSlug, existingSlugs);
           existingSlugs.add(slug);
 
-          const pageHtml = buildPostPage(title, dateDisplay, bodyHtml);
+          let imagePath = null;
+          if (image) {
+            fs.mkdirSync(POST_IMAGES_DIR, { recursive: true });
+            const imgExt = image.ext === ".jpeg" ? ".jpg" : image.ext;
+            imagePath = "assets/img/posts/" + slug + imgExt;
+            fs.writeFileSync(path.join(ROOT, imagePath), image.buffer);
+          }
+
+          const pageHtml = buildPostPage(title, dateDisplay, bodyHtml, imagePath);
           fs.writeFileSync(path.join(POSTS_DIR, slug + ".html"), pageHtml);
 
           posts.push({
             title: title,
             slug: slug,
+            image: imagePath,
             date: isoDate,
             dateDisplay: dateDisplay,
             excerpt: excerptFromHtml(bodyHtml, 160),

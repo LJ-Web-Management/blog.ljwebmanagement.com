@@ -6,6 +6,7 @@ on:
     paths:
       - "uploads/*.docx"
       - "uploads/*.txt"
+      - "uploads/*.zip"
 
 permissions:
   contents: write

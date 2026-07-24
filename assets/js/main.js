@@ -47,10 +47,16 @@ function renderPosts() {
 
   container.innerHTML = posts
     .map(function (post) {
+      var thumb = post.image
+        ? '<img class="post-card-thumb" src="' + escapeHtml(post.image) + '" alt="" loading="lazy">'
+        : "";
       return (
         '<a class="post-card" href="posts/' + encodeURIComponent(post.slug) + '.html">' +
+        thumb +
+        '<div class="post-card-body">' +
         '<div class="post-date">' + escapeHtml(post.dateDisplay || post.date) + "</div>" +
         "<h2>" + escapeHtml(post.title) + "</h2>" +
+        "</div>" +
         "</a>"
       );
     })
