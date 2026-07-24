@@ -1,0 +1,21 @@
+Convert IT Incident Updates Into Clear Business Communication
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+During an IT incident, technical teams need room to diagnose and restore service. Meanwhile, customer-facing and business teams need accurate updates about impact, scope, and the next expected communication. Rewriting engineering notes by hand creates delays and inconsistent messaging.
+
+An AI-assisted communications workflow can transform approved incident facts into audience-specific drafts. It can distinguish internal operational detail from a customer update, while a designated incident lead reviews every message before it is sent.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Clear communication reduces support volume, protects trust, and keeps teams aligned. It also prevents accidental promises about restoration times or causes that have not been confirmed.
+
+The process should prioritize accuracy over frequency.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Create a structured incident update form with affected service, customer impact, known facts, unknowns, workaround, next-update time, and approver. Use that form as the only source for generated drafts. Archive approved messages with the incident record and review post-incident whether the updates answered the questions customers actually asked.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+AI can accelerate incident communication, but it should never invent certainty. Give it verified facts and a human approval gate, and teams can be both faster and more trustworthy.

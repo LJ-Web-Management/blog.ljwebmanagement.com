@@ -1,0 +1,21 @@
+Use AI to Prioritize Backlog Work by Customer and Business Impact
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Operations, support, and product teams build backlogs faster than they can review them. Tickets often arrive with inconsistent descriptions, uncertain urgency, and incomplete links to the customer or business process affected.
+
+AI can enrich incoming work with a concise summary, likely category, related records, and impact signals. This creates a more consistent first pass while leaving priority decisions with the people who understand commitments and tradeoffs.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+First-in-first-out queues can hide work that threatens key customers, revenue, compliance, or a critical operational process. A transparent impact model makes the reason for priority visible and easier to challenge.
+
+It also prevents urgent language alone from determining who receives help first.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Create a simple scoring model using customer tier, deadline, revenue exposure, recurring incident count, and manual review flags. Let AI propose labels and summaries, but display the source data behind every score. Compare predicted priority with the team’s final decision to improve the model and its rules.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+AI should make a backlog easier to reason about, not turn it into a black box. Prioritize work with clear business signals and keep the override decision accountable.

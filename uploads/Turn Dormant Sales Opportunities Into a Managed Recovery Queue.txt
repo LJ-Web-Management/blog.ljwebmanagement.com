@@ -1,0 +1,21 @@
+Turn Dormant Sales Opportunities Into a Managed Recovery Queue
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+Sales pipelines rarely lose momentum all at once. Opportunities become dormant when a next step is missing, an email has no reply, a proposal waits too long, or a promised date passes. These signals are often available in the CRM but are difficult for managers to review consistently.
+
+An AI-assisted workflow can examine activity history and create a recovery queue. Rather than sending generic reminders, it groups opportunities by likely reason for delay and suggests a practical next action for the account owner.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+A dormant opportunity is not automatically lost, but it does need a decision. A shared queue improves forecast quality and prevents revenue from depending on an individual rep’s memory.
+
+It also helps leadership distinguish healthy long-cycle deals from records that should be requalified or closed.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Set clear inactivity rules by deal stage. For each flagged record, assemble the last customer interaction, open tasks, deal value, and a recommended choice: contact, escalate, revise, nurture, or close. Require the owner to select an outcome, then track recovery rate by segment and stage.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+Pipeline hygiene improves when dormant deals become a visible operating queue. Use AI to surface the context, while salespeople retain responsibility for the relationship decision.

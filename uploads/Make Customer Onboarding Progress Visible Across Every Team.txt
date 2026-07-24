@@ -1,0 +1,21 @@
+Make Customer Onboarding Progress Visible Across Every Team
+━━━━━━━━━━━━━━━━━━━━
+What Happened
+
+A new customer may need tasks from sales, implementation, finance, security, and support before receiving value. When each team manages its own checklist, customers get repeated questions and leaders cannot see where onboarding is stalled.
+
+A connected automation can create a single onboarding record when a deal closes, distribute role-specific tasks, and assemble a plain-language status update from the work already completed. AI helps summarize blockers and identify missing inputs without replacing the project owner.
+━━━━━━━━━━━━━━━━━━━━
+Why It Matters for Businesses
+
+Early customer experience strongly shapes adoption and renewal. Better visibility reduces handoff mistakes and gives account teams a credible answer when a customer asks what happens next.
+
+It also exposes recurring bottlenecks that deserve process improvement.
+━━━━━━━━━━━━━━━━━━━━
+The Practical Automation Opportunity
+
+Define a small number of milestone states and the evidence needed to pass each one. Capture dependencies, owners, and target dates in a shared record. Send internal alerts only for genuine blockers, while customers receive concise milestone-based updates. Review time-to-first-value by customer type each month.
+━━━━━━━━━━━━━━━━━━━━
+Business Takeaway
+
+Onboarding is a cross-functional product, not a collection of handoffs. A shared automated view lets every team contribute without making the customer coordinate the work.
