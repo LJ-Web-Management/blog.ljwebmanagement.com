@@ -48,8 +48,8 @@ function renderPosts() {
   container.innerHTML = posts
     .map(function (post) {
       var thumb = post.image
-        ? '<img class="post-card-thumb" src="' + escapeHtml(post.image) + '" alt="" loading="lazy">'
-        : "";
+        ? '<img class="post-card-thumb" src="' + escapeHtml(post.image) + '" alt="" loading="lazy" onerror="handleThumbError(this)">'
+        : brokenThumbHtml();
       return (
         '<a class="post-card" href="posts/' + encodeURIComponent(post.slug) + '.html">' +
         thumb +
@@ -61,6 +61,23 @@ function renderPosts() {
       );
     })
     .join("");
+}
+
+// Shown in place of a post's thumbnail when it has no featured image, or its
+// image file fails to load - a small corner badge rather than a reserved
+// thumbnail column, so the title/date text expands to fill the card.
+function brokenThumbHtml() {
+  return (
+    '<div class="post-card-thumb post-card-thumb--empty" aria-hidden="true">' +
+    '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/>' +
+    '<circle cx="8.5" cy="9" r="1.6"/><path d="M21 16.5l-5.5-5.5a2 2 0 0 0-2.8 0L3 20"/>' +
+    '<line x1="3" y1="3" x2="21" y2="21"/></svg>' +
+    "</div>"
+  );
+}
+
+function handleThumbError(img) {
+  img.outerHTML = brokenThumbHtml();
 }
 
 function getComparator(sortValue) {
