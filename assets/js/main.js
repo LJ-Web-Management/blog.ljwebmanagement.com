@@ -1,6 +1,8 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+var PAGE_SIZE = 20;
 var allPosts = [];
+var currentPage = 1;
 var searchInput = document.getElementById("search-input");
 var sortSelect = document.getElementById("sort-select");
 
@@ -18,15 +20,23 @@ fetch("posts.json", { cache: "no-store" })
     renderPosts();
   });
 
-searchInput.addEventListener("input", renderPosts);
-sortSelect.addEventListener("change", renderPosts);
+searchInput.addEventListener("input", function () {
+  currentPage = 1;
+  renderPosts();
+});
+sortSelect.addEventListener("change", function () {
+  currentPage = 1;
+  renderPosts();
+});
 
 function renderPosts() {
   var container = document.getElementById("posts-list");
+  var pagination = document.getElementById("pagination");
 
   if (allPosts.length === 0) {
     container.innerHTML =
       '<div class="empty-state">No blog posts yet. Upload a Word document to the <code>uploads</code> folder on GitHub to publish the first one.</div>';
+    pagination.innerHTML = "";
     return;
   }
 
@@ -42,10 +52,17 @@ function renderPosts() {
 
   if (posts.length === 0) {
     container.innerHTML = '<div class="empty-state">No posts match your search.</div>';
+    pagination.innerHTML = "";
     return;
   }
 
-  container.innerHTML = posts
+  var totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+
+  var start = (currentPage - 1) * PAGE_SIZE;
+  var pagePosts = posts.slice(start, start + PAGE_SIZE);
+
+  container.innerHTML = pagePosts
     .map(function (post) {
       var thumb = post.image
         ? '<img class="post-card-thumb" src="' + escapeHtml(post.image) + '" alt="" loading="lazy" onerror="handleThumbError(this)">'
@@ -61,6 +78,106 @@ function renderPosts() {
       );
     })
     .join("");
+
+  renderPagination(totalPages);
+}
+
+function renderPagination(totalPages) {
+  var pagination = document.getElementById("pagination");
+
+  if (totalPages <= 1) {
+    pagination.innerHTML = "";
+    return;
+  }
+
+  var pages = getPageRange(currentPage, totalPages);
+  var html = '<ul class="pagination-list">';
+
+  html +=
+    '<li><button type="button" class="pagination-arrow" data-page="' +
+    (currentPage - 1) +
+    '"' +
+    (currentPage === 1 ? " disabled" : "") +
+    ' aria-label="Previous page">' +
+    arrowIcon("left") +
+    "</button></li>";
+
+  pages.forEach(function (page) {
+    if (page === "...") {
+      html += '<li><span class="pagination-ellipsis">&hellip;</span></li>';
+      return;
+    }
+    html +=
+      '<li><button type="button" class="' +
+      (page === currentPage ? "active" : "") +
+      '" data-page="' +
+      page +
+      '" aria-label="Page ' +
+      page +
+      '"' +
+      (page === currentPage ? ' aria-current="page"' : "") +
+      ">" +
+      page +
+      "</button></li>";
+  });
+
+  html +=
+    '<li><button type="button" class="pagination-arrow" data-page="' +
+    (currentPage + 1) +
+    '"' +
+    (currentPage === totalPages ? " disabled" : "") +
+    ' aria-label="Next page">' +
+    arrowIcon("right") +
+    "</button></li>";
+
+  html += "</ul>";
+  pagination.innerHTML = html;
+
+  Array.prototype.forEach.call(pagination.querySelectorAll("button[data-page]:not(:disabled)"), function (btn) {
+    btn.addEventListener("click", function () {
+      currentPage = parseInt(btn.getAttribute("data-page"), 10);
+      renderPosts();
+      document.querySelector(".controls-bar").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
+// Builds a compact MUI-style page list: first, last, current +/-1, with
+// "..." standing in for any gaps so long post lists don't render 40 buttons.
+function getPageRange(current, total) {
+  var delta = 1;
+  var range = [];
+  var withDots = [];
+  var lastPage;
+
+  for (var i = 1; i <= total; i++) {
+    if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) {
+      range.push(i);
+    }
+  }
+
+  range.forEach(function (page) {
+    if (lastPage) {
+      if (page - lastPage === 2) {
+        withDots.push(lastPage + 1);
+      } else if (page - lastPage > 2) {
+        withDots.push("...");
+      }
+    }
+    withDots.push(page);
+    lastPage = page;
+  });
+
+  return withDots;
+}
+
+function arrowIcon(dir) {
+  var d = dir === "left" ? "M15 18l-6-6 6-6" : "M9 18l6-6-6-6";
+  return (
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' +
+    d +
+    '"/></svg>'
+  );
 }
 
 // Shown in place of a post's thumbnail when it has no featured image, or its
