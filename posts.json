@@ -598,5 +598,45 @@
     "date": "2026-07-25",
     "dateDisplay": "July 25, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Order Promise Workflow That Sales Can Trust",
+    "slug": "build-an-ai-order-promise-workflow-that-sales-can-trust",
+    "image": "assets/img/posts/build-an-ai-order-promise-workflow-that-sales-can-trust.png",
+    "date": "2026-07-27",
+    "dateDisplay": "July 27, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Detect Post-Sale Implementation Risk With AI Before Projects Stall",
+    "slug": "detect-post-sale-implementation-risk-with-ai-before-projects-stall",
+    "image": "assets/img/posts/detect-post-sale-implementation-risk-with-ai-before-projects-stall.png",
+    "date": "2026-07-27",
+    "dateDisplay": "July 27, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Monitor Purchase Requisitions With AI Before Approval Thresholds Become Surprises",
+    "slug": "monitor-purchase-requisitions-with-ai-before-approval-thresholds-become-surprises",
+    "image": "assets/img/posts/monitor-purchase-requisitions-with-ai-before-approval-thresholds-become-surprises.png",
+    "date": "2026-07-27",
+    "dateDisplay": "July 27, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Website Chat Transcripts Into Actionable Sales and Service Work",
+    "slug": "turn-website-chat-transcripts-into-actionable-sales-and-service-work",
+    "image": "assets/img/posts/turn-website-chat-transcripts-into-actionable-sales-and-service-work.png",
+    "date": "2026-07-27",
+    "dateDisplay": "July 27, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Review Customer Credit Limits Before Risk Reaches Receivables",
+    "slug": "use-ai-to-review-customer-credit-limits-before-risk-reaches-receivables",
+    "image": "assets/img/posts/use-ai-to-review-customer-credit-limits-before-risk-reaches-receivables.png",
+    "date": "2026-07-27",
+    "dateDisplay": "July 27, 2026",
+    "excerpt": "What Happened"
   }
 ]
