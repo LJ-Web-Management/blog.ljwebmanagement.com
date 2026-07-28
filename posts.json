@@ -646,5 +646,45 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Contract Obligation Monitoring Before Small Misses Become Expensive",
+    "slug": "automate-contract-obligation-monitoring-before-small-misses-become-expensive",
+    "image": "assets/img/posts/automate-contract-obligation-monitoring-before-small-misses-become-expensive.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Intake Triage Desk for Shared Operations Mailboxes",
+    "slug": "build-an-ai-intake-triage-desk-for-shared-operations-mailboxes",
+    "image": "assets/img/posts/build-an-ai-intake-triage-desk-for-shared-operations-mailboxes.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create a Governance Workflow for Automation Change Requests",
+    "slug": "create-a-governance-workflow-for-automation-change-requests",
+    "image": "assets/img/posts/create-a-governance-workflow-for-automation-change-requests.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Detect Process Bottlenecks From Time Stamps Before Customers Notice",
+    "slug": "use-ai-to-detect-process-bottlenecks-from-time-stamps-before-customers-notice",
+    "image": "assets/img/posts/use-ai-to-detect-process-bottlenecks-from-time-stamps-before-customers-notice.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Keep Website Conversion Experiments Aligned With Real Customer Intent",
+    "slug": "use-ai-to-keep-website-conversion-experiments-aligned-with-real-customer-intent",
+    "image": "assets/img/posts/use-ai-to-keep-website-conversion-experiments-aligned-with-real-customer-intent.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "What Happened"
   }
 ]
