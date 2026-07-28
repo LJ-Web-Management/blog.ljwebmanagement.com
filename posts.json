@@ -686,5 +686,45 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Consent Reviews Before Sales Outreach Creates Risk",
+    "slug": "automate-customer-consent-reviews-before-sales-outreach-creates-risk",
+    "image": "assets/img/posts/automate-customer-consent-reviews-before-sales-outreach-creates-risk.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "Sales teams want speed, but outreach only works when customers trust the way a business communicates. A prospect who asked for email updates may not want phone…"
+  },
+  {
+    "title": "Build an AI Returns Intelligence Workflow That Protects Margin and Loyalty",
+    "slug": "build-an-ai-returns-intelligence-workflow-that-protects-margin-and-loyalty",
+    "image": "assets/img/posts/build-an-ai-returns-intelligence-workflow-that-protects-margin-and-loyalty.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "Returns are often treated as an unavoidable cost of doing business. A customer sends something back, a team processes the credit, inventory receives the item,…"
+  },
+  {
+    "title": "Coordinate Product Discontinuation Readiness With AI Before Customers Hit Dead Ends",
+    "slug": "coordinate-product-discontinuation-readiness-with-ai-before-customers-hit-dead-ends",
+    "image": "assets/img/posts/coordinate-product-discontinuation-readiness-with-ai-before-customers-hit-dead-ends.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "Product discontinuation sounds like a catalog decision, but customers experience it as an operating event. A product becomes unavailable, a replacement is…"
+  },
+  {
+    "title": "Reduce SaaS Subscription Waste With an AI License Utilization Workflow",
+    "slug": "reduce-saas-subscription-waste-with-an-ai-license-utilization-workflow",
+    "image": "assets/img/posts/reduce-saas-subscription-waste-with-an-ai-license-utilization-workflow.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "Software subscriptions are easy to buy and surprisingly hard to manage. A team needs a tool, a manager approves seats, a department grows, a project ends,…"
+  },
+  {
+    "title": "Use AI to Prepare Board Ready Operating Narratives Without Rewriting the Numbers",
+    "slug": "use-ai-to-prepare-board-ready-operating-narratives-without-rewriting-the-numbers",
+    "image": "assets/img/posts/use-ai-to-prepare-board-ready-operating-narratives-without-rewriting-the-numbers.png",
+    "date": "2026-07-28",
+    "dateDisplay": "July 28, 2026",
+    "excerpt": "Executive reporting often fails in the space between numbers and decisions. Finance may close the books, operations may update dashboards, sales may provide…"
   }
 ]
