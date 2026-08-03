@@ -966,5 +966,45 @@
     "date": "2026-08-02",
     "dateDisplay": "August 2, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Morning Operations Briefing With AI That Turns Signals Into Action",
+    "slug": "build-a-morning-operations-briefing-with-ai-that-turns-signals-into-action",
+    "image": "assets/img/posts/build-a-morning-operations-briefing-with-ai-that-turns-signals-into-action.png",
+    "date": "2026-08-03",
+    "dateDisplay": "August 3, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Coordinate Cross-Team Go-Live Readiness With AI Before Launch Week",
+    "slug": "coordinate-cross-team-go-live-readiness-with-ai-before-launch-week",
+    "image": "assets/img/posts/coordinate-cross-team-go-live-readiness-with-ai-before-launch-week.png",
+    "date": "2026-08-03",
+    "dateDisplay": "August 3, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Forecast Service Parts Demand With AI Before Field Teams Lose Capacity",
+    "slug": "forecast-service-parts-demand-with-ai-before-field-teams-lose-capacity",
+    "image": "assets/img/posts/forecast-service-parts-demand-with-ai-before-field-teams-lose-capacity.png",
+    "date": "2026-08-03",
+    "dateDisplay": "August 3, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Keep Sales Enablement Assets Trustworthy With AI Version Governance",
+    "slug": "keep-sales-enablement-assets-trustworthy-with-ai-version-governance",
+    "image": "assets/img/posts/keep-sales-enablement-assets-trustworthy-with-ai-version-governance.png",
+    "date": "2026-08-03",
+    "dateDisplay": "August 3, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Prevent Invoice Disputes With AI Evidence Matching Before Bills Go Out",
+    "slug": "prevent-invoice-disputes-with-ai-evidence-matching-before-bills-go-out",
+    "image": "assets/img/posts/prevent-invoice-disputes-with-ai-evidence-matching-before-bills-go-out.png",
+    "date": "2026-08-03",
+    "dateDisplay": "August 3, 2026",
+    "excerpt": "What Happened"
   }
 ]
