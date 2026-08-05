@@ -1046,5 +1046,45 @@
     "date": "2026-08-04",
     "dateDisplay": "August 4, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Detect Customer Renewal Risk With AI Before Accounts Go Quiet",
+    "slug": "detect-customer-renewal-risk-with-ai-before-accounts-go-quiet",
+    "image": "assets/img/posts/detect-customer-renewal-risk-with-ai-before-accounts-go-quiet.png",
+    "date": "2026-08-05",
+    "dateDisplay": "August 5, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Manage Vendor Insurance Renewals With AI Before Compliance Gaps Spread",
+    "slug": "manage-vendor-insurance-renewals-with-ai-before-compliance-gaps-spread",
+    "image": "assets/img/posts/manage-vendor-insurance-renewals-with-ai-before-compliance-gaps-spread.png",
+    "date": "2026-08-05",
+    "dateDisplay": "August 5, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Prioritize Receivables Collection Work With AI Before Cash Gets Tight",
+    "slug": "prioritize-receivables-collection-work-with-ai-before-cash-gets-tight",
+    "image": "assets/img/posts/prioritize-receivables-collection-work-with-ai-before-cash-gets-tight.png",
+    "date": "2026-08-05",
+    "dateDisplay": "August 5, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Review Quote Margin Risk With AI Before Discounts Become Leakage",
+    "slug": "review-quote-margin-risk-with-ai-before-discounts-become-leakage",
+    "image": "assets/img/posts/review-quote-margin-risk-with-ai-before-discounts-become-leakage.png",
+    "date": "2026-08-05",
+    "dateDisplay": "August 5, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Triage Warranty Claims Before Service Costs Escalate",
+    "slug": "use-ai-to-triage-warranty-claims-before-service-costs-escalate",
+    "image": "assets/img/posts/use-ai-to-triage-warranty-claims-before-service-costs-escalate.png",
+    "date": "2026-08-05",
+    "dateDisplay": "August 5, 2026",
+    "excerpt": "What Happened"
   }
 ]
