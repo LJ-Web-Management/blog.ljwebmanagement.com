@@ -1086,5 +1086,45 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Data Correction Intake Across CRM Billing and Support",
+    "slug": "automate-customer-data-correction-intake-across-crm-billing-and-support",
+    "image": "assets/img/posts/automate-customer-data-correction-intake-across-crm-billing-and-support.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Control Sales Forecast Changes With AI Review Workflows",
+    "slug": "control-sales-forecast-changes-with-ai-review-workflows",
+    "image": "assets/img/posts/control-sales-forecast-changes-with-ai-review-workflows.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Manage Inventory Substitutions With AI Before Stockouts Reach Customers",
+    "slug": "manage-inventory-substitutions-with-ai-before-stockouts-reach-customers",
+    "image": "assets/img/posts/manage-inventory-substitutions-with-ai-before-stockouts-reach-customers.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Partner Referrals Into Qualified Pipeline With AI Routing",
+    "slug": "turn-partner-referrals-into-qualified-pipeline-with-ai-routing",
+    "image": "assets/img/posts/turn-partner-referrals-into-qualified-pipeline-with-ai-routing.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Policy Exception Reports Into Measurable Management Actions With AI",
+    "slug": "turn-policy-exception-reports-into-measurable-management-actions-with-ai",
+    "image": "assets/img/posts/turn-policy-exception-reports-into-measurable-management-actions-with-ai.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
   }
 ]
