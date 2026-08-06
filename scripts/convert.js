@@ -406,11 +406,6 @@ ${bodyHtml}
     <div class="footer-bottom-inner">&copy; <span id="year">${new Date().getFullYear()}</span> LJ Web Management - All Rights Reserved</div>
   </div>
 </footer>
-
-<div class="newsletter-tf-corner">
-  <div data-tf-live="01KZAMHRP7TNX59ZZ7J2GXR8E1"></div>
-  <script src="//embed.typeform.com/next/embed.js"></script>
-</div>
 </body>
 </html>
 `;
