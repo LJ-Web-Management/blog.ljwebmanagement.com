@@ -505,6 +505,124 @@ main.home {
   font-weight: 600;
 }
 
+/* ============ NEWSLETTER FORM / POPUP ============ */
+
+.newsletter-form-card {
+  padding: 0;
+  overflow: hidden;
+  min-height: 520px;
+}
+
+.newsletter-form-card [data-tf-live] {
+  min-height: 520px;
+}
+
+.newsletter-popup-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 22px;
+  box-shadow: var(--shadow-lift);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.newsletter-popup-btn:hover {
+  background: var(--navy-light);
+  transform: translateY(-2px);
+}
+
+.newsletter-popup-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.newsletter-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 37, 68, 0.55);
+  z-index: 1000;
+  padding: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-modal-overlay.is-open {
+  display: flex;
+}
+
+.newsletter-modal {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lift);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-modal-close:hover {
+  background: var(--mist);
+  color: var(--cyan);
+}
+
+.newsletter-modal-body {
+  min-height: 480px;
+  flex: 1;
+}
+
+.newsletter-modal-body [data-tf-live] {
+  min-height: 480px;
+}
+
+@media (max-width: 560px) {
+  .newsletter-popup-btn {
+    right: 16px;
+    bottom: 16px;
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+}
+
 /* ============ FOOTER ============ */
 /* Matches www.ljwebmanagement.com's footer: solid navy, logo + nav links +
    social icons row, then a separated copyright bar. */
