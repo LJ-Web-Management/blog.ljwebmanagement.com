@@ -1126,5 +1126,45 @@
     "date": "2026-08-06",
     "dateDisplay": "August 6, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Job Cost Variance Reviews Before Project Margins Drift",
+    "slug": "automate-job-cost-variance-reviews-before-project-margins-drift",
+    "image": "assets/img/posts/automate-job-cost-variance-reviews-before-project-margins-drift.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Customer Reference Request Workflow That Protects Relationships",
+    "slug": "build-an-ai-customer-reference-request-workflow-that-protects-relationships",
+    "image": "assets/img/posts/build-an-ai-customer-reference-request-workflow-that-protects-relationships.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Field Audit Photo Review Workflow Before Corrective Actions Drift",
+    "slug": "build-an-ai-field-audit-photo-review-workflow-before-corrective-actions-drift",
+    "image": "assets/img/posts/build-an-ai-field-audit-photo-review-workflow-before-corrective-actions-drift.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Product Demo Notes Into AI-Guided Buyer Follow-Up",
+    "slug": "turn-product-demo-notes-into-ai-guided-buyer-follow-up",
+    "image": "assets/img/posts/turn-product-demo-notes-into-ai-guided-buyer-follow-up.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Triage Website Uptime Incidents Into Customer Communication Actions",
+    "slug": "use-ai-to-triage-website-uptime-incidents-into-customer-communication-actions",
+    "image": "assets/img/posts/use-ai-to-triage-website-uptime-incidents-into-customer-communication-actions.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
   }
 ]
