@@ -1206,5 +1206,45 @@
     "date": "2026-08-08",
     "dateDisplay": "August 8, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Data Deletion Requests Without Losing Governance Control",
+    "slug": "automate-customer-data-deletion-requests-without-losing-governance-control",
+    "image": "assets/img/posts/automate-customer-data-deletion-requests-without-losing-governance-control.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Balance Sales Territory Capacity With AI Before Pipeline Coverage Becomes Uneven",
+    "slug": "balance-sales-territory-capacity-with-ai-before-pipeline-coverage-becomes-uneven",
+    "image": "assets/img/posts/balance-sales-territory-capacity-with-ai-before-pipeline-coverage-becomes-uneven.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build Finance Approval Evidence Packs With AI Before Spending Decisions Stall",
+    "slug": "build-finance-approval-evidence-packs-with-ai-before-spending-decisions-stall",
+    "image": "assets/img/posts/build-finance-approval-evidence-packs-with-ai-before-spending-decisions-stall.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Vendor Contract Obligations Into an AI Follow-Up Workflow Before Commitments Slip",
+    "slug": "turn-vendor-contract-obligations-into-an-ai-follow-up-workflow-before-commitments-slip",
+    "image": "assets/img/posts/turn-vendor-contract-obligations-into-an-ai-follow-up-workflow-before-commitments-slip.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Find Knowledge Base Gaps Before Support Teams Rewrite Answers",
+    "slug": "use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers",
+    "image": "assets/img/posts/use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
   }
 ]
