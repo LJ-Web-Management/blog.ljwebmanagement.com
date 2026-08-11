@@ -1286,5 +1286,45 @@
     "date": "2026-08-10",
     "dateDisplay": "August 10, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Data Retention Reviews Before Old Records Become Risk",
+    "slug": "automate-data-retention-reviews-before-old-records-become-risk",
+    "image": "assets/img/posts/automate-data-retention-reviews-before-old-records-become-risk.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Govern Proposal Content Reuse With AI Before Stale Claims Reach Buyers",
+    "slug": "govern-proposal-content-reuse-with-ai-before-stale-claims-reach-buyers",
+    "image": "assets/img/posts/govern-proposal-content-reuse-with-ai-before-stale-claims-reach-buyers.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Health Scores Into AI-Guided Retention Actions",
+    "slug": "turn-customer-health-scores-into-ai-guided-retention-actions",
+    "image": "assets/img/posts/turn-customer-health-scores-into-ai-guided-retention-actions.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Monitor Implementation Milestone Risk Before Delays Compound",
+    "slug": "use-ai-to-monitor-implementation-milestone-risk-before-delays-compound",
+    "image": "assets/img/posts/use-ai-to-monitor-implementation-milestone-risk-before-delays-compound.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Triage Warranty Claims Before Service Costs Spread",
+    "slug": "use-ai-to-triage-warranty-claims-before-service-costs-spread",
+    "image": "assets/img/posts/use-ai-to-triage-warranty-claims-before-service-costs-spread.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
   }
 ]
