@@ -1326,5 +1326,45 @@
     "date": "2026-08-11",
     "dateDisplay": "August 11, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Payment Plan Follow-Up Before Customer Promises Slip",
+    "slug": "automate-payment-plan-follow-up-before-customer-promises-slip",
+    "image": "assets/img/posts/automate-payment-plan-follow-up-before-customer-promises-slip.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Win Loss Review Loop That Improves Sales Execution",
+    "slug": "build-an-ai-win-loss-review-loop-that-improves-sales-execution",
+    "image": "assets/img/posts/build-an-ai-win-loss-review-loop-that-improves-sales-execution.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Equipment Downtime Communication Workflow Before Customers Call First",
+    "slug": "create-an-ai-equipment-downtime-communication-workflow-before-customers-call-first",
+    "image": "assets/img/posts/create-an-ai-equipment-downtime-communication-workflow-before-customers-call-first.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn CRM Attribution Conflicts Into Clean Revenue Signals With AI",
+    "slug": "turn-crm-attribution-conflicts-into-clean-revenue-signals-with-ai",
+    "image": "assets/img/posts/turn-crm-attribution-conflicts-into-clean-revenue-signals-with-ai.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Reconcile Policy Acknowledgments Before Audit Requests Arrive",
+    "slug": "use-ai-to-reconcile-policy-acknowledgments-before-audit-requests-arrive",
+    "image": "assets/img/posts/use-ai-to-reconcile-policy-acknowledgments-before-audit-requests-arrive.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
   }
 ]
