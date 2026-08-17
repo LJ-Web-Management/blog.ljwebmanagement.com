@@ -1446,5 +1446,45 @@
     "date": "2026-08-16",
     "dateDisplay": "August 16, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Customer Address Change Automation That Keeps Orders Billing and Support Aligned",
+    "slug": "build-a-customer-address-change-automation-that-keeps-orders-billing-and-support-aligned",
+    "image": "assets/img/posts/build-a-customer-address-change-automation-that-keeps-orders-billing-and-support-aligned.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Estimate Proofing Workflow Before Proposals Reach Clients",
+    "slug": "build-an-ai-estimate-proofing-workflow-before-proposals-reach-clients",
+    "image": "assets/img/posts/build-an-ai-estimate-proofing-workflow-before-proposals-reach-clients.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Quote Expiration Rescue Workflow Before Pipeline Goes Stale",
+    "slug": "create-an-ai-quote-expiration-rescue-workflow-before-pipeline-goes-stale",
+    "image": "assets/img/posts/create-an-ai-quote-expiration-rescue-workflow-before-pipeline-goes-stale.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Service Ticket Attachments Into Structured Work Orders With AI",
+    "slug": "turn-service-ticket-attachments-into-structured-work-orders-with-ai",
+    "image": "assets/img/posts/turn-service-ticket-attachments-into-structured-work-orders-with-ai.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Spot Vendor Lead Time Drift Before Purchase Plans Break",
+    "slug": "use-ai-to-spot-vendor-lead-time-drift-before-purchase-plans-break",
+    "image": "assets/img/posts/use-ai-to-spot-vendor-lead-time-drift-before-purchase-plans-break.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
   }
 ]
