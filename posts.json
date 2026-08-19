@@ -1526,5 +1526,45 @@
     "date": "2026-08-18",
     "dateDisplay": "August 18, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Audit AI Chatbot Handoffs Before Support Context Gets Lost",
+    "slug": "audit-ai-chatbot-handoffs-before-support-context-gets-lost",
+    "image": "assets/img/posts/audit-ai-chatbot-handoffs-before-support-context-gets-lost.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Invoice Coding Review Before Month-End Rework Spreads",
+    "slug": "automate-invoice-coding-review-before-month-end-rework-spreads",
+    "image": "assets/img/posts/automate-invoice-coding-review-before-month-end-rework-spreads.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Field Scheduling Stabilizer Before Customer Appointments Slip",
+    "slug": "build-an-ai-field-scheduling-stabilizer-before-customer-appointments-slip",
+    "image": "assets/img/posts/build-an-ai-field-scheduling-stabilizer-before-customer-appointments-slip.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Catch Customer Onboarding Risk Before Early Adoption Stalls",
+    "slug": "use-ai-to-catch-customer-onboarding-risk-before-early-adoption-stalls",
+    "image": "assets/img/posts/use-ai-to-catch-customer-onboarding-risk-before-early-adoption-stalls.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Detect KPI Definition Drift Before Reports Lose Trust",
+    "slug": "use-ai-to-detect-kpi-definition-drift-before-reports-lose-trust",
+    "image": "assets/img/posts/use-ai-to-detect-kpi-definition-drift-before-reports-lose-trust.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
   }
 ]
