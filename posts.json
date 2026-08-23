@@ -1686,5 +1686,45 @@
     "date": "2026-08-22",
     "dateDisplay": "August 22, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Customer Asset Registry Cleanup Workflow With AI",
+    "slug": "build-a-customer-asset-registry-cleanup-workflow-with-ai",
+    "image": "assets/img/posts/build-a-customer-asset-registry-cleanup-workflow-with-ai.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Resolve Customer Identity Conflicts With AI Before Records Break Operations",
+    "slug": "resolve-customer-identity-conflicts-with-ai-before-records-break-operations",
+    "image": "assets/img/posts/resolve-customer-identity-conflicts-with-ai-before-records-break-operations.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Retire Outdated Service Knowledge With AI Before Bad Guidance Reaches Customers",
+    "slug": "retire-outdated-service-knowledge-with-ai-before-bad-guidance-reaches-customers",
+    "image": "assets/img/posts/retire-outdated-service-knowledge-with-ai-before-bad-guidance-reaches-customers.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Review Automation Telemetry With AI Before Workflow Drift Becomes Invisible",
+    "slug": "review-automation-telemetry-with-ai-before-workflow-drift-becomes-invisible",
+    "image": "assets/img/posts/review-automation-telemetry-with-ai-before-workflow-drift-becomes-invisible.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Test Workflow Automations With AI Simulations Before Teams Depend on Them",
+    "slug": "test-workflow-automations-with-ai-simulations-before-teams-depend-on-them",
+    "image": "assets/img/posts/test-workflow-automations-with-ai-simulations-before-teams-depend-on-them.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
   }
 ]
