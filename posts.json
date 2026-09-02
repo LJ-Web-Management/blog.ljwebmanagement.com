@@ -2006,5 +2006,45 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate CRM Meeting Note Quality Checks Before Pipeline Signals Get Noisy",
+    "slug": "automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy",
+    "image": "assets/img/posts/automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Customer Profitability Watchlist Before Revenue Hides Margin Risk",
+    "slug": "build-an-ai-customer-profitability-watchlist-before-revenue-hides-margin-risk",
+    "image": "assets/img/posts/build-an-ai-customer-profitability-watchlist-before-revenue-hides-margin-risk.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Order Change Impact Review Before Small Edits Disrupt Fulfillment",
+    "slug": "create-an-ai-order-change-impact-review-before-small-edits-disrupt-fulfillment",
+    "image": "assets/img/posts/create-an-ai-order-change-impact-review-before-small-edits-disrupt-fulfillment.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Website Form Abandonment Recovery Workflow Before Qualified Buyers Drift Away",
+    "slug": "create-an-ai-website-form-abandonment-recovery-workflow-before-qualified-buyers-drift-away",
+    "image": "assets/img/posts/create-an-ai-website-form-abandonment-recovery-workflow-before-qualified-buyers-drift-away.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Service Parts Returns Into Warranty Inventory and Vendor Signals",
+    "slug": "use-ai-to-turn-service-parts-returns-into-warranty-inventory-and-vendor-signals",
+    "image": "assets/img/posts/use-ai-to-turn-service-parts-returns-into-warranty-inventory-and-vendor-signals.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
   }
 ]
