@@ -1086,5 +1086,1013 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Data Correction Intake Across CRM Billing and Support",
+    "slug": "automate-customer-data-correction-intake-across-crm-billing-and-support",
+    "image": "assets/img/posts/automate-customer-data-correction-intake-across-crm-billing-and-support.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Control Sales Forecast Changes With AI Review Workflows",
+    "slug": "control-sales-forecast-changes-with-ai-review-workflows",
+    "image": "assets/img/posts/control-sales-forecast-changes-with-ai-review-workflows.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Manage Inventory Substitutions With AI Before Stockouts Reach Customers",
+    "slug": "manage-inventory-substitutions-with-ai-before-stockouts-reach-customers",
+    "image": "assets/img/posts/manage-inventory-substitutions-with-ai-before-stockouts-reach-customers.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Partner Referrals Into Qualified Pipeline With AI Routing",
+    "slug": "turn-partner-referrals-into-qualified-pipeline-with-ai-routing",
+    "image": "assets/img/posts/turn-partner-referrals-into-qualified-pipeline-with-ai-routing.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Policy Exception Reports Into Measurable Management Actions With AI",
+    "slug": "turn-policy-exception-reports-into-measurable-management-actions-with-ai",
+    "image": "assets/img/posts/turn-policy-exception-reports-into-measurable-management-actions-with-ai.png",
+    "date": "2026-08-06",
+    "dateDisplay": "August 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Job Cost Variance Reviews Before Project Margins Drift",
+    "slug": "automate-job-cost-variance-reviews-before-project-margins-drift",
+    "image": "assets/img/posts/automate-job-cost-variance-reviews-before-project-margins-drift.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Customer Reference Request Workflow That Protects Relationships",
+    "slug": "build-an-ai-customer-reference-request-workflow-that-protects-relationships",
+    "image": "assets/img/posts/build-an-ai-customer-reference-request-workflow-that-protects-relationships.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Field Audit Photo Review Workflow Before Corrective Actions Drift",
+    "slug": "build-an-ai-field-audit-photo-review-workflow-before-corrective-actions-drift",
+    "image": "assets/img/posts/build-an-ai-field-audit-photo-review-workflow-before-corrective-actions-drift.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Product Demo Notes Into AI-Guided Buyer Follow-Up",
+    "slug": "turn-product-demo-notes-into-ai-guided-buyer-follow-up",
+    "image": "assets/img/posts/turn-product-demo-notes-into-ai-guided-buyer-follow-up.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Triage Website Uptime Incidents Into Customer Communication Actions",
+    "slug": "use-ai-to-triage-website-uptime-incidents-into-customer-communication-actions",
+    "image": "assets/img/posts/use-ai-to-triage-website-uptime-incidents-into-customer-communication-actions.png",
+    "date": "2026-08-07",
+    "dateDisplay": "August 7, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Training Follow-Up With AI Before Adoption Stalls",
+    "slug": "automate-customer-training-follow-up-with-ai-before-adoption-stalls",
+    "image": "assets/img/posts/automate-customer-training-follow-up-with-ai-before-adoption-stalls.png",
+    "date": "2026-08-08",
+    "dateDisplay": "August 8, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Delivery Appointment Readiness Workflow Before Missed Windows Cost Trust",
+    "slug": "build-an-ai-delivery-appointment-readiness-workflow-before-missed-windows-cost-trust",
+    "image": "assets/img/posts/build-an-ai-delivery-appointment-readiness-workflow-before-missed-windows-cost-trust.png",
+    "date": "2026-08-08",
+    "dateDisplay": "August 8, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Bid No-Bid Review Workflow That Protects Sales Capacity",
+    "slug": "create-an-ai-bid-no-bid-review-workflow-that-protects-sales-capacity",
+    "image": "assets/img/posts/create-an-ai-bid-no-bid-review-workflow-that-protects-sales-capacity.png",
+    "date": "2026-08-08",
+    "dateDisplay": "August 8, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Refund Requests Into a Controlled AI Review Workflow",
+    "slug": "turn-customer-refund-requests-into-a-controlled-ai-review-workflow",
+    "image": "assets/img/posts/turn-customer-refund-requests-into-a-controlled-ai-review-workflow.png",
+    "date": "2026-08-08",
+    "dateDisplay": "August 8, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Reconcile Subscription Entitlements Before Support and Billing Drift Apart",
+    "slug": "use-ai-to-reconcile-subscription-entitlements-before-support-and-billing-drift-apart",
+    "image": "assets/img/posts/use-ai-to-reconcile-subscription-entitlements-before-support-and-billing-drift-apart.png",
+    "date": "2026-08-08",
+    "dateDisplay": "August 8, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Data Deletion Requests Without Losing Governance Control",
+    "slug": "automate-customer-data-deletion-requests-without-losing-governance-control",
+    "image": "assets/img/posts/automate-customer-data-deletion-requests-without-losing-governance-control.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Balance Sales Territory Capacity With AI Before Pipeline Coverage Becomes Uneven",
+    "slug": "balance-sales-territory-capacity-with-ai-before-pipeline-coverage-becomes-uneven",
+    "image": "assets/img/posts/balance-sales-territory-capacity-with-ai-before-pipeline-coverage-becomes-uneven.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build Finance Approval Evidence Packs With AI Before Spending Decisions Stall",
+    "slug": "build-finance-approval-evidence-packs-with-ai-before-spending-decisions-stall",
+    "image": "assets/img/posts/build-finance-approval-evidence-packs-with-ai-before-spending-decisions-stall.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Vendor Contract Obligations Into an AI Follow-Up Workflow Before Commitments Slip",
+    "slug": "turn-vendor-contract-obligations-into-an-ai-follow-up-workflow-before-commitments-slip",
+    "image": "assets/img/posts/turn-vendor-contract-obligations-into-an-ai-follow-up-workflow-before-commitments-slip.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Find Knowledge Base Gaps Before Support Teams Rewrite Answers",
+    "slug": "use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers",
+    "image": "assets/img/posts/use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers.png",
+    "date": "2026-08-09",
+    "dateDisplay": "August 9, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Proof of Delivery Reviews Before Billing Questions Spread",
+    "slug": "automate-customer-proof-of-delivery-reviews-before-billing-questions-spread",
+    "image": "assets/img/posts/automate-customer-proof-of-delivery-reviews-before-billing-questions-spread.png",
+    "date": "2026-08-10",
+    "dateDisplay": "August 10, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Meeting Follow-Up Quality Loop for Client-Facing Teams",
+    "slug": "build-an-ai-meeting-follow-up-quality-loop-for-client-facing-teams",
+    "image": "assets/img/posts/build-an-ai-meeting-follow-up-quality-loop-for-client-facing-teams.png",
+    "date": "2026-08-10",
+    "dateDisplay": "August 10, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Revenue Handoff Checklist Before New Deals Reach Operations",
+    "slug": "build-an-ai-revenue-handoff-checklist-before-new-deals-reach-operations",
+    "image": "assets/img/posts/build-an-ai-revenue-handoff-checklist-before-new-deals-reach-operations.png",
+    "date": "2026-08-10",
+    "dateDisplay": "August 10, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create a Vendor Price Increase Review Workflow That Protects Margin",
+    "slug": "create-a-vendor-price-increase-review-workflow-that-protects-margin",
+    "image": "assets/img/posts/create-a-vendor-price-increase-review-workflow-that-protects-margin.png",
+    "date": "2026-08-10",
+    "dateDisplay": "August 10, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Website Error Reports Into Prioritized Repair Work",
+    "slug": "use-ai-to-turn-website-error-reports-into-prioritized-repair-work",
+    "image": "assets/img/posts/use-ai-to-turn-website-error-reports-into-prioritized-repair-work.png",
+    "date": "2026-08-10",
+    "dateDisplay": "August 10, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Data Retention Reviews Before Old Records Become Risk",
+    "slug": "automate-data-retention-reviews-before-old-records-become-risk",
+    "image": "assets/img/posts/automate-data-retention-reviews-before-old-records-become-risk.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Govern Proposal Content Reuse With AI Before Stale Claims Reach Buyers",
+    "slug": "govern-proposal-content-reuse-with-ai-before-stale-claims-reach-buyers",
+    "image": "assets/img/posts/govern-proposal-content-reuse-with-ai-before-stale-claims-reach-buyers.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Health Scores Into AI-Guided Retention Actions",
+    "slug": "turn-customer-health-scores-into-ai-guided-retention-actions",
+    "image": "assets/img/posts/turn-customer-health-scores-into-ai-guided-retention-actions.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Monitor Implementation Milestone Risk Before Delays Compound",
+    "slug": "use-ai-to-monitor-implementation-milestone-risk-before-delays-compound",
+    "image": "assets/img/posts/use-ai-to-monitor-implementation-milestone-risk-before-delays-compound.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Triage Warranty Claims Before Service Costs Spread",
+    "slug": "use-ai-to-triage-warranty-claims-before-service-costs-spread",
+    "image": "assets/img/posts/use-ai-to-triage-warranty-claims-before-service-costs-spread.png",
+    "date": "2026-08-11",
+    "dateDisplay": "August 11, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Payment Plan Follow-Up Before Customer Promises Slip",
+    "slug": "automate-payment-plan-follow-up-before-customer-promises-slip",
+    "image": "assets/img/posts/automate-payment-plan-follow-up-before-customer-promises-slip.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Win Loss Review Loop That Improves Sales Execution",
+    "slug": "build-an-ai-win-loss-review-loop-that-improves-sales-execution",
+    "image": "assets/img/posts/build-an-ai-win-loss-review-loop-that-improves-sales-execution.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Equipment Downtime Communication Workflow Before Customers Call First",
+    "slug": "create-an-ai-equipment-downtime-communication-workflow-before-customers-call-first",
+    "image": "assets/img/posts/create-an-ai-equipment-downtime-communication-workflow-before-customers-call-first.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn CRM Attribution Conflicts Into Clean Revenue Signals With AI",
+    "slug": "turn-crm-attribution-conflicts-into-clean-revenue-signals-with-ai",
+    "image": "assets/img/posts/turn-crm-attribution-conflicts-into-clean-revenue-signals-with-ai.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Reconcile Policy Acknowledgments Before Audit Requests Arrive",
+    "slug": "use-ai-to-reconcile-policy-acknowledgments-before-audit-requests-arrive",
+    "image": "assets/img/posts/use-ai-to-reconcile-policy-acknowledgments-before-audit-requests-arrive.png",
+    "date": "2026-08-12",
+    "dateDisplay": "August 12, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build AI Assisted Website Lead Enrichment That Keeps CRM Records Actionable",
+    "slug": "build-ai-assisted-website-lead-enrichment-that-keeps-crm-records-actionable",
+    "image": "assets/img/posts/build-ai-assisted-website-lead-enrichment-that-keeps-crm-records-actionable.png",
+    "date": "2026-08-14",
+    "dateDisplay": "August 14, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Change Impact Review for Workflow Automations Before Small Edits Break Operations",
+    "slug": "build-an-ai-change-impact-review-for-workflow-automations-before-small-edits-break-operations",
+    "image": "assets/img/posts/build-an-ai-change-impact-review-for-workflow-automations-before-small-edits-break-operations.png",
+    "date": "2026-08-14",
+    "dateDisplay": "August 14, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an Automation Control Room for Daily Exception Follow Through",
+    "slug": "create-an-automation-control-room-for-daily-exception-follow-through",
+    "image": "assets/img/posts/create-an-automation-control-room-for-daily-exception-follow-through.png",
+    "date": "2026-08-14",
+    "dateDisplay": "August 14, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Document Intake Into an AI Completeness Control Before Work Begins",
+    "slug": "turn-customer-document-intake-into-an-ai-completeness-control-before-work-begins",
+    "image": "assets/img/posts/turn-customer-document-intake-into-an-ai-completeness-control-before-work-begins.png",
+    "date": "2026-08-14",
+    "dateDisplay": "August 14, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Reconcile Sales Promotions With Billing Rules Before Margin Leaks",
+    "slug": "use-ai-to-reconcile-sales-promotions-with-billing-rules-before-margin-leaks",
+    "image": "assets/img/posts/use-ai-to-reconcile-sales-promotions-with-billing-rules-before-margin-leaks.png",
+    "date": "2026-08-14",
+    "dateDisplay": "August 14, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Vendor Dispute Evidence Before Supplier Trust Breaks Down",
+    "slug": "automate-vendor-dispute-evidence-before-supplier-trust-breaks-down",
+    "image": "assets/img/posts/automate-vendor-dispute-evidence-before-supplier-trust-breaks-down.png",
+    "date": "2026-08-16",
+    "dateDisplay": "August 16, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Renewal Risk Handoff Before Account Signals Scatter",
+    "slug": "build-an-ai-renewal-risk-handoff-before-account-signals-scatter",
+    "image": "assets/img/posts/build-an-ai-renewal-risk-handoff-before-account-signals-scatter.png",
+    "date": "2026-08-16",
+    "dateDisplay": "August 16, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Escalation Readiness Pack Before Customer Issues Reach Executives",
+    "slug": "create-an-ai-escalation-readiness-pack-before-customer-issues-reach-executives",
+    "image": "assets/img/posts/create-an-ai-escalation-readiness-pack-before-customer-issues-reach-executives.png",
+    "date": "2026-08-16",
+    "dateDisplay": "August 16, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Quote-to-Cash Exceptions Into an AI Follow-Through Workflow",
+    "slug": "turn-quote-to-cash-exceptions-into-an-ai-follow-through-workflow",
+    "image": "assets/img/posts/turn-quote-to-cash-exceptions-into-an-ai-follow-through-workflow.png",
+    "date": "2026-08-16",
+    "dateDisplay": "August 16, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Retire Stale Website Pages Without Losing Customer Trust",
+    "slug": "use-ai-to-retire-stale-website-pages-without-losing-customer-trust",
+    "image": "assets/img/posts/use-ai-to-retire-stale-website-pages-without-losing-customer-trust.png",
+    "date": "2026-08-16",
+    "dateDisplay": "August 16, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Customer Address Change Automation That Keeps Orders Billing and Support Aligned",
+    "slug": "build-a-customer-address-change-automation-that-keeps-orders-billing-and-support-aligned",
+    "image": "assets/img/posts/build-a-customer-address-change-automation-that-keeps-orders-billing-and-support-aligned.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Estimate Proofing Workflow Before Proposals Reach Clients",
+    "slug": "build-an-ai-estimate-proofing-workflow-before-proposals-reach-clients",
+    "image": "assets/img/posts/build-an-ai-estimate-proofing-workflow-before-proposals-reach-clients.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Quote Expiration Rescue Workflow Before Pipeline Goes Stale",
+    "slug": "create-an-ai-quote-expiration-rescue-workflow-before-pipeline-goes-stale",
+    "image": "assets/img/posts/create-an-ai-quote-expiration-rescue-workflow-before-pipeline-goes-stale.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Service Ticket Attachments Into Structured Work Orders With AI",
+    "slug": "turn-service-ticket-attachments-into-structured-work-orders-with-ai",
+    "image": "assets/img/posts/turn-service-ticket-attachments-into-structured-work-orders-with-ai.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Spot Vendor Lead Time Drift Before Purchase Plans Break",
+    "slug": "use-ai-to-spot-vendor-lead-time-drift-before-purchase-plans-break",
+    "image": "assets/img/posts/use-ai-to-spot-vendor-lead-time-drift-before-purchase-plans-break.png",
+    "date": "2026-08-17",
+    "dateDisplay": "August 17, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Lost Shipment Investigations Before Customer Promises Break",
+    "slug": "automate-lost-shipment-investigations-before-customer-promises-break",
+    "image": "assets/img/posts/automate-lost-shipment-investigations-before-customer-promises-break.png",
+    "date": "2026-08-18",
+    "dateDisplay": "August 18, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Marketing Campaign Compliance Review Before Messages Reach the Market",
+    "slug": "automate-marketing-campaign-compliance-review-before-messages-reach-the-market",
+    "image": "assets/img/posts/automate-marketing-campaign-compliance-review-before-messages-reach-the-market.png",
+    "date": "2026-08-18",
+    "dateDisplay": "August 18, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Change Order Review Workflow That Protects Project Scope and Margin",
+    "slug": "build-an-ai-change-order-review-workflow-that-protects-project-scope-and-margin",
+    "image": "assets/img/posts/build-an-ai-change-order-review-workflow-that-protects-project-scope-and-margin.png",
+    "date": "2026-08-18",
+    "dateDisplay": "August 18, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI SLA Credit Review Workflow Before Service Disputes Reach Finance",
+    "slug": "build-an-ai-sla-credit-review-workflow-before-service-disputes-reach-finance",
+    "image": "assets/img/posts/build-an-ai-sla-credit-review-workflow-before-service-disputes-reach-finance.png",
+    "date": "2026-08-18",
+    "dateDisplay": "August 18, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Escalations Into AI-Guided Prevention Workflows",
+    "slug": "turn-customer-escalations-into-ai-guided-prevention-workflows",
+    "image": "assets/img/posts/turn-customer-escalations-into-ai-guided-prevention-workflows.png",
+    "date": "2026-08-18",
+    "dateDisplay": "August 18, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Audit AI Chatbot Handoffs Before Support Context Gets Lost",
+    "slug": "audit-ai-chatbot-handoffs-before-support-context-gets-lost",
+    "image": "assets/img/posts/audit-ai-chatbot-handoffs-before-support-context-gets-lost.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Invoice Coding Review Before Month-End Rework Spreads",
+    "slug": "automate-invoice-coding-review-before-month-end-rework-spreads",
+    "image": "assets/img/posts/automate-invoice-coding-review-before-month-end-rework-spreads.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Field Scheduling Stabilizer Before Customer Appointments Slip",
+    "slug": "build-an-ai-field-scheduling-stabilizer-before-customer-appointments-slip",
+    "image": "assets/img/posts/build-an-ai-field-scheduling-stabilizer-before-customer-appointments-slip.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Catch Customer Onboarding Risk Before Early Adoption Stalls",
+    "slug": "use-ai-to-catch-customer-onboarding-risk-before-early-adoption-stalls",
+    "image": "assets/img/posts/use-ai-to-catch-customer-onboarding-risk-before-early-adoption-stalls.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Detect KPI Definition Drift Before Reports Lose Trust",
+    "slug": "use-ai-to-detect-kpi-definition-drift-before-reports-lose-trust",
+    "image": "assets/img/posts/use-ai-to-detect-kpi-definition-drift-before-reports-lose-trust.png",
+    "date": "2026-08-19",
+    "dateDisplay": "August 19, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Sales Demo Environment Readiness Before High-Value Meetings",
+    "slug": "automate-sales-demo-environment-readiness-before-high-value-meetings",
+    "image": "assets/img/posts/automate-sales-demo-environment-readiness-before-high-value-meetings.png",
+    "date": "2026-08-20",
+    "dateDisplay": "August 20, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Change Freeze Readiness Workflow Before Seasonal Traffic Peaks",
+    "slug": "build-an-ai-change-freeze-readiness-workflow-before-seasonal-traffic-peaks",
+    "image": "assets/img/posts/build-an-ai-change-freeze-readiness-workflow-before-seasonal-traffic-peaks.png",
+    "date": "2026-08-20",
+    "dateDisplay": "August 20, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Data Access Exception Review Before Shadow Permissions Spread",
+    "slug": "build-an-ai-data-access-exception-review-before-shadow-permissions-spread",
+    "image": "assets/img/posts/build-an-ai-data-access-exception-review-before-shadow-permissions-spread.png",
+    "date": "2026-08-20",
+    "dateDisplay": "August 20, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Supplier Substitution Approval Workflow Before Expedites Erode Margin",
+    "slug": "create-an-ai-supplier-substitution-approval-workflow-before-expedites-erode-margin",
+    "image": "assets/img/posts/create-an-ai-supplier-substitution-approval-workflow-before-expedites-erode-margin.png",
+    "date": "2026-08-20",
+    "dateDisplay": "August 20, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Customer Payment Portal Friction Into Cash Recovery Actions",
+    "slug": "use-ai-to-turn-customer-payment-portal-friction-into-cash-recovery-actions",
+    "image": "assets/img/posts/use-ai-to-turn-customer-payment-portal-friction-into-cash-recovery-actions.png",
+    "date": "2026-08-20",
+    "dateDisplay": "August 20, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Compliance Evidence Requests Before Audit Questions Scatter Across Teams",
+    "slug": "automate-compliance-evidence-requests-before-audit-questions-scatter-across-teams",
+    "image": "assets/img/posts/automate-compliance-evidence-requests-before-audit-questions-scatter-across-teams.png",
+    "date": "2026-08-21",
+    "dateDisplay": "August 21, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Revenue Recognition Readiness Workflow Before Automation Sends Bad Signals",
+    "slug": "build-a-revenue-recognition-readiness-workflow-before-automation-sends-bad-signals",
+    "image": "assets/img/posts/build-a-revenue-recognition-readiness-workflow-before-automation-sends-bad-signals.png",
+    "date": "2026-08-21",
+    "dateDisplay": "August 21, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Contract Clause Deviation Review Before Legal Bottlenecks Slow Deals",
+    "slug": "create-an-ai-contract-clause-deviation-review-before-legal-bottlenecks-slow-deals",
+    "image": "assets/img/posts/create-an-ai-contract-clause-deviation-review-before-legal-bottlenecks-slow-deals.png",
+    "date": "2026-08-21",
+    "dateDisplay": "August 21, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Subscription Usage Alert Workflow Before Renewals Lose Momentum",
+    "slug": "create-an-ai-subscription-usage-alert-workflow-before-renewals-lose-momentum",
+    "image": "assets/img/posts/create-an-ai-subscription-usage-alert-workflow-before-renewals-lose-momentum.png",
+    "date": "2026-08-21",
+    "dateDisplay": "August 21, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Sales Territory Changes Into a Clean CRM Reassignment Workflow",
+    "slug": "use-ai-to-turn-sales-territory-changes-into-a-clean-crm-reassignment-workflow",
+    "image": "assets/img/posts/use-ai-to-turn-sales-territory-changes-into-a-clean-crm-reassignment-workflow.png",
+    "date": "2026-08-21",
+    "dateDisplay": "August 21, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Implementation Scope Checks Before Onboarding Work Expands",
+    "slug": "automate-customer-implementation-scope-checks-before-onboarding-work-expands",
+    "image": "assets/img/posts/automate-customer-implementation-scope-checks-before-onboarding-work-expands.png",
+    "date": "2026-08-22",
+    "dateDisplay": "August 22, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Service Recovery Playbook Before Negative Reviews Spread",
+    "slug": "build-an-ai-service-recovery-playbook-before-negative-reviews-spread",
+    "image": "assets/img/posts/build-an-ai-service-recovery-playbook-before-negative-reviews-spread.png",
+    "date": "2026-08-22",
+    "dateDisplay": "August 22, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Website Conversion Anomaly Brief Before Leads Disappear",
+    "slug": "build-an-ai-website-conversion-anomaly-brief-before-leads-disappear",
+    "image": "assets/img/posts/build-an-ai-website-conversion-anomaly-brief-before-leads-disappear.png",
+    "date": "2026-08-22",
+    "dateDisplay": "August 22, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI CRM Merge Review Before Duplicate Accounts Distort Revenue",
+    "slug": "create-an-ai-crm-merge-review-before-duplicate-accounts-distort-revenue",
+    "image": "assets/img/posts/create-an-ai-crm-merge-review-before-duplicate-accounts-distort-revenue.png",
+    "date": "2026-08-22",
+    "dateDisplay": "August 22, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Automate Warranty Reserve Signals Before Finance Gets Surprised",
+    "slug": "use-ai-to-automate-warranty-reserve-signals-before-finance-gets-surprised",
+    "image": "assets/img/posts/use-ai-to-automate-warranty-reserve-signals-before-finance-gets-surprised.png",
+    "date": "2026-08-22",
+    "dateDisplay": "August 22, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build a Customer Asset Registry Cleanup Workflow With AI",
+    "slug": "build-a-customer-asset-registry-cleanup-workflow-with-ai",
+    "image": "assets/img/posts/build-a-customer-asset-registry-cleanup-workflow-with-ai.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Resolve Customer Identity Conflicts With AI Before Records Break Operations",
+    "slug": "resolve-customer-identity-conflicts-with-ai-before-records-break-operations",
+    "image": "assets/img/posts/resolve-customer-identity-conflicts-with-ai-before-records-break-operations.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Retire Outdated Service Knowledge With AI Before Bad Guidance Reaches Customers",
+    "slug": "retire-outdated-service-knowledge-with-ai-before-bad-guidance-reaches-customers",
+    "image": "assets/img/posts/retire-outdated-service-knowledge-with-ai-before-bad-guidance-reaches-customers.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Review Automation Telemetry With AI Before Workflow Drift Becomes Invisible",
+    "slug": "review-automation-telemetry-with-ai-before-workflow-drift-becomes-invisible",
+    "image": "assets/img/posts/review-automation-telemetry-with-ai-before-workflow-drift-becomes-invisible.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Test Workflow Automations With AI Simulations Before Teams Depend on Them",
+    "slug": "test-workflow-automations-with-ai-simulations-before-teams-depend-on-them",
+    "image": "assets/img/posts/test-workflow-automations-with-ai-simulations-before-teams-depend-on-them.png",
+    "date": "2026-08-23",
+    "dateDisplay": "August 23, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Credit Memo Reviews Before Revenue Leakage Hides in Adjustments",
+    "slug": "automate-customer-credit-memo-reviews-before-revenue-leakage-hides-in-adjustments",
+    "image": "assets/img/posts/automate-customer-credit-memo-reviews-before-revenue-leakage-hides-in-adjustments.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer-Specific Pricing Reviews Before Special Terms Create Margin Confusion",
+    "slug": "automate-customer-specific-pricing-reviews-before-special-terms-create-margin-confusion",
+    "image": "assets/img/posts/automate-customer-specific-pricing-reviews-before-special-terms-create-margin-confusion.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Renewal Clause Reviews Before Customer Conversations Start",
+    "slug": "automate-renewal-clause-reviews-before-customer-conversations-start",
+    "image": "assets/img/posts/automate-renewal-clause-reviews-before-customer-conversations-start.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Sales Tax Nexus Watchlists Before Market Expansion Creates Filing Risk",
+    "slug": "automate-sales-tax-nexus-watchlists-before-market-expansion-creates-filing-risk",
+    "image": "assets/img/posts/automate-sales-tax-nexus-watchlists-before-market-expansion-creates-filing-risk.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Vendor Contract Renewal Budget Alerts Before Spend Surprises Finance",
+    "slug": "automate-vendor-contract-renewal-budget-alerts-before-spend-surprises-finance",
+    "image": "assets/img/posts/automate-vendor-contract-renewal-budget-alerts-before-spend-surprises-finance.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Website Content Ownership Reviews Before Pages Become Orphaned",
+    "slug": "automate-website-content-ownership-reviews-before-pages-become-orphaned",
+    "image": "assets/img/posts/automate-website-content-ownership-reviews-before-pages-become-orphaned.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Customer Promise Register Before Commitments Scatter Across Teams",
+    "slug": "build-an-ai-customer-promise-register-before-commitments-scatter-across-teams",
+    "image": "assets/img/posts/build-an-ai-customer-promise-register-before-commitments-scatter-across-teams.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Demand Signal Review Workflow Before Inventory Buys Outrun Reality",
+    "slug": "build-an-ai-demand-signal-review-workflow-before-inventory-buys-outrun-reality",
+    "image": "assets/img/posts/build-an-ai-demand-signal-review-workflow-before-inventory-buys-outrun-reality.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Procurement Savings Verification Workflow Before Reported Wins Fade",
+    "slug": "build-an-ai-procurement-savings-verification-workflow-before-reported-wins-fade",
+    "image": "assets/img/posts/build-an-ai-procurement-savings-verification-workflow-before-reported-wins-fade.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Quote Approval Memory So Pricing Exceptions Do Not Repeat",
+    "slug": "build-an-ai-quote-approval-memory-so-pricing-exceptions-do-not-repeat",
+    "image": "assets/img/posts/build-an-ai-quote-approval-memory-so-pricing-exceptions-do-not-repeat.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Regulatory Change Intake Workflow Before Policies Fall Behind",
+    "slug": "build-an-ai-regulatory-change-intake-workflow-before-policies-fall-behind",
+    "image": "assets/img/posts/build-an-ai-regulatory-change-intake-workflow-before-policies-fall-behind.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an Automation Portfolio Review That Proves ROI Before Budget Season",
+    "slug": "build-an-automation-portfolio-review-that-proves-roi-before-budget-season",
+    "image": "assets/img/posts/build-an-automation-portfolio-review-that-proves-roi-before-budget-season.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Customer Communication Collision Check Before Teams Send Mixed Messages",
+    "slug": "create-an-ai-customer-communication-collision-check-before-teams-send-mixed-messages",
+    "image": "assets/img/posts/create-an-ai-customer-communication-collision-check-before-teams-send-mixed-messages.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Customer Master Data Merge Review Before Duplicate Accounts Distort Reporting",
+    "slug": "create-an-ai-customer-master-data-merge-review-before-duplicate-accounts-distort-reporting",
+    "image": "assets/img/posts/create-an-ai-customer-master-data-merge-review-before-duplicate-accounts-distort-reporting.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Data Refresh Failure Monitor Before Dashboards Mislead Leaders",
+    "slug": "create-an-ai-data-refresh-failure-monitor-before-dashboards-mislead-leaders",
+    "image": "assets/img/posts/create-an-ai-data-refresh-failure-monitor-before-dashboards-mislead-leaders.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Maintenance Parts Readiness Workflow Before Service Visits Stall",
+    "slug": "create-an-ai-maintenance-parts-readiness-workflow-before-service-visits-stall",
+    "image": "assets/img/posts/create-an-ai-maintenance-parts-readiness-workflow-before-service-visits-stall.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Service Estimate Review Workflow Before Field Costs Drift",
+    "slug": "create-an-ai-service-estimate-review-workflow-before-field-costs-drift",
+    "image": "assets/img/posts/create-an-ai-service-estimate-review-workflow-before-field-costs-drift.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Website Lead Quality Feedback Loop Between Sales and Marketing",
+    "slug": "create-an-ai-website-lead-quality-feedback-loop-between-sales-and-marketing",
+    "image": "assets/img/posts/create-an-ai-website-lead-quality-feedback-loop-between-sales-and-marketing.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Turn Customer Cancellation Requests Into an AI Retention Decision Workflow",
+    "slug": "turn-customer-cancellation-requests-into-an-ai-retention-decision-workflow",
+    "image": "assets/img/posts/turn-customer-cancellation-requests-into-an-ai-retention-decision-workflow.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Catch Website Product Data Errors Before Buyers Lose Confidence",
+    "slug": "use-ai-to-catch-website-product-data-errors-before-buyers-lose-confidence",
+    "image": "assets/img/posts/use-ai-to-catch-website-product-data-errors-before-buyers-lose-confidence.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Convert Website Heatmap Patterns Into Prioritized UX Repair Work",
+    "slug": "use-ai-to-convert-website-heatmap-patterns-into-prioritized-ux-repair-work",
+    "image": "assets/img/posts/use-ai-to-convert-website-heatmap-patterns-into-prioritized-ux-repair-work.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Monitor Customer Document Expiration Before Operations Stall",
+    "slug": "use-ai-to-monitor-customer-document-expiration-before-operations-stall",
+    "image": "assets/img/posts/use-ai-to-monitor-customer-document-expiration-before-operations-stall.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Customer Training Attendance Into Adoption Risk Signals",
+    "slug": "use-ai-to-turn-customer-training-attendance-into-adoption-risk-signals",
+    "image": "assets/img/posts/use-ai-to-turn-customer-training-attendance-into-adoption-risk-signals.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Operations Exceptions Into Root Cause Fixes",
+    "slug": "use-ai-to-turn-operations-exceptions-into-root-cause-fixes",
+    "image": "assets/img/posts/use-ai-to-turn-operations-exceptions-into-root-cause-fixes.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Sales Call Objections Into Enablement Repair Work",
+    "slug": "use-ai-to-turn-sales-call-objections-into-enablement-repair-work",
+    "image": "assets/img/posts/use-ai-to-turn-sales-call-objections-into-enablement-repair-work.png",
+    "date": "2026-08-29",
+    "dateDisplay": "August 29, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Assign AI Data Pipeline Ownership Before Broken Integrations Damage Reporting",
+    "slug": "assign-ai-data-pipeline-ownership-before-broken-integrations-damage-reporting",
+    "image": "assets/img/posts/assign-ai-data-pipeline-ownership-before-broken-integrations-damage-reporting.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Internal Approval Queue Aging Before Work Stalls Between Managers",
+    "slug": "automate-internal-approval-queue-aging-before-work-stalls-between-managers",
+    "image": "assets/img/posts/automate-internal-approval-queue-aging-before-work-stalls-between-managers.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Purchase Card Pattern Reviews Before Small Charges Become Control Gaps",
+    "slug": "automate-purchase-card-pattern-reviews-before-small-charges-become-control-gaps",
+    "image": "assets/img/posts/automate-purchase-card-pattern-reviews-before-small-charges-become-control-gaps.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI CRM Stage Hygiene Review Before Forecast Meetings Start",
+    "slug": "build-an-ai-crm-stage-hygiene-review-before-forecast-meetings-start",
+    "image": "assets/img/posts/build-an-ai-crm-stage-hygiene-review-before-forecast-meetings-start.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Calendar Capacity Signal Before Internal Meetings Crowd Out Customer Work",
+    "slug": "build-an-ai-calendar-capacity-signal-before-internal-meetings-crowd-out-customer-work",
+    "image": "assets/img/posts/build-an-ai-calendar-capacity-signal-before-internal-meetings-crowd-out-customer-work.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Website Personalization Governance Workflow Before Experiments Confuse Buyers",
+    "slug": "build-an-ai-website-personalization-governance-workflow-before-experiments-confuse-buyers",
+    "image": "assets/img/posts/build-an-ai-website-personalization-governance-workflow-before-experiments-confuse-buyers.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Automation Sunset Review Before Legacy Workflows Keep Running Unchecked",
+    "slug": "create-an-ai-automation-sunset-review-before-legacy-workflows-keep-running-unchecked",
+    "image": "assets/img/posts/create-an-ai-automation-sunset-review-before-legacy-workflows-keep-running-unchecked.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Customer Invoice Question Triage Before Support and Finance Duplicate Work",
+    "slug": "create-an-ai-customer-invoice-question-triage-before-support-and-finance-duplicate-work",
+    "image": "assets/img/posts/create-an-ai-customer-invoice-question-triage-before-support-and-finance-duplicate-work.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Clarify Onboarding Role Ownership Before New Customer Work Slows Down",
+    "slug": "use-ai-to-clarify-onboarding-role-ownership-before-new-customer-work-slows-down",
+    "image": "assets/img/posts/use-ai-to-clarify-onboarding-role-ownership-before-new-customer-work-slows-down.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Supplier Email Promises Into Delivery Risk Signals",
+    "slug": "use-ai-to-turn-supplier-email-promises-into-delivery-risk-signals",
+    "image": "assets/img/posts/use-ai-to-turn-supplier-email-promises-into-delivery-risk-signals.png",
+    "date": "2026-08-31",
+    "dateDisplay": "August 31, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate CRM Meeting Note Quality Checks Before Pipeline Signals Get Noisy",
+    "slug": "automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy",
+    "image": "assets/img/posts/automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Customer Profitability Watchlist Before Revenue Hides Margin Risk",
+    "slug": "build-an-ai-customer-profitability-watchlist-before-revenue-hides-margin-risk",
+    "image": "assets/img/posts/build-an-ai-customer-profitability-watchlist-before-revenue-hides-margin-risk.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Order Change Impact Review Before Small Edits Disrupt Fulfillment",
+    "slug": "create-an-ai-order-change-impact-review-before-small-edits-disrupt-fulfillment",
+    "image": "assets/img/posts/create-an-ai-order-change-impact-review-before-small-edits-disrupt-fulfillment.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Website Form Abandonment Recovery Workflow Before Qualified Buyers Drift Away",
+    "slug": "create-an-ai-website-form-abandonment-recovery-workflow-before-qualified-buyers-drift-away",
+    "image": "assets/img/posts/create-an-ai-website-form-abandonment-recovery-workflow-before-qualified-buyers-drift-away.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Use AI to Turn Service Parts Returns Into Warranty Inventory and Vendor Signals",
+    "slug": "use-ai-to-turn-service-parts-returns-into-warranty-inventory-and-vendor-signals",
+    "image": "assets/img/posts/use-ai-to-turn-service-parts-returns-into-warranty-inventory-and-vendor-signals.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Build an AI Customer Commitments Ledger Before Promises Become Operational Risk",
+    "slug": "build-an-ai-customer-commitments-ledger-before-promises-become-operational-risk",
+    "image": "assets/img/posts/build-an-ai-customer-commitments-ledger-before-promises-become-operational-risk.png",
+    "date": "2026-09-02",
+    "dateDisplay": "September 2, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Returned Mail Recovery Workflow Before Bad Addresses Drain Revenue",
+    "slug": "create-an-ai-returned-mail-recovery-workflow-before-bad-addresses-drain-revenue",
+    "image": "assets/img/posts/create-an-ai-returned-mail-recovery-workflow-before-bad-addresses-drain-revenue.png",
+    "date": "2026-09-03",
+    "dateDisplay": "September 3, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Customer Specification Change Intake Before Teams Build From Old Requirements",
+    "slug": "automate-customer-specification-change-intake-before-teams-build-from-old-requirements",
+    "image": "assets/img/posts/automate-customer-specification-change-intake-before-teams-build-from-old-requirements.png",
+    "date": "2026-09-04",
+    "dateDisplay": "September 4, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Delivery Instruction Verification Workflow Before Orders Leave the Dock",
+    "slug": "create-an-ai-delivery-instruction-verification-workflow-before-orders-leave-the-dock",
+    "image": "assets/img/posts/create-an-ai-delivery-instruction-verification-workflow-before-orders-leave-the-dock.png",
+    "date": "2026-09-05",
+    "dateDisplay": "September 5, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Automate Sales Sample Request Reviews Before Free Product Drains Margin",
+    "slug": "automate-sales-sample-request-reviews-before-free-product-drains-margin",
+    "image": "assets/img/posts/automate-sales-sample-request-reviews-before-free-product-drains-margin.png",
+    "date": "2026-09-06",
+    "dateDisplay": "September 6, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Create an AI Payment Method Readiness Workflow Before Recurring Revenue Gets Interrupted",
+    "slug": "create-an-ai-payment-method-readiness-workflow-before-recurring-revenue-gets-interrupted",
+    "image": "assets/img/posts/create-an-ai-payment-method-readiness-workflow-before-recurring-revenue-gets-interrupted.png",
+    "date": "2026-09-11",
+    "dateDisplay": "September 11, 2026",
+    "excerpt": "What Happened"
   }
 ]
