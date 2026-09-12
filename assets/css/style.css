@@ -55,7 +55,6 @@ header.site-header {
   padding: 12px 28px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -84,6 +83,7 @@ header.site-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-right: auto;
 }
 
 .site-header nav a {
@@ -596,99 +596,171 @@ main.home {
 }
 
 /* ============ FOOTER ============ */
-/* Matches www.ljwebmanagement.com's footer: solid navy, logo + nav links +
-   social icons row, then a separated copyright bar. */
+/* Mirrors www.ljwebmanagement.com's lj-footer component exactly. */
 
 footer.site-footer {
   margin-top: 64px;
-  background: var(--navy);
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.85rem;
 }
 
-footer.site-footer a {
+.lj-footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.lj-footer * {
+  box-sizing: border-box;
+}
+
+.lj-footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.lj-footer-top {
+  padding: 64px 0 48px;
+}
+
+.lj-footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.lj-footer-brand img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.lj-footer-brand p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.62);
+  max-width: 320px;
+  margin: 0;
+}
+
+.lj-footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.lj-footer-social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lj-footer-social a:hover {
+  background: var(--cyan);
+  transform: translateY(-2px);
   color: #fff;
 }
 
-.footer-row {
-  max-width: var(--max-width-wide);
-  margin: 0 auto;
-  padding: 40px 24px;
+.lj-footer-social svg {
+  width: 17px;
+  height: 17px;
+}
+
+.lj-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lj-footer-col h4 {
+  font-family: var(--font-heading);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.lj-footer-col a,
+.lj-footer-col span {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.lj-footer-col a:hover {
+  color: #fff;
+}
+
+.lj-footer-address {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+.lj-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.lj-footer-bottom-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 12px;
+  padding: 22px 0;
+}
+
+.lj-footer-bottom-row > span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lj-footer-legal {
+  display: flex;
   gap: 20px;
 }
 
-.footer-logo img {
-  height: 42px;
-  width: auto;
-  display: block;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  font-family: var(--font-heading);
-  font-weight: 600;
+.lj-footer-legal a {
+  color: rgba(255, 255, 255, 0.55);
   font-size: 13px;
+  text-decoration: none;
 }
 
-.footer-links a {
-  opacity: 0.85;
+.lj-footer-legal a:hover {
+  color: #fff;
 }
 
-.footer-links a:hover {
-  opacity: 1;
-  color: var(--cyan-light);
+@media (max-width: 900px) {
+  .lj-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 36px;
+  }
+
+  .lj-footer-brand {
+    grid-column: 1 / -1;
+  }
 }
 
-.footer-link-sep {
-  opacity: 0.5;
-}
+@media (max-width: 560px) {
+  .lj-footer-top {
+    padding: 48px 0 36px;
+  }
 
-.footer-social {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
+  .lj-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-.footer-social a {
-  display: inline-flex;
-  opacity: 0.85;
-}
-
-.footer-social a:hover {
-  opacity: 1;
-  color: var(--cyan-light);
-}
-
-.footer-social svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.footer-bottom {
-  background: var(--navy-dark);
-  padding: 16px 24px;
-}
-
-.footer-bottom-inner {
-  max-width: var(--max-width-wide);
-  margin: 0 auto;
-  text-align: center;
-  font-size: 12.5px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-@media (min-width: 768px) {
-  .footer-bottom-inner {
-    text-align: left;
+  .lj-footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
