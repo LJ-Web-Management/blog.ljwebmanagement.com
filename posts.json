@@ -2102,5 +2102,21 @@
     "date": "2026-09-12",
     "dateDisplay": "September 12, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "SaaS Offboarding Access Checklist That Finds Permission Gaps After Employees Leave",
+    "slug": "saas-offboarding-access-checklist-that-finds-permission-gaps-after-employees-leave",
+    "image": "assets/img/posts/saas-offboarding-access-checklist-that-finds-permission-gaps-after-employees-leave.png",
+    "date": "2026-09-14",
+    "dateDisplay": "September 14, 2026",
+    "excerpt": "What Happened"
+  },
+  {
+    "title": "Vendor Master Data Change Review With AI That Catches Payment Risk Before Records Update",
+    "slug": "vendor-master-data-change-review-with-ai-that-catches-payment-risk-before-records-update",
+    "image": "assets/img/posts/vendor-master-data-change-review-with-ai-that-catches-payment-risk-before-records-update.png",
+    "date": "2026-09-14",
+    "dateDisplay": "September 14, 2026",
+    "excerpt": "What Happened"
   }
 ]
