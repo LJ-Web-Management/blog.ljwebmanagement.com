@@ -84,7 +84,7 @@ function isMostlyStyled(text) {
 
 function isDividerLine(text) {
   const t = text.trim();
-  if (t.length < 5) return false;
+  if (t.length < 3) return false;
   return /^[─-╿—–\-=_~*]+$/.test(t);
 }
 
@@ -102,6 +102,65 @@ function isUrlLine(text) {
 
 function isSourcesHeading(text) {
   return /^(sources?|references?)$/i.test(plainNormalize(text));
+}
+
+// ---------------------------------------------------------------------------
+// Manual formatting shortcuts a writer can type directly into the source
+// document as plain text, so posts don't rely only on Word styling or the
+// AI-faked-bold-unicode trick above: **bold**, *italic*/_italic_, ## and ###
+// headings, "> " block quotes, ((asides)), a "[space]" vertical spacer, and
+// "1. " numbered lists. Only plain-text paragraphs reach these checks -
+// paragraphs with real Word formatting are already routed around this file
+// as "raw" blocks (see blocksFromMammothHtml above).
+// ---------------------------------------------------------------------------
+
+function isSpacerLine(text) {
+  return /^\[space\]$/i.test(text.trim());
+}
+
+function isBlockquoteMarker(text) {
+  return /^>\s+\S/.test(text.trim());
+}
+
+function stripBlockquoteMarker(text) {
+  return text.trim().replace(/^>\s+/, "");
+}
+
+function isCaptionLine(text) {
+  return /^\(\((.+)\)\)$/.test(text.trim());
+}
+
+function captionText(text) {
+  const m = text.trim().match(/^\(\((.+)\)\)$/);
+  return m ? m[1].trim() : text.trim();
+}
+
+function headingMarkerMatch(text) {
+  const m = text.trim().match(/^(#{2,3})\s+(\S.*)$/);
+  if (!m) return null;
+  return { level: m[1].length, text: m[2].trim() };
+}
+
+function isOrderedListLine(text) {
+  return /^\d+\.\s+\S/.test(text.trim());
+}
+
+function stripOrderedMarker(text) {
+  return text.trim().replace(/^\d+\.\s+/, "");
+}
+
+// Applied after normalizeAndMarkBold, whose output is already HTML-escaped -
+// the literal *, _, and # punctuation survives escaping, so it's safe to
+// match against here.
+function applyInlineMarkdown(html) {
+  return html
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*\s][^*]*?)\*/g, "<em>$1</em>")
+    .replace(/(^|[^\w])_([^_\s][^_]*?)_(?!\w)/g, "$1<em>$2</em>");
+}
+
+function formatInline(text) {
+  return applyInlineMarkdown(normalizeAndMarkBold(text));
 }
 
 function linkifyUrls(html) {
@@ -173,6 +232,7 @@ function extractTitle(blocks, fallbackTitle) {
 function buildBodyHtml(blocks) {
   const output = [];
   let bulletBuffer = [];
+  let orderedBuffer = [];
   let sourcesMode = false;
   let sourcesBuffer = [];
   let pendingSourceName = null;
@@ -181,11 +241,27 @@ function buildBodyHtml(blocks) {
     if (bulletBuffer.length) {
       output.push(
         "<ul>" +
-          bulletBuffer.map((t) => "<li>" + linkifyUrls(normalizeAndMarkBold(t)) + "</li>").join("") +
+          bulletBuffer.map((t) => "<li>" + linkifyUrls(formatInline(t)) + "</li>").join("") +
           "</ul>"
       );
       bulletBuffer = [];
     }
+  }
+
+  function flushOrdered() {
+    if (orderedBuffer.length) {
+      output.push(
+        "<ol>" +
+          orderedBuffer.map((t) => "<li>" + linkifyUrls(formatInline(t)) + "</li>").join("") +
+          "</ol>"
+      );
+      orderedBuffer = [];
+    }
+  }
+
+  function flushLists() {
+    flushBullets();
+    flushOrdered();
   }
 
   function flushSources() {
@@ -214,7 +290,7 @@ function buildBodyHtml(blocks) {
 
   for (const block of blocks) {
     if (block.type === "raw" || block.type === "heading") {
-      flushBullets();
+      flushLists();
       flushSources();
       sourcesMode = false;
       output.push(block.html);
@@ -225,7 +301,28 @@ function buildBodyHtml(blocks) {
     if (!text) continue;
 
     if (isDividerLine(text)) {
-      flushBullets();
+      flushLists();
+      output.push("<hr>");
+      continue;
+    }
+
+    if (isSpacerLine(text)) {
+      flushLists();
+      output.push('<div class="spacer"></div>');
+      continue;
+    }
+
+    if (isBlockquoteMarker(text)) {
+      flushLists();
+      output.push(
+        "<blockquote>" + linkifyUrls(formatInline(stripBlockquoteMarker(text))) + "</blockquote>"
+      );
+      continue;
+    }
+
+    if (isCaptionLine(text)) {
+      flushLists();
+      output.push('<p class="caption">' + linkifyUrls(formatInline(captionText(text))) + "</p>");
       continue;
     }
 
@@ -236,15 +333,25 @@ function buildBodyHtml(blocks) {
     }
 
     if (isSourcesHeading(text)) {
-      flushBullets();
+      flushLists();
       flushSources();
       output.push("<h2>" + escapeHtml(plainNormalize(text)) + "</h2>");
       sourcesMode = true;
       continue;
     }
 
+    const heading = headingMarkerMatch(text);
+    if (heading) {
+      flushLists();
+      flushSources();
+      sourcesMode = false;
+      const tag = "h" + heading.level;
+      output.push("<" + tag + ">" + linkifyUrls(formatInline(heading.text)) + "</" + tag + ">");
+      continue;
+    }
+
     if (isMostlyStyled(text)) {
-      flushBullets();
+      flushLists();
       flushSources();
       sourcesMode = false;
       output.push("<h2>" + escapeHtml(plainNormalize(text)) + "</h2>");
@@ -259,16 +366,23 @@ function buildBodyHtml(blocks) {
       continue;
     }
 
+    if (isOrderedListLine(text)) {
+      flushBullets();
+      orderedBuffer.push(stripOrderedMarker(text));
+      continue;
+    }
+
     if (isBulletLine(text)) {
+      flushOrdered();
       bulletBuffer.push(stripBullet(text));
       continue;
     }
 
-    flushBullets();
-    output.push("<p>" + linkifyUrls(normalizeAndMarkBold(text)) + "</p>");
+    flushLists();
+    output.push("<p>" + linkifyUrls(formatInline(text)) + "</p>");
   }
 
-  flushBullets();
+  flushLists();
   flushSources();
 
   return output.join("\n");

@@ -666,6 +666,26 @@ main.home {
   color: var(--body-color);
 }
 
+.post-content hr {
+  border: none;
+  border-top: 2px solid var(--cyan);
+  width: 64px;
+  margin: 36px 0;
+}
+
+.post-content .caption {
+  border-left: 2px solid var(--cyan-light);
+  padding-left: 14px;
+  color: var(--muted);
+  font-size: 13.5px;
+  font-style: italic;
+  margin: -8px 0 18px;
+}
+
+.post-content .spacer {
+  height: 32px;
+}
+
 .post-content .sources-list {
   list-style: none;
   padding-left: 0;
