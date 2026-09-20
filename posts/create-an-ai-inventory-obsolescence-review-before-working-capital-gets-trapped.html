@@ -19,58 +19,44 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Create an AI Inventory Obsolescence Review Before Working Capital Gets Trapped">
 <meta name="twitter:image" content="https://lj-web-management.github.io/ljwebmanagement-blogpage/assets/img/posts/create-an-ai-inventory-obsolescence-review-before-working-capital-gets-trapped.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header class="site-header">
+<header class="site-header glass-nav" id="siteHeader">
   <div class="header-inner">
-    <a class="brand" href="../index.html">
-      <img src="../assets/img/lj-logo.webp" alt="LJ Web Management" width="95" height="40">
+    <a class="brand" href="../index.html" aria-label="LJ Web Management Blog home">
+      <img src="../assets/img/lj-logo.webp" alt="" width="26" height="26" loading="eager">
+      <span>LJ Web Management</span>
     </a>
-    <nav>
+    <nav aria-label="Main">
       <a href="https://www.ljwebmanagement.com">Home</a>
+      <a href="https://www.ljwebmanagement.com/courses">Courses</a>
       <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
-      <a href="https://www.ljwebmanagement.com/automations">Automations</a>
-      <a href="https://www.ljwebmanagement.com/solutions">Solutions</a>
-      <a href="https://www.ljwebmanagement.com/appointment">Book a Consultation</a>
+      <a href="../index.html">Blog</a>
+      <a href="https://www.ljwebmanagement.com/contactus">Contact</a>
     </nav>
     <div class="header-actions">
       <a class="header-email" href="mailto:info@ljwebmanagement.com">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
         info@ljwebmanagement.com
       </a>
-      <a class="header-cta" href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
+      <a class="header-cta" href="https://www.ljwebmanagement.com/courses">Browse Courses</a>
+      <button type="button" class="menu-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
   </div>
 </header>
 
 <div id="mobile-menu" class="mobile-menu">
-  <div class="mobile-menu-header">
-    <a class="brand" href="../index.html">
-      <img src="../assets/img/lj-logo.webp" alt="LJ Web Management" width="95" height="40">
-    </a>
-    <button type="button" class="mobile-menu-close" aria-label="Close menu">&times;</button>
-  </div>
-  <nav class="mobile-menu-nav">
-    <a href="https://www.ljwebmanagement.com">Home</a>
-    <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
-    <a href="https://www.ljwebmanagement.com/automations">Automations</a>
-    <a href="https://www.ljwebmanagement.com/solutions">Solutions</a>
-    <a href="https://www.ljwebmanagement.com/appointment">Book a Consultation</a>
-  </nav>
-  <div class="mobile-menu-footer">
-    <a class="header-email" href="mailto:info@ljwebmanagement.com">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
-      info@ljwebmanagement.com
-    </a>
-    <a class="header-cta" href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
-  </div>
+  <a href="https://www.ljwebmanagement.com">Home</a>
+  <a href="https://www.ljwebmanagement.com/courses">Courses</a>
+  <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
+  <a href="../index.html">Blog</a>
+  <a href="https://www.ljwebmanagement.com/contactus">Contact</a>
+  <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
+  <a class="header-cta" href="https://www.ljwebmanagement.com/courses">Browse Courses</a>
 </div>
 
 <main>
@@ -121,57 +107,51 @@
 </main>
 
 <footer class="site-footer">
-  <div class="lj-footer">
-    <div class="lj-footer-top">
-      <div class="lj-footer-inner">
-        <div class="lj-footer-grid">
-          <div class="lj-footer-brand">
-            <a href="../index.html" aria-label="LJ Web Management home">
-              <img src="../assets/img/lj-logo.webp" alt="LJ Web Management">
-            </a>
-            <p>LJ Web Management builds custom AI automation systems that remove repetitive tasks and bottlenecks, connecting the tools you already use so your team can save time and focus on growth.</p>
-            <div class="lj-footer-social">
-              <a href="https://www.linkedin.com/company/ljwebmanagement" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              </a>
-              <a href="https://x.com/lj_web_mgmt" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="lj-footer-col">
-            <h4>Company</h4>
-            <a href="https://www.ljwebmanagement.com">Home</a>
-            <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
-            <a href="https://www.ljwebmanagement.com/automations">Automations</a>
-            <a href="https://www.ljwebmanagement.com/solutions">Solutions</a>
-            <a href="https://www.ljwebmanagement.com/appointment">Book a Consultation</a>
-          </div>
-          <div class="lj-footer-col">
-            <h4>Free Tools</h4>
-            <a href="https://www.ljwebmanagement.com/roi-calculator">ROI Calculator</a>
-            <a href="https://www.ljwebmanagement.com/quiz">Find Your Match Quiz</a>
-            <a href="https://www.ljwebmanagement.com/faq">FAQ</a>
-            <a href="https://www.ljwebmanagement.com">Main Site</a>
-          </div>
-          <div class="lj-footer-col">
-            <h4>Get in Touch</h4>
-            <a href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
-            <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
-            <a href="tel:+18775593268">+1 (877) 559-3268</a>
-            <span class="lj-footer-address">1108 E 9th St, Lockport, IL 60441</span>
-          </div>
+  <div class="footer-top">
+    <div class="wrap-grid footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" aria-label="LJ Web Management home">
+          <img src="../assets/img/lj-logo.webp" alt="LJ Web Management">
+        </a>
+        <p>News, insights, and analysis on AI and automation for growing businesses, from LJ Web Management.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/ljwebmanagement" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://x.com/lj_web_mgmt" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="lj-footer-bottom">
-      <div class="lj-footer-inner lj-footer-bottom-row">
-        <span><span id="year">2026</span> &copy; LJ Web Management, LLC. All Rights Reserved</span>
-        <nav class="lj-footer-legal">
-          <a href="https://www.ljwebmanagement.com/privacy-policy">Privacy Policy</a>
-          <a href="https://www.ljwebmanagement.com/terms-of-service">Terms of Service</a>
-        </nav>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="https://www.ljwebmanagement.com">Home</a>
+        <a href="https://www.ljwebmanagement.com/courses">Courses</a>
+        <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
+        <a href="https://www.ljwebmanagement.com/contactus">Contact</a>
       </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="https://www.ljwebmanagement.com/faq">FAQ</a>
+        <a href="https://www.ljwebmanagement.com/privacy-policy">Privacy Policy</a>
+        <a href="https://www.ljwebmanagement.com/terms-of-service">Terms of Service</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <a href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
+        <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
+        <a href="tel:+18775593268">+1 (877) 559-3268</a>
+        <span>1108 E 9th St, Lockport, IL 60441</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-row">
+      <span><span id="year">2026</span> &copy; LJ Web Management, LLC. All Rights Reserved</span>
+      <nav class="footer-legal">
+        <a href="https://www.ljwebmanagement.com/privacy-policy">Privacy Policy</a>
+        <a href="https://www.ljwebmanagement.com/terms-of-service">Terms of Service</a>
+      </nav>
     </div>
   </div>
 </footer>
