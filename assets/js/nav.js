@@ -1,30 +1,23 @@
 (function () {
-  "use strict";
-
-  /* Sticky header hairline: only appears once content actually scrolls beneath it */
-  var header = document.querySelector(".site-header");
-  if (header) {
-    var onScroll = function () {
-      header.classList.toggle("scrolled", window.scrollY > 8);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-  }
-
-  /* Mobile menu */
   var toggle = document.querySelector(".menu-toggle");
+  var closeBtn = document.querySelector(".mobile-menu-close");
   var menu = document.getElementById("mobile-menu");
   if (!toggle || !menu) return;
 
+  function openMenu() {
+    menu.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    toggle.setAttribute("aria-expanded", "true");
+  }
+
   function closeMenu() {
     menu.classList.remove("is-open");
+    document.body.style.overflow = "";
     toggle.setAttribute("aria-expanded", "false");
   }
 
-  toggle.addEventListener("click", function () {
-    var open = menu.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", open ? "true" : "false");
-  });
+  toggle.addEventListener("click", openMenu);
+  if (closeBtn) closeBtn.addEventListener("click", closeMenu);
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && menu.classList.contains("is-open")) closeMenu();
