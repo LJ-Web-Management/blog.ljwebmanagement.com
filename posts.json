@@ -2190,5 +2190,13 @@
     "date": "2026-09-23",
     "dateDisplay": "September 23, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Build Your First React Component: A Small Project for Frontend Beginners",
+    "slug": "build-your-first-react-component-a-small-project-for-frontend-beginners",
+    "image": "assets/img/posts/build-your-first-react-component-a-small-project-for-frontend-beginners.png",
+    "date": "2026-09-24",
+    "dateDisplay": "September 24, 2026",
+    "excerpt": "What Happened"
   }
 ]
