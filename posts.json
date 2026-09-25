@@ -2198,5 +2198,13 @@
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "Neural Networks for Beginners: The Plain Language Concepts Behind Modern AI",
+    "slug": "neural-networks-for-beginners-the-plain-language-concepts-behind-modern-ai",
+    "image": "assets/img/posts/neural-networks-for-beginners-the-plain-language-concepts-behind-modern-ai.png",
+    "date": "2026-09-25",
+    "dateDisplay": "September 25, 2026",
+    "excerpt": "What Happened"
   }
 ]
