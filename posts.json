@@ -2206,5 +2206,13 @@
     "date": "2026-09-25",
     "dateDisplay": "September 25, 2026",
     "excerpt": "What Happened"
+  },
+  {
+    "title": "How to Debug Beginner JavaScript: A Practical Workflow for Finding Errors",
+    "slug": "how-to-debug-beginner-javascript-a-practical-workflow-for-finding-errors",
+    "image": "assets/img/posts/how-to-debug-beginner-javascript-a-practical-workflow-for-finding-errors.png",
+    "date": "2026-09-26",
+    "dateDisplay": "September 26, 2026",
+    "excerpt": "What Happened"
   }
 ]
