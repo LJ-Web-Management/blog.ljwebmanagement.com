@@ -2518,5 +2518,14 @@
     "dateDisplay": "September 29, 2026",
     "excerpt": "Many beginners do not struggle because they lack interest in technology. They struggle because every course seems to promise a different future. One…",
     "webp": true
+  },
+  {
+    "title": "No-Code Automation Mistakes Beginners Make When Connecting Apps",
+    "slug": "no-code-automation-mistakes-beginners-make-when-connecting-apps",
+    "image": "assets/img/posts/no-code-automation-mistakes-beginners-make-when-connecting-apps.png",
+    "webp": true,
+    "date": "2026-09-30",
+    "dateDisplay": "September 30, 2026",
+    "excerpt": "No-code automation can make a small team feel larger by moving information between the apps people already use. A form response can become a task, a…"
   }
 ]
