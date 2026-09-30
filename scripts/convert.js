@@ -2,15 +2,15 @@ const fs = require("fs");
 const path = require("path");
 const mammoth = require("mammoth");
 const AdmZip = require("adm-zip");
+const templates = require("./templates");
 
 const ROOT = path.join(__dirname, "..");
 const UPLOADS_DIR = path.join(ROOT, "uploads");
 const PROCESSED_DIR = path.join(UPLOADS_DIR, "processed");
 const POSTS_DIR = path.join(ROOT, "posts");
 const POSTS_JSON = path.join(ROOT, "posts.json");
+const INDEX_HTML = path.join(ROOT, "index.html");
 const POST_IMAGES_DIR = path.join(ROOT, "assets", "img", "posts");
-const SITE_URL = "https://lj-web-management.github.io/ljwebmanagement-blogpage";
-const LOGO_URL = SITE_URL + "/assets/img/lj-logo.webp";
 
 const SUPPORTED_EXTENSIONS = [".docx", ".txt", ".zip"];
 const DOC_EXTENSIONS = [".docx", ".txt"];
@@ -85,7 +85,7 @@ function isMostlyStyled(text) {
 function isDividerLine(text) {
   const t = text.trim();
   if (t.length < 3) return false;
-  return /^[─-╿—–\-=_~*]+$/.test(t);
+  return /^[\u2500-\u257f\u2014\u2013\-=_~*]+$/.test(t);
 }
 
 function isBulletLine(text) {
@@ -98,6 +98,19 @@ function stripBullet(text) {
 
 function isUrlLine(text) {
   return /^https?:\/\/\S+$/i.test(text.trim());
+}
+
+// Section labels the post writers put on their own line. They are shown as
+// real <h2> headings (the wording is unchanged).
+const SECTION_HEADINGS = [
+  "what happened",
+  "why it matters for businesses",
+  "the practical automation opportunity",
+  "business takeaway",
+];
+
+function isSectionHeading(text) {
+  return SECTION_HEADINGS.indexOf(plainNormalize(text).toLowerCase()) !== -1;
 }
 
 function isSourcesHeading(text) {
@@ -350,6 +363,14 @@ function buildBodyHtml(blocks) {
       continue;
     }
 
+    if (isSectionHeading(text)) {
+      flushLists();
+      flushSources();
+      sourcesMode = false;
+      output.push("<h2>" + escapeHtml(plainNormalize(text)) + "</h2>");
+      continue;
+    }
+
     if (isMostlyStyled(text)) {
       flushLists();
       flushSources();
@@ -388,14 +409,21 @@ function buildBodyHtml(blocks) {
   return output.join("\n");
 }
 
+// Uses the first real paragraph (skipping short label lines such as
+// "What Happened") so each post gets its own meta description.
 function excerptFromHtml(html, maxLen) {
-  const match = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-  const source = match ? match[1] : html;
-  const text = decodeEntities(source.replace(/<[^>]+>/g, " "))
-    .replace(/\s+/g, " ")
-    .trim();
+  const paragraphs = html.match(/<p[^>]*>[\s\S]*?<\/p>/gi) || [];
+  const texts = paragraphs.map((p) =>
+    decodeEntities(p.replace(/<[^>]+>/g, " "))
+      .replace(/\s+/g, " ")
+      .trim()
+  );
+  const text =
+    texts.find((t) => t.length >= 80) ||
+    texts.find((t) => t.length > 0) ||
+    decodeEntities(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
   if (text.length <= maxLen) return text;
-  return text.slice(0, maxLen).replace(/\s+\S*$/, "") + "…";
+  return text.slice(0, maxLen - 1).replace(/\s+\S*$/, "").replace(/[,;:.]$/, "") + "\u2026";
 }
 
 // ---------------------------------------------------------------------------
@@ -433,169 +461,8 @@ function uniqueSlug(baseSlug, existingSlugs) {
   return slug;
 }
 
-function buildPostPage(title, dateDisplay, bodyHtml, imagePath) {
-  const featuredImageHtml = imagePath
-    ? `  <div class="post-featured-image">
-    <img src="../${imagePath}" alt="${escapeHtml(title)}" loading="eager">
-  </div>
-`
-    : "";
-
-  const shareImageUrl = imagePath ? SITE_URL + "/" + imagePath : LOGO_URL;
-  const escapedTitle = escapeHtml(title);
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B0EQTNP7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-80B0EQTNP7');
-</script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ylzfavw3xd");
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapedTitle} | AI Automation Insights</title>
-<link rel="icon" type="image/webp" href="../assets/img/lj-logo.webp">
-<meta property="og:title" content="${escapedTitle}">
-<meta property="og:image" content="${shareImageUrl}">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="${escapedTitle}">
-<meta name="twitter:image" content="${shareImageUrl}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="../index.html">
-      <img src="../assets/img/lj-logo.webp" alt="LJ Web Management" width="95" height="40">
-    </a>
-    <nav>
-      <a href="https://www.ljwebmanagement.com">Home</a>
-      <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
-      <a href="https://www.ljwebmanagement.com/automations">Automations</a>
-      <a href="https://www.ljwebmanagement.com/solutions">Solutions</a>
-      <a href="https://www.ljwebmanagement.com/appointment">Book a Consultation</a>
-    </nav>
-    <div class="header-actions">
-      <a class="header-email" href="mailto:info@ljwebmanagement.com">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
-        info@ljwebmanagement.com
-      </a>
-      <a class="header-cta" href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
-    </div>
-    <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
-  </div>
-</header>
-
-<div id="mobile-menu" class="mobile-menu">
-  <div class="mobile-menu-header">
-    <a class="brand" href="../index.html">
-      <img src="../assets/img/lj-logo.webp" alt="LJ Web Management" width="95" height="40">
-    </a>
-    <button type="button" class="mobile-menu-close" aria-label="Close menu">&times;</button>
-  </div>
-  <nav class="mobile-menu-nav">
-    <a href="https://www.ljwebmanagement.com">Home</a>
-    <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
-    <a href="https://www.ljwebmanagement.com/automations">Automations</a>
-    <a href="https://www.ljwebmanagement.com/solutions">Solutions</a>
-    <a href="https://www.ljwebmanagement.com/appointment">Book a Consultation</a>
-  </nav>
-  <div class="mobile-menu-footer">
-    <a class="header-email" href="mailto:info@ljwebmanagement.com">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
-      info@ljwebmanagement.com
-    </a>
-    <a class="header-cta" href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
-  </div>
-</div>
-
-<main>
-  <a class="back-link" href="../index.html">&larr; Back to Blog</a>
-  <div class="post-header">
-    <div class="post-date">${escapeHtml(dateDisplay)}</div>
-    <h1>${escapeHtml(title)}</h1>
-  </div>
-${featuredImageHtml}  <article class="post-content">
-${bodyHtml}
-  </article>
-</main>
-
-<footer class="site-footer">
-  <div class="lj-footer">
-    <div class="lj-footer-top">
-      <div class="lj-footer-inner">
-        <div class="lj-footer-grid">
-          <div class="lj-footer-brand">
-            <a href="../index.html" aria-label="LJ Web Management home">
-              <img src="../assets/img/lj-logo.webp" alt="LJ Web Management">
-            </a>
-            <p>LJ Web Management builds custom AI automation systems that remove repetitive tasks and bottlenecks, connecting the tools you already use so your team can save time and focus on growth.</p>
-            <div class="lj-footer-social">
-              <a href="https://www.linkedin.com/company/ljwebmanagement" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              </a>
-              <a href="https://x.com/lj_web_mgmt" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="lj-footer-col">
-            <h4>Company</h4>
-            <a href="https://www.ljwebmanagement.com">Home</a>
-            <a href="https://www.ljwebmanagement.com/how-it-works">How It Works</a>
-            <a href="https://www.ljwebmanagement.com/automations">Automations</a>
-            <a href="https://www.ljwebmanagement.com/solutions">Solutions</a>
-            <a href="https://www.ljwebmanagement.com/appointment">Book a Consultation</a>
-          </div>
-          <div class="lj-footer-col">
-            <h4>Free Tools</h4>
-            <a href="https://www.ljwebmanagement.com/roi-calculator">ROI Calculator</a>
-            <a href="https://www.ljwebmanagement.com/quiz">Find Your Match Quiz</a>
-            <a href="https://www.ljwebmanagement.com/faq">FAQ</a>
-            <a href="https://www.ljwebmanagement.com">Main Site</a>
-          </div>
-          <div class="lj-footer-col">
-            <h4>Get in Touch</h4>
-            <a href="https://www.ljwebmanagement.com/contactus">Contact Us</a>
-            <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
-            <a href="tel:+18775593268">+1 (877) 559-3268</a>
-            <span class="lj-footer-address">1108 E 9th St, Lockport, IL 60441</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="lj-footer-bottom">
-      <div class="lj-footer-inner lj-footer-bottom-row">
-        <span><span id="year">${new Date().getFullYear()}</span> &copy; LJ Web Management, LLC. All Rights Reserved</span>
-        <nav class="lj-footer-legal">
-          <a href="https://www.ljwebmanagement.com/privacy-policy">Privacy Policy</a>
-          <a href="https://www.ljwebmanagement.com/terms-of-service">Terms of Service</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/nav.js"></script>
-</body>
-</html>
-`;
+function writeIndex(posts) {
+  fs.writeFileSync(INDEX_HTML, templates.buildIndexPage(posts));
 }
 
 // ---------------------------------------------------------------------------
@@ -721,25 +588,31 @@ function main() {
             fs.writeFileSync(path.join(ROOT, imagePath), image.buffer);
           }
 
-          const pageHtml = buildPostPage(title, dateDisplay, bodyHtml, imagePath);
-          fs.writeFileSync(path.join(POSTS_DIR, slug + ".html"), pageHtml);
+          return templates.ensureWebp(imagePath, slug).then((webp) => {
+            const post = {
+              title: title,
+              slug: slug,
+              image: imagePath,
+              webp: webp,
+              date: isoDate,
+              dateDisplay: dateDisplay,
+              excerpt: excerptFromHtml(bodyHtml, 155),
+            };
+            const pageHtml = templates.buildPostPage(
+              Object.assign({ description: post.excerpt, bodyHtml: bodyHtml }, post)
+            );
+            fs.writeFileSync(path.join(POSTS_DIR, slug + ".html"), pageHtml);
+            posts.push(post);
 
-          posts.push({
-            title: title,
-            slug: slug,
-            image: imagePath,
-            date: isoDate,
-            dateDisplay: dateDisplay,
-            excerpt: excerptFromHtml(bodyHtml, 160),
+            fs.renameSync(filePath, path.join(PROCESSED_DIR, filename));
+            console.log("  -> posts/" + slug + ".html");
           });
-
-          fs.renameSync(filePath, path.join(PROCESSED_DIR, filename));
-          console.log("  -> posts/" + slug + ".html");
         });
       });
     }, Promise.resolve())
     .then(() => {
       savePosts(posts);
+      writeIndex(posts);
       console.log("Done. " + files.length + " post(s) published.");
     })
     .catch((err) => {
@@ -752,4 +625,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { buildPostPage };
+module.exports = { buildBodyHtml, excerptFromHtml, loadPosts, savePosts, writeIndex };

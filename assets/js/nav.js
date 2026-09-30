@@ -1,29 +1,53 @@
+// Full-screen mega menu, copied from www.ljwebmanagement.com assets/site.js
+// (the .lj-menu-toggle / .lj-mega-menu parts only).
 (function () {
-  var toggle = document.querySelector(".menu-toggle");
-  var closeBtn = document.querySelector(".mobile-menu-close");
-  var menu = document.getElementById("mobile-menu");
-  if (!toggle || !menu) return;
+  'use strict';
 
-  function openMenu() {
-    menu.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-    toggle.setAttribute("aria-expanded", "true");
+  function openMegaMenu() {
+    var menu = document.getElementById('lj-mega-menu');
+    var toggle = document.querySelector('.lj-menu-toggle');
+    if (!menu) return;
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lj-menu-open');
+    if (toggle) toggle.setAttribute('aria-expanded', 'true');
+    var closeBtn = menu.querySelector('.lj-mega-menu-close');
+    if (closeBtn) closeBtn.focus();
   }
 
-  function closeMenu() {
-    menu.classList.remove("is-open");
-    document.body.style.overflow = "";
-    toggle.setAttribute("aria-expanded", "false");
+  function closeMegaMenu() {
+    var menu = document.getElementById('lj-mega-menu');
+    var toggle = document.querySelector('.lj-menu-toggle');
+    if (!menu || !menu.classList.contains('is-open')) return;
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lj-menu-open');
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
   }
 
-  toggle.addEventListener("click", openMenu);
-  if (closeBtn) closeBtn.addEventListener("click", closeMenu);
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && menu.classList.contains("is-open")) closeMenu();
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.lj-menu-toggle')) {
+      var menu = document.getElementById('lj-mega-menu');
+      if (menu && menu.classList.contains('is-open')) {
+        closeMegaMenu();
+      } else {
+        openMegaMenu();
+      }
+      return;
+    }
+    if (e.target.closest('.lj-mega-menu-close')) {
+      closeMegaMenu();
+      return;
+    }
+    if (e.target.id === 'lj-mega-menu') {
+      closeMegaMenu();
+    }
   });
 
-  Array.prototype.forEach.call(menu.querySelectorAll("a"), function (a) {
-    a.addEventListener("click", closeMenu);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMegaMenu();
   });
 })();

@@ -4,10 +4,12 @@
   "version": "1.0.0",
   "description": "Blog site for LJ Web Management, with Word-document-to-blog-post publishing.",
   "scripts": {
-    "convert": "node scripts/convert.js"
+    "convert": "node scripts/convert.js",
+    "rebuild": "node scripts/rebuild.js"
   },
   "dependencies": {
     "adm-zip": "^0.6.0",
-    "mammoth": "^1.8.0"
+    "mammoth": "^1.8.0",
+    "sharp": "^0.34.5"
   }
 }
