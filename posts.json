@@ -2527,5 +2527,14 @@
     "date": "2026-09-30",
     "dateDisplay": "September 30, 2026",
     "excerpt": "No-code automation can make a small team feel larger by moving information between the apps people already use. A form response can become a task, a…"
+  },
+  {
+    "title": "Portfolio Project Practice for Beginners: Turn HTML, CSS, and JavaScript Into Proof You Can Build",
+    "slug": "portfolio-project-practice-for-beginners-turn-html-css-and-javascript-into-proof-you-can-build",
+    "image": "assets/img/posts/portfolio-project-practice-for-beginners-turn-html-css-and-javascript-into-proof-you-can-build.png",
+    "webp": true,
+    "date": "2026-10-01",
+    "dateDisplay": "October 1, 2026",
+    "excerpt": "Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…"
   }
 ]
