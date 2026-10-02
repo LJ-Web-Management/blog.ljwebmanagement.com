@@ -2536,5 +2536,14 @@
     "date": "2026-10-01",
     "dateDisplay": "October 1, 2026",
     "excerpt": "Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…"
+  },
+  {
+    "title": "AI at Work for Beginners: Three Everyday Tasks to Practice This Week",
+    "slug": "ai-at-work-for-beginners-three-everyday-tasks-to-practice-this-week",
+    "image": "assets/img/posts/ai-at-work-for-beginners-three-everyday-tasks-to-practice-this-week.png",
+    "webp": true,
+    "date": "2026-10-02",
+    "dateDisplay": "October 2, 2026",
+    "excerpt": "Many people want to use AI at work, but the first step is often unclear. Should you ask it to write an email, summarize a meeting, analyze a spreadsheet…"
   }
 ]
