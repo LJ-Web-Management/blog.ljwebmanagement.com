@@ -2545,5 +2545,14 @@
     "date": "2026-10-02",
     "dateDisplay": "October 2, 2026",
     "excerpt": "Many people want to use AI at work, but the first step is often unclear. Should you ask it to write an email, summarize a meeting, analyze a spreadsheet…"
+  },
+  {
+    "title": "Beginner Phishing Detection Practice: Five Clues to Check Before You Click",
+    "slug": "beginner-phishing-detection-practice-five-clues-to-check-before-you-click",
+    "image": "assets/img/posts/beginner-phishing-detection-practice-five-clues-to-check-before-you-click.png",
+    "webp": true,
+    "date": "2026-10-03",
+    "dateDisplay": "October 3, 2026",
+    "excerpt": "Phishing detection is one of the most useful cybersecurity skills a beginner can practice because a single rushed click can expose an account, a company…"
   }
 ]
