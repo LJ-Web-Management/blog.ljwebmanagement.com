@@ -2572,5 +2572,14 @@
     "date": "2026-10-06",
     "dateDisplay": "October 6, 2026",
     "excerpt": "When a beginner asks why an AI tool gives a confident but unhelpful answer, the explanation often starts with the prompt. The more important question may…"
+  },
+  {
+    "title": "CSS Flexbox for Beginners: Build a Responsive Page Section Without Guessing",
+    "slug": "css-flexbox-for-beginners-build-a-responsive-page-section-without-guessing",
+    "image": "assets/img/posts/css-flexbox-for-beginners-build-a-responsive-page-section-without-guessing.png",
+    "webp": true,
+    "date": "2026-10-06",
+    "dateDisplay": "October 6, 2026",
+    "excerpt": "Many beginners can write a little HTML and change a color in CSS, but they still feel stuck when three cards refuse to sit in a neat row or a page breaks…"
   }
 ]
