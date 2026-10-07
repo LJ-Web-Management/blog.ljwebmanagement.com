@@ -2581,5 +2581,14 @@
     "date": "2026-10-06",
     "dateDisplay": "October 6, 2026",
     "excerpt": "Many beginners can write a little HTML and change a color in CSS, but they still feel stuck when three cards refuse to sit in a neat row or a page breaks…"
+  },
+  {
+    "title": "API Responses for Beginners: Read JSON and Use Data in a Small App",
+    "slug": "api-responses-for-beginners-read-json-and-use-data-in-a-small-app",
+    "image": "assets/img/posts/api-responses-for-beginners-read-json-and-use-data-in-a-small-app.png",
+    "webp": true,
+    "date": "2026-10-07",
+    "dateDisplay": "October 7, 2026",
+    "excerpt": "Many beginner developers can build a button, change a color, or print a message on a page, but they freeze when an app needs information from somewhere…"
   }
 ]
