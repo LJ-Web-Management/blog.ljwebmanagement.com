@@ -2590,5 +2590,14 @@
     "date": "2026-10-07",
     "dateDisplay": "October 7, 2026",
     "excerpt": "Many beginner developers can build a button, change a color, or print a message on a page, but they freeze when an app needs information from somewhere…"
+  },
+  {
+    "title": "Build a Beginner JavaScript Quiz: A First Project With Variables, Events, and DOM Updates",
+    "slug": "build-a-beginner-javascript-quiz-a-first-project-with-variables-events-and-dom-updates",
+    "image": "assets/img/posts/build-a-beginner-javascript-quiz-a-first-project-with-variables-events-and-dom-updates.png",
+    "webp": true,
+    "date": "2026-10-08",
+    "dateDisplay": "October 8, 2026",
+    "excerpt": "JavaScript becomes easier to understand when each concept has a visible job. A small browser quiz gives beginners a focused project where variables hold…"
   }
 ]
