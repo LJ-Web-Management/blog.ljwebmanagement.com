@@ -2599,5 +2599,14 @@
     "date": "2026-10-08",
     "dateDisplay": "October 8, 2026",
     "excerpt": "JavaScript becomes easier to understand when each concept has a visible job. A small browser quiz gives beginners a focused project where variables hold…"
+  },
+  {
+    "title": "React State vs Props for Beginners: Know Where Your Interface Data Belongs",
+    "slug": "react-state-vs-props-for-beginners-know-where-your-interface-data-belongs",
+    "image": "assets/img/posts/react-state-vs-props-for-beginners-know-where-your-interface-data-belongs.png",
+    "webp": true,
+    "date": "2026-10-09",
+    "dateDisplay": "October 9, 2026",
+    "excerpt": "React becomes much easier to reason about when you can answer one practical question: should this piece of interface data be owned by a component, or…"
   }
 ]
