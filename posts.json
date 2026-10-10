@@ -2608,5 +2608,14 @@
     "date": "2026-10-09",
     "dateDisplay": "October 9, 2026",
     "excerpt": "React becomes much easier to reason about when you can answer one practical question: should this piece of interface data be owned by a component, or…"
+  },
+  {
+    "title": "AI Answer Verification for Beginners: Five Checks Before You Use Generated Content",
+    "slug": "ai-answer-verification-for-beginners-five-checks-before-you-use-generated-content",
+    "image": "assets/img/posts/ai-answer-verification-for-beginners-five-checks-before-you-use-generated-content.png",
+    "webp": true,
+    "date": "2026-10-10",
+    "dateDisplay": "October 10, 2026",
+    "excerpt": "AI can produce a polished answer in seconds, but a polished answer is not automatically a dependable one. A beginner may ask an AI tool to summarize a…"
   }
 ]
