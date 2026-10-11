@@ -2617,5 +2617,14 @@
     "date": "2026-10-10",
     "dateDisplay": "October 10, 2026",
     "excerpt": "AI can produce a polished answer in seconds, but a polished answer is not automatically a dependable one. A beginner may ask an AI tool to summarize a…"
+  },
+  {
+    "title": "Git Basics for Beginners: Track Changes and Recover From Coding Mistakes",
+    "slug": "git-basics-for-beginners-track-changes-and-recover-from-coding-mistakes",
+    "image": "assets/img/posts/git-basics-for-beginners-track-changes-and-recover-from-coding-mistakes.png",
+    "webp": true,
+    "date": "2026-10-11",
+    "dateDisplay": "October 11, 2026",
+    "excerpt": "Git is the skill that lets a beginner change code without feeling trapped by every change. If you have ever hesitated to edit a working page because one…"
   }
 ]
