@@ -2635,5 +2635,14 @@
     "date": "2026-10-12",
     "dateDisplay": "October 12, 2026",
     "excerpt": "Many beginners want to learn no-code automation but get stuck comparing tool names before they have built a single useful workflow. Zapier and Make can…"
+  },
+  {
+    "title": "JavaScript Functions for Beginners: Turn Repeated Code Into Reusable Tools",
+    "slug": "javascript-functions-for-beginners-turn-repeated-code-into-reusable-tools",
+    "image": "assets/img/posts/javascript-functions-for-beginners-turn-repeated-code-into-reusable-tools.png",
+    "webp": true,
+    "date": "2026-10-13",
+    "dateDisplay": "October 13, 2026",
+    "excerpt": "Many people learning JavaScript can make a button respond, change text on a page, or calculate a total, but their code starts to feel messy as soon as…"
   }
 ]
