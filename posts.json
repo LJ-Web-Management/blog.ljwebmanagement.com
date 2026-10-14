@@ -2644,5 +2644,14 @@
     "date": "2026-10-13",
     "dateDisplay": "October 13, 2026",
     "excerpt": "Many people learning JavaScript can make a button respond, change text on a page, or calculate a total, but their code starts to feel messy as soon as…"
+  },
+  {
+    "title": "Beginner HTML Forms: Build a Contact Page That Collects Useful Information",
+    "slug": "beginner-html-forms-build-a-contact-page-that-collects-useful-information",
+    "image": "assets/img/posts/beginner-html-forms-build-a-contact-page-that-collects-useful-information.png",
+    "webp": true,
+    "date": "2026-10-14",
+    "dateDisplay": "October 14, 2026",
+    "excerpt": "Many people can make a web page display a heading, image, and paragraph but feel less confident when a visitor needs to send information back. HTML forms…"
   }
 ]
