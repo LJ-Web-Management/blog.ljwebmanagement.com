@@ -2653,5 +2653,14 @@
     "date": "2026-10-14",
     "dateDisplay": "October 14, 2026",
     "excerpt": "Many people can make a web page display a heading, image, and paragraph but feel less confident when a visitor needs to send information back. HTML forms…"
+  },
+  {
+    "title": "Website Accessibility Basics for Beginners: Make a First Page Easier to Use",
+    "slug": "website-accessibility-basics-for-beginners-make-a-first-page-easier-to-use",
+    "image": "assets/img/posts/website-accessibility-basics-for-beginners-make-a-first-page-easier-to-use.png",
+    "webp": true,
+    "date": "2026-10-15",
+    "dateDisplay": "October 15, 2026",
+    "excerpt": "Many beginners learn to build a web page by focusing on what it looks like in a browser. Accessibility adds a second question: can people with different…"
   }
 ]
