@@ -2662,5 +2662,14 @@
     "date": "2026-10-15",
     "dateDisplay": "October 15, 2026",
     "excerpt": "Many beginners learn to build a web page by focusing on what it looks like in a browser. Accessibility adds a second question: can people with different…"
+  },
+  {
+    "title": "Prompt Templates vs. Detailed Instructions: A Beginner Practice Guide for Better AI Results",
+    "slug": "prompt-templates-vs-detailed-instructions-a-beginner-practice-guide-for-better-ai-results",
+    "image": "assets/img/posts/prompt-templates-vs-detailed-instructions-a-beginner-practice-guide-for-better-ai-results.png",
+    "webp": true,
+    "date": "2026-10-16",
+    "dateDisplay": "October 16, 2026",
+    "excerpt": "Many beginners ask an AI tool a reasonable question, receive an uneven answer, and assume the tool is unreliable. Often, the real problem is not the…"
   }
 ]
