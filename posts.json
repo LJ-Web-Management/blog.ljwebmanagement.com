@@ -2671,5 +2671,14 @@
     "date": "2026-10-16",
     "dateDisplay": "October 16, 2026",
     "excerpt": "Many beginners ask an AI tool a reasonable question, receive an uneven answer, and assume the tool is unreliable. Often, the real problem is not the…"
+  },
+  {
+    "title": "How to Debug Beginner JavaScript Without Guessing",
+    "slug": "how-to-debug-beginner-javascript-without-guessing",
+    "image": "assets/img/posts/how-to-debug-beginner-javascript-without-guessing.png",
+    "webp": true,
+    "date": "2026-10-17",
+    "dateDisplay": "October 17, 2026",
+    "excerpt": "Many new developers can follow a JavaScript lesson until the browser stops doing what they expected. A button does nothing, a value appears as undefined…"
   }
 ]
