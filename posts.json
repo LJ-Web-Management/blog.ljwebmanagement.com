@@ -2680,5 +2680,14 @@
     "date": "2026-10-17",
     "dateDisplay": "October 17, 2026",
     "excerpt": "Many new developers can follow a JavaScript lesson until the browser stops doing what they expected. A button does nothing, a value appears as undefined…"
+  },
+  {
+    "title": "MFA for Beginners: Build a Safer Account-Security Routine",
+    "slug": "mfa-for-beginners-build-a-safer-account-security-routine",
+    "image": "assets/img/posts/mfa-for-beginners-build-a-safer-account-security-routine.png",
+    "webp": true,
+    "date": "2026-10-18",
+    "dateDisplay": "October 18, 2026",
+    "excerpt": "Many beginners know that multi-factor authentication, or MFA, is important, but still treat it as a button to switch on once and forget. The real skill…"
   }
 ]
