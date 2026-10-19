@@ -2689,5 +2689,14 @@
     "date": "2026-10-18",
     "dateDisplay": "October 18, 2026",
     "excerpt": "Many beginners know that multi-factor authentication, or MFA, is important, but still treat it as a button to switch on once and forget. The real skill…"
+  },
+  {
+    "title": "CSS Grid for Beginners: Build a Clean Multi-Section Layout Without Guessing",
+    "slug": "css-grid-for-beginners-build-a-clean-multi-section-layout-without-guessing",
+    "image": "assets/img/posts/css-grid-for-beginners-build-a-clean-multi-section-layout-without-guessing.png",
+    "webp": true,
+    "date": "2026-10-19",
+    "dateDisplay": "October 19, 2026",
+    "excerpt": "Many beginners can make a web page look acceptable in one browser window, then feel lost when the design needs a sidebar, a content area, a card row, and…"
   }
 ]
