@@ -2707,5 +2707,14 @@
     "date": "2026-10-20",
     "dateDisplay": "October 20, 2026",
     "excerpt": "Choosing a first cybersecurity course can feel harder than the first lesson. Course pages often mention networks, threats, encryption, identity…"
+  },
+  {
+    "title": "How to Map a Repetitive Task Before You Automate It",
+    "slug": "how-to-map-a-repetitive-task-before-you-automate-it",
+    "image": "assets/img/posts/how-to-map-a-repetitive-task-before-you-automate-it.png",
+    "webp": true,
+    "date": "2026-10-21",
+    "dateDisplay": "October 21, 2026",
+    "excerpt": "Many people start learning automation by opening Zapier, Make, or an AI assistant and looking for a button that will connect two apps. That can be…"
   }
 ]
