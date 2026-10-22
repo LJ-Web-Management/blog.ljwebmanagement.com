@@ -2716,5 +2716,14 @@
     "date": "2026-10-21",
     "dateDisplay": "October 21, 2026",
     "excerpt": "Many people start learning automation by opening Zapier, Make, or an AI assistant and looking for a button that will connect two apps. That can be…"
+  },
+  {
+    "title": "How to Use Browser DevTools as a Beginner: Inspect, Test, and Fix Your First Web Page",
+    "slug": "how-to-use-browser-devtools-as-a-beginner-inspect-test-and-fix-your-first-web-page",
+    "image": "assets/img/posts/how-to-use-browser-devtools-as-a-beginner-inspect-test-and-fix-your-first-web-page.png",
+    "webp": true,
+    "date": "2026-10-22",
+    "dateDisplay": "October 22, 2026",
+    "excerpt": "When a first web page looks wrong, beginners often change several lines of HTML or CSS at once and hope the next refresh explains what happened. Browser…"
   }
 ]
