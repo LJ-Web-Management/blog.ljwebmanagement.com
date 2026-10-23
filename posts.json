@@ -2725,5 +2725,14 @@
     "date": "2026-10-22",
     "dateDisplay": "October 22, 2026",
     "excerpt": "When a first web page looks wrong, beginners often change several lines of HTML or CSS at once and hope the next refresh explains what happened. Browser…"
+  },
+  {
+    "title": "SQL Basics for Beginners: Ask Better Questions of Everyday Data",
+    "slug": "sql-basics-for-beginners-ask-better-questions-of-everyday-data",
+    "image": "assets/img/posts/sql-basics-for-beginners-ask-better-questions-of-everyday-data.png",
+    "webp": true,
+    "date": "2026-10-23",
+    "dateDisplay": "October 23, 2026",
+    "excerpt": "Many beginners think working with data means mastering complicated dashboards or becoming a full-time programmer. A better first step is learning how to…"
   }
 ]
