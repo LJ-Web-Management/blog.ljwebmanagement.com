@@ -2734,5 +2734,14 @@
     "date": "2026-10-23",
     "dateDisplay": "October 23, 2026",
     "excerpt": "Many beginners think working with data means mastering complicated dashboards or becoming a full-time programmer. A better first step is learning how to…"
+  },
+  {
+    "title": "AI Context for Beginners: Give an Assistant the Right Information Before You Ask for Help",
+    "slug": "ai-context-for-beginners-give-an-assistant-the-right-information-before-you-ask-for-help",
+    "image": "assets/img/posts/ai-context-for-beginners-give-an-assistant-the-right-information-before-you-ask-for-help.png",
+    "webp": true,
+    "date": "2026-10-24",
+    "dateDisplay": "October 24, 2026",
+    "excerpt": "Many beginners assume an AI assistant gives better answers because it knows more words. In practice, the quality of the information you provide often…"
   }
 ]
