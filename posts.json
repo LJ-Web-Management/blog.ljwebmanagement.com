@@ -3353,5 +3353,16 @@
     "excerpt": "Many beginners assume an AI assistant gives better answers because it knows more words. In practice, the quality of the information you provide often…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Command Line Basics for Beginners: Navigate Files and Run Your First Tools",
+    "slug": "command-line-basics-for-beginners-navigate-files-and-run-your-first-tools",
+    "image": "assets/img/posts/command-line-basics-for-beginners-navigate-files-and-run-your-first-tools.png",
+    "webp": true,
+    "date": "2026-10-25",
+    "dateDisplay": "October 25, 2026",
+    "excerpt": "Many beginners meet the command line as a black window full of unfamiliar symbols, then decide it belongs to advanced developers. That reaction is…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
