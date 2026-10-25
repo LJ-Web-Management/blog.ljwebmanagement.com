@@ -325,6 +325,45 @@
     });
   }
 
+  /* ---------- FAQ: open on hover, click to keep open or closed ---------- */
+  // Every answer starts closed. With a mouse, hovering a question previews
+  // its answer; a click keeps it open, and another click closes it and keeps
+  // it closed until the pointer leaves. Keyboard and touch toggle on click,
+  // and Escape dismisses a hover preview.
+  var faqItems = $$('.lj-faq details');
+  if (faqItems.length) {
+    var canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+    var faqState = faqItems.map(function (d) {
+      var st = { el: d, pinned: d.open, muted: false, timer: null };
+      d.classList.toggle('is-pinned', st.pinned);
+      $('summary', d).addEventListener('click', function (e) {
+        e.preventDefault();
+        clearTimeout(st.timer);
+        st.pinned = !st.pinned;
+        st.muted = !st.pinned;
+        d.open = st.pinned;
+        d.classList.toggle('is-pinned', st.pinned);
+      });
+      d.addEventListener('pointerenter', function (e) {
+        if (e.pointerType !== 'mouse' || !canHover.matches || st.pinned || st.muted) return;
+        st.timer = setTimeout(function () { d.open = true; }, 120);
+      });
+      d.addEventListener('pointerleave', function (e) {
+        if (e.pointerType !== 'mouse') return;
+        clearTimeout(st.timer);
+        st.muted = false;
+        if (!st.pinned) d.open = false;
+      });
+      return st;
+    });
+    doc.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      faqState.forEach(function (st) {
+        if (st.el.open && !st.pinned) { st.el.open = false; st.muted = true; }
+      });
+    });
+  }
+
   /* ---------- Wide tables: keyboard scrolling ---------- */
   // Article tables scroll sideways on small screens; a table that overflows
   // must be focusable so keyboard users can scroll it too.
