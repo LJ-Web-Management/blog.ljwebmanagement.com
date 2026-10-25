@@ -1,20 +1,23 @@
-// Shared page templates for the blog. The header, full-screen menu and
-// footer markup are copied from the main site (LJ-Web-Management/ljwebmanagement.com,
-// index.html and faq/index.html) with every link made absolute, so the blog
-// and www.ljwebmanagement.com look and behave the same.
+// Page templates for the blog. The header, navigation, search, footer and
+// icons come from scripts/chrome.js and the styles from assets/css/site.css,
+// both shared verbatim with the main site (LJ-Web-Management/ljwebmanagement.com),
+// so the blog and www.ljwebmanagement.com look and behave as one site.
 
 const fs = require("fs");
 const path = require("path");
+const chrome = require("./chrome");
 
+const { icon } = chrome;
 const ROOT = path.join(__dirname, "..");
 const SITE_URL = "https://blog.ljwebmanagement.com";
-const MAIN_URL = "https://www.ljwebmanagement.com";
+const MAIN_URL = chrome.SITE_URL;
 const BLOG_HOME = SITE_URL + "/";
 const SHARE_IMAGE = MAIN_URL + "/assets/social-share.png";
-const GA_ID = "G-SFXD7K93JS";
-const CLARITY_ID = "ylzewu0va8";
+const LOGO = "/assets/img/lj-logo-80.webp";
 const WEBP_DIR = "assets/img/posts/webp";
 const WEBP_WIDTHS = [640, 1280];
+const PAGE_SIZE = 18;
+const BLOG_NAME = "LJ Web Management Blog";
 
 function escapeHtml(str) {
   return String(str)
@@ -28,81 +31,71 @@ function main(p) {
   return MAIN_URL + p;
 }
 
-// Same Organization node as the main site's homepage JSON-LD, so search
-// engines treat the blog and the main site as one entity.
-const ORGANIZATION = {
-  "@type": "ProfessionalService",
-  "@id": MAIN_URL + "/#organization",
-  name: "LJ Web Management",
-  url: MAIN_URL + "/",
-  logo: MAIN_URL + "/assets/lj-logo.webp",
-  image: MAIN_URL + "/assets/lj-logo.webp",
-  description:
-    "LJ Web Management is a business automation company that builds custom AI workflow automation systems, removing repetitive tasks and bottlenecks by connecting the business tools teams already use.",
-  telephone: "+1-877-559-3268",
-  email: "info@ljwebmanagement.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "1108 E 9th St.",
-    addressLocality: "Lockport",
-    addressRegion: "IL",
-    postalCode: "60441",
-    addressCountry: "US",
-  },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    opens: "00:00",
-    closes: "23:59",
-    description: "Available by appointment",
-  },
-  priceRange: "$$",
-  sameAs: ["https://www.linkedin.com/company/ljwebmanagement", "https://x.com/lj_web_mgmt"],
-};
-
 function jsonLd(nodes) {
-  const data = { "@context": "https://schema.org", "@graph": nodes };
+  const data = { "@context": "https://schema.org", "@graph": [chrome.ORGANIZATION].concat(nodes) };
   // Escape "<" so post titles can never close the script element early.
-  return (
-    '<script type="application/ld+json">\n' +
-    JSON.stringify(data, null, 2).replace(/</g, "\\u003c") +
-    "\n</script>"
-  );
+  return '<script type="application/ld+json">' + JSON.stringify(data).replace(/</g, "\\u003c") + "</script>";
 }
 
-// Google Analytics and Microsoft Clarity, loaded the same way as on the main
-// site: calls queue immediately, the libraries load on the first user
-// interaction so they never compete with the initial render.
-function analyticsSnippet() {
-  return `<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '${GA_ID}');
-  window.clarity = window.clarity || function(){(window.clarity.q = window.clarity.q || []).push(arguments);};
-  (function(){
-    var loaded = false, events = ['pointerdown', 'mousemove', 'scroll', 'touchstart', 'keydown'];
-    function add(src){ var s = document.createElement('script'); s.async = true; s.src = src; document.head.appendChild(s); }
-    function load(){
-      if (loaded) return;
-      loaded = true;
-      events.forEach(function(e){ window.removeEventListener(e, load); });
-      add('https://www.googletagmanager.com/gtag/js?id=${GA_ID}');
-      add('https://www.clarity.ms/tag/${CLARITY_ID}');
+// ---------------------------------------------------------------------------
+// Topics. Every post is filed under one topic, picked from its title the
+// first time it is published (first matching rule wins). Each topic points
+// readers to the matching automation category and guide on the main site.
+// ---------------------------------------------------------------------------
+
+const TOPICS = [
+  { slug: "learn", name: "Tech Skills for Beginners", test: /beginner|first web page|first react|learning to code|first tech skill|first no-code|python basics|neural networks|prompt engineering|first ai workflow|repetitive task before you automate/i,
+    practice: ["/automations/", "Browse 1,000+ done-for-you automations"], guide: ["/guides/what-to-automate-first/", "What should you automate first?"] },
+  { slug: "governance", name: "AI Strategy & Governance", test: /governance|govern |automation change|automation telemetry|automation sunset|automation portfolio|automation readiness|automation control room|test workflow automations|change impact review|data pipeline ownership|definition drift|data refresh failure|change freeze/i,
+    practice: ["/automations/category/compliance-documents/", "Compliance, documents & deadlines automations"], guide: ["/guides/ai-agents-vs-workflow-automation/", "AI agents vs. workflow automation"] },
+  { slug: "field-service", name: "Field Service", test: /field service|dispatch|truck roll|work order|field audit|service estimate|service visits|service parts|field scheduling|field teams|technician|job cost|change order|facilities|equipment|calibration/i,
+    practice: ["/automations/category/scheduling-dispatch/", "Scheduling, reminders & dispatch automations"], guide: ["/guides/reduce-no-shows-appointment-reminders/", "How to reduce no-shows"] },
+  { slug: "people", name: "HR & Team", test: /employee|new-hire|new hire|hire |interview|training expirations|timesheet|payroll|workforce|travel approval|offboarding/i,
+    practice: ["/automations/category/hr-team/", "HR, hiring & team automations"], guide: ["/guides/employee-onboarding-automation/", "Employee onboarding automation checklist"] },
+  { slug: "compliance", name: "Compliance & Data", test: /compliance|audit|consent|data retention|data deletion|policy|regulatory|contract|certificate|insurance renewals|access review|access exception|privacy|identity conflicts|master data|merge review|address change|document expiration|tax exemption|nexus|returned mail|customer data|asset registry|accessibility/i,
+    practice: ["/automations/category/compliance-documents/", "Compliance, documents & deadlines automations"], guide: ["/guides/client-onboarding-automation/", "Client onboarding automation"] },
+  { slug: "finance", name: "Finance & Billing", test: /invoice|cash|collection|receivable|payable|expense|payment|billing|credit memo|credit limit|credit approval|revenue recognition|month-end|finance|purchase card|refund|spend|budget|margin|warranty reserve|supplier payments|profitability|sla credit|subscription waste|entitlements/i,
+    practice: ["/automations/category/billing-finance/", "Billing, payments & finance automations"], guide: ["/guides/automate-invoicing-payment-reminders/", "How to automate invoicing and payment reminders"] },
+  { slug: "reporting", name: "Reporting & Leadership", test: /executive reporting|executive forecasts|board ready|kpi|briefing|reporting|dashboard|meeting decisions|meeting follow-up|narrative|calendar capacity|risk radar|status updates/i,
+    practice: ["/automations/category/reporting-analytics/", "Reporting & analytics automations"], guide: ["/guides/automation-roi/", "How to calculate automation ROI"] },
+  { slug: "marketing", name: "Marketing & Website", test: /website|marketing|campaign|content|seo|conversion|heatmap|form |search logs|pricing page|chat transcripts|attribution/i,
+    practice: ["/automations/category/marketing-retention/", "Marketing & customer retention automations"], guide: ["/guides/automate-review-requests/", "How to automate review requests"] },
+  { slug: "sales", name: "Sales & CRM", test: /sales|crm|lead|pipeline|quote|proposal|deal|forecast|territory|win loss|bid no-bid|pricing|price change|demo|referral|prospect|order promise/i,
+    practice: ["/automations/category/lead-follow-up-sales/", "Lead follow-up & sales automations"], guide: ["/guides/automate-lead-follow-up/", "How to automate lead follow-up"] },
+  { slug: "customer-experience", name: "Customer Experience", test: /customer|support|escalation|onboarding|renewal|retention|cancellation|portal|chatbot|knowledge|help desk|macro|adoption|health score|implementation|warranty|service recovery|reviews/i,
+    practice: ["/automations/category/customer-communication/", "Customer service & communication automations"], guide: ["/guides/missed-call-text-back/", "Missed-call text-back"] },
+  { slug: "operations", name: "Operations & Supply Chain", test: /./,
+    practice: ["/automations/category/operations-inventory/", "Operations, inventory & vendor automations"], guide: ["/guides/what-to-automate-first/", "What should you automate first?"] },
+];
+const TOPIC_BY_SLUG = Object.fromEntries(TOPICS.map((t) => [t.slug, t]));
+
+function topicFor(title) {
+  return TOPICS.find((t) => t.test.test(title));
+}
+
+// Fills in category/categorySlug on posts that do not have one yet.
+function assignTopics(posts) {
+  posts.forEach((p) => {
+    if (!p.categorySlug || !TOPIC_BY_SLUG[p.categorySlug]) {
+      const t = topicFor(p.title);
+      p.categorySlug = t.slug;
     }
-    events.forEach(function(e){ window.addEventListener(e, load, {passive: true}); });
-  })();
-</script>`;
+    p.category = TOPIC_BY_SLUG[p.categorySlug].name;
+  });
+  return posts;
 }
 
-// assets/css/style.css is the source; it is minified and inlined in every
-// page's <head> (as the main site does) so the first paint needs no extra
-// request.
+// ---------------------------------------------------------------------------
+// Shared head / page shell
+// ---------------------------------------------------------------------------
+
+// assets/css/site.css is minified and inlined in every page's <head> so the
+// first paint needs no extra request.
 let inlineCss = null;
 function siteCss() {
   if (inlineCss === null) {
     inlineCss = fs
-      .readFileSync(path.join(ROOT, "assets", "css", "style.css"), "utf8")
+      .readFileSync(path.join(ROOT, "assets", "css", "site.css"), "utf8")
       .replace(/\/\*[\s\S]*?\*\//g, "")
       .replace(/\s+/g, " ")
       .replace(/\s*([{}:;,>])\s*/g, "$1")
@@ -110,6 +103,14 @@ function siteCss() {
       .trim();
   }
   return inlineCss;
+}
+
+let jsVersion = null;
+function siteJs() {
+  if (jsVersion === null) {
+    jsVersion = require("crypto").createHash("sha1").update(fs.readFileSync(path.join(ROOT, "assets", "js", "site.js"))).digest("hex").slice(0, 10);
+  }
+  return "/assets/js/site.js?v=" + jsVersion;
 }
 
 function head(opts) {
@@ -139,164 +140,74 @@ function head(opts) {
     '<meta name="twitter:card" content="summary_large_image">',
     '<meta name="twitter:title" content="' + title + '">',
     '<meta name="twitter:description" content="' + description + '">',
-    '<meta name="twitter:image" content="' + escapeHtml(ogImage) + '">'
+    '<meta name="twitter:image" content="' + escapeHtml(ogImage) + '">',
+    '<meta name="theme-color" content="#081426">'
   );
   if (opts.extraMeta) lines.push(opts.extraMeta);
   lines.push(
     '<link rel="icon" href="/assets/img/favicon.ico" sizes="any">',
     '<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">',
+    '<link rel="alternate" type="application/rss+xml" title="' + BLOG_NAME + '" href="' + SITE_URL + '/feed.xml">',
     '<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>',
     '<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>'
   );
   if (opts.preloadImage) lines.push(opts.preloadImage);
   lines.push("<style>" + siteCss() + "</style>");
-  lines.push('<script src="/assets/js/nav.js" defer></script>');
+  lines.push("<script>document.documentElement.classList.add('lj-js')</script>");
+  lines.push('<script src="' + siteJs() + '" defer></script>');
   if (opts.scripts) lines.push(opts.scripts);
-  if (opts.jsonLd) lines.push(jsonLd(opts.jsonLd));
-  lines.push(analyticsSnippet(), "</head>");
+  lines.push(jsonLd(opts.jsonLd || []));
+  lines.push(chrome.analytics(), "</head>");
   return lines.join("\n");
 }
 
-const HEADER = `<a class="lj-skip" href="#main">Skip to Content</a>
-<header class="lj-site-header">
-  <div class="lj-header-container">
-    <div class="lj-topbar">
-        <div class="lj-topbar-inner">
-            <a href="${main("/")}" class="lj-topbar-logo" aria-label="LJ Web Management home">
-                <img src="/assets/img/lj-logo-80.webp" width="40" height="40" alt="LJ Web Management" loading="eager">
-            </a>
-            <div class="lj-topbar-right">
-                <a href="${main("/contactus/")}" class="lj-topbar-cta">Contact Us</a>
-                <button type="button" class="lj-menu-toggle" aria-expanded="false" aria-controls="lj-mega-menu" aria-label="Open menu">
-                    <span class="lj-menu-toggle-bars"><span></span><span></span><span></span></span>
-                    <span class="lj-menu-toggle-label">Menu</span>
-                </button>
-            </div>
-        </div>
-    </div>
-  </div>
+const CHROME_OPTS = {
+  base: MAIN_URL,
+  blogBase: "",
+  active: "blog",
+  logoSrc: LOGO,
+  searchIndexUrl: MAIN_URL + "/assets/data/search-index.js",
+  blogPostsUrl: "/posts.json",
+};
 
-    <div id="lj-mega-menu" class="lj-mega-menu" aria-hidden="true">
-        <div class="lj-mega-menu-inner">
-            <button type="button" class="lj-mega-menu-close" aria-label="Close menu">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
-            </button>
-            <a href="${main("/")}" class="lj-mega-menu-logo" aria-label="LJ Web Management home">
-                <img src="/assets/img/lj-logo-80.webp" width="40" height="40" alt="LJ Web Management" loading="lazy">
-            </a>
-            <div class="lj-mega-grid">
-                <nav class="lj-mega-col" aria-label="Company">
-                    <h3>Company</h3>
-                    <a href="${main("/")}">Home</a>
-                    <a href="${main("/how-it-works/")}">How It Works</a>
-                    <a href="${main("/solutions/")}">Platform Solutions</a>
-                    <a href="${main("/faq/")}">Automation FAQ</a>
-                    <a href="${main("/contactus/")}">Contact Us</a>
-                </nav>
-                <nav class="lj-mega-col" aria-label="Automations by industry">
-                    <h3>Automations by Industry</h3>
-                    <a href="${main("/automations/real-estate/")}">Real Estate Automation</a>
-                    <a href="${main("/automations/healthcare/")}">Healthcare Automation</a>
-                    <a href="${main("/automations/legal/")}">Legal Automation</a>
-                    <a href="${main("/automations/home-services/")}">Home Services Automation</a>
-                    <a href="${main("/automations/general-business/")}">General Business Automation</a>
-                    <a href="${main("/automations/ecommerce-retail/")}">E-Commerce &amp; Retail Automation</a>
-                    <a href="${main("/automations/financial-services/")}">Financial Services Automation</a>
-                    <a href="${main("/automations/restaurants-food-service/")}">Restaurants &amp; Food Service Automation</a>
-                    <a href="${main("/automations/property-management/")}">Property Management Automation</a>
-                    <a href="${main("/automations/construction-contracting/")}">Construction &amp; Contracting Automation</a>
-                    <a href="${main("/automations/marketing-agencies/")}">Marketing Agencies Automation</a>
-                    <a href="${main("/automations/")}" class="lj-mega-viewall">All 57 Industry Automations &rarr;</a>
-                </nav>
-                <nav class="lj-mega-col" aria-label="Resources">
-                    <h3>Resources</h3>
-                    <a href="${main("/roi-calculator/")}">Automation ROI Calculator</a>
-                    <a href="${main("/quiz/")}">Automation Match Quiz</a>
-                    <a href="${main("/resources/what-is-business-automation/")}">What Is Business Automation?</a>
-                    <a href="${main("/resources/business-automation-examples/")}">Business Automation Examples</a>
-                    <a href="${main("/resources/ai-automation-for-small-business/")}">AI Automation for Small Business</a>
-                    <a href="${BLOG_HOME}">LJ Web Management Blog</a>
-                </nav>
-                <div class="lj-mega-col lj-mega-cta">
-                    <h3>Get Started</h3>
-                    <p>Book a free consultation and we'll scope your automation with a flat, upfront quote.</p>
-                    <a href="${main("/appointment/")}" class="lj-btn-cyan">Book a Free Consultation</a>
-                    <div class="lj-mega-contact">
-                        <a href="tel:+18775593268">+1-877-559-3268</a>
-                        <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>`;
-
-function footer() {
-  return `<footer id="bottom" class="lj-footer">
-  <div class="lj-footer-top">
-    <div class="lj-footer-inner">
-      <div class="lj-footer-grid">
-        <div class="lj-footer-brand">
-          <a href="${main("/")}" aria-label="LJ Web Management home">
-            <img src="/assets/img/lj-logo-80.webp" alt="LJ Web Management" width="40" height="40" loading="lazy">
-          </a>
-          <p>LJ Web Management builds custom AI automation systems that remove repetitive tasks and bottlenecks, connecting the tools you already use so your team can save time and focus on growth.</p>
-          <div class="lj-footer-social">
-            <a href="https://www.linkedin.com/company/ljwebmanagement" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"></path></svg></a>
-            <a href="https://x.com/lj_web_mgmt" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
-          </div>
-        </div>
-        <div class="lj-footer-col">
-          <h2>Company</h2>
-          <a href="${main("/")}">Home</a>
-          <a href="${main("/how-it-works/")}">How It Works</a>
-          <a href="${main("/automations/")}">Automations by Industry</a>
-          <a href="${main("/solutions/")}">Platform Solutions</a>
-          <a href="${main("/appointment/")}">Book a Free Consultation</a>
-        </div>
-        <div class="lj-footer-col">
-          <h2>Free Tools</h2>
-          <a href="${main("/roi-calculator/")}">Automation ROI Calculator</a>
-          <a href="${main("/quiz/")}">Automation Match Quiz</a>
-          <a href="${main("/faq/")}">Automation FAQ</a>
-          <a href="${BLOG_HOME}">LJ Web Management Blog</a>
-        </div>
-        <div class="lj-footer-col">
-          <h2>Get in Touch</h2>
-          <a href="${main("/contactus/")}">Contact Us</a>
-          <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
-          <a href="tel:+18775593268">+1 (877) 559-3268</a>
-          <span class="lj-footer-address">1108 E 9th St, Lockport, IL 60441</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="lj-footer-bottom">
-    <div class="lj-footer-inner lj-footer-bottom-row">
-      <span>${new Date().getFullYear()} &copy; LJ Web Management, LLC. All Rights Reserved</span>
-      <nav class="lj-footer-legal" aria-label="Legal">
-        <a href="${main("/privacy-policy/")}">Privacy Policy</a>
-        <a href="${main("/terms-of-service/")}">Terms of Service</a>
-      </nav>
-    </div>
-  </div>
-</footer>`;
+function page(headHtml, mainHtml, endScripts) {
+  return [
+    headHtml,
+    "<body>",
+    chrome.header(CHROME_OPTS),
+    '<main id="main" tabindex="-1">',
+    mainHtml,
+    "</main>",
+    chrome.footer(Object.assign({ year: new Date().getFullYear() }, CHROME_OPTS)),
+    endScripts || "",
+    chrome.chatWidget(),
+    "</body>",
+    "</html>",
+    "",
+  ].join("\n");
 }
 
-// Closing call to action shown on every post (and on the blog home).
-function ctaBox() {
-  return `<aside class="lj-post-cta" aria-labelledby="lj-post-cta-title">
-  <h2 id="lj-post-cta-title">Ready to Put This Workflow to Work?</h2>
-  <p>Book a free consultation and we'll show you exactly where automation fits in your business, with a flat, upfront quote.</p>
-  <div class="lj-post-cta-row">
-    <a href="${main("/appointment/")}" class="lj-btn lj-btn-cyan">Book a Free Automation Consultation</a>
-    <a href="${main("/automations/")}" class="lj-btn lj-btn-outline">Browse Automations by Industry</a>
-  </div>
-</aside>`;
-}
-
-function page(headHtml, mainHtml) {
-  return headHtml + "\n<body>\n" + HEADER + "\n" + mainHtml + "\n" + footer() + "\n</body>\n</html>\n";
+function breadcrumbs(items) {
+  const html =
+    '<nav class="lj-breadcrumbs" aria-label="Breadcrumb"><ol>' +
+    items
+      .map(([name, href], i) =>
+        i === items.length - 1
+          ? '<li><span aria-current="page">' + escapeHtml(name.length > 70 ? name.slice(0, 69).replace(/\s+\S*$/, "") + "…" : name) + "</span></li>"
+          : '<li><a href="' + href + '">' + escapeHtml(name) + "</a></li>"
+      )
+      .join("") +
+    "</ol></nav>";
+  const schema = {
+    "@type": "BreadcrumbList",
+    itemListElement: items.map(([name, href], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name,
+      item: href.indexOf("http") === 0 ? href : SITE_URL + href,
+    })),
+  };
+  return { html, schema };
 }
 
 // ---------------------------------------------------------------------------
@@ -346,6 +257,34 @@ function imageSources(post) {
 }
 
 // ---------------------------------------------------------------------------
+// Post cards. The markup matches postCard() in the main site's
+// build/lib/blogfeed.js so cards look the same on both sites.
+// ---------------------------------------------------------------------------
+
+const CARD_SIZES = "(max-width: 640px) calc(100vw - 32px), (max-width: 960px) 45vw, 380px";
+
+function postCard(post, opts) {
+  opts = opts || {};
+  const img = imageSources(post);
+  const href = (opts.absolute ? SITE_URL : "") + "/posts/" + encodeURIComponent(post.slug) + ".html";
+  const loading = opts.eager ? ' fetchpriority="high"' : ' loading="lazy"';
+  const media = img
+    ? '<span class="lj-post-card-media"><img src="' + img.src + '"' + (img.srcset ? ' srcset="' + img.srcset + '" sizes="' + CARD_SIZES + '"' : "") + ' width="640" height="360" alt=""' + loading + ' decoding="async"></span>'
+    : "";
+  const Tag = opts.heading || "h3";
+  return (
+    '<a class="lj-card lj-post-card" href="' + href + '" data-lj-item data-cat="' + escapeHtml(post.categorySlug || "") + '">' +
+    media +
+    '<span class="lj-post-card-body"><span class="lj-post-card-meta">' +
+    (post.category ? '<span class="lj-tag">' + escapeHtml(post.category) + "</span>" : "") +
+    '<time datetime="' + escapeHtml(post.date) + '">' + escapeHtml(post.dateDisplay || post.date) + "</time></span>" +
+    "<" + Tag + ">" + escapeHtml(post.title) + "</" + Tag + ">" +
+    (post.excerpt ? "<p>" + escapeHtml(post.excerpt) + "</p>" : "") +
+    '<span class="lj-link-arrow">Read article ' + icon("arrowRight") + "</span></span></a>"
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Post page
 // ---------------------------------------------------------------------------
 
@@ -358,34 +297,69 @@ function postUrl(slug) {
   return SITE_URL + "/posts/" + slug + ".html";
 }
 
-function buildPostPage(post) {
+function slugifyHeading(text) {
+  return text.toLowerCase().replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+// Adds ids to <h2> headings (for the table of contents) without changing
+// the stored post body. rebuild.js strips them again when it reads a page.
+function withHeadingIds(bodyHtml) {
+  const toc = [];
+  const used = {};
+  const html = bodyHtml.replace(/<h2>([\s\S]*?)<\/h2>/g, (all, inner) => {
+    let id = slugifyHeading(inner) || "section";
+    if (used[id]) id += "-" + ++used[id];
+    else used[id] = 1;
+    toc.push([id, inner.replace(/<[^>]+>/g, "")]);
+    return '<h2 id="' + id + '">' + inner + "</h2>";
+  });
+  return { html, toc };
+}
+
+function relatedPosts(post, all, n) {
+  const sorted = sortPosts(all).filter((p) => p.slug !== post.slug);
+  const same = sorted.filter((p) => p.categorySlug === post.categorySlug);
+  const picked = same.slice(0, n);
+  sorted.forEach((p) => {
+    if (picked.length < n && picked.indexOf(p) === -1) picked.push(p);
+  });
+  return picked;
+}
+
+function buildPostPage(post, allPosts) {
+  allPosts = allPosts || [];
   const canonical = postUrl(post.slug);
   const title = post.title;
   const img = imageSources(post);
-  const sizes = "(max-width: 868px) calc(100vw - 48px), 820px";
+  const sizes = "(max-width: 860px) calc(100vw - 32px), 760px";
   const shareImage = post.image ? SITE_URL + "/" + post.image : SHARE_IMAGE;
+  const topic = TOPIC_BY_SLUG[post.categorySlug] || topicFor(post.title);
+  const crumbs = breadcrumbs([
+    ["Home", MAIN_URL + "/"],
+    ["Blog", "/"],
+    [title, "/posts/" + post.slug + ".html"],
+  ]);
+  const body = withHeadingIds(post.bodyHtml);
+  const minutes = readingMinutes(post.bodyHtml);
+  const share = encodeURIComponent(canonical);
+  const shareTitle = encodeURIComponent(title);
+  const related = relatedPosts(post, allPosts, 3);
 
   const figure = img
-    ? `    <figure class="lj-post-figure">
-      <img src="${img.src}"${img.srcset ? ` srcset="${img.srcset}" sizes="${sizes}"` : ""} width="1280" height="720" alt="${escapeHtml(title)}" fetchpriority="high" decoding="async">
-    </figure>
-`
+    ? `<figure class="lj-article-figure"><img src="${img.src}"${img.srcset ? ` srcset="${img.srcset}" sizes="${sizes}"` : ""} width="1280" height="720" alt="${escapeHtml(title)}" fetchpriority="high" decoding="async"></figure>`
     : "";
   const preload =
-    img && img.srcset
-      ? `<link rel="preload" as="image" href="${img.src}" imagesrcset="${img.srcset}" imagesizes="${sizes}" fetchpriority="high">`
-      : "";
+    img && img.srcset ? `<link rel="preload" as="image" href="${img.src}" imagesrcset="${img.srcset}" imagesizes="${sizes}" fetchpriority="high">` : "";
 
   const headHtml = head({
-    title: title + " | LJ Web Management Blog",
+    title: title + " | " + BLOG_NAME,
     description: post.description,
     canonical,
     ogType: "article",
     ogImage: shareImage,
-    extraMeta: `<meta property="article:published_time" content="${post.date}">`,
+    extraMeta: `<meta property="article:published_time" content="${post.date}"><meta property="article:section" content="${escapeHtml(topic.name)}">`,
     preloadImage: preload,
     jsonLd: [
-      ORGANIZATION,
       {
         "@type": "BlogPosting",
         "@id": canonical + "#article",
@@ -394,148 +368,180 @@ function buildPostPage(post) {
         image: shareImage,
         datePublished: post.date,
         dateModified: post.date,
-        author: { "@id": ORGANIZATION["@id"] },
-        publisher: { "@id": ORGANIZATION["@id"] },
+        articleSection: topic.name,
+        wordCount: post.bodyHtml.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length,
+        author: { "@id": chrome.ORGANIZATION["@id"] },
+        publisher: { "@id": chrome.ORGANIZATION["@id"] },
         mainEntityOfPage: canonical,
-        isPartOf: { "@type": "Blog", "@id": BLOG_HOME + "#blog", name: "LJ Web Management Blog", url: BLOG_HOME },
+        isPartOf: { "@type": "Blog", "@id": BLOG_HOME + "#blog", name: BLOG_NAME, url: BLOG_HOME },
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: MAIN_URL + "/" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: BLOG_HOME },
-          { "@type": "ListItem", position: 3, name: title, item: canonical },
-        ],
-      },
+      crumbs.schema,
     ],
   });
 
-  const mainHtml = `<main id="main" class="lj-post" tabindex="-1">
-  <article>
-    <header class="lj-post-hero">
-      <div class="lj-post-hero-inner">
-        <a class="lj-back-link" href="/">&larr; All Articles</a>
-        <span class="lj-eyebrow">AI &amp; Automation Insights</span>
-        <h1>${escapeHtml(title)}</h1>
-        <p class="lj-post-meta">By <a href="${main("/")}">LJ Web Management</a> <span aria-hidden="true">&middot;</span> <time datetime="${post.date}">${escapeHtml(post.dateDisplay)}</time> <span aria-hidden="true">&middot;</span> ${readingMinutes(post.bodyHtml)} min read</p>
-      </div>
-    </header>
-    <div class="lj-post-wrap">
-${figure}      <div class="lj-post-content">
-${post.bodyHtml}
-      </div>
-${ctaBox()}
+  const mainHtml = `<header class="lj-article-hero">
+  <div class="lj-container">
+    ${crumbs.html}
+    <a class="lj-eyebrow lj-eyebrow--pill" href="/?topic=${topic.slug}">${escapeHtml(topic.name)}</a>
+    <h1>${escapeHtml(title)}</h1>
+    <div class="lj-article-meta">
+      <span class="lj-author"><img src="${LOGO}" width="36" height="36" alt=""><span>LJ Web Management<small>Automation team</small></span></span>
+      <span>${icon("calendar")}<time datetime="${post.date}">${escapeHtml(post.dateDisplay)}</time></span>
+      <span>${icon("clock")}${minutes} min read</span>
     </div>
-  </article>
-</main>`;
+  </div>
+</header>
+<div class="lj-container">
+  <div class="lj-article-layout">
+    <article>
+      ${figure}
+      <div class="lj-prose">
+<!-- post-body:start -->
+${body.html}
+<!-- post-body:end -->
+      </div>
+      <div class="lj-article-footer">
+        <div class="lj-cta-band"><div><h2>Put this into practice</h2><p>We build done-for-you automations like this around the tools you already use. Explore real workflows, or book a free consultation for a flat, upfront quote.</p></div><div class="lj-btn-row"><a class="lj-btn lj-btn-accent" href="${main("/appointment/")}">Book a Free Consultation</a><a class="lj-btn lj-btn-light" href="${main(topic.practice[0])}">See Example Automations</a></div></div>
+        <div class="lj-share"><span>Share this article</span>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=${share}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">${icon("linkedin")}</a>
+          <a href="https://x.com/intent/post?url=${share}&amp;text=${shareTitle}" target="_blank" rel="noopener" aria-label="Share on X">${icon("xlogo")}</a>
+          <a href="mailto:?subject=${shareTitle}&amp;body=${share}" aria-label="Share by email">${icon("mail")}</a>
+        </div>
+        <div class="lj-author-box"><img src="${LOGO}" width="52" height="52" alt="" loading="lazy"><div><strong>Written by the LJ Web Management team</strong><p>We build done-for-you automation systems for small and mid-sized businesses across 57 industries. Read our <a href="${main("/guides/")}">automation guides</a> or <a href="${main("/automations/")}">browse the automation catalog</a>.</p></div></div>
+      </div>
+    </article>
+    <aside class="lj-article-aside" aria-label="On this page">
+      ${body.toc.length > 1 ? '<nav class="lj-toc" aria-label="Table of contents"><p>On this page</p><ol>' + body.toc.map(([id, t]) => '<li><a href="#' + id + '">' + escapeHtml(t) + "</a></li>").join("") + "</ol></nav>" : ""}
+      <div class="lj-aside-cta"><strong>${escapeHtml(topic.practice[1])}</strong>See how this works as a done-for-you automation, with a flat, upfront quote.<a class="lj-btn lj-btn-accent lj-btn-sm" href="${main(topic.practice[0])}">Explore automations</a></div>
+      <a class="lj-card lj-card--link" href="${main(topic.guide[0])}" style="padding:18px"><span class="lj-eyebrow" style="margin-bottom:6px">Related guide</span><strong style="color:var(--ink);font-family:var(--font-display);line-height:1.35">${escapeHtml(topic.guide[1])}</strong></a>
+    </aside>
+  </div>
+</div>
+${related.length ? `<section class="lj-section lj-section--mist">
+  <div class="lj-container">
+    <div class="lj-section-head lj-section-head--split">
+      <div><span class="lj-eyebrow">Keep reading</span><h2>More on ${escapeHtml(topic.name.toLowerCase())}</h2></div>
+      <a class="lj-link-arrow" href="/?topic=${topic.slug}">All ${escapeHtml(topic.name)} articles ${icon("arrowRight")}</a>
+    </div>
+    <div class="lj-grid lj-grid-3">${related.map((p) => postCard(p)).join("")}</div>
+  </div>
+</section>` : ""}`;
 
   return page(headHtml, mainHtml);
 }
 
 // ---------------------------------------------------------------------------
-// Blog home: the first page of cards is rendered here at build time so the
-// list is visible (and crawlable) without JavaScript. assets/js/main.js takes
-// over for search, sorting and pagination.
+// Blog home: the first page of cards is rendered at build time so the list
+// is visible (and crawlable) without JavaScript. assets/js/main.js takes
+// over for search, topic filters, sorting and pagination.
 // ---------------------------------------------------------------------------
 
-const PAGE_SIZE = 20;
-const CARD_SIZES = "(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 45vw, 360px";
-
 function sortPosts(posts) {
-  return posts.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
-}
-
-function cardHtml(post, index) {
-  const img = imageSources(post);
-  const thumb = img
-    ? `<img class="lj-card-thumb" src="${img.src}"${img.srcset ? ` srcset="${img.srcset}" sizes="${CARD_SIZES}"` : ""} width="640" height="360" alt="" ${index === 0 ? 'fetchpriority="high"' : index < 3 ? "" : 'loading="lazy"'} decoding="async">`
-    : '<div class="lj-card-thumb lj-card-thumb--empty" aria-hidden="true"></div>';
-  return (
-    '<a class="lj-card" href="/posts/' + encodeURIComponent(post.slug) + '.html">' +
-    thumb +
-    '<div class="lj-card-body">' +
-    '<time class="lj-card-date" datetime="' + escapeHtml(post.date) + '">' + escapeHtml(post.dateDisplay || post.date) + "</time>" +
-    '<h2 class="lj-card-title">' + escapeHtml(post.title) + "</h2>" +
-    (post.excerpt ? '<p class="lj-card-excerpt">' + escapeHtml(post.excerpt) + "</p>" : "") +
-    '<span class="lj-card-more" aria-hidden="true">Read article &rarr;</span>' +
-    "</div></a>"
-  );
+  return posts.slice().sort((a, b) => new Date(b.date) - new Date(a.date) || a.title.localeCompare(b.title));
 }
 
 function buildIndexPage(posts) {
+  assignTopics(posts);
   const sorted = sortPosts(posts);
-  const first = sorted.slice(0, PAGE_SIZE);
-  const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+  const [featured, ...rest] = sorted;
+  const first = rest.slice(0, PAGE_SIZE);
+  const counts = {};
+  sorted.forEach((p) => (counts[p.categorySlug] = (counts[p.categorySlug] || 0) + 1));
   const description =
-    "Practical AI and automation insights for growing businesses: workflow ideas, operations playbooks and analysis from LJ Web Management.";
+    "Practical AI and automation insights for growing businesses: workflow playbooks, operations ideas, and beginner tech skills from LJ Web Management, published daily.";
+  const fImg = featured ? imageSources(featured) : null;
+  const featuredSizes = "(max-width: 820px) calc(100vw - 32px), 640px";
 
-  const firstImg = first.length ? imageSources(first[0]) : null;
   const headHtml = head({
-    title: "AI & Automation Insights | LJ Web Management Blog",
-    preloadImage:
-      firstImg && firstImg.srcset
-        ? `<link rel="preload" as="image" href="${firstImg.src}" imagesrcset="${firstImg.srcset}" imagesizes="${CARD_SIZES}" fetchpriority="high">`
-        : "",
+    title: "AI & Automation Blog | LJ Web Management",
     description,
     canonical: BLOG_HOME,
+    preloadImage: fImg && fImg.srcset ? `<link rel="preload" as="image" href="${fImg.src}" imagesrcset="${fImg.srcset}" imagesizes="${featuredSizes}" fetchpriority="high">` : "",
     scripts: '<script src="/assets/js/main.js" defer></script>',
     jsonLd: [
-      ORGANIZATION,
       {
         "@type": "Blog",
         "@id": BLOG_HOME + "#blog",
-        name: "LJ Web Management Blog",
+        name: BLOG_NAME,
         url: BLOG_HOME,
         description,
-        publisher: { "@id": ORGANIZATION["@id"] },
+        publisher: { "@id": chrome.ORGANIZATION["@id"] },
         inLanguage: "en-US",
+        blogPost: sorted.slice(0, 10).map((p) => ({ "@type": "BlogPosting", headline: p.title, url: postUrl(p.slug), datePublished: p.date })),
       },
     ],
   });
 
-  const mainHtml = `<main id="main" class="lj-blog" tabindex="-1">
-  <section class="lj-blog-hero">
-    <div class="lj-blog-hero-inner">
-      <span class="lj-eyebrow">AI &amp; Automation Blog</span>
-      <h1>AI &amp; Automation Insights</h1>
-      <p>News, insights, and analysis on AI and automation for growing businesses, from LJ Web Management.</p>
-    </div>
-  </section>
+  const featuredHtml = featured
+    ? `<a class="lj-card lj-post-card lj-post-card--featured" href="/posts/${encodeURIComponent(featured.slug)}.html">
+      ${fImg ? `<span class="lj-post-card-media"><img src="${fImg.src}"${fImg.srcset ? ` srcset="${fImg.srcset}" sizes="${featuredSizes}"` : ""} width="1280" height="720" alt="" fetchpriority="high" decoding="async"></span>` : ""}
+      <span class="lj-post-card-body">
+        <span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">Latest</span><span class="lj-tag">${escapeHtml(featured.category)}</span><time datetime="${featured.date}">${escapeHtml(featured.dateDisplay)}</time></span>
+        <h2 class="lj-mt-0" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">${escapeHtml(featured.title)}</h2>
+        ${featured.excerpt ? `<p>${escapeHtml(featured.excerpt)}</p>` : ""}
+        <span class="lj-link-arrow">Read article ${icon("arrowRight")}</span>
+      </span>
+    </a>`
+    : "";
 
-  <section class="lj-blog-list" aria-label="Articles">
-    <div class="lj-blog-inner">
-      <div class="lj-controls">
-        <label class="lj-sr-only" for="search-input">Search posts</label>
-        <input type="search" id="search-input" class="lj-input lj-search" placeholder="Search posts&hellip;">
-        <label class="lj-sr-only" for="sort-select">Sort posts</label>
-        <select id="sort-select" class="lj-input lj-sort">
-          <option value="date-desc">Date: Newest first</option>
-          <option value="date-asc">Date: Oldest first</option>
-          <option value="title-asc">Name: A to Z</option>
-          <option value="title-desc">Name: Z to A</option>
-        </select>
-      </div>
-      <p id="posts-status" class="lj-sr-only" role="status" aria-live="polite"></p>
-      <div id="posts-list" class="lj-card-grid" data-total="${sorted.length}">
-${first.map((p, i) => "        " + cardHtml(p, i)).join("\n")}
-      </div>
-      <nav id="pagination" class="lj-pagination" aria-label="Blog pagination"${totalPages > 1 ? "" : " hidden"}></nav>
-    </div>
-  </section>
+  const chips = TOPICS.filter((t) => counts[t.slug])
+    .map((t) => `<button type="button" class="lj-chip" data-topic="${t.slug}" aria-pressed="false">${escapeHtml(t.name)} <span class="lj-chip-count">${counts[t.slug]}</span></button>`)
+    .join("");
 
-  <section class="lj-blog-cta">
-    <div class="lj-blog-inner">
-${ctaBox()}
-    </div>
-  </section>
-  <div class="lj-newsletter-corner"><div data-tf-live="01KZAMHRP7TNX59ZZ7J2GXR8E1"></div></div>
-</main>`;
+  const mainHtml = `<section class="lj-page-hero lj-page-hero--center">
+  <div class="lj-container">
+    <span class="lj-eyebrow lj-eyebrow--pill">AI &amp; automation blog</span>
+    <h1>Automation ideas you can <span class="lj-gradient-text--ink">use this week</span></h1>
+    <p class="lj-lead">Practical playbooks for growing businesses: workflows worth automating, how AI fits into real operations, and beginner tech skills. New articles every day.</p>
+    <div class="lj-btn-row"><a class="lj-btn lj-btn-primary" href="#articles">Browse ${sorted.length} articles ${icon("arrowRight")}</a><a class="lj-btn lj-btn-ghost" href="${main("/guides/")}">Read the Guides</a><a class="lj-btn lj-btn-ghost" href="/feed.xml">${icon("rss")}RSS</a></div>
+  </div>
+</section>
 
-  return page(headHtml, mainHtml);
+<section class="lj-section">
+  <div class="lj-container">
+    ${featuredHtml}
+  </div>
+</section>
+
+<section class="lj-section lj-section--mist" id="articles" aria-labelledby="articles-title">
+  <div class="lj-container">
+    <div class="lj-section-head lj-section-head--split"><div><span class="lj-eyebrow">All articles</span><h2 id="articles-title">Browse by topic</h2></div></div>
+    <div class="lj-blog-controls">
+      <div class="lj-input-wrap">${icon("search")}<label class="lj-sr-only" for="search-input">Search articles</label><input type="search" id="search-input" class="lj-input" placeholder="Search articles&hellip;" autocomplete="off"></div>
+      <label class="lj-sr-only" for="sort-select">Sort articles</label>
+      <select id="sort-select" class="lj-input">
+        <option value="date-desc">Newest first</option>
+        <option value="date-asc">Oldest first</option>
+        <option value="title-asc">Title: A to Z</option>
+        <option value="title-desc">Title: Z to A</option>
+      </select>
+    </div>
+    <div class="lj-filter-chips" role="group" aria-label="Filter by topic" id="topic-chips">
+      <button type="button" class="lj-chip" data-topic="" aria-pressed="true">All topics <span class="lj-chip-count">${sorted.length}</span></button>${chips}
+    </div>
+    <p id="posts-status" class="lj-filter-status" role="status" aria-live="polite" style="margin:18px 0 0"></p>
+    <div id="posts-list" class="lj-grid lj-grid-3 lj-mt-lg" data-total="${rest.length}" data-page-size="${PAGE_SIZE}">
+${first.map((p, i) => "      " + postCard(p, { eager: i === 0 })).join("\n")}
+    </div>
+    <nav id="pagination" class="lj-pagination" aria-label="Blog pagination"${rest.length > PAGE_SIZE ? "" : " hidden"}></nav>
+  </div>
+</section>
+
+<section class="lj-section">
+  <div class="lj-container">
+    <div class="lj-newsletter">
+      <div><h2>Get new automation ideas in your inbox</h2><p>One practical workflow at a time, from the team that builds them. Subscribe from the button in the corner of this page, or follow along by RSS.</p></div>
+      <div class="lj-btn-row"><a class="lj-btn lj-btn-primary" href="/feed.xml">${icon("rss")}Subscribe by RSS</a><a class="lj-btn lj-btn-ghost" href="${main("/automations/")}">Browse Automations</a></div>
+    </div>
+  </div>
+</section>
+<div class="lj-newsletter-corner"><div data-tf-live="01KZAMHRP7TNX59ZZ7J2GXR8E1"></div></div>`;
+
+  return page(headHtml, mainHtml, '<script src="https://embed.typeform.com/next/embed.js" defer></script>');
 }
 
 // ---------------------------------------------------------------------------
-// Newsletter unsubscribe page
+// Newsletter unsubscribe page and 404
 // ---------------------------------------------------------------------------
 
 function buildUnsubscribePage() {
@@ -546,30 +552,127 @@ function buildUnsubscribePage() {
     canonical: SITE_URL + "/newsletter/unsubscibe/",
     scripts: '<script src="https://embed.typeform.com/next/embed.js" defer></script>',
   });
-  const mainHtml = `<main id="main" class="lj-blog" tabindex="-1">
-  <section class="lj-blog-hero">
-    <div class="lj-blog-hero-inner">
-      <span class="lj-eyebrow">Newsletter</span>
-      <h1>Unsubscribe from our Newsletter</h1>
-    </div>
-  </section>
-  <section class="lj-blog-list">
-    <div class="lj-blog-inner lj-unsubscribe">
-      <div data-tf-live="01KZAN1VGA3KXYRTZH1WWXKKER"></div>
-      <p class="lj-unsubscribe-back"><a class="lj-btn lj-btn-outline" href="/">&larr; Back to the Blog</a></p>
-    </div>
-  </section>
-</main>`;
+  const mainHtml = `<section class="lj-page-hero lj-page-hero--center">
+  <div class="lj-container">
+    <span class="lj-eyebrow lj-eyebrow--pill">Newsletter</span>
+    <h1>Unsubscribe from our newsletter</h1>
+    <p class="lj-lead">Sorry to see you go. Confirm below and we'll stop sending the newsletter.</p>
+  </div>
+</section>
+<section class="lj-section">
+  <div class="lj-container lj-container--narrow">
+    <div class="lj-embed"><div data-tf-live="01KZAN1VGA3KXYRTZH1WWXKKER"></div></div>
+    <p class="lj-center lj-mt-lg"><a class="lj-btn lj-btn-ghost" href="/">${icon("arrowLeft")} Back to the Blog</a></p>
+  </div>
+</section>`;
   return page(headHtml, mainHtml);
+}
+
+function buildNotFoundPage() {
+  const headHtml = head({ title: "Page Not Found | LJ Web Management Blog", description: "The page you were looking for could not be found.", robots: "noindex, follow" });
+  const mainHtml = `<section class="lj-page-hero lj-page-hero--dark lj-page-hero--center" style="padding-block:96px">
+  <div class="lj-container">
+    <span class="lj-eyebrow lj-eyebrow--pill">Error 404</span>
+    <h1>This page couldn't be found</h1>
+    <p class="lj-lead" style="margin-inline:auto">The article you're looking for doesn't exist or has moved. Try searching, or head back to the latest posts.</p>
+    <div style="max-width:560px;margin:28px auto 0"><button type="button" class="lj-hero-search" data-lj-search-open aria-label="Search the site">${icon("search")}<span class="lj-hero-search-text">Search articles, automations, and guides</span><span class="lj-btn lj-btn-primary lj-btn-sm">Search</span></button></div>
+    <div class="lj-hero-quick" style="justify-content:center"><a href="/">Latest articles</a><a href="${main("/")}">LJ Web Management home</a><a href="${main("/automations/")}">Automations</a><a href="${main("/guides/")}">Guides</a></div>
+  </div>
+</section>`;
+  return page(headHtml, mainHtml);
+}
+
+// ---------------------------------------------------------------------------
+// Feeds: RSS, sitemap, and the latest-posts script the main site embeds.
+// ---------------------------------------------------------------------------
+
+function xmlEscape(s) {
+  return escapeHtml(s).replace(/'/g, "&apos;");
+}
+
+function buildFeed(posts) {
+  const items = sortPosts(posts)
+    .slice(0, 50)
+    .map(
+      (p) =>
+        "    <item>\n" +
+        "      <title>" + xmlEscape(p.title) + "</title>\n" +
+        "      <link>" + postUrl(p.slug) + "</link>\n" +
+        '      <guid isPermaLink="true">' + postUrl(p.slug) + "</guid>\n" +
+        "      <pubDate>" + new Date(p.date + "T12:00:00Z").toUTCString() + "</pubDate>\n" +
+        "      <category>" + xmlEscape(p.category || "") + "</category>\n" +
+        "      <description>" + xmlEscape(p.excerpt || "") + "</description>\n" +
+        "    </item>"
+    )
+    .join("\n");
+  return (
+    '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n' +
+    "    <title>" + BLOG_NAME + "</title>\n    <link>" + BLOG_HOME + "</link>\n" +
+    "    <description>Practical AI and automation insights for growing businesses.</description>\n    <language>en-us</language>\n" +
+    '    <atom:link href="' + SITE_URL + '/feed.xml" rel="self" type="application/rss+xml"/>\n' +
+    items +
+    "\n  </channel>\n</rss>\n"
+  );
+}
+
+function buildSitemap(posts) {
+  const urls = [{ loc: BLOG_HOME, lastmod: sortPosts(posts)[0].date, freq: "daily", pri: "1.0" }].concat(
+    sortPosts(posts).map((p) => ({ loc: postUrl(p.slug), lastmod: p.date, freq: "monthly", pri: "0.7" }))
+  );
+  return (
+    '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    urls.map((u) => "  <url>\n    <loc>" + u.loc + "</loc>\n    <lastmod>" + u.lastmod + "</lastmod>\n    <changefreq>" + u.freq + "</changefreq>\n    <priority>" + u.pri + "</priority>\n  </url>").join("\n") +
+    "\n</urlset>\n"
+  );
+}
+
+// Script loaded by www.ljwebmanagement.com (home page and guides hub) to show
+// the newest posts. It fills every [data-lj-latest-posts] element.
+function buildLatestPostsScript(posts) {
+  const latest = sortPosts(posts)
+    .slice(0, 6)
+    .map((p) => {
+      const img = imageSources(p);
+      return { t: p.title, u: postUrl(p.slug), d: p.date, dd: p.dateDisplay, c: p.category, e: p.excerpt && p.excerpt.length > 130 ? p.excerpt.slice(0, 129).replace(/\s+\S*$/, "") + "…" : p.excerpt, i: img ? SITE_URL + img.src : "" };
+    });
+  const arrow = icon("arrowRight").replace(/'/g, "\\'");
+  return (
+    "/* Generated by scripts/templates.js on every publish. Do not edit. */\n" +
+    "(function () {\n" +
+    "  var posts = " + JSON.stringify(latest).replace(/</g, "\\u003c") + ";\n" +
+    "  function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;'); }\n" +
+    "  function card(p) {\n" +
+    "    return '<a class=\"lj-card lj-post-card\" href=\"' + esc(p.u) + '\">' +\n" +
+    "      (p.i ? '<span class=\"lj-post-card-media\"><img src=\"' + esc(p.i) + '\" width=\"640\" height=\"360\" alt=\"\" loading=\"lazy\" decoding=\"async\"></span>' : '') +\n" +
+    "      '<span class=\"lj-post-card-body\"><span class=\"lj-post-card-meta\">' + (p.c ? '<span class=\"lj-tag\">' + esc(p.c) + '</span>' : '') +\n" +
+    "      '<time datetime=\"' + esc(p.d) + '\">' + esc(p.dd) + '</time></span><h3>' + esc(p.t) + '</h3>' + (p.e ? '<p>' + esc(p.e) + '</p>' : '') +\n" +
+    "      '<span class=\"lj-link-arrow\">Read article " + arrow + "</span></span></a>';\n" +
+    "  }\n" +
+    "  function render() {\n" +
+    "    var nodes = document.querySelectorAll('[data-lj-latest-posts]');\n" +
+    "    for (var i = 0; i < nodes.length; i++) {\n" +
+    "      var n = parseInt(nodes[i].getAttribute('data-count'), 10) || 3;\n" +
+    "      nodes[i].innerHTML = posts.slice(0, n).map(card).join('');\n" +
+    "    }\n" +
+    "  }\n" +
+    "  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render); else render();\n" +
+    "})();\n"
+  );
 }
 
 module.exports = {
   SITE_URL,
   PAGE_SIZE,
+  TOPICS,
   escapeHtml,
   ensureWebp,
+  assignTopics,
   buildPostPage,
   buildIndexPage,
   buildUnsubscribePage,
+  buildNotFoundPage,
+  buildFeed,
+  buildSitemap,
+  buildLatestPostsScript,
   postUrl,
 };

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LJ Web Management Blog</title>
+    <link>https://blog.ljwebmanagement.com/</link>
+    <description>Practical AI and automation insights for growing businesses.</description>
+    <language>en-us</language>
+    <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Context for Beginners: Give an Assistant the Right Information Before You Ask for Help</title>
+      <link>https://blog.ljwebmanagement.com/posts/ai-context-for-beginners-give-an-assistant-the-right-information-before-you-ask-for-help.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-context-for-beginners-give-an-assistant-the-right-information-before-you-ask-for-help.html</guid>
+      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners assume an AI assistant gives better answers because it knows more words. In practice, the quality of the information you provide often…</description>
+    </item>
+    <item>
+      <title>SQL Basics for Beginners: Ask Better Questions of Everyday Data</title>
+      <link>https://blog.ljwebmanagement.com/posts/sql-basics-for-beginners-ask-better-questions-of-everyday-data.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/sql-basics-for-beginners-ask-better-questions-of-everyday-data.html</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners think working with data means mastering complicated dashboards or becoming a full-time programmer. A better first step is learning how to…</description>
+    </item>
+    <item>
+      <title>How to Use Browser DevTools as a Beginner: Inspect, Test, and Fix Your First Web Page</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-to-use-browser-devtools-as-a-beginner-inspect-test-and-fix-your-first-web-page.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-use-browser-devtools-as-a-beginner-inspect-test-and-fix-your-first-web-page.html</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>When a first web page looks wrong, beginners often change several lines of HTML or CSS at once and hope the next refresh explains what happened. Browser…</description>
+    </item>
+    <item>
+      <title>How to Map a Repetitive Task Before You Automate It</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-to-map-a-repetitive-task-before-you-automate-it.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-map-a-repetitive-task-before-you-automate-it.html</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people start learning automation by opening Zapier, Make, or an AI assistant and looking for a button that will connect two apps. That can be…</description>
+    </item>
+    <item>
+      <title>How to Choose Your First Cybersecurity Course: A Beginner Path From Passwords to Safer Systems</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-to-choose-your-first-cybersecurity-course-a-beginner-path-from-passwords-to-safer-systems.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-choose-your-first-cybersecurity-course-a-beginner-path-from-passwords-to-safer-systems.html</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Choosing a first cybersecurity course can feel harder than the first lesson. Course pages often mention networks, threats, encryption, identity…</description>
+    </item>
+    <item>
+      <title>CSS Grid for Beginners: Build a Clean Multi-Section Layout Without Guessing</title>
+      <link>https://blog.ljwebmanagement.com/posts/css-grid-for-beginners-build-a-clean-multi-section-layout-without-guessing.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/css-grid-for-beginners-build-a-clean-multi-section-layout-without-guessing.html</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners can make a web page look acceptable in one browser window, then feel lost when the design needs a sidebar, a content area, a card row, and…</description>
+    </item>
+    <item>
+      <title>MFA for Beginners: Build a Safer Account-Security Routine</title>
+      <link>https://blog.ljwebmanagement.com/posts/mfa-for-beginners-build-a-safer-account-security-routine.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/mfa-for-beginners-build-a-safer-account-security-routine.html</guid>
+      <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners know that multi-factor authentication, or MFA, is important, but still treat it as a button to switch on once and forget. The real skill…</description>
+    </item>
+    <item>
+      <title>How to Debug Beginner JavaScript Without Guessing</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-to-debug-beginner-javascript-without-guessing.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-debug-beginner-javascript-without-guessing.html</guid>
+      <pubDate>Sat, 17 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many new developers can follow a JavaScript lesson until the browser stops doing what they expected. A button does nothing, a value appears as undefined…</description>
+    </item>
+    <item>
+      <title>Prompt Templates vs. Detailed Instructions: A Beginner Practice Guide for Better AI Results</title>
+      <link>https://blog.ljwebmanagement.com/posts/prompt-templates-vs-detailed-instructions-a-beginner-practice-guide-for-better-ai-results.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/prompt-templates-vs-detailed-instructions-a-beginner-practice-guide-for-better-ai-results.html</guid>
+      <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners ask an AI tool a reasonable question, receive an uneven answer, and assume the tool is unreliable. Often, the real problem is not the…</description>
+    </item>
+    <item>
+      <title>Website Accessibility Basics for Beginners: Make a First Page Easier to Use</title>
+      <link>https://blog.ljwebmanagement.com/posts/website-accessibility-basics-for-beginners-make-a-first-page-easier-to-use.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/website-accessibility-basics-for-beginners-make-a-first-page-easier-to-use.html</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners learn to build a web page by focusing on what it looks like in a browser. Accessibility adds a second question: can people with different…</description>
+    </item>
+    <item>
+      <title>Beginner HTML Forms: Build a Contact Page That Collects Useful Information</title>
+      <link>https://blog.ljwebmanagement.com/posts/beginner-html-forms-build-a-contact-page-that-collects-useful-information.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/beginner-html-forms-build-a-contact-page-that-collects-useful-information.html</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people can make a web page display a heading, image, and paragraph but feel less confident when a visitor needs to send information back. HTML forms…</description>
+    </item>
+    <item>
+      <title>JavaScript Functions for Beginners: Turn Repeated Code Into Reusable Tools</title>
+      <link>https://blog.ljwebmanagement.com/posts/javascript-functions-for-beginners-turn-repeated-code-into-reusable-tools.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-functions-for-beginners-turn-repeated-code-into-reusable-tools.html</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people learning JavaScript can make a button respond, change text on a page, or calculate a total, but their code starts to feel messy as soon as…</description>
+    </item>
+    <item>
+      <title>Zapier vs Make for Beginners: Which No-Code Automation Tool Should You Learn First?</title>
+      <link>https://blog.ljwebmanagement.com/posts/zapier-vs-make-for-beginners-which-no-code-automation-tool-should-you-learn-first.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/zapier-vs-make-for-beginners-which-no-code-automation-tool-should-you-learn-first.html</guid>
+      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners want to learn no-code automation but get stuck comparing tool names before they have built a single useful workflow. Zapier and Make can…</description>
+    </item>
+    <item>
+      <title>Git Basics for Beginners: Track Changes and Recover From Coding Mistakes</title>
+      <link>https://blog.ljwebmanagement.com/posts/git-basics-for-beginners-track-changes-and-recover-from-coding-mistakes.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/git-basics-for-beginners-track-changes-and-recover-from-coding-mistakes.html</guid>
+      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Git is the skill that lets a beginner change code without feeling trapped by every change. If you have ever hesitated to edit a working page because one…</description>
+    </item>
+    <item>
+      <title>AI Answer Verification for Beginners: Five Checks Before You Use Generated Content</title>
+      <link>https://blog.ljwebmanagement.com/posts/ai-answer-verification-for-beginners-five-checks-before-you-use-generated-content.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-answer-verification-for-beginners-five-checks-before-you-use-generated-content.html</guid>
+      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>AI can produce a polished answer in seconds, but a polished answer is not automatically a dependable one. A beginner may ask an AI tool to summarize a…</description>
+    </item>
+    <item>
+      <title>React State vs Props for Beginners: Know Where Your Interface Data Belongs</title>
+      <link>https://blog.ljwebmanagement.com/posts/react-state-vs-props-for-beginners-know-where-your-interface-data-belongs.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/react-state-vs-props-for-beginners-know-where-your-interface-data-belongs.html</guid>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>React becomes much easier to reason about when you can answer one practical question: should this piece of interface data be owned by a component, or…</description>
+    </item>
+    <item>
+      <title>Build a Beginner JavaScript Quiz: A First Project With Variables, Events, and DOM Updates</title>
+      <link>https://blog.ljwebmanagement.com/posts/build-a-beginner-javascript-quiz-a-first-project-with-variables-events-and-dom-updates.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/build-a-beginner-javascript-quiz-a-first-project-with-variables-events-and-dom-updates.html</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>JavaScript becomes easier to understand when each concept has a visible job. A small browser quiz gives beginners a focused project where variables hold…</description>
+    </item>
+    <item>
+      <title>API Responses for Beginners: Read JSON and Use Data in a Small App</title>
+      <link>https://blog.ljwebmanagement.com/posts/api-responses-for-beginners-read-json-and-use-data-in-a-small-app.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/api-responses-for-beginners-read-json-and-use-data-in-a-small-app.html</guid>
+      <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginner developers can build a button, change a color, or print a message on a page, but they freeze when an app needs information from somewhere…</description>
+    </item>
+    <item>
+      <title>CSS Flexbox for Beginners: Build a Responsive Page Section Without Guessing</title>
+      <link>https://blog.ljwebmanagement.com/posts/css-flexbox-for-beginners-build-a-responsive-page-section-without-guessing.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/css-flexbox-for-beginners-build-a-responsive-page-section-without-guessing.html</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners can write a little HTML and change a color in CSS, but they still feel stuck when three cards refuse to sit in a neat row or a page breaks…</description>
+    </item>
+    <item>
+      <title>How Training Data Shapes AI Answers: A Beginner Practice Guide</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-training-data-shapes-ai-answers-a-beginner-practice-guide.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-training-data-shapes-ai-answers-a-beginner-practice-guide.html</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>When a beginner asks why an AI tool gives a confident but unhelpful answer, the explanation often starts with the prompt. The more important question may…</description>
+    </item>
+    <item>
+      <title>What to Build First When Learning to Code: Three Beginner Projects That Teach Real Skills</title>
+      <link>https://blog.ljwebmanagement.com/posts/what-to-build-first-when-learning-to-code-three-beginner-projects-that-teach-real-skills.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-to-build-first-when-learning-to-code-three-beginner-projects-that-teach-real-skills.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Learning to code gets easier when the first project is small enough to finish and useful enough to explain. Many beginners choose a project because it…</description>
+    </item>
+    <item>
+      <title>Beginner Phishing Detection Practice: Five Clues to Check Before You Click</title>
+      <link>https://blog.ljwebmanagement.com/posts/beginner-phishing-detection-practice-five-clues-to-check-before-you-click.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/beginner-phishing-detection-practice-five-clues-to-check-before-you-click.html</guid>
+      <pubDate>Sat, 03 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Phishing detection is one of the most useful cybersecurity skills a beginner can practice because a single rushed click can expose an account, a company…</description>
+    </item>
+    <item>
+      <title>AI at Work for Beginners: Three Everyday Tasks to Practice This Week</title>
+      <link>https://blog.ljwebmanagement.com/posts/ai-at-work-for-beginners-three-everyday-tasks-to-practice-this-week.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-at-work-for-beginners-three-everyday-tasks-to-practice-this-week.html</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people want to use AI at work, but the first step is often unclear. Should you ask it to write an email, summarize a meeting, analyze a spreadsheet…</description>
+    </item>
+    <item>
+      <title>Portfolio Project Practice for Beginners: Turn HTML, CSS, and JavaScript Into Proof You Can Build</title>
+      <link>https://blog.ljwebmanagement.com/posts/portfolio-project-practice-for-beginners-turn-html-css-and-javascript-into-proof-you-can-build.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/portfolio-project-practice-for-beginners-turn-html-css-and-javascript-into-proof-you-can-build.html</guid>
+      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…</description>
+    </item>
+    <item>
+      <title>No-Code Automation Mistakes Beginners Make When Connecting Apps</title>
+      <link>https://blog.ljwebmanagement.com/posts/no-code-automation-mistakes-beginners-make-when-connecting-apps.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/no-code-automation-mistakes-beginners-make-when-connecting-apps.html</guid>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>No-code automation can make a small team feel larger by moving information between the apps people already use. A form response can become a task, a…</description>
+    </item>
+    <item>
+      <title>How to Pick a First Tech Skill When You Have Limited Study Time</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-to-pick-a-first-tech-skill-when-you-have-limited-study-time.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-pick-a-first-tech-skill-when-you-have-limited-study-time.html</guid>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners do not struggle because they lack interest in technology. They struggle because every course seems to promise a different future. One…</description>
+    </item>
+    <item>
+      <title>First AI Workflow Checklist: Five Steps From Repetitive Task to Useful Automation</title>
+      <link>https://blog.ljwebmanagement.com/posts/first-ai-workflow-checklist-five-steps-from-repetitive-task-to-useful-automation.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/first-ai-workflow-checklist-five-steps-from-repetitive-task-to-useful-automation.html</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people want to learn AI automation, but the first project often feels larger than it needs to be. They imagine connecting several business apps…</description>
+    </item>
+    <item>
+      <title>Python Basics for Beginners: Three Small Programs That Build Coding Confidence</title>
+      <link>https://blog.ljwebmanagement.com/posts/python-basics-for-beginners-three-small-programs-that-build-coding-confidence.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/python-basics-for-beginners-three-small-programs-that-build-coding-confidence.html</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people who want to learn coding begin with a difficult question: what should the first real program actually do? A blank editor can make programming…</description>
+    </item>
+    <item>
+      <title>How to Debug Beginner JavaScript: A Practical Workflow for Finding Errors</title>
+      <link>https://blog.ljwebmanagement.com/posts/how-to-debug-beginner-javascript-a-practical-workflow-for-finding-errors.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-debug-beginner-javascript-a-practical-workflow-for-finding-errors.html</guid>
+      <pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>JavaScript debugging is the skill of finding out why a page does not behave as you expected, then making one small, testable change at a time. For…</description>
+    </item>
+    <item>
+      <title>Neural Networks for Beginners: The Plain Language Concepts Behind Modern AI</title>
+      <link>https://blog.ljwebmanagement.com/posts/neural-networks-for-beginners-the-plain-language-concepts-behind-modern-ai.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/neural-networks-for-beginners-the-plain-language-concepts-behind-modern-ai.html</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Neural networks are one of the ideas behind many AI tools, yet the phrase can make beginner learning feel more technical than it needs to be. A neural…</description>
+    </item>
+    <item>
+      <title>Build Your First React Component: A Small Project for Frontend Beginners</title>
+      <link>https://blog.ljwebmanagement.com/posts/build-your-first-react-component-a-small-project-for-frontend-beginners.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/build-your-first-react-component-a-small-project-for-frontend-beginners.html</guid>
+      <pubDate>Thu, 24 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>React can feel confusing when you first hear words like component, prop, state, and render, but the fastest way to understand it is to build one small…</description>
+    </item>
+    <item>
+      <title>What You Learn Building Your First Web Page With HTML, CSS, and JavaScript</title>
+      <link>https://blog.ljwebmanagement.com/posts/what-you-learn-building-your-first-web-page-with-html-css-and-javascript.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-you-learn-building-your-first-web-page-with-html-css-and-javascript.html</guid>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners want to learn coding, but they are not always sure where to start or what a first project should actually teach them. Building a simple…</description>
+    </item>
+    <item>
+      <title>Cybersecurity Basics for Beginners: Account Safety Skills You Can Use This Week</title>
+      <link>https://blog.ljwebmanagement.com/posts/cybersecurity-basics-for-beginners-account-safety-skills-you-can-use-this-week.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/cybersecurity-basics-for-beginners-account-safety-skills-you-can-use-this-week.html</guid>
+      <pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people know they should be more careful online, but they do not know which cybersecurity basics to learn first. This beginner guide focuses on…</description>
+    </item>
+    <item>
+      <title>Your First No-Code Automation Workflow: A Beginner Guide to Connecting Apps</title>
+      <link>https://blog.ljwebmanagement.com/posts/your-first-no-code-automation-workflow-a-beginner-guide-to-connecting-apps.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/your-first-no-code-automation-workflow-a-beginner-guide-to-connecting-apps.html</guid>
+      <pubDate>Mon, 21 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>A lot of beginners want to learn automation, but they get stuck before they build their first workflow because the tools look more complicated than the…</description>
+    </item>
+    <item>
+      <title>CRM Next-Step Aging Review With AI That Finds Stalled Deals Before Forecast Meetings</title>
+      <link>https://blog.ljwebmanagement.com/posts/crm-next-step-aging-review-with-ai-that-finds-stalled-deals-before-forecast-meetings.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/crm-next-step-aging-review-with-ai-that-finds-stalled-deals-before-forecast-meetings.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Sales &amp; CRM</category>
+      <description>A CRM next-step aging review helps sales teams find deals that look active in the pipeline but have not had a meaningful buyer action, seller follow-up…</description>
+    </item>
+    <item>
+      <title>Field Service Parts Reservation Review That Stops Truck Rolls Before Inventory Is Confirmed</title>
+      <link>https://blog.ljwebmanagement.com/posts/field-service-parts-reservation-review-that-stops-truck-rolls-before-inventory-is-confirmed.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/field-service-parts-reservation-review-that-stops-truck-rolls-before-inventory-is-confirmed.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Field Service</category>
+      <description>Field service teams lose money when a technician leaves for a job before the required part is actually available, reserved, and matched to the work…</description>
+    </item>
+    <item>
+      <title>Five Signs Your Lead Source Attribution Needs AI Review Before Campaign ROI Reports</title>
+      <link>https://blog.ljwebmanagement.com/posts/five-signs-your-lead-source-attribution-needs-ai-review-before-campaign-roi-reports.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/five-signs-your-lead-source-attribution-needs-ai-review-before-campaign-roi-reports.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Marketing &amp; Website</category>
+      <description>Lead source attribution looks tidy until the campaign ROI report reaches the owner, CFO, or sales leader who has to decide where the next dollar goes. A…</description>
+    </item>
+    <item>
+      <title>Monthly KPI Exception Briefs With AI: How to Find the Variances Leaders Should Discuss</title>
+      <link>https://blog.ljwebmanagement.com/posts/monthly-kpi-exception-briefs-with-ai-how-to-find-the-variances-leaders-should-discuss.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/monthly-kpi-exception-briefs-with-ai-how-to-find-the-variances-leaders-should-discuss.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Reporting &amp; Leadership</category>
+      <description>Monthly KPI meetings often get pulled into the wrong work. Leaders spend the first half of the meeting asking what changed, the second half debating…</description>
+    </item>
+    <item>
+      <title>Prompt Engineering Practice Exercises for Beginners Who Want Better AI Answers</title>
+      <link>https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-exercises-for-beginners-who-want-better-ai-answers.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-exercises-for-beginners-who-want-better-ai-answers.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people try AI tools once or twice, get a vague answer, and assume the tool is either overrated or too advanced for them. The real issue is often…</description>
+    </item>
+    <item>
+      <title>Support Macro Drift Scorecard for Finding Bad Answers Before Customers Escalate</title>
+      <link>https://blog.ljwebmanagement.com/posts/support-macro-drift-scorecard-for-finding-bad-answers-before-customers-escalate.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/support-macro-drift-scorecard-for-finding-bad-answers-before-customers-escalate.html</guid>
+      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Customer Experience</category>
+      <description>Support macros are supposed to make customer service faster, more consistent, and easier to coach. They give agents approved language for common…</description>
+    </item>
+    <item>
+      <title>SaaS Offboarding Access Checklist That Finds Permission Gaps After Employees Leave</title>
+      <link>https://blog.ljwebmanagement.com/posts/saas-offboarding-access-checklist-that-finds-permission-gaps-after-employees-leave.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/saas-offboarding-access-checklist-that-finds-permission-gaps-after-employees-leave.html</guid>
+      <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
+      <category>HR &amp; Team</category>
+      <description>Employee offboarding often looks complete because HR closed the personnel record, IT disabled the email account, and the manager collected a laptop. The…</description>
+    </item>
+    <item>
+      <title>Vendor Master Data Change Review With AI That Catches Payment Risk Before Records Update</title>
+      <link>https://blog.ljwebmanagement.com/posts/vendor-master-data-change-review-with-ai-that-catches-payment-risk-before-records-update.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/vendor-master-data-change-review-with-ai-that-catches-payment-risk-before-records-update.html</guid>
+      <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Compliance &amp; Data</category>
+      <description>Vendor master data changes look routine until one bad update redirects money, breaks tax reporting, or slows a supplier that the business depends on. A…</description>
+    </item>
+    <item>
+      <title>What Changes When AI Reviews Timesheet Exceptions Before Payroll Closes?</title>
+      <link>https://blog.ljwebmanagement.com/posts/what-changes-when-ai-reviews-timesheet-exceptions-before-payroll-closes.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-changes-when-ai-reviews-timesheet-exceptions-before-payroll-closes.html</guid>
+      <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
+      <category>HR &amp; Team</category>
+      <description>Payroll usually looks simple until the final review window opens. A few missed punches, late approvals, duplicate shift notes, and overtime questions can…</description>
+    </item>
+    <item>
+      <title>Create an AI Payment Method Readiness Workflow Before Recurring Revenue Gets Interrupted</title>
+      <link>https://blog.ljwebmanagement.com/posts/create-an-ai-payment-method-readiness-workflow-before-recurring-revenue-gets-interrupted.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/create-an-ai-payment-method-readiness-workflow-before-recurring-revenue-gets-interrupted.html</guid>
+      <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Finance &amp; Billing</category>
+      <description>Recurring revenue depends on a quiet promise: when the next billing date arrives, the customer is ready, the payment method works, the invoice is…</description>
+    </item>
+    <item>
+      <title>Automate Sales Sample Request Reviews Before Free Product Drains Margin</title>
+      <link>https://blog.ljwebmanagement.com/posts/automate-sales-sample-request-reviews-before-free-product-drains-margin.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/automate-sales-sample-request-reviews-before-free-product-drains-margin.html</guid>
+      <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Finance &amp; Billing</category>
+      <description>Sales sample requests usually begin with good intent. A prospect wants to test a product, a distributor wants a display set, an account manager wants to…</description>
+    </item>
+    <item>
+      <title>Create an AI Delivery Instruction Verification Workflow Before Orders Leave the Dock</title>
+      <link>https://blog.ljwebmanagement.com/posts/create-an-ai-delivery-instruction-verification-workflow-before-orders-leave-the-dock.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/create-an-ai-delivery-instruction-verification-workflow-before-orders-leave-the-dock.html</guid>
+      <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Operations &amp; Supply Chain</category>
+      <description>Delivery instructions have become more complicated than the simple notes many companies still treat them as. A customer may need a liftgate, a delivery…</description>
+    </item>
+    <item>
+      <title>Automate Customer Specification Change Intake Before Teams Build From Old Requirements</title>
+      <link>https://blog.ljwebmanagement.com/posts/automate-customer-specification-change-intake-before-teams-build-from-old-requirements.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/automate-customer-specification-change-intake-before-teams-build-from-old-requirements.html</guid>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Customer Experience</category>
+      <description>Customer requirements rarely stay still after the first order, project kickoff, or signed scope. A buyer asks for a packaging change. An engineer…</description>
+    </item>
+    <item>
+      <title>Create an AI Returned Mail Recovery Workflow Before Bad Addresses Drain Revenue</title>
+      <link>https://blog.ljwebmanagement.com/posts/create-an-ai-returned-mail-recovery-workflow-before-bad-addresses-drain-revenue.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/create-an-ai-returned-mail-recovery-workflow-before-bad-addresses-drain-revenue.html</guid>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Compliance &amp; Data</category>
+      <description>Returned mail looks small because each individual envelope, postcard, invoice, renewal notice, tax form, welcome packet, product catalog, statement, or…</description>
+    </item>
+    <item>
+      <title>Automate CRM Meeting Note Quality Checks Before Pipeline Signals Get Noisy</title>
+      <link>https://blog.ljwebmanagement.com/posts/automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy.html</guid>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Sales &amp; CRM</category>
+      <description>CRM meeting notes are supposed to help teams understand buyer intent, next steps, blockers, urgency, and relationship context. In practice, notes often…</description>
+    </item>
+    <item>
+      <title>Build an AI Customer Commitments Ledger Before Promises Become Operational Risk</title>
+      <link>https://blog.ljwebmanagement.com/posts/build-an-ai-customer-commitments-ledger-before-promises-become-operational-risk.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/build-an-ai-customer-commitments-ledger-before-promises-become-operational-risk.html</guid>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+      <category>Customer Experience</category>
+      <description>Most companies have a surprisingly weak memory for customer promises. A sales rep agrees to follow up with a revised quote by Friday. A project manager…</description>
+    </item>
+  </channel>
+</rss>

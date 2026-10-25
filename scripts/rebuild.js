@@ -1,4 +1,4 @@
-// Re-renders every existing post, the blog home and the newsletter page with
+// Re-renders every existing post, the blog home, the feeds and the newsletter page with
 // the current templates (scripts/templates.js). Post URLs, titles, dates and
 // body copy are read back from the existing files and kept as they are.
 //
@@ -19,13 +19,15 @@ const SECTION_LABELS = [
   "Business Takeaway",
 ];
 
-// Pulls the post body out of either the original template
-// (<article class="post-content">) or the current one (lj-post-content).
+// Pulls the post body out of the current template (between the post-body
+// markers) or either of the older ones (post-content / lj-post-content).
 function extractBody(html, slug) {
-  let m = html.match(/<article class="post-content">\n?([\s\S]*?)\n?\s*<\/article>/);
+  let m = html.match(/<!-- post-body:start -->\n([\s\S]*?)\n<!-- post-body:end -->/);
+  if (!m) m = html.match(/<article class="post-content">\n?([\s\S]*?)\n?\s*<\/article>/);
   if (!m) m = html.match(/<div class="lj-post-content">\n([\s\S]*?)\n\s*<\/div>\n<aside class="lj-post-cta"/);
   if (!m) throw new Error("Could not find the post body in posts/" + slug + ".html");
-  let body = m[1];
+  // Heading ids are added at render time for the table of contents.
+  let body = m[1].replace(/<h2 id="[^"]*">/g, "<h2>");
   SECTION_LABELS.forEach((label) => {
     body = body.split("<p>" + label + "</p>").join("<h2>" + label + "</h2>");
   });
@@ -55,10 +57,12 @@ async function main() {
     post.webp = await templates.ensureWebp(post.image, post.slug);
   }
   uniqueDescriptions(posts);
+  templates.assignTopics(posts);
 
   for (const post of posts) {
     const html = templates.buildPostPage(
-      Object.assign({ description: post.excerpt, bodyHtml: bodies[post.slug] }, post)
+      Object.assign({ description: post.excerpt, bodyHtml: bodies[post.slug] }, post),
+      posts
     );
     fs.writeFileSync(path.join(POSTS_DIR, post.slug + ".html"), html);
   }
@@ -69,7 +73,7 @@ async function main() {
     path.join(ROOT, "newsletter", "unsubscibe", "index.html"),
     templates.buildUnsubscribePage()
   );
-  console.log("Rebuilt " + posts.length + " posts, index.html and the newsletter page.");
+  console.log("Rebuilt " + posts.length + " posts, the blog home, feeds and the newsletter page.");
 }
 
 main().catch((err) => {

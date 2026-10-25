@@ -1,22 +1,33 @@
-// Blog home: search, sort and pagination. The first page of cards is already
-// in the HTML (built by scripts/templates.js), so nothing is re-rendered until
-// the visitor searches, sorts or changes page.
+// Blog home: search, topic filters, sorting and pagination. The first page
+// of cards is already in the HTML (built by scripts/templates.js), so nothing
+// is re-rendered until the visitor searches, filters, sorts or changes page.
+// State is mirrored in the URL (?topic=, ?q=, ?sort=, ?page=) so filtered
+// views can be shared and linked to from posts.
 (function () {
   'use strict';
 
-  var PAGE_SIZE = 20;
-  var allPosts = null;
-  var loading = null;
-  var currentPage = 1;
   var container = document.getElementById('posts-list');
   var pagination = document.getElementById('pagination');
   var status = document.getElementById('posts-status');
   var searchInput = document.getElementById('search-input');
   var sortSelect = document.getElementById('sort-select');
-  if (!container || !pagination) return;
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#topic-chips [data-topic]'));
+  if (!container || !pagination || !searchInput || !sortSelect) return;
 
-  var initialTotal = parseInt(container.getAttribute('data-total'), 10) || 0;
-  renderPagination(Math.max(1, Math.ceil(initialTotal / PAGE_SIZE)));
+  var PAGE_SIZE = parseInt(container.getAttribute('data-page-size'), 10) || 18;
+  var CARD_SIZES = '(max-width: 640px) calc(100vw - 32px), (max-width: 960px) 45vw, 380px';
+  var ARROW = '<svg class="lj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>';
+  var allPosts = null;
+  var loading = null;
+  var state = { topic: '', q: '', sort: 'date-desc', page: 1 };
+
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
 
   function loadPosts() {
     if (allPosts) return Promise.resolve(allPosts);
@@ -38,75 +49,100 @@
     return loading;
   }
 
-  function update() {
-    loadPosts().then(renderPosts);
+  function isDefault() {
+    return !state.topic && !state.q && state.sort === 'date-desc';
   }
 
-  searchInput.addEventListener('input', function () {
-    currentPage = 1;
-    update();
-  });
-  sortSelect.addEventListener('change', function () {
-    currentPage = 1;
-    update();
-  });
-  pagination.addEventListener('click', function (e) {
-    var btn = e.target.closest('button[data-page]');
-    if (!btn || btn.disabled) return;
-    currentPage = parseInt(btn.getAttribute('data-page'), 10);
-    update();
-    document.querySelector('.lj-controls').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+  function readUrl() {
+    var params = new URLSearchParams(window.location.search);
+    state.topic = params.get('topic') || '';
+    state.q = params.get('q') || '';
+    state.sort = params.get('sort') || 'date-desc';
+    state.page = Math.max(1, parseInt(params.get('page'), 10) || 1);
+    searchInput.value = state.q;
+    sortSelect.value = state.sort;
+    if (sortSelect.value !== state.sort) { state.sort = 'date-desc'; sortSelect.value = state.sort; }
+    syncChips();
+  }
 
-  function renderPosts(source) {
-    var query = searchInput.value.trim().toLowerCase();
-    var posts = source.filter(function (post) {
-      return (
-        (post.title || '').toLowerCase().indexOf(query) !== -1 ||
-        (post.excerpt || '').toLowerCase().indexOf(query) !== -1
-      );
+  function writeUrl() {
+    var params = new URLSearchParams();
+    if (state.topic) params.set('topic', state.topic);
+    if (state.q) params.set('q', state.q);
+    if (state.sort !== 'date-desc') params.set('sort', state.sort);
+    if (state.page > 1) params.set('page', state.page);
+    var qs = params.toString();
+    history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : '') + window.location.hash);
+  }
+
+  function syncChips() {
+    chips.forEach(function (c) {
+      c.setAttribute('aria-pressed', c.getAttribute('data-topic') === state.topic ? 'true' : 'false');
     });
-    posts.sort(getComparator(sortSelect.value));
+  }
 
-    if (posts.length === 0) {
-      container.innerHTML = '<p class="lj-empty">No posts match your search.</p>';
-      renderPagination(1);
-      status.textContent = 'No posts match your search.';
-      return;
+  function comparator(sort) {
+    switch (sort) {
+      case 'date-asc': return function (a, b) { return new Date(a.date) - new Date(b.date); };
+      case 'title-asc': return function (a, b) { return a.title.localeCompare(b.title); };
+      case 'title-desc': return function (a, b) { return b.title.localeCompare(a.title); };
+      default: return function (a, b) { return new Date(b.date) - new Date(a.date) || a.title.localeCompare(b.title); };
     }
-
-    var totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
-    if (currentPage > totalPages) currentPage = totalPages;
-    var start = (currentPage - 1) * PAGE_SIZE;
-    container.innerHTML = posts.slice(start, start + PAGE_SIZE).map(cardHtml).join('');
-    renderPagination(totalPages);
-    status.textContent = posts.length + (posts.length === 1 ? ' post' : ' posts') + ', page ' + currentPage + ' of ' + totalPages + '.';
   }
 
   function cardHtml(post, index) {
-    var slug = post.slug;
-    var thumb;
+    var slug = encodeURIComponent(post.slug);
+    var media = '';
+    var lazy = index < 3 ? '' : ' loading="lazy"';
     if (post.webp) {
-      thumb =
-        '<img class="lj-card-thumb" src="/assets/img/posts/webp/' + encodeURIComponent(slug) + '-640.webp"' +
-        ' srcset="/assets/img/posts/webp/' + encodeURIComponent(slug) + '-640.webp 640w, /assets/img/posts/webp/' + encodeURIComponent(slug) + '-1280.webp 1280w"' +
-        ' sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 45vw, 360px"' +
-        ' width="640" height="360" alt="" ' + (index < 3 ? '' : 'loading="lazy" ') + 'decoding="async">';
+      media = '<span class="lj-post-card-media"><img src="/assets/img/posts/webp/' + slug + '-640.webp"' +
+        ' srcset="/assets/img/posts/webp/' + slug + '-640.webp 640w, /assets/img/posts/webp/' + slug + '-1280.webp 1280w"' +
+        ' sizes="' + CARD_SIZES + '" width="640" height="360" alt=""' + lazy + ' decoding="async"></span>';
     } else if (post.image) {
-      thumb = '<img class="lj-card-thumb" src="/' + escapeHtml(post.image) + '" width="640" height="360" alt="" loading="lazy" decoding="async">';
-    } else {
-      thumb = '<div class="lj-card-thumb lj-card-thumb--empty" aria-hidden="true"></div>';
+      media = '<span class="lj-post-card-media"><img src="/' + escapeHtml(post.image) + '" width="640" height="360" alt=""' + lazy + ' decoding="async"></span>';
     }
     return (
-      '<a class="lj-card" href="/posts/' + encodeURIComponent(slug) + '.html">' +
-      thumb +
-      '<div class="lj-card-body">' +
-      '<time class="lj-card-date" datetime="' + escapeHtml(post.date) + '">' + escapeHtml(post.dateDisplay || post.date) + '</time>' +
-      '<h2 class="lj-card-title">' + escapeHtml(post.title) + '</h2>' +
-      (post.excerpt ? '<p class="lj-card-excerpt">' + escapeHtml(post.excerpt) + '</p>' : '') +
-      '<span class="lj-card-more" aria-hidden="true">Read article &rarr;</span>' +
-      '</div></a>'
+      '<a class="lj-card lj-post-card" href="/posts/' + slug + '.html">' + media +
+      '<span class="lj-post-card-body"><span class="lj-post-card-meta">' +
+      (post.category ? '<span class="lj-tag">' + escapeHtml(post.category) + '</span>' : '') +
+      '<time datetime="' + escapeHtml(post.date) + '">' + escapeHtml(post.dateDisplay || post.date) + '</time></span>' +
+      '<h3>' + escapeHtml(post.title) + '</h3>' +
+      (post.excerpt ? '<p>' + escapeHtml(post.excerpt) + '</p>' : '') +
+      '<span class="lj-link-arrow">Read article ' + ARROW + '</span></span></a>'
     );
+  }
+
+  function render(source) {
+    var tokens = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    var posts = source.filter(function (p) {
+      if (state.topic && p.categorySlug !== state.topic) return false;
+      var hay = ((p.title || '') + ' ' + (p.excerpt || '') + ' ' + (p.category || '')).toLowerCase();
+      return tokens.every(function (t) { return hay.indexOf(t) !== -1; });
+    });
+    posts.sort(comparator(state.sort));
+    // The newest post is featured above the list in the default view.
+    if (isDefault()) posts = posts.slice(1);
+
+    if (!posts.length) {
+      container.innerHTML = '<p class="lj-empty-state" style="grid-column:1/-1">No articles match that search. Try a different word or topic.</p>';
+      renderPagination(1);
+      status.textContent = 'No articles match.';
+      return;
+    }
+    var totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
+    if (state.page > totalPages) state.page = totalPages;
+    var start = (state.page - 1) * PAGE_SIZE;
+    container.innerHTML = posts.slice(start, start + PAGE_SIZE).map(cardHtml).join('');
+    renderPagination(totalPages);
+    status.textContent = posts.length + (posts.length === 1 ? ' article' : ' articles') + (totalPages > 1 ? ', page ' + state.page + ' of ' + totalPages : '');
+  }
+
+  function update(scroll) {
+    writeUrl();
+    loadPosts().then(function (posts) {
+      render(posts);
+      if (scroll) document.getElementById('articles').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   }
 
   function renderPagination(totalPages) {
@@ -116,80 +152,73 @@
       return;
     }
     pagination.hidden = false;
-    var html = '<ul>';
-    html += '<li><button type="button" data-page="' + (currentPage - 1) + '"' + (currentPage === 1 ? ' disabled' : '') + ' aria-label="Previous page">' + arrowIcon('left') + '</button></li>';
-    getPageRange(currentPage, totalPages).forEach(function (page) {
-      if (page === '...') {
-        html += '<li><span class="lj-ellipsis" aria-hidden="true">&hellip;</span></li>';
-        return;
-      }
-      html +=
-        '<li><button type="button" data-page="' + page + '" aria-label="Page ' + page + '"' +
-        (page === currentPage ? ' aria-current="page"' : '') + '>' + page + '</button></li>';
+    var cur = state.page;
+    var html = '';
+    if (cur > 1) html += '<a href="?page=' + (cur - 1) + '" data-page="' + (cur - 1) + '" rel="prev" aria-label="Previous page">' + ARROW.replace('<path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>', '<path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/>') + '</a>';
+    pageRange(cur, totalPages).forEach(function (p) {
+      if (p === '...') html += '<span aria-hidden="true">&hellip;</span>';
+      else if (p === cur) html += '<span aria-current="page">' + p + '</span>';
+      else html += '<a href="?page=' + p + '" data-page="' + p + '" aria-label="Page ' + p + '">' + p + '</a>';
     });
-    html += '<li><button type="button" data-page="' + (currentPage + 1) + '"' + (currentPage === totalPages ? ' disabled' : '') + ' aria-label="Next page">' + arrowIcon('right') + '</button></li>';
-    html += '</ul>';
+    if (cur < totalPages) html += '<a href="?page=' + (cur + 1) + '" data-page="' + (cur + 1) + '" rel="next" aria-label="Next page">' + ARROW + '</a>';
     pagination.innerHTML = html;
   }
 
   // First, last, current +/-1, with "..." standing in for any gaps.
-  function getPageRange(current, total) {
+  function pageRange(current, total) {
     var range = [];
-    var withDots = [];
-    var lastPage;
+    var out = [];
+    var last;
     for (var i = 1; i <= total; i++) {
       if (i === 1 || i === total || (i >= current - 1 && i <= current + 1)) range.push(i);
     }
-    range.forEach(function (page) {
-      if (lastPage) {
-        if (page - lastPage === 2) withDots.push(lastPage + 1);
-        else if (page - lastPage > 2) withDots.push('...');
+    range.forEach(function (p) {
+      if (last) {
+        if (p - last === 2) out.push(last + 1);
+        else if (p - last > 2) out.push('...');
       }
-      withDots.push(page);
-      lastPage = page;
+      out.push(p);
+      last = p;
     });
-    return withDots;
+    return out;
   }
 
-  function arrowIcon(dir) {
-    var d = dir === 'left' ? 'M15 18l-6-6 6-6' : 'M9 18l6-6-6-6';
-    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + d + '"/></svg>';
-  }
+  var debounce = null;
+  searchInput.addEventListener('input', function () {
+    clearTimeout(debounce);
+    debounce = setTimeout(function () {
+      state.q = searchInput.value.trim();
+      state.page = 1;
+      update(false);
+    }, 120);
+  });
+  sortSelect.addEventListener('change', function () {
+    state.sort = sortSelect.value;
+    state.page = 1;
+    update(false);
+  });
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      state.topic = chip.getAttribute('data-topic');
+      state.page = 1;
+      syncChips();
+      update(false);
+    });
+  });
+  pagination.addEventListener('click', function (e) {
+    var link = e.target.closest('a[data-page]');
+    if (!link) return;
+    e.preventDefault();
+    state.page = parseInt(link.getAttribute('data-page'), 10);
+    update(true);
+  });
 
-  function getComparator(sortValue) {
-    switch (sortValue) {
-      case 'date-asc':
-        return function (a, b) { return new Date(a.date) - new Date(b.date); };
-      case 'title-asc':
-        return function (a, b) { return (a.title || '').localeCompare(b.title || ''); };
-      case 'title-desc':
-        return function (a, b) { return (b.title || '').localeCompare(a.title || ''); };
-      default:
-        return function (a, b) { return new Date(b.date) - new Date(a.date); };
-    }
+  readUrl();
+  if (!isDefault() || state.page > 1) {
+    update(false);
+  } else {
+    var initialTotal = parseInt(container.getAttribute('data-total'), 10) || 0;
+    renderPagination(Math.max(1, Math.ceil(initialTotal / PAGE_SIZE)));
+    status.textContent = initialTotal + 1 + ' articles';
   }
-
-  function escapeHtml(str) {
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
-
-  // The newsletter widget is third party, so it loads on the first
-  // interaction instead of competing with the initial render.
-  (function () {
-    var loaded = false, events = ['pointerdown', 'mousemove', 'scroll', 'touchstart', 'keydown'];
-    function load() {
-      if (loaded) return;
-      loaded = true;
-      events.forEach(function (e) { window.removeEventListener(e, load); });
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://embed.typeform.com/next/embed.js';
-      document.head.appendChild(s);
-    }
-    events.forEach(function (e) { window.addEventListener(e, load, { passive: true }); });
-  })();
 })();
