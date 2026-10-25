@@ -461,8 +461,15 @@ function uniqueSlug(baseSlug, existingSlugs) {
   return slug;
 }
 
+// Writes everything that lists posts: the blog home, the RSS feed, the
+// sitemap, the 404 page and the latest-posts script the main site embeds.
 function writeIndex(posts) {
+  templates.assignTopics(posts);
   fs.writeFileSync(INDEX_HTML, templates.buildIndexPage(posts));
+  fs.writeFileSync(path.join(ROOT, "feed.xml"), templates.buildFeed(posts));
+  fs.writeFileSync(path.join(ROOT, "sitemap.xml"), templates.buildSitemap(posts));
+  fs.writeFileSync(path.join(ROOT, "404.html"), templates.buildNotFoundPage());
+  fs.writeFileSync(path.join(ROOT, "assets", "js", "latest-posts.js"), templates.buildLatestPostsScript(posts));
 }
 
 // ---------------------------------------------------------------------------
@@ -598,8 +605,10 @@ function main() {
               dateDisplay: dateDisplay,
               excerpt: excerptFromHtml(bodyHtml, 155),
             };
+            templates.assignTopics([post]);
             const pageHtml = templates.buildPostPage(
-              Object.assign({ description: post.excerpt, bodyHtml: bodyHtml }, post)
+              Object.assign({ description: post.excerpt, bodyHtml: bodyHtml }, post),
+              posts
             );
             fs.writeFileSync(path.join(POSTS_DIR, slug + ".html"), pageHtml);
             posts.push(post);

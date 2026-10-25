@@ -6,7 +6,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many businesses already own the data needed to make AI-assisted deal-desk workflows work, but the information is usually scattered across systems and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Automate CRM Lead Handoff Quality Checks Before Follow-Up Slips",
@@ -15,7 +17,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Lead handoff is often described as a marketing problem or a sales discipline problem. In practice it is a data-quality and timing problem. A prospect can…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Automate Customer Onboarding Handoffs Before Early Momentum Fades",
@@ -24,7 +28,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "The period immediately after a sale is often when a customer decides whether a provider feels organized. Yet onboarding begins with information scattered…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Automate Expense Receipt Reviews Before Policy Exceptions Pile Up",
@@ -33,7 +39,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Expense receipt reviews often looks straightforward until it is handled at scale. Information arrives through several channels, each participant sees…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Automate Month-End Evidence Collection Without Chasing Spreadsheets",
@@ -42,7 +50,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Month-end close often creates a familiar scramble: someone requests a reconciliation, another person searches for support, a spreadsheet is emailed to…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Automate New-Hire Access Readiness Before Day One",
@@ -51,7 +61,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "The important shift is from a passive queue to an active workflow. Instead of asking employees to discover work by repeatedly checking a shared inbox…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Automate Proposal Risk Review Without Slowing Down Sales",
@@ -60,7 +72,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A proposal is often treated as a document-production task. In practice, it is a risk decision that happens under a deadline. Sales representatives gather…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Build AI Content Approval Workflows That Increase Speed Without Losing Governance",
@@ -69,7 +83,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many organizations are discovering that AI content approval governance is not a software feature to switch on. It is an operating discipline. Teams often…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Build AI-Prepared Customer QBR Briefs That Turn Account Data Into Action",
@@ -78,7 +94,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Customer quarterly business review preparation often looks straightforward until it is handled at scale. Information arrives through several channels…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build a Cash Collection Follow-Up Queue That Respects Customer Context",
@@ -87,7 +105,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Accounts receivable teams are asked to improve cash flow without treating every overdue invoice as the same kind of problem. One customer may be waiting…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI Quality Review System That Improves Customer Service Without Micromanaging",
@@ -96,7 +116,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Customer Service Quality Assurance is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Review Queue for Website Accessibility Issues",
@@ -105,7 +127,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Website accessibility work is often discovered too late. A redesign ships, a marketing campaign adds a landing page, or a product team changes a form…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an AI-Assisted Collections Workflow That Protects Cash Flow",
@@ -114,7 +138,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Businesses rarely lose control of accounts receivable collections because people do not care. They lose control because the evidence needed for a sound…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI-Assisted Collections Workflow That Protects Cash and Customer Trust",
@@ -123,7 +149,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Most organizations do not lack data about accounts receivable collections. They lack a dependable way to turn that data into a decision while there is…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI-Assisted Equipment Calibration Renewal Workflow Before Quality Risk Grows",
@@ -132,7 +160,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Calibration records can appear complete until an instrument fails a check, a customer asks for evidence, or a quality review reveals that the asset was…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Build an AI-Assisted Invoice Exception Queue That Protects Cash Flow",
@@ -141,7 +171,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Finance teams do not lose control of cash because every invoice is difficult. They lose time when ordinary exceptions are discovered late, described…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an Audit Evidence Collection Workflow Before Review Season Starts",
@@ -150,7 +182,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Audit preparation often becomes a scramble because evidence is scattered across systems and people. A reviewer asks for proof that a control operated…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an Explainable AI Lead Routing Audit for Your CRM",
@@ -159,7 +193,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Lead routing feels invisible when it works and highly visible when it does not. A prospect who waits because the wrong territory rule fired may never…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Close Accounts Receivable Disputes Faster With an AI Evidence Pack",
@@ -168,7 +204,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Payment disputes rarely begin as a clean case. A customer may reply to a reminder with a short objection, an account manager may forward a call summary…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Close the Cash Application Gap With AI-Assisted Remittance Matching",
@@ -177,7 +215,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Cash application is one of those finance processes that appears simple from a distance. A payment arrives, a remittance detail identifies the invoices…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Context Without the Handoff Tax: AI Workflows for Better Customer Service Escalations",
@@ -186,7 +226,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many businesses already own the data needed to make customer-service context workflows work, but the information is usually scattered across systems and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create a Maintenance Parts Reorder Workflow Before a Repair Becomes a Delay",
@@ -195,7 +237,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A maintenance delay is often described as an equipment problem when it is really an information problem. The technician may know what part is likely…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Create a Privacy-Aware Meeting Intelligence Workflow for Business Teams",
@@ -204,7 +248,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Meetings create decisions, commitments, risks, and follow-up work, but the notes are often incomplete or scattered across personal documents. AI meeting…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Create a Supplier Performance Automation That Finds Risk Before Delivery Slips",
@@ -213,7 +259,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Most organizations do not lack data about supplier performance management. They lack a dependable way to turn that data into a decision while there is…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Create an AI Inventory Exception Desk Before Small Variances Become Stockouts",
@@ -222,7 +270,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Inventory Exception Management is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Create an AI Knowledge Review Loop That Keeps Internal Procedures Current",
@@ -231,7 +281,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Internal guidance becomes unreliable quietly. A workflow changes, a system screen is redesigned, or a policy receives an exception, and the old article…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI-Assisted Travel Approval Workflow That Balances Cost, Policy, and Employee Experience",
@@ -240,7 +292,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Travel requests are deceptively complex. An employee may need a quick answer, a manager may need to understand business purpose, finance may need budget…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Design Website Lead Routing That Responds to Intent, Not Just Form Fields",
@@ -249,7 +303,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A website form is a beginning, not a finished lead record. The visitor may describe an urgent problem in an open text field, select a generic service…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "From Spreadsheet Chase to Decision Rhythm: AI Automation for Weekly Executive Reporting",
@@ -258,7 +314,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many businesses already own the data needed to make weekly executive reporting automation work, but the information is usually scattered across systems…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Govern AI-Assisted Executive Reporting With a Trusted Metric Workflow",
@@ -267,7 +325,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Businesses rarely lose control of executive reporting and metric governance because people do not care. They lose control because the evidence needed for…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "How AI Exception Queues Turn Accounts Payable Into a Faster Decision System",
@@ -276,7 +336,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many businesses already own the data needed to make accounts payable exception queues work, but the information is usually scattered across systems and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Improve Warehouse Cycle Count Accuracy With an AI-Guided Workflow",
@@ -285,7 +347,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Cycle counting is one of the quiet controls that keeps a warehouse, finance team, and customer promise aligned. When inventory records drift from…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Keep Internal Answers Reliable With an AI Knowledge Governance Workflow",
@@ -294,7 +358,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Most organizations do not lack data about internal knowledge governance. They lack a dependable way to turn that data into a decision while there is…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Make CRM Data Quality a Revenue-Protection Automation",
@@ -303,7 +369,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A CRM rarely becomes unreliable in one dramatic failure. It drifts. A lead arrives without a buying role, a sales representative adds a company under a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Make Cash-Flow Forecast Variance Explanations an Automated Finance Routine",
@@ -312,7 +380,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many organizations are discovering that cash-flow forecast variance explanations is not a software feature to switch on. It is an operating discipline…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Make Executive Forecasts More Useful With AI-Connected Operating Signals",
@@ -321,7 +391,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Most organizations do not lack data about executive forecasting. They lack a dependable way to turn that data into a decision while there is still time…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Make Field Service Dispatch More Predictable With AI Scheduling",
@@ -330,7 +402,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Field service dispatch is usually managed in the space between customer promises and finite capacity. A dispatcher must consider technician skills…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Make Field Service Dispatch More Reliable With AI Job-Readiness Checks",
@@ -339,7 +413,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Dispatch reliability is built before a vehicle leaves the yard. A work order can look scheduled and still be unready: the asset history may be…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Make Interview Scheduling More Reliable With an AI Coordination Workflow",
@@ -348,7 +424,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Candidate interview scheduling often looks straightforward until it is handled at scale. Information arrives through several channels, each participant…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Modernize Field Service Dispatch With AI-Assisted Exception Routing",
@@ -357,7 +435,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Businesses rarely lose control of field service dispatch exceptions because people do not care. They lose control because the evidence needed for a sound…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Practical AI Governance for Small Businesses: Controls That Keep Automation Useful",
@@ -366,7 +446,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many businesses already own the data needed to make small-business AI governance work, but the information is usually scattered across systems and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Prioritize Facilities Maintenance Work Orders With AI and Automation",
@@ -375,7 +457,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A facilities maintenance work order prioritization process rarely fails because people do not care. It fails because the decision arrives in fragments: a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Route Facilities Work Requests With AI Before Small Issues Become Disruptions",
@@ -384,7 +468,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Facilities work-request routing often looks straightforward until it is handled at scale. Information arrives through several channels, each participant…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Stop Duplicate Supplier Payments With an AI-Assisted Control Workflow",
@@ -393,7 +479,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "For accounts payable leaders, AI is useful here when it is treated as a disciplined operations layer rather than a replacement for judgment. It can…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Turn Customer Call Summaries Into a Retention Early Warning System",
@@ -402,7 +490,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Customer conversations contain early signs of churn, expansion, and unresolved friction, but those signs often disappear into call notes or personal…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Turn Customer Service Conversations Into Product Improvement Signals",
@@ -411,7 +501,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Customer-service teams hold a remarkably detailed record of how a product works in real life. They hear where customers hesitate, which instructions are…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Turn Employee Training Expirations Into a Risk-Managed Renewal Workflow",
@@ -420,7 +512,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Training expiration is easy to underestimate because the individual event looks small. One certification lapses, a manager intends to follow up, and the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Turn Field Service Schedule Changes Into an AI-Guided Dispatch Decision",
@@ -429,7 +523,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Field Service Dispatch is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of late…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Turn Invoice Exceptions Into a Faster, More Controlled Workflow",
@@ -438,7 +534,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Invoice work often appears routine until an exception interrupts it. A purchase-order number is missing, a quantity differs from the receipt, a vendor…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Turn Manufacturing Shift Handover Notes Into an AI Operations Workflow",
@@ -447,7 +545,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Manufacturing shift handovers often looks straightforward until it is handled at scale. Information arrives through several channels, each participant…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Turn Meeting Decisions Into an AI-Assisted Action Ownership Workflow",
@@ -456,7 +556,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Businesses rarely lose control of meeting decision and action ownership because people do not care. They lose control because the evidence needed for a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Turn Recurring Support Signals Into Proactive Product Alerts",
@@ -465,7 +567,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Most companies already collect evidence about recurring support signals, but the evidence is scattered across systems and arrives in fragments. The…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Turn Website Form Spam Reviews Into a Safer Automation Workflow",
@@ -474,7 +578,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A business website form is both a front door and an operational queue. Genuine inquiries may arrive alongside automated spam, incomplete submissions…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Turn Website Form Submissions Into Qualified Sales Conversations With AI Routing",
@@ -483,7 +589,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many organizations are discovering that website lead enrichment and routing is not a software feature to switch on. It is an operating discipline. Teams…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Create Seamless Customer Service Handoffs Across Teams",
@@ -492,7 +600,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Businesses rarely lose control of cross-functional customer service handoffs because people do not care. They lose control because the evidence needed…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Detect Customer-Service Intent Drift Before Queues Overflow",
@@ -501,7 +611,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many organizations are discovering that customer-service intent drift is not a software feature to switch on. It is an operating discipline. Teams often…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Find CRM Contact Decay Before It Weakens Customer Relationships",
@@ -510,7 +622,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many organizations are discovering that CRM contact-data decay is not a software feature to switch on. It is an operating discipline. Teams often have…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Use AI to Govern Price Change Requests Without Slowing Commercial Teams",
@@ -519,7 +633,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Price changes are rarely just a finance task. A request can arise from supplier cost movement, a new service tier, a market response, a contract…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Use AI to Improve Warehouse Replenishment Before Pick Paths Break Down",
@@ -528,7 +644,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "For distribution operations leaders, AI is useful here when it is treated as a disciplined operations layer rather than a replacement for judgment. It…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Use AI to Make Employee Onboarding a Coordinated Operating Workflow",
@@ -537,7 +655,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Employee Onboarding is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of scattered…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Use AI to Reconcile Field Service Notes With Billing Records",
@@ -546,7 +666,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Field service work creates valuable evidence at the edge of the business. A technician may record an arrival time, parts used, customer approval, photos…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Use AI to Review Expense Policy Exceptions Without Slowing Employees Down",
@@ -555,7 +677,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "A expense policy exception review process rarely fails because people do not care. It fails because the decision arrives in fragments: a record in one…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Use AI to Turn Cash Application Exceptions Into a Daily Recovery Queue",
@@ -564,7 +688,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Cash Application is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of unmatched…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Turn Meeting Decisions Into Accountable Operating Work",
@@ -573,7 +699,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many businesses do not lack meetings. They lack a reliable bridge from conversation to execution. A decision is made, an owner volunteers, a dependency…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Use AI to Turn Workforce Scheduling Into a Proactive Operations System",
@@ -582,7 +710,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Most organizations do not lack data about workforce scheduling. They lack a dependable way to turn that data into a decision while there is still time to…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Automate Vendor Certificate Expiration Reviews Before Compliance Gaps Appear",
@@ -591,7 +721,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Vendor certificates are easy to ignore until they become the reason a job stalls, an audit",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build a Sales Quote Margin Guardrail With AI-Assisted Exception Routing",
@@ -600,7 +732,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Sales teams need speed, but margin discipline cannot depend on someone noticing a risky",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI Warranty Claim Triage Workflow That Protects Margin Without Slowing Service",
@@ -609,7 +743,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Warranty claims often look like a customer service problem until finance reviews the cost",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Create an Operations KPI Narrative Workflow That Explains Variance Before Meetings",
@@ -618,7 +754,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Many leadership meetings spend too much time asking what changed and not enough time",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Use AI to Turn Website Search Logs Into Service and Sales Signals",
@@ -627,7 +765,9 @@
     "date": "2026-07-24",
     "dateDisplay": "July 24, 2026",
     "excerpt": "Internal teams often study web traffic, form submissions, and campaign results, but overlook",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Create a Website Content Maintenance Workflow That Keeps Pages Trustworthy",
@@ -636,7 +776,9 @@
     "date": "2026-07-25",
     "dateDisplay": "July 25, 2026",
     "excerpt": "AI and automation are becoming most useful in business when they are attached to a specific operating workflow. Website Content Governance is a strong…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Build an AI Order Promise Workflow That Sales Can Trust",
@@ -645,7 +787,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Many business teams have reached the point where basic automation is no longer the hard part. Forms can trigger tasks, systems can send alerts, and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Detect Post-Sale Implementation Risk With AI Before Projects Stall",
@@ -654,7 +798,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Detect Post-Sale Implementation Risk With AI Before Projects Stall. Many business teams have reached the point where basic automation is no longer the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Monitor Purchase Requisitions With AI Before Approval Thresholds Become Surprises",
@@ -663,7 +809,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Monitor Purchase Requisitions With AI Before Approval Thresholds Become Surprises. Many business teams have reached the point where basic automation is…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Turn Website Chat Transcripts Into Actionable Sales and Service Work",
@@ -672,7 +820,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Turn Website Chat Transcripts Into Actionable Sales and Service Work. Many business teams have reached the point where basic automation is no longer the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Review Customer Credit Limits Before Risk Reaches Receivables",
@@ -681,7 +831,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Use AI to Review Customer Credit Limits Before Risk Reaches Receivables. Many business teams have reached the point where basic automation is no longer…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build a Customer Portal Deflection Loop That Keeps Support Personal",
@@ -690,7 +842,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Customer portals are often launched as a self-service promise, but many businesses discover that the portal becomes another place where customers get…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI Governance Evidence Log Before Automation Questions Become Audit Problems",
@@ -699,7 +853,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "As companies add AI to business workflows, leaders eventually ask a practical question: how do we prove what the automation did, why it did it, and who…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Find Service Billing Leakage With an AI Work Order Reconciliation Workflow",
@@ -708,7 +864,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Service businesses lose margin when completed work does not turn into accurate billing. The leak may be a missing part, an unbilled trip charge…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Turn Project Status Updates Into Early Risk Narratives With AI",
@@ -717,7 +875,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Project status updates can create the illusion of control while still leaving leaders surprised by delays. Teams may submit updates on time, but the risk…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Use AI to Catch Purchase Order Acknowledgment Gaps Before Delivery Risk Spreads",
@@ -726,7 +886,9 @@
     "date": "2026-07-27",
     "dateDisplay": "July 27, 2026",
     "excerpt": "Purchase order acknowledgments are one of the quiet control points in operations, because a missing or mismatched acknowledgment can create trouble long…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Automate Contract Obligation Monitoring Before Small Misses Become Expensive",
@@ -735,7 +897,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Contracts often contain the operating rules that teams need, but those rules are rarely easy to monitor. A customer agreement may include service…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an AI Intake Triage Desk for Shared Operations Mailboxes",
@@ -744,7 +908,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Many small and mid-sized businesses still run critical operations through shared inboxes. Orders, vendor questions, customer requests, internal…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Create a Governance Workflow for Automation Change Requests",
@@ -753,7 +919,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "As companies adopt more automation, a new operational problem appears: everyone wants improvements, but no one wants uncontrolled changes. A sales…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Use AI to Detect Process Bottlenecks From Time Stamps Before Customers Notice",
@@ -762,7 +930,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Every business process leaves a trail of time stamps. A quote is requested, drafted, reviewed, revised, approved, and sent. A service job is opened…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Keep Website Conversion Experiments Aligned With Real Customer Intent",
@@ -771,7 +941,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Website conversion work often focuses on visible page changes. Teams test a headline, shorten a form, move a button, rewrite a service page, add a chat…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Automate Customer Consent Reviews Before Sales Outreach Creates Risk",
@@ -780,7 +952,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Sales teams want speed, but outreach only works when customers trust the way a business communicates. A prospect who asked for email updates may not want…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an AI Returns Intelligence Workflow That Protects Margin and Loyalty",
@@ -789,7 +963,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Returns are often treated as an unavoidable cost of doing business. A customer sends something back, a team processes the credit, inventory receives the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Coordinate Product Discontinuation Readiness With AI Before Customers Hit Dead Ends",
@@ -798,7 +974,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Product discontinuation sounds like a catalog decision, but customers experience it as an operating event. A product becomes unavailable, a replacement…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Reduce SaaS Subscription Waste With an AI License Utilization Workflow",
@@ -807,7 +985,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Software subscriptions are easy to buy and surprisingly hard to manage. A team needs a tool, a manager approves seats, a department grows, a project…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Prepare Board Ready Operating Narratives Without Rewriting the Numbers",
@@ -816,7 +996,9 @@
     "date": "2026-07-28",
     "dateDisplay": "July 28, 2026",
     "excerpt": "Executive reporting often fails in the space between numbers and decisions. Finance may close the books, operations may update dashboards, sales may…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Automate Website Content QA Before Small Page Errors Become Revenue Leaks",
@@ -825,7 +1007,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around website…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Build a Customer Health Score Review That Turns Signals Into Retention Actions",
@@ -834,7 +1018,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around customer…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI-Assisted Vendor Onboarding Workflow That Reduces Compliance Drag",
@@ -843,7 +1029,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around vendor…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Turn Support Backlog Aging Into an AI Prioritization Workflow",
@@ -852,7 +1040,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around support…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Turn Quote Revisions Into a Controlled Sales Workflow",
@@ -861,7 +1051,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around quote…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Automate Warranty Claim Intake With AI Evidence Review",
@@ -870,7 +1062,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Service, distribution, and manufacturing companies that receive warranty claims from customers, dealers, and field teams are entering a different…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Renewal Readiness Workflow for Customer Success Teams",
@@ -879,7 +1073,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Customer success teams that need to protect renewals months before the contract date arrives are entering a different operating environment. AI is no…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI SOP Drift Monitor for Multi-Location Operations",
@@ -888,7 +1084,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Multi-location businesses that need local teams to follow the same critical process without making every site feel overmanaged are entering a different…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Turn Project Status Updates Into an Executive Risk Radar With AI",
@@ -897,7 +1095,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Leadership teams that receive project updates from many departments but struggle to see which issues deserve attention now are entering a different…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Use AI to Create a Margin Leakage Alert System for Service Businesses",
@@ -906,7 +1106,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Service companies that quote work carefully but lose margin through small delivery changes after the sale are entering a different operating environment…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI Exception Command Center for Revenue Operations Teams",
@@ -915,7 +1117,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and revenue operations exception management is a strong example of that…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Create an AI Automation Readiness Scorecard Before Buying New Tools",
@@ -924,7 +1128,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and automation readiness scoring is a strong example of that shift. The…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Make Operations Capacity Planning More Predictable With AI Workload Signals",
@@ -933,7 +1139,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and operations capacity planning with workload intelligence is a strong…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Turn Customer Implementation Milestones Into an AI-Guided Delivery Workflow",
@@ -942,7 +1150,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and customer implementation milestone management is a strong example of that…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Convert Policy Questions Into Measurable Compliance Workflows",
@@ -951,7 +1161,9 @@
     "date": "2026-07-30",
     "dateDisplay": "July 30, 2026",
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and policy question intake and compliance routing is a strong example of that…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Connect Marketing Attribution to Sales Follow-Up With AI Workflow Signals",
@@ -960,7 +1172,9 @@
     "date": "2026-07-31",
     "dateDisplay": "July 31, 2026",
     "excerpt": "Marketing attribution often stops at the point where the business most needs operational clarity. A campaign generates a form fill, a webinar attendee, a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Create AI Onboarding Health Checks Before Customer Momentum Fades",
@@ -969,7 +1183,9 @@
     "date": "2026-07-31",
     "dateDisplay": "July 31, 2026",
     "excerpt": "Customer onboarding has become one of the most important operating moments in a business relationship. A sale may close in the CRM, a contract may be…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Improve Procurement Intake Quality With AI Before Approvals Stall",
@@ -978,7 +1194,9 @@
     "date": "2026-07-31",
     "dateDisplay": "July 31, 2026",
     "excerpt": "Procurement delays often begin before a buyer or approver ever sees a request. An employee submits a purchase need with an incomplete description. A…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Use AI to Find Internal Search Gaps Before Customers Ask Twice",
@@ -987,7 +1205,9 @@
     "date": "2026-07-31",
     "dateDisplay": "July 31, 2026",
     "excerpt": "Internal search behavior is one of the most underused signals in a business. Employees search the intranet, knowledge base, help center, website backend…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Spot Service-Level Risk Before Commitments Slip",
@@ -996,7 +1216,9 @@
     "date": "2026-07-31",
     "dateDisplay": "July 31, 2026",
     "excerpt": "Service commitments are easy to make visible after they are missed. A ticket passes its deadline, a customer calls for an update, a manager reviews a red…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Automate Tax Exemption Certificate Reviews Before Billing Errors Spread",
@@ -1005,7 +1227,9 @@
     "date": "2026-08-01",
     "dateDisplay": "August 1, 2026",
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and tax exemption certificate review is a clear example…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Balance Field Service Territories With AI Before Drive Time Consumes Capacity",
@@ -1014,7 +1238,9 @@
     "date": "2026-08-01",
     "dateDisplay": "August 1, 2026",
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and field service territory balancing is a clear example…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Build an AI Data Retention Review Queue Before Storage Becomes Risk",
@@ -1023,7 +1249,9 @@
     "date": "2026-08-01",
     "dateDisplay": "August 1, 2026",
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and data retention is a clear example. The work is not…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Turn Customer Portal Friction Into an AI-Guided Adoption Workflow",
@@ -1032,7 +1260,9 @@
     "date": "2026-08-01",
     "dateDisplay": "August 1, 2026",
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and customer portal adoption is a clear example. The work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Triage Contract Redlines Before Approval Work Stalls",
@@ -1041,7 +1271,9 @@
     "date": "2026-08-01",
     "dateDisplay": "August 1, 2026",
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and contract redline intake is a clear example. The work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an AI Customer Credit Approval Narrative Before Discounts Hide the Real Cost",
@@ -1050,7 +1282,9 @@
     "date": "2026-08-02",
     "dateDisplay": "August 2, 2026",
     "excerpt": "Customer credits and goodwill adjustments are easy to approve one case at a time. The real cost appears when small exceptions hide recurring operational…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Create an AI Backorder Communication Workflow Before Customers Lose Trust",
@@ -1059,7 +1293,9 @@
     "date": "2026-08-02",
     "dateDisplay": "August 2, 2026",
     "excerpt": "Backorders rarely damage a relationship because one shipment is late. They damage trust when the company sounds uncertain and waits too long to explain…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI Inventory Obsolescence Review Before Working Capital Gets Trapped",
@@ -1068,7 +1304,9 @@
     "date": "2026-08-02",
     "dateDisplay": "August 2, 2026",
     "excerpt": "Inventory obsolescence is often discovered late, after slow-moving items have already consumed cash, warehouse space, and management attention.",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Turn Pricing Page Behavior Into AI-Guided Sales Priorities",
@@ -1077,7 +1315,9 @@
     "date": "2026-08-02",
     "dateDisplay": "August 2, 2026",
     "excerpt": "A pricing page is one of the clearest places where buyer intent becomes visible, yet many companies leave those signals outside the sales workflow.",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Turn System Access Reviews Into a Continuous Control Workflow",
@@ -1086,7 +1326,9 @@
     "date": "2026-08-02",
     "dateDisplay": "August 2, 2026",
     "excerpt": "Most access reviews are designed like periodic cleanups, but business systems change every week and stale permissions can quietly become operational risk.",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build a Morning Operations Briefing With AI That Turns Signals Into Action",
@@ -1095,7 +1337,9 @@
     "date": "2026-08-03",
     "dateDisplay": "August 3, 2026",
     "excerpt": "Many teams start the day by checking dashboards, inboxes, ticket queues, order reports, staffing updates, CRM activity, website forms, and yesterday's…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Coordinate Cross-Team Go-Live Readiness With AI Before Launch Week",
@@ -1104,7 +1348,9 @@
     "date": "2026-08-03",
     "dateDisplay": "August 3, 2026",
     "excerpt": "Launch week usually exposes the operational gaps that were already present for weeks. A customer project looks healthy in the project plan, the sales…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Forecast Service Parts Demand With AI Before Field Teams Lose Capacity",
@@ -1113,7 +1359,9 @@
     "date": "2026-08-03",
     "dateDisplay": "August 3, 2026",
     "excerpt": "Field service teams often discover inventory problems at the worst possible moment. A technician is ready, the customer is scheduled, the service window…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Keep Sales Enablement Assets Trustworthy With AI Version Governance",
@@ -1122,7 +1370,9 @@
     "date": "2026-08-03",
     "dateDisplay": "August 3, 2026",
     "excerpt": "Sales teams move quickly, and content libraries rarely keep pace without help. A deck is updated after a product change, but an older version remains in…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Prevent Invoice Disputes With AI Evidence Matching Before Bills Go Out",
@@ -1131,7 +1381,9 @@
     "date": "2026-08-03",
     "dateDisplay": "August 3, 2026",
     "excerpt": "Invoice disputes are often treated as a collections problem, but many of them begin before the invoice is ever sent. A purchase order has one price, the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Align Marketing Campaign Promises With Sales and Service Readiness Using AI",
@@ -1140,7 +1392,9 @@
     "date": "2026-08-04",
     "dateDisplay": "August 4, 2026",
     "excerpt": "Marketing campaigns can move faster than the operating readiness behind them. A landing page may promise a simple package, a promotion may imply quick…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Build a Location Request Intake Workflow That Turns Store Needs Into Planned Work",
@@ -1149,7 +1403,9 @@
     "date": "2026-08-04",
     "dateDisplay": "August 4, 2026",
     "excerpt": "Multi-location businesses receive a steady stream of requests from branches, stores, clinics, offices, and field teams. Those requests may involve…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Convert Internal Help Desk Questions Into Self-Service Improvements With AI",
@@ -1158,7 +1414,9 @@
     "date": "2026-08-04",
     "dateDisplay": "August 4, 2026",
     "excerpt": "Internal help desks answer repeated questions about systems, policies, forms, approvals, access, and procedures. Each answer may be quick, but the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Turn Onboarding Document Collection Into a Customer Readiness Workflow",
@@ -1167,7 +1425,9 @@
     "date": "2026-08-04",
     "dateDisplay": "August 4, 2026",
     "excerpt": "Customer onboarding often slows down because required documents, forms, confirmations, or technical details arrive through fragmented channels. The…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Prioritize Stale Purchase Orders Before Supplier Delays Spread",
@@ -1176,7 +1436,9 @@
     "date": "2026-08-04",
     "dateDisplay": "August 4, 2026",
     "excerpt": "Every purchasing team has open purchase orders that look harmless until supplier silence starts affecting delivery promises. A missing acknowledgment, a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Detect Customer Renewal Risk With AI Before Accounts Go Quiet",
@@ -1185,7 +1447,9 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "Renewal risk rarely appears all at once. It builds through small signals that are easy to miss when teams are busy. A champion stops attending check-ins…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Manage Vendor Insurance Renewals With AI Before Compliance Gaps Spread",
@@ -1194,7 +1458,9 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "Vendor compliance often looks organized until a document expires. A certificate of insurance sits in a folder. A contract requires certain coverage…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Prioritize Receivables Collection Work With AI Before Cash Gets Tight",
@@ -1203,7 +1469,9 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "Accounts receivable teams often start the day with a long aging report and too little context. The report shows invoice dates, balances, and days past…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Review Quote Margin Risk With AI Before Discounts Become Leakage",
@@ -1212,7 +1480,9 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "Discounts often enter a business through reasonable exceptions. A sales representative wants to win a competitive deal. A customer asks for a bundle…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Triage Warranty Claims Before Service Costs Escalate",
@@ -1221,7 +1491,9 @@
     "date": "2026-08-05",
     "dateDisplay": "August 5, 2026",
     "excerpt": "Warranty claims often look like a service problem, but they are really a coordination problem. A customer reports that a product failed. A service agent…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Automate Customer Data Correction Intake Across CRM Billing and Support",
@@ -1230,7 +1502,9 @@
     "date": "2026-08-06",
     "dateDisplay": "August 6, 2026",
     "excerpt": "Customer data corrections seem small until inconsistent names, contacts, addresses, tax details, and account relationships spread across multiple…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Control Sales Forecast Changes With AI Review Workflows",
@@ -1239,7 +1513,9 @@
     "date": "2026-08-06",
     "dateDisplay": "August 6, 2026",
     "excerpt": "Sales forecasts lose credibility when changes happen through scattered notes, private spreadsheets, and informal updates that leadership cannot trace…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Manage Inventory Substitutions With AI Before Stockouts Reach Customers",
@@ -1248,7 +1524,9 @@
     "date": "2026-08-06",
     "dateDisplay": "August 6, 2026",
     "excerpt": "Inventory substitutions are often treated as last-minute exceptions, but they can become a planned service workflow when AI watches demand, availability…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Turn Partner Referrals Into Qualified Pipeline With AI Routing",
@@ -1257,7 +1535,9 @@
     "date": "2026-08-06",
     "dateDisplay": "August 6, 2026",
     "excerpt": "Partner referrals are valuable because they arrive with context, trust, and timing, but many organizations still handle them like ordinary web leads…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Turn Policy Exception Reports Into Measurable Management Actions With AI",
@@ -1266,7 +1546,9 @@
     "date": "2026-08-06",
     "dateDisplay": "August 6, 2026",
     "excerpt": "Policy exceptions are useful signals, but many organizations review them as isolated incidents instead of treating them as management intelligence. Many…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Automate Job Cost Variance Reviews Before Project Margins Drift",
@@ -1275,7 +1557,9 @@
     "date": "2026-08-07",
     "dateDisplay": "August 7, 2026",
     "excerpt": "Job cost variance is one of those operational signals that often arrives too late. A project looks healthy during the weekly meeting, then a labor…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Build an AI Customer Reference Request Workflow That Protects Relationships",
@@ -1284,7 +1568,9 @@
     "date": "2026-08-07",
     "dateDisplay": "August 7, 2026",
     "excerpt": "Customer references are powerful because they carry credibility that no sales deck can match. A strong reference call can help a buyer understand the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Field Audit Photo Review Workflow Before Corrective Actions Drift",
@@ -1293,7 +1579,9 @@
     "date": "2026-08-07",
     "dateDisplay": "August 7, 2026",
     "excerpt": "Field audits create valuable evidence, but many companies struggle to turn that evidence into timely action. Inspectors capture photos of sites…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Turn Product Demo Notes Into AI-Guided Buyer Follow-Up",
@@ -1302,7 +1590,9 @@
     "date": "2026-08-07",
     "dateDisplay": "August 7, 2026",
     "excerpt": "Product demonstrations produce some of the richest sales information a company will ever collect, yet much of that information disappears into scattered…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Use AI to Triage Website Uptime Incidents Into Customer Communication Actions",
@@ -1311,7 +1601,9 @@
     "date": "2026-08-07",
     "dateDisplay": "August 7, 2026",
     "excerpt": "Website uptime incidents are often treated as technical events first and customer communication events second. Monitoring tools detect a slowdown…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Automate Customer Training Follow-Up With AI Before Adoption Stalls",
@@ -1320,7 +1612,9 @@
     "date": "2026-08-08",
     "dateDisplay": "August 8, 2026",
     "excerpt": "Customer training is often treated as an event, but adoption is a sequence of follow-",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Delivery Appointment Readiness Workflow Before Missed Windows Cost Trust",
@@ -1329,7 +1623,9 @@
     "date": "2026-08-08",
     "dateDisplay": "August 8, 2026",
     "excerpt": "Delivery appointments fail long before the driver misses the window. The warning signs",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Create an AI Bid No-Bid Review Workflow That Protects Sales Capacity",
@@ -1338,7 +1634,9 @@
     "date": "2026-08-08",
     "dateDisplay": "August 8, 2026",
     "excerpt": "Not every opportunity deserves the same amount of sales effort. Some deals fit the company",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Turn Customer Refund Requests Into a Controlled AI Review Workflow",
@@ -1347,7 +1645,9 @@
     "date": "2026-08-08",
     "dateDisplay": "August 8, 2026",
     "excerpt": "Refunds are often treated as isolated customer service tasks, but they are really business",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Reconcile Subscription Entitlements Before Support and Billing Drift Apart",
@@ -1356,7 +1656,9 @@
     "date": "2026-08-08",
     "dateDisplay": "August 8, 2026",
     "excerpt": "Subscription businesses depend on a simple promise: customers should receive the access,",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Automate Customer Data Deletion Requests Without Losing Governance Control",
@@ -1365,7 +1667,9 @@
     "date": "2026-08-09",
     "dateDisplay": "August 9, 2026",
     "excerpt": "Customer data deletion request operations is a strong practical use case for AI because",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Balance Sales Territory Capacity With AI Before Pipeline Coverage Becomes Uneven",
@@ -1374,7 +1678,9 @@
     "date": "2026-08-09",
     "dateDisplay": "August 9, 2026",
     "excerpt": "Sales territory capacity balancing is a strong practical use case for AI because the",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Build Finance Approval Evidence Packs With AI Before Spending Decisions Stall",
@@ -1383,7 +1689,9 @@
     "date": "2026-08-09",
     "dateDisplay": "August 9, 2026",
     "excerpt": "Finance approval evidence preparation is a strong practical use case for AI because the",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Turn Vendor Contract Obligations Into an AI Follow-Up Workflow Before Commitments Slip",
@@ -1392,7 +1700,9 @@
     "date": "2026-08-09",
     "dateDisplay": "August 9, 2026",
     "excerpt": "Vendor contract obligation management is a strong practical use case for AI because the",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Use AI to Find Knowledge Base Gaps Before Support Teams Rewrite Answers",
@@ -1401,7 +1711,9 @@
     "date": "2026-08-09",
     "dateDisplay": "August 9, 2026",
     "excerpt": "Knowledge base gap detection is a strong practical use case for AI because the work is",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Automate Customer Proof of Delivery Reviews Before Billing Questions Spread",
@@ -1410,7 +1722,9 @@
     "date": "2026-08-10",
     "dateDisplay": "August 10, 2026",
     "excerpt": "Proof of delivery is often treated as a closing detail, but in many businesses it is one of the first places where customer trust, cash flow, and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI Meeting Follow-Up Quality Loop for Client-Facing Teams",
@@ -1419,7 +1733,9 @@
     "date": "2026-08-10",
     "dateDisplay": "August 10, 2026",
     "excerpt": "Client-facing meetings create a large amount of valuable information, but much of it is lost in the space between the call and the follow-up. A customer…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Build an AI Revenue Handoff Checklist Before New Deals Reach Operations",
@@ -1428,7 +1744,9 @@
     "date": "2026-08-10",
     "dateDisplay": "August 10, 2026",
     "excerpt": "New deals create momentum, but they also create risk when the details that helped close the sale do not reach the teams responsible for delivery. Sales…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Create a Vendor Price Increase Review Workflow That Protects Margin",
@@ -1437,7 +1755,9 @@
     "date": "2026-08-10",
     "dateDisplay": "August 10, 2026",
     "excerpt": "Vendor price increases rarely arrive at a convenient time. A supplier sends a notice before a renewal date, a distributor changes a discount schedule, a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Turn Website Error Reports Into Prioritized Repair Work",
@@ -1446,7 +1766,9 @@
     "date": "2026-08-10",
     "dateDisplay": "August 10, 2026",
     "excerpt": "Website error reports often arrive as noise. A visitor submits a form saying the page did not work. A support agent hears that a checkout button failed…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Automate Data Retention Reviews Before Old Records Become Risk",
@@ -1455,7 +1777,9 @@
     "date": "2026-08-11",
     "dateDisplay": "August 11, 2026",
     "excerpt": "Data retention is one of those business responsibilities that stays invisible until it becomes urgent. Files accumulate in shared drives, CRM…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Govern Proposal Content Reuse With AI Before Stale Claims Reach Buyers",
@@ -1464,7 +1788,9 @@
     "date": "2026-08-11",
     "dateDisplay": "August 11, 2026",
     "excerpt": "Proposal teams reuse content because speed matters. Salespeople need customer stories, service descriptions, security answers, implementation language…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Turn Customer Health Scores Into AI-Guided Retention Actions",
@@ -1473,7 +1799,9 @@
     "date": "2026-08-11",
     "dateDisplay": "August 11, 2026",
     "excerpt": "Customer health scores are common in subscription and relationship driven businesses, but many of them fail because they are either too simple or too…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Monitor Implementation Milestone Risk Before Delays Compound",
@@ -1482,7 +1810,9 @@
     "date": "2026-08-11",
     "dateDisplay": "August 11, 2026",
     "excerpt": "Implementation projects often look healthy until they suddenly do not. The status report says tasks are mostly on track, the customer meeting sounds…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Triage Warranty Claims Before Service Costs Spread",
@@ -1491,7 +1821,9 @@
     "date": "2026-08-11",
     "dateDisplay": "August 11, 2026",
     "excerpt": "Warranty claims are often treated as a back office cost center, but the work actually sits at the intersection of customer experience, service delivery…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Automate Payment Plan Follow-Up Before Customer Promises Slip",
@@ -1500,7 +1832,9 @@
     "date": "2026-08-12",
     "dateDisplay": "August 12, 2026",
     "excerpt": "Payment plans usually begin with good intent. A customer explains a temporary cash issue, a finance or service manager agrees to a practical schedule…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI Win Loss Review Loop That Improves Sales Execution",
@@ -1509,7 +1843,9 @@
     "date": "2026-08-12",
     "dateDisplay": "August 12, 2026",
     "excerpt": "Most companies say they want to learn from won and lost deals, but the review process is often sporadic. A manager asks for notes after a big loss. A…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Create an AI Equipment Downtime Communication Workflow Before Customers Call First",
@@ -1518,7 +1854,9 @@
     "date": "2026-08-12",
     "dateDisplay": "August 12, 2026",
     "excerpt": "Equipment downtime creates two problems at once. The operational team must diagnose and repair the issue, while the customer-facing team must explain…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Turn CRM Attribution Conflicts Into Clean Revenue Signals With AI",
@@ -1527,7 +1865,9 @@
     "date": "2026-08-12",
     "dateDisplay": "August 12, 2026",
     "excerpt": "CRM attribution conflicts are common because customer journeys are messy. A lead arrives through a paid campaign, later fills out a website form, replies…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Reconcile Policy Acknowledgments Before Audit Requests Arrive",
@@ -1536,7 +1876,9 @@
     "date": "2026-08-12",
     "dateDisplay": "August 12, 2026",
     "excerpt": "Policy acknowledgment sounds simple until a business needs to prove it. A new handbook is released, security rules are updated, safety procedures change…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build AI Assisted Website Lead Enrichment That Keeps CRM Records Actionable",
@@ -1545,7 +1887,9 @@
     "date": "2026-08-14",
     "dateDisplay": "August 14, 2026",
     "excerpt": "Many companies have moved past the question of whether AI can help with website lead enrichment and CRM actionability. The harder question is whether the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Build an AI Change Impact Review for Workflow Automations Before Small Edits Break Operations",
@@ -1554,7 +1898,9 @@
     "date": "2026-08-14",
     "dateDisplay": "August 14, 2026",
     "excerpt": "Many companies have moved past the question of whether AI can help with change impact review for live automations. The harder question is whether the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Create an Automation Control Room for Daily Exception Follow Through",
@@ -1563,7 +1909,9 @@
     "date": "2026-08-14",
     "dateDisplay": "August 14, 2026",
     "excerpt": "Many companies have moved past the question of whether AI can help with daily exception follow through across teams. The harder question is whether the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Turn Customer Document Intake Into an AI Completeness Control Before Work Begins",
@@ -1572,7 +1920,9 @@
     "date": "2026-08-14",
     "dateDisplay": "August 14, 2026",
     "excerpt": "Many companies have moved past the question of whether AI can help with customer document intake readiness. The harder question is whether the work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Reconcile Sales Promotions With Billing Rules Before Margin Leaks",
@@ -1581,7 +1931,9 @@
     "date": "2026-08-14",
     "dateDisplay": "August 14, 2026",
     "excerpt": "Many companies have moved past the question of whether AI can help with promotion to billing rule reconciliation. The harder question is whether the work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Automate Vendor Dispute Evidence Before Supplier Trust Breaks Down",
@@ -1590,7 +1942,9 @@
     "date": "2026-08-16",
     "dateDisplay": "August 16, 2026",
     "excerpt": "Vendor dispute evidence collection used to be handled through meetings, inbox follow ups,",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Build an AI Renewal Risk Handoff Before Account Signals Scatter",
@@ -1599,7 +1953,9 @@
     "date": "2026-08-16",
     "dateDisplay": "August 16, 2026",
     "excerpt": "Renewal risk handoffs used to be handled through meetings, inbox follow ups, and personal",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI Escalation Readiness Pack Before Customer Issues Reach Executives",
@@ -1608,7 +1964,9 @@
     "date": "2026-08-16",
     "dateDisplay": "August 16, 2026",
     "excerpt": "Customer escalation readiness used to be handled through meetings, inbox follow ups, and",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Turn Quote-to-Cash Exceptions Into an AI Follow-Through Workflow",
@@ -1617,7 +1975,9 @@
     "date": "2026-08-16",
     "dateDisplay": "August 16, 2026",
     "excerpt": "Quote-to-cash exception follow-through used to be handled through meetings, inbox follow",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Retire Stale Website Pages Without Losing Customer Trust",
@@ -1626,7 +1986,9 @@
     "date": "2026-08-16",
     "dateDisplay": "August 16, 2026",
     "excerpt": "Website content retirement used to be handled through meetings, inbox follow ups, and",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Build a Customer Address Change Automation That Keeps Orders Billing and Support Aligned",
@@ -1635,7 +1997,9 @@
     "date": "2026-08-17",
     "dateDisplay": "August 17, 2026",
     "excerpt": "A customer address change sounds simple until it touches every system. Sales may update the CRM. Billing may still use the old invoice address. Shipping…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an AI Estimate Proofing Workflow Before Proposals Reach Clients",
@@ -1644,7 +2008,9 @@
     "date": "2026-08-17",
     "dateDisplay": "August 17, 2026",
     "excerpt": "Most service businesses know the feeling of sending an estimate that looked complete at the time, only to discover later that a line item was missing, a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Create an AI Quote Expiration Rescue Workflow Before Pipeline Goes Stale",
@@ -1653,7 +2019,9 @@
     "date": "2026-08-17",
     "dateDisplay": "August 17, 2026",
     "excerpt": "Quotes expire quietly. A salesperson sends pricing, the customer says they will review it, and the opportunity remains open while attention moves to…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Turn Service Ticket Attachments Into Structured Work Orders With AI",
@@ -1662,7 +2030,9 @@
     "date": "2026-08-17",
     "dateDisplay": "August 17, 2026",
     "excerpt": "Service teams receive work requests in messy forms. A customer sends photos from a job site, a technician forwards a voice note, a dispatcher receives a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Use AI to Spot Vendor Lead Time Drift Before Purchase Plans Break",
@@ -1671,7 +2041,9 @@
     "date": "2026-08-17",
     "dateDisplay": "August 17, 2026",
     "excerpt": "Vendor lead times rarely fail all at once. They drift. A supplier that used to deliver in seven days starts taking nine. A shipment that usually arrives…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Automate Lost Shipment Investigations Before Customer Promises Break",
@@ -1680,7 +2052,9 @@
     "date": "2026-08-18",
     "dateDisplay": "August 18, 2026",
     "excerpt": "A lost shipment rarely starts as a dramatic failure. It usually starts as a small unanswered question. A customer asks where an order is. A carrier…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Automate Marketing Campaign Compliance Review Before Messages Reach the Market",
@@ -1689,7 +2063,9 @@
     "date": "2026-08-18",
     "dateDisplay": "August 18, 2026",
     "excerpt": "Marketing teams move quickly because the market rewards timing. New offers, landing pages, emails, ads, partner promotions, event messages, and sales…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an AI Change Order Review Workflow That Protects Project Scope and Margin",
@@ -1698,7 +2074,9 @@
     "date": "2026-08-18",
     "dateDisplay": "August 18, 2026",
     "excerpt": "Change orders are where project discipline is tested. A customer asks for a small adjustment, a field team finds an unexpected condition, a salesperson…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Build an AI SLA Credit Review Workflow Before Service Disputes Reach Finance",
@@ -1707,7 +2085,9 @@
     "date": "2026-08-18",
     "dateDisplay": "August 18, 2026",
     "excerpt": "Service-level credits often become difficult because the review starts too late. A customer reports that a commitment was missed. Support checks the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Turn Customer Escalations Into AI-Guided Prevention Workflows",
@@ -1716,7 +2096,9 @@
     "date": "2026-08-18",
     "dateDisplay": "August 18, 2026",
     "excerpt": "Customer escalations are often treated as urgent events that end when the customer is satisfied enough to move forward. A manager joins the call, support…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Audit AI Chatbot Handoffs Before Support Context Gets Lost",
@@ -1725,7 +2107,9 @@
     "date": "2026-08-19",
     "dateDisplay": "August 19, 2026",
     "excerpt": "AI chatbots are now common on business websites and customer portals because they can answer routine questions, collect details, and reduce the number of…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Automate Invoice Coding Review Before Month-End Rework Spreads",
@@ -1734,7 +2118,9 @@
     "date": "2026-08-19",
     "dateDisplay": "August 19, 2026",
     "excerpt": "Invoice coding is one of those accounting routines that looks simple until the volume rises, the vendor list expands, and the month-end close begins. A…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI Field Scheduling Stabilizer Before Customer Appointments Slip",
@@ -1743,7 +2129,9 @@
     "date": "2026-08-19",
     "dateDisplay": "August 19, 2026",
     "excerpt": "Field service scheduling is a constant negotiation between promises and reality. A customer expects a technician during a specific window. A dispatcher…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Use AI to Catch Customer Onboarding Risk Before Early Adoption Stalls",
@@ -1752,7 +2140,9 @@
     "date": "2026-08-19",
     "dateDisplay": "August 19, 2026",
     "excerpt": "Customer onboarding has become one of the most expensive places for small and mid-sized businesses to lose momentum. A sale closes, the handoff looks…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Detect KPI Definition Drift Before Reports Lose Trust",
@@ -1761,7 +2151,9 @@
     "date": "2026-08-19",
     "dateDisplay": "August 19, 2026",
     "excerpt": "Business leaders rely on key performance indicators to create a shared view of progress. The problem is that KPI definitions often drift without anyone…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Automate Sales Demo Environment Readiness Before High-Value Meetings",
@@ -1770,7 +2162,9 @@
     "date": "2026-08-20",
     "dateDisplay": "August 20, 2026",
     "excerpt": "High-value demos fail in small ways before they fail in obvious ways. The sample account has",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Build an AI Change Freeze Readiness Workflow Before Seasonal Traffic Peaks",
@@ -1779,7 +2173,9 @@
     "date": "2026-08-20",
     "dateDisplay": "August 20, 2026",
     "excerpt": "Many companies still treat seasonal traffic preparation as a technical checklist that lives",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Build an AI Data Access Exception Review Before Shadow Permissions Spread",
@@ -1788,7 +2184,9 @@
     "date": "2026-08-20",
     "dateDisplay": "August 20, 2026",
     "excerpt": "Data access exceptions are usually created for sensible reasons. A finance analyst needs",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Create an AI Supplier Substitution Approval Workflow Before Expedites Erode Margin",
@@ -1797,7 +2195,9 @@
     "date": "2026-08-20",
     "dateDisplay": "August 20, 2026",
     "excerpt": "Supplier substitutions often begin as urgent problem solving. A preferred item is",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Turn Customer Payment Portal Friction Into Cash Recovery Actions",
@@ -1806,7 +2206,9 @@
     "date": "2026-08-20",
     "dateDisplay": "August 20, 2026",
     "excerpt": "Payment portals often look like finance infrastructure, but customers experience them as",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Automate Compliance Evidence Requests Before Audit Questions Scatter Across Teams",
@@ -1815,7 +2217,9 @@
     "date": "2026-08-21",
     "dateDisplay": "August 21, 2026",
     "excerpt": "Compliance evidence requests rarely fail because teams refuse to help. They fail because the request arrives late, the owner is unclear, the source…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build a Revenue Recognition Readiness Workflow Before Automation Sends Bad Signals",
@@ -1824,7 +2228,9 @@
     "date": "2026-08-21",
     "dateDisplay": "August 21, 2026",
     "excerpt": "Revenue recognition depends on disciplined signals from contracts, orders, fulfillment, billing, and customer acceptance. Automation can move those…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Create an AI Contract Clause Deviation Review Before Legal Bottlenecks Slow Deals",
@@ -1833,7 +2239,9 @@
     "date": "2026-08-21",
     "dateDisplay": "August 21, 2026",
     "excerpt": "Contract review often becomes the hidden constraint inside a growing sales process. A business may have a modern CRM, a clean quoting tool, and automated…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Create an AI Subscription Usage Alert Workflow Before Renewals Lose Momentum",
@@ -1842,7 +2250,9 @@
     "date": "2026-08-21",
     "dateDisplay": "August 21, 2026",
     "excerpt": "Subscription businesses rarely lose renewal momentum all at once. The warning signs arrive quietly. A power user stops logging in. A team never adopts a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Turn Sales Territory Changes Into a Clean CRM Reassignment Workflow",
@@ -1851,7 +2261,9 @@
     "date": "2026-08-21",
     "dateDisplay": "August 21, 2026",
     "excerpt": "Sales territory changes look simple on a slide and complicated inside a CRM. A manager redraws regions, rebalances account loads, assigns a new industry…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Automate Customer Implementation Scope Checks Before Onboarding Work Expands",
@@ -1860,7 +2272,9 @@
     "date": "2026-08-22",
     "dateDisplay": "August 22, 2026",
     "excerpt": "Customer implementation work often expands quietly. A kickoff call adds a report. A",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Service Recovery Playbook Before Negative Reviews Spread",
@@ -1869,7 +2283,9 @@
     "date": "2026-08-22",
     "dateDisplay": "August 22, 2026",
     "excerpt": "Customer service teams rarely lose trust because one issue happened. Trust usually erodes",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Website Conversion Anomaly Brief Before Leads Disappear",
@@ -1878,7 +2294,9 @@
     "date": "2026-08-22",
     "dateDisplay": "August 22, 2026",
     "excerpt": "Website conversion problems often become obvious only after the pipeline has already",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Create an AI CRM Merge Review Before Duplicate Accounts Distort Revenue",
@@ -1887,7 +2305,9 @@
     "date": "2026-08-22",
     "dateDisplay": "August 22, 2026",
     "excerpt": "Duplicate CRM accounts seem like a housekeeping issue until they distort pipeline, territory",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Use AI to Automate Warranty Reserve Signals Before Finance Gets Surprised",
@@ -1896,7 +2316,9 @@
     "date": "2026-08-22",
     "dateDisplay": "August 22, 2026",
     "excerpt": "Warranty cost is one of those business signals that can look manageable until it suddenly",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build a Customer Asset Registry Cleanup Workflow With AI",
@@ -1905,7 +2327,9 @@
     "date": "2026-08-23",
     "dateDisplay": "August 23, 2026",
     "excerpt": "Most companies discover customer asset registry cleanup problems through daily friction, not through a formal audit. The issue begins with outdated…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Resolve Customer Identity Conflicts With AI Before Records Break Operations",
@@ -1914,7 +2338,9 @@
     "date": "2026-08-23",
     "dateDisplay": "August 23, 2026",
     "excerpt": "Most companies discover customer identity resolution problems through daily friction, not through a formal audit. The issue begins with duplicate and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Retire Outdated Service Knowledge With AI Before Bad Guidance Reaches Customers",
@@ -1923,7 +2349,9 @@
     "date": "2026-08-23",
     "dateDisplay": "August 23, 2026",
     "excerpt": "Most companies discover service knowledge retirement problems through daily friction, not through a formal audit. The issue begins with old help…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Review Automation Telemetry With AI Before Workflow Drift Becomes Invisible",
@@ -1932,7 +2360,9 @@
     "date": "2026-08-23",
     "dateDisplay": "August 23, 2026",
     "excerpt": "Most companies discover automation telemetry review problems through daily friction, not through a formal audit. The issue begins with workflows that…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Test Workflow Automations With AI Simulations Before Teams Depend on Them",
@@ -1941,7 +2371,9 @@
     "date": "2026-08-23",
     "dateDisplay": "August 23, 2026",
     "excerpt": "Most companies discover workflow simulation before automation launch problems through daily friction, not through a formal audit. The issue begins with…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Automate Customer Credit Memo Reviews Before Revenue Leakage Hides in Adjustments",
@@ -1950,7 +2382,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Business teams are getting more comfortable using AI to summarize work, classify requests,",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Automate Customer-Specific Pricing Reviews Before Special Terms Create Margin Confusion",
@@ -1959,7 +2393,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Customer-specific pricing can be a smart commercial tool. It helps teams win strategic",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Automate Renewal Clause Reviews Before Customer Conversations Start",
@@ -1968,7 +2404,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Renewal conversations often begin with relationship history, usage trends, satisfaction notes, and expansion potential. Those inputs matter, but they are…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Automate Sales Tax Nexus Watchlists Before Market Expansion Creates Filing Risk",
@@ -1977,7 +2415,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "A business can expand into a new market long before its accounting team feels the impact. A sales rep starts closing orders in a new state, a website…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Automate Vendor Contract Renewal Budget Alerts Before Spend Surprises Finance",
@@ -1986,7 +2426,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Automate Vendor Contract Renewal Budget Alerts Before Spend Surprises Finance. Business teams are getting more comfortable using AI to summarize work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Automate Website Content Ownership Reviews Before Pages Become Orphaned",
@@ -1995,7 +2437,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Business websites accumulate pages faster than ownership models mature. A product page is launched for a campaign. A service description is written by a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Build an AI Customer Promise Register Before Commitments Scatter Across Teams",
@@ -2004,7 +2448,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "A customer promise rarely starts its life as a formal project. It begins in a sales call, a renewal discussion, a service recovery note, an…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Build an AI Demand Signal Review Workflow Before Inventory Buys Outrun Reality",
@@ -2013,7 +2459,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Build an AI Demand Signal Review Workflow Before Inventory Buys Outrun Reality. Business teams are getting more comfortable using AI to summarize work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Build an AI Procurement Savings Verification Workflow Before Reported Wins Fade",
@@ -2022,7 +2470,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Procurement teams often work hard to negotiate better pricing, improved payment terms,",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Build an AI Quote Approval Memory So Pricing Exceptions Do Not Repeat",
@@ -2031,7 +2481,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Sales teams often treat quote exceptions as one-time events. A discount is approved because a competitor is aggressive. A special payment term is allowed…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Build an AI Regulatory Change Intake Workflow Before Policies Fall Behind",
@@ -2040,7 +2492,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Regulatory change often reaches businesses as a pile of alerts, newsletters, agency updates, legal notes, vendor emails, association summaries, and…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Build an Automation Portfolio Review That Proves ROI Before Budget Season",
@@ -2049,7 +2503,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Automation work often begins as a collection of useful projects. One team automates invoice routing. Another builds a customer service chatbot…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Create an AI Customer Communication Collision Check Before Teams Send Mixed Messages",
@@ -2058,7 +2514,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "A growing business can send conflicting messages to the same customer without anyone making",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI Customer Master Data Merge Review Before Duplicate Accounts Distort Reporting",
@@ -2067,7 +2525,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Duplicate customer accounts are easy to create and hard to unwind. A prospect fills out a website form with a slightly different company name. A sales…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Create an AI Data Refresh Failure Monitor Before Dashboards Mislead Leaders",
@@ -2076,7 +2536,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Create an AI Data Refresh Failure Monitor Before Dashboards Mislead Leaders. Business teams are getting more comfortable using AI to summarize work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Create an AI Maintenance Parts Readiness Workflow Before Service Visits Stall",
@@ -2085,7 +2547,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "A service visit can be scheduled perfectly and still fail if the right part is not ready.",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Create an AI Service Estimate Review Workflow Before Field Costs Drift",
@@ -2094,7 +2558,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Service organizations have learned that the estimate is not a simple administrative document. It is the moment where customer expectation, technician…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Create an AI Website Lead Quality Feedback Loop Between Sales and Marketing",
@@ -2103,7 +2569,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Most website lead workflows are built to move quickly. A visitor fills out a form, the record enters a CRM, an automation assigns an owner, and sales…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Turn Customer Cancellation Requests Into an AI Retention Decision Workflow",
@@ -2112,7 +2580,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Customer cancellation requests often arrive through channels that were not designed for strategic retention work. A customer emails support, submits a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Catch Website Product Data Errors Before Buyers Lose Confidence",
@@ -2121,7 +2591,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Product pages are often treated as marketing surfaces, but they are also operational",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Convert Website Heatmap Patterns Into Prioritized UX Repair Work",
@@ -2130,7 +2602,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Many businesses collect website heatmaps, session recordings, scroll maps, and click analytics, but the information rarely turns into a disciplined…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Monitor Customer Document Expiration Before Operations Stall",
@@ -2139,7 +2613,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Many businesses depend on customer documents that quietly expire. Tax exemption certificates, resale forms, insurance documents, signed service…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Use AI to Turn Customer Training Attendance Into Adoption Risk Signals",
@@ -2148,7 +2624,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Customer training is often treated as a calendar event. The session is scheduled, invites are sent, attendance is recorded, and the team moves on. But…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Turn Operations Exceptions Into Root Cause Fixes",
@@ -2157,7 +2635,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Every operations team has exception queues. Orders need review because an address is incomplete. Invoices stall because a purchase order does not match…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Use AI to Turn Sales Call Objections Into Enablement Repair Work",
@@ -2166,7 +2646,9 @@
     "date": "2026-08-29",
     "dateDisplay": "August 29, 2026",
     "excerpt": "Use AI to Turn Sales Call Objections Into Enablement Repair Work. Business teams are getting more comfortable using AI to summarize work, classify…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Assign AI Data Pipeline Ownership Before Broken Integrations Damage Reporting",
@@ -2175,7 +2657,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Dashboards do not fail only when a chart goes blank. They also fail when an integration changes, a field stops syncing, a nightly refresh partially…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Automate Internal Approval Queue Aging Before Work Stalls Between Managers",
@@ -2184,7 +2668,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Internal approvals often look organized in software while work quietly stalls. A purchase request waits for a department head. A discount exception sits…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Automate Purchase Card Pattern Reviews Before Small Charges Become Control Gaps",
@@ -2193,7 +2679,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Purchase card programs are designed for speed. They help employees solve small business needs without turning every transaction into a formal procurement…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Build an AI CRM Stage Hygiene Review Before Forecast Meetings Start",
@@ -2202,7 +2690,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Forecast meetings often become data repair sessions. A sales leader opens the pipeline view, sees a large deal marked as commit, and immediately asks…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Build an AI Calendar Capacity Signal Before Internal Meetings Crowd Out Customer Work",
@@ -2211,7 +2701,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Many teams do not notice meeting overload until customer work starts slipping. Calendars fill gradually, then sales follow-up slows, support updates…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Build an AI Website Personalization Governance Workflow Before Experiments Confuse Buyers",
@@ -2220,7 +2712,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Website personalization can improve conversion, but it can also create confusion when teams move faster than governance. A returning visitor sees one…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Create an AI Automation Sunset Review Before Legacy Workflows Keep Running Unchecked",
@@ -2229,7 +2723,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Automation programs often celebrate launch day, but they rarely give the same discipline to retirement day. A workflow that was useful six months ago can…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Create an AI Customer Invoice Question Triage Before Support and Finance Duplicate Work",
@@ -2238,7 +2734,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Customer invoice questions rarely arrive in a neat finance queue. They show up as support tickets, account manager emails, replies to automated billing…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Use AI to Clarify Onboarding Role Ownership Before New Customer Work Slows Down",
@@ -2247,7 +2745,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Customer onboarding often begins with energy, then slows when ownership becomes fuzzy. Sales assumes implementation has the latest promise…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Use AI to Turn Supplier Email Promises Into Delivery Risk Signals",
@@ -2256,7 +2756,9 @@
     "date": "2026-08-31",
     "dateDisplay": "August 31, 2026",
     "excerpt": "Supplier risk often hides in ordinary email. A vendor says they expect the order to leave the warehouse soon. A buyer receives a note that a component…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Automate CRM Meeting Note Quality Checks Before Pipeline Signals Get Noisy",
@@ -2265,7 +2767,9 @@
     "date": "2026-09-02",
     "dateDisplay": "September 2, 2026",
     "excerpt": "CRM meeting notes are supposed to help teams understand buyer intent, next steps, blockers, urgency, and relationship context. In practice, notes often…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Build an AI Customer Profitability Watchlist Before Revenue Hides Margin Risk",
@@ -2274,7 +2778,9 @@
     "date": "2026-09-02",
     "dateDisplay": "September 2, 2026",
     "excerpt": "Many companies still treat large customers as automatically healthy customers. Revenue reports show the account near the top of the list, sales teams…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Create an AI Order Change Impact Review Before Small Edits Disrupt Fulfillment",
@@ -2283,7 +2789,9 @@
     "date": "2026-09-02",
     "dateDisplay": "September 2, 2026",
     "excerpt": "Order changes look harmless when they arrive one at a time. A customer updates a delivery date, swaps a configuration, changes a shipping address, adds a…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "governance",
+    "category": "AI Strategy & Governance"
   },
   {
     "title": "Create an AI Website Form Abandonment Recovery Workflow Before Qualified Buyers Drift Away",
@@ -2292,7 +2800,9 @@
     "date": "2026-09-02",
     "dateDisplay": "September 2, 2026",
     "excerpt": "Website form abandonment is often treated as a marketing analytics issue. A visitor starts a quote request, demo form, consultation form, assessment…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Use AI to Turn Service Parts Returns Into Warranty Inventory and Vendor Signals",
@@ -2301,7 +2811,9 @@
     "date": "2026-09-02",
     "dateDisplay": "September 2, 2026",
     "excerpt": "Service parts returns often get treated as cleanup work. A part comes back from the field, someone checks whether it can be restocked, warranty paperwork…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Build an AI Customer Commitments Ledger Before Promises Become Operational Risk",
@@ -2310,7 +2822,9 @@
     "date": "2026-09-02",
     "dateDisplay": "September 2, 2026",
     "excerpt": "Most companies have a surprisingly weak memory for customer promises. A sales rep agrees to follow up with a revised quote by Friday. A project manager…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI Returned Mail Recovery Workflow Before Bad Addresses Drain Revenue",
@@ -2319,7 +2833,9 @@
     "date": "2026-09-03",
     "dateDisplay": "September 3, 2026",
     "excerpt": "Returned mail looks small because each individual envelope, postcard, invoice, renewal notice, tax form, welcome packet, product catalog, statement, or…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Automate Customer Specification Change Intake Before Teams Build From Old Requirements",
@@ -2328,7 +2844,9 @@
     "date": "2026-09-04",
     "dateDisplay": "September 4, 2026",
     "excerpt": "Customer requirements rarely stay still after the first order, project kickoff, or signed scope. A buyer asks for a packaging change. An engineer…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "Create an AI Delivery Instruction Verification Workflow Before Orders Leave the Dock",
@@ -2337,7 +2855,9 @@
     "date": "2026-09-05",
     "dateDisplay": "September 5, 2026",
     "excerpt": "Delivery instructions have become more complicated than the simple notes many companies still treat them as. A customer may need a liftgate, a delivery…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   },
   {
     "title": "Automate Sales Sample Request Reviews Before Free Product Drains Margin",
@@ -2346,7 +2866,9 @@
     "date": "2026-09-06",
     "dateDisplay": "September 6, 2026",
     "excerpt": "Sales sample requests usually begin with good intent. A prospect wants to test a product, a distributor wants a display set, an account manager wants to…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "Create an AI Payment Method Readiness Workflow Before Recurring Revenue Gets Interrupted",
@@ -2355,7 +2877,9 @@
     "date": "2026-09-11",
     "dateDisplay": "September 11, 2026",
     "excerpt": "Recurring revenue depends on a quiet promise: when the next billing date arrives, the customer is ready, the payment method works, the invoice is…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "finance",
+    "category": "Finance & Billing"
   },
   {
     "title": "What Changes When AI Reviews Timesheet Exceptions Before Payroll Closes?",
@@ -2364,7 +2888,9 @@
     "date": "2026-09-12",
     "dateDisplay": "September 12, 2026",
     "excerpt": "Payroll usually looks simple until the final review window opens. A few missed punches, late approvals, duplicate shift notes, and overtime questions can…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "SaaS Offboarding Access Checklist That Finds Permission Gaps After Employees Leave",
@@ -2373,7 +2899,9 @@
     "date": "2026-09-14",
     "dateDisplay": "September 14, 2026",
     "excerpt": "Employee offboarding often looks complete because HR closed the personnel record, IT disabled the email account, and the manager collected a laptop. The…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "people",
+    "category": "HR & Team"
   },
   {
     "title": "Vendor Master Data Change Review With AI That Catches Payment Risk Before Records Update",
@@ -2382,7 +2910,9 @@
     "date": "2026-09-14",
     "dateDisplay": "September 14, 2026",
     "excerpt": "Vendor master data changes look routine until one bad update redirects money, breaks tax reporting, or slows a supplier that the business depends on. A…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "compliance",
+    "category": "Compliance & Data"
   },
   {
     "title": "Support Macro Drift Scorecard for Finding Bad Answers Before Customers Escalate",
@@ -2391,7 +2921,9 @@
     "date": "2026-09-15",
     "dateDisplay": "September 15, 2026",
     "excerpt": "Support macros are supposed to make customer service faster, more consistent, and easier to coach. They give agents approved language for common…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "customer-experience",
+    "category": "Customer Experience"
   },
   {
     "title": "CRM Next-Step Aging Review With AI That Finds Stalled Deals Before Forecast Meetings",
@@ -2400,7 +2932,9 @@
     "date": "2026-09-20",
     "dateDisplay": "September 20, 2026",
     "excerpt": "A CRM next-step aging review helps sales teams find deals that look active in the pipeline but have not had a meaningful buyer action, seller follow-up…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "sales",
+    "category": "Sales & CRM"
   },
   {
     "title": "Field Service Parts Reservation Review That Stops Truck Rolls Before Inventory Is Confirmed",
@@ -2409,7 +2943,9 @@
     "date": "2026-09-20",
     "dateDisplay": "September 20, 2026",
     "excerpt": "Field service teams lose money when a technician leaves for a job before the required part is actually available, reserved, and matched to the work…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "field-service",
+    "category": "Field Service"
   },
   {
     "title": "Five Signs Your Lead Source Attribution Needs AI Review Before Campaign ROI Reports",
@@ -2418,7 +2954,9 @@
     "date": "2026-09-20",
     "dateDisplay": "September 20, 2026",
     "excerpt": "Lead source attribution looks tidy until the campaign ROI report reaches the owner, CFO, or sales leader who has to decide where the next dollar goes. A…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   },
   {
     "title": "Monthly KPI Exception Briefs With AI: How to Find the Variances Leaders Should Discuss",
@@ -2427,7 +2965,9 @@
     "date": "2026-09-20",
     "dateDisplay": "September 20, 2026",
     "excerpt": "Monthly KPI meetings often get pulled into the wrong work. Leaders spend the first half of the meeting asking what changed, the second half debating…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "reporting",
+    "category": "Reporting & Leadership"
   },
   {
     "title": "Prompt Engineering Practice Exercises for Beginners Who Want Better AI Answers",
@@ -2436,7 +2976,9 @@
     "date": "2026-09-20",
     "dateDisplay": "September 20, 2026",
     "excerpt": "Many people try AI tools once or twice, get a vague answer, and assume the tool is either overrated or too advanced for them. The real issue is often…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Your First No-Code Automation Workflow: A Beginner Guide to Connecting Apps",
@@ -2445,7 +2987,9 @@
     "date": "2026-09-21",
     "dateDisplay": "September 21, 2026",
     "excerpt": "A lot of beginners want to learn automation, but they get stuck before they build their first workflow because the tools look more complicated than the…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Cybersecurity Basics for Beginners: Account Safety Skills You Can Use This Week",
@@ -2454,7 +2998,9 @@
     "date": "2026-09-22",
     "dateDisplay": "September 22, 2026",
     "excerpt": "Many people know they should be more careful online, but they do not know which cybersecurity basics to learn first. This beginner guide focuses on…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "What You Learn Building Your First Web Page With HTML, CSS, and JavaScript",
@@ -2463,7 +3009,9 @@
     "date": "2026-09-23",
     "dateDisplay": "September 23, 2026",
     "excerpt": "Many beginners want to learn coding, but they are not always sure where to start or what a first project should actually teach them. Building a simple…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Build Your First React Component: A Small Project for Frontend Beginners",
@@ -2472,7 +3020,9 @@
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
     "excerpt": "React can feel confusing when you first hear words like component, prop, state, and render, but the fastest way to understand it is to build one small…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Neural Networks for Beginners: The Plain Language Concepts Behind Modern AI",
@@ -2481,7 +3031,9 @@
     "date": "2026-09-25",
     "dateDisplay": "September 25, 2026",
     "excerpt": "Neural networks are one of the ideas behind many AI tools, yet the phrase can make beginner learning feel more technical than it needs to be. A neural…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How to Debug Beginner JavaScript: A Practical Workflow for Finding Errors",
@@ -2490,7 +3042,9 @@
     "date": "2026-09-26",
     "dateDisplay": "September 26, 2026",
     "excerpt": "JavaScript debugging is the skill of finding out why a page does not behave as you expected, then making one small, testable change at a time. For…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Python Basics for Beginners: Three Small Programs That Build Coding Confidence",
@@ -2499,7 +3053,9 @@
     "date": "2026-09-27",
     "dateDisplay": "September 27, 2026",
     "excerpt": "Many people who want to learn coding begin with a difficult question: what should the first real program actually do? A blank editor can make programming…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "First AI Workflow Checklist: Five Steps From Repetitive Task to Useful Automation",
@@ -2508,7 +3064,9 @@
     "date": "2026-09-28",
     "dateDisplay": "September 28, 2026",
     "excerpt": "Many people want to learn AI automation, but the first project often feels larger than it needs to be. They imagine connecting several business apps…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How to Pick a First Tech Skill When You Have Limited Study Time",
@@ -2517,7 +3075,9 @@
     "date": "2026-09-29",
     "dateDisplay": "September 29, 2026",
     "excerpt": "Many beginners do not struggle because they lack interest in technology. They struggle because every course seems to promise a different future. One…",
-    "webp": true
+    "webp": true,
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "No-Code Automation Mistakes Beginners Make When Connecting Apps",
@@ -2526,7 +3086,9 @@
     "webp": true,
     "date": "2026-09-30",
     "dateDisplay": "September 30, 2026",
-    "excerpt": "No-code automation can make a small team feel larger by moving information between the apps people already use. A form response can become a task, a…"
+    "excerpt": "No-code automation can make a small team feel larger by moving information between the apps people already use. A form response can become a task, a…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Portfolio Project Practice for Beginners: Turn HTML, CSS, and JavaScript Into Proof You Can Build",
@@ -2535,7 +3097,9 @@
     "webp": true,
     "date": "2026-10-01",
     "dateDisplay": "October 1, 2026",
-    "excerpt": "Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…"
+    "excerpt": "Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "AI at Work for Beginners: Three Everyday Tasks to Practice This Week",
@@ -2544,7 +3108,9 @@
     "webp": true,
     "date": "2026-10-02",
     "dateDisplay": "October 2, 2026",
-    "excerpt": "Many people want to use AI at work, but the first step is often unclear. Should you ask it to write an email, summarize a meeting, analyze a spreadsheet…"
+    "excerpt": "Many people want to use AI at work, but the first step is often unclear. Should you ask it to write an email, summarize a meeting, analyze a spreadsheet…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Beginner Phishing Detection Practice: Five Clues to Check Before You Click",
@@ -2553,7 +3119,9 @@
     "webp": true,
     "date": "2026-10-03",
     "dateDisplay": "October 3, 2026",
-    "excerpt": "Phishing detection is one of the most useful cybersecurity skills a beginner can practice because a single rushed click can expose an account, a company…"
+    "excerpt": "Phishing detection is one of the most useful cybersecurity skills a beginner can practice because a single rushed click can expose an account, a company…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "What to Build First When Learning to Code: Three Beginner Projects That Teach Real Skills",
@@ -2562,7 +3130,9 @@
     "webp": true,
     "date": "2026-10-04",
     "dateDisplay": "October 4, 2026",
-    "excerpt": "Learning to code gets easier when the first project is small enough to finish and useful enough to explain. Many beginners choose a project because it…"
+    "excerpt": "Learning to code gets easier when the first project is small enough to finish and useful enough to explain. Many beginners choose a project because it…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How Training Data Shapes AI Answers: A Beginner Practice Guide",
@@ -2571,7 +3141,9 @@
     "webp": true,
     "date": "2026-10-06",
     "dateDisplay": "October 6, 2026",
-    "excerpt": "When a beginner asks why an AI tool gives a confident but unhelpful answer, the explanation often starts with the prompt. The more important question may…"
+    "excerpt": "When a beginner asks why an AI tool gives a confident but unhelpful answer, the explanation often starts with the prompt. The more important question may…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "CSS Flexbox for Beginners: Build a Responsive Page Section Without Guessing",
@@ -2580,7 +3152,9 @@
     "webp": true,
     "date": "2026-10-06",
     "dateDisplay": "October 6, 2026",
-    "excerpt": "Many beginners can write a little HTML and change a color in CSS, but they still feel stuck when three cards refuse to sit in a neat row or a page breaks…"
+    "excerpt": "Many beginners can write a little HTML and change a color in CSS, but they still feel stuck when three cards refuse to sit in a neat row or a page breaks…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "API Responses for Beginners: Read JSON and Use Data in a Small App",
@@ -2589,7 +3163,9 @@
     "webp": true,
     "date": "2026-10-07",
     "dateDisplay": "October 7, 2026",
-    "excerpt": "Many beginner developers can build a button, change a color, or print a message on a page, but they freeze when an app needs information from somewhere…"
+    "excerpt": "Many beginner developers can build a button, change a color, or print a message on a page, but they freeze when an app needs information from somewhere…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Build a Beginner JavaScript Quiz: A First Project With Variables, Events, and DOM Updates",
@@ -2598,7 +3174,9 @@
     "webp": true,
     "date": "2026-10-08",
     "dateDisplay": "October 8, 2026",
-    "excerpt": "JavaScript becomes easier to understand when each concept has a visible job. A small browser quiz gives beginners a focused project where variables hold…"
+    "excerpt": "JavaScript becomes easier to understand when each concept has a visible job. A small browser quiz gives beginners a focused project where variables hold…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "React State vs Props for Beginners: Know Where Your Interface Data Belongs",
@@ -2607,7 +3185,9 @@
     "webp": true,
     "date": "2026-10-09",
     "dateDisplay": "October 9, 2026",
-    "excerpt": "React becomes much easier to reason about when you can answer one practical question: should this piece of interface data be owned by a component, or…"
+    "excerpt": "React becomes much easier to reason about when you can answer one practical question: should this piece of interface data be owned by a component, or…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "AI Answer Verification for Beginners: Five Checks Before You Use Generated Content",
@@ -2616,7 +3196,9 @@
     "webp": true,
     "date": "2026-10-10",
     "dateDisplay": "October 10, 2026",
-    "excerpt": "AI can produce a polished answer in seconds, but a polished answer is not automatically a dependable one. A beginner may ask an AI tool to summarize a…"
+    "excerpt": "AI can produce a polished answer in seconds, but a polished answer is not automatically a dependable one. A beginner may ask an AI tool to summarize a…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Git Basics for Beginners: Track Changes and Recover From Coding Mistakes",
@@ -2625,7 +3207,9 @@
     "webp": true,
     "date": "2026-10-11",
     "dateDisplay": "October 11, 2026",
-    "excerpt": "Git is the skill that lets a beginner change code without feeling trapped by every change. If you have ever hesitated to edit a working page because one…"
+    "excerpt": "Git is the skill that lets a beginner change code without feeling trapped by every change. If you have ever hesitated to edit a working page because one…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Zapier vs Make for Beginners: Which No-Code Automation Tool Should You Learn First?",
@@ -2634,7 +3218,9 @@
     "webp": true,
     "date": "2026-10-12",
     "dateDisplay": "October 12, 2026",
-    "excerpt": "Many beginners want to learn no-code automation but get stuck comparing tool names before they have built a single useful workflow. Zapier and Make can…"
+    "excerpt": "Many beginners want to learn no-code automation but get stuck comparing tool names before they have built a single useful workflow. Zapier and Make can…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "JavaScript Functions for Beginners: Turn Repeated Code Into Reusable Tools",
@@ -2643,7 +3229,9 @@
     "webp": true,
     "date": "2026-10-13",
     "dateDisplay": "October 13, 2026",
-    "excerpt": "Many people learning JavaScript can make a button respond, change text on a page, or calculate a total, but their code starts to feel messy as soon as…"
+    "excerpt": "Many people learning JavaScript can make a button respond, change text on a page, or calculate a total, but their code starts to feel messy as soon as…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Beginner HTML Forms: Build a Contact Page That Collects Useful Information",
@@ -2652,7 +3240,9 @@
     "webp": true,
     "date": "2026-10-14",
     "dateDisplay": "October 14, 2026",
-    "excerpt": "Many people can make a web page display a heading, image, and paragraph but feel less confident when a visitor needs to send information back. HTML forms…"
+    "excerpt": "Many people can make a web page display a heading, image, and paragraph but feel less confident when a visitor needs to send information back. HTML forms…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Website Accessibility Basics for Beginners: Make a First Page Easier to Use",
@@ -2661,7 +3251,9 @@
     "webp": true,
     "date": "2026-10-15",
     "dateDisplay": "October 15, 2026",
-    "excerpt": "Many beginners learn to build a web page by focusing on what it looks like in a browser. Accessibility adds a second question: can people with different…"
+    "excerpt": "Many beginners learn to build a web page by focusing on what it looks like in a browser. Accessibility adds a second question: can people with different…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "Prompt Templates vs. Detailed Instructions: A Beginner Practice Guide for Better AI Results",
@@ -2670,7 +3262,9 @@
     "webp": true,
     "date": "2026-10-16",
     "dateDisplay": "October 16, 2026",
-    "excerpt": "Many beginners ask an AI tool a reasonable question, receive an uneven answer, and assume the tool is unreliable. Often, the real problem is not the…"
+    "excerpt": "Many beginners ask an AI tool a reasonable question, receive an uneven answer, and assume the tool is unreliable. Often, the real problem is not the…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How to Debug Beginner JavaScript Without Guessing",
@@ -2679,7 +3273,9 @@
     "webp": true,
     "date": "2026-10-17",
     "dateDisplay": "October 17, 2026",
-    "excerpt": "Many new developers can follow a JavaScript lesson until the browser stops doing what they expected. A button does nothing, a value appears as undefined…"
+    "excerpt": "Many new developers can follow a JavaScript lesson until the browser stops doing what they expected. A button does nothing, a value appears as undefined…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "MFA for Beginners: Build a Safer Account-Security Routine",
@@ -2688,7 +3284,9 @@
     "webp": true,
     "date": "2026-10-18",
     "dateDisplay": "October 18, 2026",
-    "excerpt": "Many beginners know that multi-factor authentication, or MFA, is important, but still treat it as a button to switch on once and forget. The real skill…"
+    "excerpt": "Many beginners know that multi-factor authentication, or MFA, is important, but still treat it as a button to switch on once and forget. The real skill…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "CSS Grid for Beginners: Build a Clean Multi-Section Layout Without Guessing",
@@ -2697,7 +3295,9 @@
     "webp": true,
     "date": "2026-10-19",
     "dateDisplay": "October 19, 2026",
-    "excerpt": "Many beginners can make a web page look acceptable in one browser window, then feel lost when the design needs a sidebar, a content area, a card row, and…"
+    "excerpt": "Many beginners can make a web page look acceptable in one browser window, then feel lost when the design needs a sidebar, a content area, a card row, and…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How to Choose Your First Cybersecurity Course: A Beginner Path From Passwords to Safer Systems",
@@ -2706,7 +3306,9 @@
     "webp": true,
     "date": "2026-10-20",
     "dateDisplay": "October 20, 2026",
-    "excerpt": "Choosing a first cybersecurity course can feel harder than the first lesson. Course pages often mention networks, threats, encryption, identity…"
+    "excerpt": "Choosing a first cybersecurity course can feel harder than the first lesson. Course pages often mention networks, threats, encryption, identity…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How to Map a Repetitive Task Before You Automate It",
@@ -2715,7 +3317,9 @@
     "webp": true,
     "date": "2026-10-21",
     "dateDisplay": "October 21, 2026",
-    "excerpt": "Many people start learning automation by opening Zapier, Make, or an AI assistant and looking for a button that will connect two apps. That can be…"
+    "excerpt": "Many people start learning automation by opening Zapier, Make, or an AI assistant and looking for a button that will connect two apps. That can be…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "How to Use Browser DevTools as a Beginner: Inspect, Test, and Fix Your First Web Page",
@@ -2724,7 +3328,9 @@
     "webp": true,
     "date": "2026-10-22",
     "dateDisplay": "October 22, 2026",
-    "excerpt": "When a first web page looks wrong, beginners often change several lines of HTML or CSS at once and hope the next refresh explains what happened. Browser…"
+    "excerpt": "When a first web page looks wrong, beginners often change several lines of HTML or CSS at once and hope the next refresh explains what happened. Browser…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "SQL Basics for Beginners: Ask Better Questions of Everyday Data",
@@ -2733,7 +3339,9 @@
     "webp": true,
     "date": "2026-10-23",
     "dateDisplay": "October 23, 2026",
-    "excerpt": "Many beginners think working with data means mastering complicated dashboards or becoming a full-time programmer. A better first step is learning how to…"
+    "excerpt": "Many beginners think working with data means mastering complicated dashboards or becoming a full-time programmer. A better first step is learning how to…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   },
   {
     "title": "AI Context for Beginners: Give an Assistant the Right Information Before You Ask for Help",
@@ -2742,6 +3350,8 @@
     "webp": true,
     "date": "2026-10-24",
     "dateDisplay": "October 24, 2026",
-    "excerpt": "Many beginners assume an AI assistant gives better answers because it knows more words. In practice, the quality of the information you provide often…"
+    "excerpt": "Many beginners assume an AI assistant gives better answers because it knows more words. In practice, the quality of the information you provide often…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
