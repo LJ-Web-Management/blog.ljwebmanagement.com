@@ -39,3 +39,12 @@ Change them in the main site repo first, copy them here, then run
 `npm run rebuild`. The blog's site search loads the main site's index from
 `https://www.ljwebmanagement.com/assets/data/search-index.js`, and the main
 site embeds `assets/js/latest-posts.js` to show the newest posts.
+
+## Privacy and accessibility rules
+
+Analytics, session recording, and live chat are consent-gated by the shared
+`scripts/chrome.js` (copied from the main site). Never add tracking scripts
+directly to templates; see "Privacy and accessibility rules" in the main site
+repo's CLAUDE.md. Forms that collect personal information need a short notice
+at collection linking to the Privacy Policy, like the newsletter pop-up and
+unsubscribe page.

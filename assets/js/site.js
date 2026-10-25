@@ -103,6 +103,8 @@
     var input = $('#lj-search-input', dialog);
     var results = $('#lj-search-results', dialog);
     var hint = $('[data-lj-search-hint]', dialog);
+    var status = $('[data-lj-search-status]', dialog);
+    var announce = function (text) { if (status) status.textContent = text; };
     var base = (header && header.getAttribute('data-lj-base')) || '';
     var index = null;
     var loading = false;
@@ -162,7 +164,7 @@
     var render = function (q) {
       var tokens = tokenize(q);
       hint.hidden = tokens.length > 0;
-      if (!tokens.length) { results.innerHTML = ''; current = []; return; }
+      if (!tokens.length) { results.innerHTML = ''; current = []; announce(''); return; }
       if (!index) {
         results.innerHTML = '<li class="lj-search-none">Loading&hellip;</li>';
         return;
@@ -188,14 +190,16 @@
       active = current.length ? 0 : -1;
       if (!current.length) {
         results.innerHTML = '<li class="lj-search-none">No matches for &ldquo;' + escapeHtml(q) + '&rdquo;. Try a tool name, a role, or a task like &ldquo;reminder&rdquo;.</li>';
+        announce('No matches');
         return;
       }
       results.innerHTML = current.map(function (it, i) {
-        return '<li role="option" aria-selected="' + (i === active) + '"><a href="' + escapeHtml(it.url) + '"' + (i === active ? ' class="is-active"' : '') + '>' +
+        return '<li><a href="' + escapeHtml(it.url) + '"' + (i === active ? ' class="is-active"' : '') + '>' +
           '<span class="lj-search-type">' + it.type + '</span>' +
           '<span><strong>' + highlight(it.title, tokens) + '</strong><small>' + escapeHtml(it.sub) + '</small></span>' +
           '</a></li>';
       }).join('');
+      announce(scored.length + (scored.length === 1 ? ' result' : ' results') + (scored.length > current.length ? ', showing the top ' + current.length : ''));
     };
 
     var move = function (delta) {
@@ -204,7 +208,6 @@
       active = (active + delta + links.length) % links.length;
       links.forEach(function (a, i) {
         a.classList.toggle('is-active', i === active);
-        a.parentNode.setAttribute('aria-selected', i === active ? 'true' : 'false');
       });
       links[active].scrollIntoView({ block: 'nearest' });
     };
@@ -322,6 +325,21 @@
     });
   }
 
+  /* ---------- Wide tables: keyboard scrolling ---------- */
+  // Article tables scroll sideways on small screens; a table that overflows
+  // must be focusable so keyboard users can scroll it too.
+  var tables = $$('.lj-prose table');
+  if (tables.length) {
+    var markScrollable = function () {
+      tables.forEach(function (t) {
+        if (t.scrollWidth > t.clientWidth + 1) t.setAttribute('tabindex', '0');
+        else t.removeAttribute('tabindex');
+      });
+    };
+    markScrollable();
+    window.addEventListener('resize', markScrollable);
+  }
+
   /* ---------- Reveal on scroll ---------- */
   var reveals = $$('.lj-reveal');
   if (reveals.length) {
@@ -348,10 +366,108 @@
       video.className = 'lj-video';
       video.setAttribute('width', '1920');
       video.setAttribute('height', '1080');
+      var captions = btn.getAttribute('data-lj-captions');
+      if (captions) {
+        var track = doc.createElement('track');
+        track.kind = 'captions';
+        track.src = captions;
+        track.srclang = 'en';
+        track.label = 'English';
+        track.default = true;
+        video.appendChild(track);
+      }
       btn.parentNode.replaceChild(video, btn);
       video.play().catch(function () {});
     }, { once: true });
   });
+
+  /* ---------- Privacy choices: cookie banner and settings ---------- */
+  // Analytics stay off until the visitor accepts them. The choice is stored
+  // in a first-party cookie shared by www and the blog; a Global Privacy
+  // Control or Do Not Track signal counts as "no" unless the visitor turns
+  // analytics on themselves. The loader itself lives in chrome.analytics().
+  var banner = $('#lj-consent');
+  var panel = $('#lj-consent-panel');
+  if (banner && panel && typeof panel.showModal === 'function') {
+    var NAME = banner.getAttribute('data-lj-consent-cookie');
+    var VERSION = banner.getAttribute('data-lj-consent-version');
+    var toggle = $('#lj-consent-analytics', panel);
+    var signal = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1';
+    var shared = /(^|\.)ljwebmanagement\.com$/.test(window.location.hostname) ? '; Domain=.ljwebmanagement.com' : '';
+
+    // true = analytics allowed, false = declined, null = no valid choice yet.
+    var readChoice = function () {
+      var m = doc.cookie.match(new RegExp('(?:^|;\\s*)' + NAME + '=([^;]*)'));
+      if (!m) return null;
+      var v = decodeURIComponent(m[1]).split('|');
+      return v[0] === VERSION ? v[1] === 'a1' : null;
+    };
+    var writeChoice = function (on) {
+      var value = [VERSION, on ? 'a1' : 'a0', new Date().toISOString().slice(0, 10)].join('|');
+      doc.cookie = NAME + '=' + encodeURIComponent(value) + '; Max-Age=31536000; Path=/; SameSite=Lax' + shared + (window.location.protocol === 'https:' ? '; Secure' : '');
+    };
+    var clearAnalyticsCookies = function () {
+      doc.cookie.split(';').forEach(function (c) {
+        var name = c.split('=')[0].trim();
+        if (!/^(_ga|_gid|_gat|_clck|_clsk|_cltk|CLID)/.test(name)) return;
+        ['', '; Domain=' + window.location.hostname, shared].forEach(function (d) {
+          doc.cookie = name + '=; Max-Age=0; Path=/' + d;
+        });
+      });
+    };
+    var placeBanner = function () {
+      doc.documentElement.style.setProperty('--lj-consent-h', banner.hidden ? '0px' : banner.offsetHeight + 12 + 'px');
+    };
+    var showBanner = function (show) {
+      // Keyboard and screen reader users reach the banner right after the
+      // skip link instead of at the very end of the page.
+      if (show && banner.previousElementSibling !== $('.lj-skip')) {
+        var skip = $('.lj-skip');
+        doc.body.insertBefore(banner, skip ? skip.nextSibling : doc.body.firstChild);
+      }
+      banner.hidden = !show;
+      placeBanner();
+    };
+    var renderStatus = function () {
+      var choice = readChoice();
+      var text = choice === true ? 'Optional analytics are on. You can turn them off at any time.'
+        : signal && choice !== false ? 'Optional analytics are off because your browser sent a Global Privacy Control or Do Not Track signal.'
+          : choice === false ? 'Optional analytics are off.' : 'You have not made a choice yet, so optional analytics are off.';
+      $$('[data-lj-consent-status]').forEach(function (el) { el.textContent = text; });
+    };
+    var applyChoice = function (on) {
+      var wasLoaded = window.ljAnalytics && window.ljAnalytics.loaded();
+      writeChoice(on);
+      showBanner(false);
+      if (panel.open) panel.close();
+      renderStatus();
+      if (on) {
+        if (window.ljAnalytics) window.ljAnalytics.arm();
+      } else {
+        clearAnalyticsCookies();
+        // Scripts that already ran cannot be unloaded; reload without them.
+        if (wasLoaded) window.location.reload();
+      }
+    };
+    var openPanel = function () {
+      var choice = readChoice();
+      toggle.checked = choice === true;
+      $('[data-lj-consent-signal]', panel).hidden = !(signal && choice !== true);
+      panel.showModal();
+    };
+
+    doc.addEventListener('click', function (e) {
+      var set = e.target.closest('[data-lj-consent-set]');
+      if (set) { applyChoice(set.getAttribute('data-lj-consent-set') === '1'); return; }
+      if (e.target.closest('[data-lj-consent-open]')) { e.preventDefault(); openPanel(); return; }
+      if (e.target.closest('[data-lj-consent-save]')) { applyChoice(toggle.checked); return; }
+      if (e.target.closest('[data-lj-consent-close]') || e.target === panel) panel.close();
+    });
+    window.addEventListener('resize', function () { if (!banner.hidden) placeBanner(); });
+
+    if (readChoice() === null && !signal) showBanner(true);
+    renderStatus();
+  }
 
   /* ---------- Highlight a solution reached by #anchor ---------- */
   if (window.location.hash) {

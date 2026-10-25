@@ -160,26 +160,103 @@ const ORGANIZATION = {
   sameAs: SOCIAL.map((s) => s.url),
 };
 
-// Google Analytics and Microsoft Clarity: calls queue immediately and the
-// libraries load on the first user interaction, so they never compete with
-// the initial render. GA4 sets its cookie on ljwebmanagement.com, so one
-// visitor is one user across www and blog.
+// Consent. Optional analytics (Google Analytics and Microsoft Clarity) only
+// load after the visitor accepts them in the cookie banner. The choice is kept
+// in a first-party cookie on .ljwebmanagement.com so one answer covers www and
+// the blog. Browser opt-out signals (Global Privacy Control, Do Not Track)
+// keep analytics off unless the visitor later turns them on. Bump
+// CONSENT_VERSION to ask everyone again after a material change.
+const CONSENT_COOKIE = "lj_consent";
+const CONSENT_VERSION = "v1";
+
+// Analytics loader for the <head>. Calls queue immediately; the libraries
+// load on the first interaction after consent, so they never compete with the
+// initial render. GA4 runs with Google signals and ad personalization off.
 function analytics() {
   return `<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});gtag('js',new Date());
 window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments);};
-(function(){var loaded=false,ev=['pointerdown','mousemove','scroll','touchstart','keydown'];function add(s){var e=document.createElement('script');e.async=true;e.src=s;document.head.appendChild(e);}function load(){if(loaded)return;loaded=true;ev.forEach(function(e){window.removeEventListener(e,load);});add('https://www.googletagmanager.com/gtag/js?id=${GA_ID}');add('https://www.clarity.ms/tag/${CLARITY_ID}');}ev.forEach(function(e){window.addEventListener(e,load,{passive:true});});})();
+(function(){var loaded=false,armed=false,ev=['pointerdown','mousemove','scroll','touchstart','keydown'];
+function allowed(){var m=document.cookie.match(/(?:^|;\\s*)${CONSENT_COOKIE}=([^;]*)/);if(!m)return false;var v=decodeURIComponent(m[1]).split('|');return v[0]==='${CONSENT_VERSION}'&&v[1]==='a1';}
+function add(s){var e=document.createElement('script');e.async=true;e.src=s;document.head.appendChild(e);}
+function load(){if(loaded||!allowed())return;loaded=true;ev.forEach(function(e){window.removeEventListener(e,load);});gtag('consent','update',{analytics_storage:'granted'});gtag('config','${GA_ID}',{allow_google_signals:false,allow_ad_personalization_signals:false});clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'granted'});add('https://www.googletagmanager.com/gtag/js?id=${GA_ID}');add('https://www.clarity.ms/tag/${CLARITY_ID}');}
+function arm(){if(armed||!allowed())return;armed=true;ev.forEach(function(e){window.addEventListener(e,load,{passive:true});});}
+window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};arm();})();
 </script>`;
 }
 
-// Tawk.to live chat, loaded on first interaction and kept minimized until
-// the visitor opens it themselves.
+// Tawk.to live chat. Nothing loads until the visitor asks to chat: the first
+// time, a short notice explains that Tawk.to handles the conversation and the
+// chat starts only after they agree. That choice is remembered on the device
+// so an ongoing conversation follows them from page to page.
 function chatWidget() {
-  return `<script>
+  return `<div class="lj-chat" data-lj-chat hidden>
+  <div class="lj-chat-notice" id="lj-chat-notice" role="dialog" aria-modal="false" aria-labelledby="lj-chat-notice-title" hidden>
+    <p class="lj-chat-notice-title" id="lj-chat-notice-title">Chat with our team</p>
+    <p>Live chat is provided by Tawk.to. Your messages and basic technical details (such as your IP address and the page you are on) are sent to Tawk.to and kept as a record of the conversation. See our <a href="${SITE_URL}/privacy-policy/#chat">Privacy Policy</a>.</p>
+    <div class="lj-chat-notice-actions"><button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-chat-start>Start chat</button><button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-chat-cancel>Not now</button></div>
+  </div>
+  <button type="button" class="lj-chat-launcher" data-lj-chat-open aria-expanded="false" aria-controls="lj-chat-notice">${icon("message")}<span>Chat with us</span></button>
+</div>
+<script>
 var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
-(function(){var opened=false;window.addEventListener('blur',function(){if(document.activeElement&&document.activeElement.tagName==='IFRAME'){opened=true;setTimeout(function(){opened=false;},1500);}});Tawk_API.onLoad=function(){Tawk_API.minimize();};Tawk_API.onChatMaximized=function(){if(!opened){Tawk_API.minimize();}};})();
-(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';s.charset='UTF-8';s.setAttribute('crossorigin','*');document.body.appendChild(s);}['mousemove','scroll','touchstart','keydown','click'].forEach(function(e){window.addEventListener(e,load,{passive:true,once:true});});})();
+(function(){var KEY='lj-chat',root=document.querySelector('[data-lj-chat]');if(!root)return;var notice=root.querySelector('#lj-chat-notice'),launcher=root.querySelector('[data-lj-chat-open]'),loaded=false,openOnLoad=false,userOpened=false;
+function agreed(){try{return localStorage.getItem(KEY)==='1';}catch(e){return false;}}
+function load(open){openOnLoad=open;if(loaded){if(open&&Tawk_API.maximize){userOpened=true;Tawk_API.maximize();}return;}loaded=true;var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';s.charset='UTF-8';s.setAttribute('crossorigin','*');document.body.appendChild(s);}
+function showNotice(show){notice.hidden=!show;launcher.setAttribute('aria-expanded',show?'true':'false');if(show){var b=notice.querySelector('[data-lj-chat-start]');b&&b.focus();}}
+window.addEventListener('blur',function(){if(document.activeElement&&document.activeElement.tagName==='IFRAME'){userOpened=true;setTimeout(function(){userOpened=false;},1500);}});
+Tawk_API.onLoad=function(){root.hidden=true;if(openOnLoad){userOpened=true;Tawk_API.maximize();setTimeout(function(){userOpened=false;},1500);}else{Tawk_API.minimize();}};
+Tawk_API.onChatMaximized=function(){if(!userOpened&&!openOnLoad){Tawk_API.minimize();}openOnLoad=false;};
+launcher.addEventListener('click',function(){if(agreed()){launcher.disabled=true;load(true);}else{showNotice(notice.hidden);}});
+root.querySelector('[data-lj-chat-start]').addEventListener('click',function(){try{localStorage.setItem(KEY,'1');}catch(e){}showNotice(false);launcher.disabled=true;load(true);});
+root.querySelector('[data-lj-chat-cancel]').addEventListener('click',function(){showNotice(false);launcher.focus();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!notice.hidden){showNotice(false);launcher.focus();}});
+root.hidden=false;
+if(agreed()){var ev=['mousemove','scroll','touchstart','keydown','click'],go=function(){ev.forEach(function(x){window.removeEventListener(x,go);});load(false);};ev.forEach(function(x){window.addEventListener(x,go,{passive:true});});}
+})();
 </script>`;
+}
+
+// Cookie banner and the privacy settings dialog. Hidden until site.js
+// decides whether to show them. "Accept" and "Reject" are equally prominent.
+function consentUi(opts) {
+  const { main } = links(opts);
+  const cat = (title, text, control) =>
+    `<div class="lj-consent-cat"><div><p class="lj-consent-cat-title">${title}</p><p>${text}</p></div>${control}</div>`;
+  return `<section class="lj-consent" id="lj-consent" aria-labelledby="lj-consent-title" data-lj-consent-cookie="${CONSENT_COOKIE}" data-lj-consent-version="${CONSENT_VERSION}" hidden>
+  <div class="lj-consent-inner">
+    <div class="lj-consent-text">
+      <h2 id="lj-consent-title">Your privacy choices</h2>
+      <p>With your permission, we use analytics cookies (Google Analytics and Microsoft Clarity, which can record how you use our pages) to understand and improve this site. They stay off unless you accept. We do not sell or share your personal information or use advertising cookies. <a href="${main("/privacy-policy/")}#cookies">Privacy Policy</a></p>
+    </div>
+    <div class="lj-consent-actions">
+      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="1">Accept analytics</button>
+      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="0">Reject analytics</button>
+      <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-open>Settings</button>
+    </div>
+  </div>
+</section>
+<dialog class="lj-popup lj-consent-panel" id="lj-consent-panel" aria-labelledby="lj-consent-panel-title">
+  <div class="lj-consent-panel-head">
+    <h2 id="lj-consent-panel-title">Privacy and cookie settings</h2>
+    <button type="button" class="lj-popup-close" data-lj-consent-close aria-label="Close privacy settings">${icon("close")}</button>
+  </div>
+  <div class="lj-consent-panel-body">
+    <p>Choose which optional technologies we may use. You can change this at any time from <strong>Your Privacy Choices</strong> at the bottom of every page.</p>
+    <p class="lj-consent-signal" data-lj-consent-signal hidden>Your browser sent a Global Privacy Control or Do Not Track signal, so optional analytics are off. You can still turn them on below if you want to.</p>
+    ${cat("Strictly necessary", `Remember your privacy choices (a first-party cookie named <code>${CONSENT_COOKIE}</code>, kept for 12 months) and on-device preferences such as course progress and the blog newsletter pop-up (browser local storage). We use these only to apply your choices, never to identify or track you.`, '<span class="lj-tag">Always on</span>')}
+    ${cat('<label for="lj-consent-analytics">Analytics</label>', "Google Analytics measures visits, pages, devices, and approximate location. Microsoft Clarity records clicks, scrolling, and page interactions to create heatmaps and session recordings. Google signals and ad personalization are turned off.", '<input type="checkbox" class="lj-switch" id="lj-consent-analytics" role="switch">')}
+    ${cat("Selling, sharing, and targeted advertising", "We do not sell or share personal information, use advertising cookies, or engage in targeted advertising. Turning analytics off stops all optional measurement.", '<span class="lj-tag">Never used</span>')}
+    ${cat("Live chat and forms", "Live chat (Tawk.to) loads only when you choose to start a chat. Forms (Typeform) load on the pages where you fill them in, and the information you enter goes to Typeform for us.", '<span class="lj-tag">Only when used</span>')}
+    <p class="lj-consent-more"><a href="${main("/privacy-choices/")}">Learn about your privacy rights and how to make a request</a></p>
+  </div>
+  <div class="lj-consent-panel-foot">
+    <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-save>Save my choices</button>
+    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="1">Accept analytics</button>
+    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="0">Reject analytics</button>
+  </div>
+</dialog>`;
 }
 
 function links(opts) {
@@ -292,7 +369,8 @@ function header(opts) {
       <button type="button" class="lj-search-close" data-lj-search-close aria-label="Close search">Esc</button>
     </div>
     <div class="lj-search-body">
-      <ul class="lj-search-results" id="lj-search-results" role="listbox" aria-label="Search results"></ul>
+      <ul class="lj-search-results" id="lj-search-results" aria-label="Search results"></ul>
+      <p class="lj-sr-only" aria-live="polite" data-lj-search-status></p>
       <div class="lj-search-empty" data-lj-search-hint>
         <p class="lj-search-hint-title">Popular searches</p>
         <div class="lj-chip-row">
@@ -377,10 +455,11 @@ function footer(opts) {
     </div>
     <div class="lj-footer-bottom">
       <span>&copy; ${year} LJ Web Management, LLC. All rights reserved.</span>
-      <nav aria-label="Legal"><a href="${main("/privacy-policy/")}">Privacy Policy</a><a href="${main("/terms-of-service/")}">Terms of Service</a></nav>
+      <nav aria-label="Legal"><a href="${main("/privacy-policy/")}">Privacy Policy</a><a href="${main("/terms-of-service/")}">Terms of Service</a><a href="${main("/accessibility/")}">Accessibility</a><a href="${main("/privacy-choices/")}" data-lj-consent-open>Your Privacy Choices</a></nav>
     </div>
   </div>
-</footer>`;
+</footer>
+${consentUi(opts)}`;
 }
 
 module.exports = {
@@ -393,6 +472,7 @@ module.exports = {
   NAV_CATEGORIES,
   NAV_INDUSTRIES,
   ORGANIZATION,
+  CONSENT_COOKIE,
   icon,
   analytics,
   chatWidget,

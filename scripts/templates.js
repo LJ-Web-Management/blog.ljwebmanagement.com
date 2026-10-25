@@ -529,6 +529,7 @@ ${first.map((p, i) => "      " + postCard(p, { eager: i === 0 })).join("\n")}
   <div class="lj-popup-body">
     <button type="button" class="lj-btn lj-btn-primary lj-btn-block" data-lj-newsletter-join autofocus>Join the Newsletter ${icon("arrowRight")}</button>
     <label class="lj-popup-check"><input type="checkbox" data-lj-popup-never> Don't show this again</label>
+    <p class="lj-popup-note">We use your email address only to send the newsletter, through Typeform. Unsubscribe anytime. <a href="${main("/privacy-policy/")}">Privacy Policy</a></p>
   </div>
 </dialog>`;
 
@@ -556,7 +557,8 @@ function buildUnsubscribePage() {
 </section>
 <section class="lj-section">
   <div class="lj-container lj-container--narrow">
-    <div class="lj-embed"><div data-tf-live="01KZAN1VGA3KXYRTZH1WWXKKER"></div></div>
+    <div class="lj-embed"><div data-tf-widget="rISHmXGO" data-tf-opacity="100" data-tf-inline-on-mobile data-tf-iframe-props="title=Unsubscribe from the newsletter" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:560px"></div></div>
+    <p class="lj-notice">We use the email address you enter here only to remove it from our newsletter list. Typeform processes this form for us. See our <a href="${main("/privacy-policy/")}">Privacy Policy</a>.</p>
     <p class="lj-center lj-mt-lg"><a class="lj-btn lj-btn-ghost" href="/">${icon("arrowLeft")} Back to the Blog</a></p>
   </div>
 </section>`;
