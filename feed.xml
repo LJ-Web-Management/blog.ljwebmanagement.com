@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Command Line Basics for Beginners: Navigate Files and Run Your First Tools</title>
+      <link>https://blog.ljwebmanagement.com/posts/command-line-basics-for-beginners-navigate-files-and-run-your-first-tools.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/command-line-basics-for-beginners-navigate-files-and-run-your-first-tools.html</guid>
+      <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners meet the command line as a black window full of unfamiliar symbols, then decide it belongs to advanced developers. That reaction is…</description>
+    </item>
+    <item>
       <title>AI Context for Beginners: Give an Assistant the Right Information Before You Ask for Help</title>
       <link>https://blog.ljwebmanagement.com/posts/ai-context-for-beginners-give-an-assistant-the-right-information-before-you-ask-for-help.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-context-for-beginners-give-an-assistant-the-right-information-before-you-ask-for-help.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <category>Sales &amp; CRM</category>
       <description>CRM meeting notes are supposed to help teams understand buyer intent, next steps, blockers, urgency, and relationship context. In practice, notes often…</description>
-    </item>
-    <item>
-      <title>Build an AI Customer Commitments Ledger Before Promises Become Operational Risk</title>
-      <link>https://blog.ljwebmanagement.com/posts/build-an-ai-customer-commitments-ledger-before-promises-become-operational-risk.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/build-an-ai-customer-commitments-ledger-before-promises-become-operational-risk.html</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Customer Experience</category>
-      <description>Most companies have a surprisingly weak memory for customer promises. A sales rep agrees to follow up with a revised quote by Friday. A project manager…</description>
     </item>
   </channel>
 </rss>
