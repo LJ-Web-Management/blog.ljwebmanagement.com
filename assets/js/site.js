@@ -329,37 +329,98 @@
   // Every answer starts closed. With a mouse, hovering a question previews
   // its answer; a click keeps it open, and another click closes it and keeps
   // it closed until the pointer leaves. Keyboard and touch toggle on click,
-  // and Escape dismisses a hover preview.
+  // and Escape dismisses a hover preview. Answers slide open and closed, and
+  // when a preview above the pointer closes, the page scrolls with it so the
+  // question under the pointer stays put instead of jumping away. Near the
+  // top of the page, where it cannot scroll, the next question opens right
+  // away so it grows under the pointer while the one above shrinks.
   var faqItems = $$('.lj-faq details');
   if (faqItems.length) {
     var canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+    var calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var faqAnchor = null;
+    var faqQuick = null;
+    var faqMoving = 0;
+    var holdAnchor = function () {
+      if (!faqAnchor) return;
+      var shift = faqAnchor.el.getBoundingClientRect().top - faqAnchor.top;
+      if (Math.abs(shift) >= 0.5) window.scrollBy(0, shift);
+    };
+    var follow = function () {
+      holdAnchor();
+      if (faqMoving) requestAnimationFrame(follow);
+      else faqAnchor = null;
+    };
+    window.addEventListener('wheel', function () { faqAnchor = null; }, { passive: true });
+
+    var slide = function (st, open) {
+      if (st.want === open) return;
+      st.want = open;
+      var d = st.el;
+      var from = d.getBoundingClientRect().height;
+      if (st.stop) st.stop();
+      if (calm.matches || !d.animate) {
+        d.open = open;
+        holdAnchor();
+        faqAnchor = null;
+        return;
+      }
+      d.open = true;
+      var cs = getComputedStyle(d);
+      var to = open ? d.getBoundingClientRect().height
+        : $('summary', d).getBoundingClientRect().height + parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
+      d.style.overflow = 'hidden';
+      var anim = d.animate({ height: [from + 'px', to + 'px'] }, { duration: 260, easing: 'cubic-bezier(0.25, 0.8, 0.25, 1)', fill: 'forwards' });
+      var live = true;
+      if (!faqMoving++) requestAnimationFrame(follow);
+      st.stop = function () {
+        if (!live) return;
+        live = false;
+        faqMoving--;
+        st.stop = null;
+        anim.cancel();
+      };
+      anim.onfinish = function () {
+        if (!live) return;
+        st.stop();
+        d.open = st.want;
+        d.style.overflow = '';
+      };
+    };
+
     var faqState = faqItems.map(function (d) {
-      var st = { el: d, pinned: d.open, muted: false, timer: null };
+      var st = { el: d, pinned: d.open, want: d.open, muted: false, timer: null, stop: null };
       d.classList.toggle('is-pinned', st.pinned);
       $('summary', d).addEventListener('click', function (e) {
         e.preventDefault();
         clearTimeout(st.timer);
         st.pinned = !st.pinned;
         st.muted = !st.pinned;
-        d.open = st.pinned;
         d.classList.toggle('is-pinned', st.pinned);
+        slide(st, st.pinned);
       });
       d.addEventListener('pointerenter', function (e) {
         if (e.pointerType !== 'mouse' || !canHover.matches || st.pinned || st.muted) return;
-        st.timer = setTimeout(function () { d.open = true; }, 120);
+        st.timer = setTimeout(function () { slide(st, true); }, faqQuick === d ? 0 : 140);
+        faqQuick = null;
       });
       d.addEventListener('pointerleave', function (e) {
         if (e.pointerType !== 'mouse') return;
         clearTimeout(st.timer);
         st.muted = false;
-        if (!st.pinned) d.open = false;
+        if (st.pinned || !st.want) return;
+        var next = e.relatedTarget && e.relatedTarget.closest ? e.relatedTarget.closest('.lj-faq details') : null;
+        faqAnchor = next ? { el: next, top: next.getBoundingClientRect().top } : null;
+        var shrink = d.getBoundingClientRect().height - $('summary', d).getBoundingClientRect().height;
+        faqQuick = next && (d.compareDocumentPosition(next) & 4) && window.scrollY < shrink ? next : null;
+        slide(st, false);
       });
       return st;
     });
     doc.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape') return;
       faqState.forEach(function (st) {
-        if (st.el.open && !st.pinned) { st.el.open = false; st.muted = true; }
+        if (st.want && !st.pinned) { st.muted = true; slide(st, false); }
       });
     });
   }
