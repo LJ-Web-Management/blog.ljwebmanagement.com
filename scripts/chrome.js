@@ -40,6 +40,20 @@ const NAV_CATEGORIES = [
   ["reporting-analytics", "Reporting & Analytics", "chart"],
 ];
 
+// Solution categories for the Solutions menu. build.js checks these against
+// content/solutions/ so the menu never drifts from the solution pages.
+const NAV_SOLUTIONS = [
+  ["websites-digital-presence", "Websites & Digital Presence", "layers", "Sites, stores, SEO, AI chat"],
+  ["sales-marketing", "Sales, CRM & Marketing", "target", "CRM, campaigns, quotes, reviews"],
+  ["customer-experience", "Customer Experience & Support", "message", "Booking, portals, help desk"],
+  ["operations-field-service", "Operations & Field Service", "tool", "Dispatch, inventory, projects"],
+  ["finance-billing", "Finance, Billing & Payments", "receipt", "Billing, AR, AP, month-end close"],
+  ["erp-enterprise-systems", "ERP & Enterprise Systems", "building", "ERP, integrations, compliance"],
+  ["hr-people-training", "HR, People & Training", "users", "Payroll, hiring, scheduling, LMS"],
+  ["data-ai-analytics", "Data, AI & Analytics", "chart", "Dashboards, AI agents, forecasting"],
+  ["industry-platforms-saas", "Industry Platforms, Apps & SaaS", "grid", "POS, marketplaces, apps, SaaS"],
+];
+
 const NAV_INDUSTRIES = [
   ["real-estate", "Real Estate"],
   ["healthcare", "Healthcare"],
@@ -263,6 +277,11 @@ function header(opts) {
     ([slug, name]) => `<li><a class="lj-menu-link lj-menu-link--plain" href="${main("/automations/" + slug + "/")}">${escapeHtml(name)}</a></li>`
   ).join("");
 
+  const solLinks = NAV_SOLUTIONS.map(
+    ([slug, name, ic, desc]) =>
+      `<li><a class="lj-menu-link lj-menu-link--rich" href="${main("/solutions/" + slug + "/")}"><span class="lj-menu-icon">${icon(ic)}</span><span><strong>${escapeHtml(name)}</strong><small>${desc}</small></span></a></li>`
+  ).join("");
+
   const resource = (href, ic, title, desc) =>
     `<li><a class="lj-menu-link lj-menu-link--rich" href="${href}"><span class="lj-menu-icon">${icon(ic)}</span><span><strong>${title}</strong><small>${desc}</small></span></a></li>`;
 
@@ -297,7 +316,14 @@ function header(opts) {
             </div>
           </div>
         </li>
-        <li class="lj-nav-item${curCls("solutions")}"><a class="lj-nav-link" href="${main("/solutions/")}"${cur("solutions")}>Solutions</a></li>
+        <li class="lj-nav-item lj-has-menu lj-has-menu--wide${curCls("solutions")}">
+          <button type="button" class="lj-nav-link" aria-expanded="false" aria-controls="lj-menu-solutions">Solutions ${icon("chevronDown", "lj-nav-caret")}</button>
+          <div class="lj-menu lj-menu--sol" id="lj-menu-solutions">
+            <p class="lj-menu-title">Platform solutions by category</p>
+            <ul class="lj-menu-list lj-menu-list--3col">${solLinks}</ul>
+            <a class="lj-menu-more" href="${main("/solutions/")}">See all solutions ${icon("arrowRight")}</a>
+          </div>
+        </li>
         <li class="lj-nav-item${curCls("how")}"><a class="lj-nav-link" href="${main("/how-it-works/")}"${cur("how")}>How It Works</a></li>
         <li class="lj-nav-item lj-has-menu${curCls("resources")}">
           <button type="button" class="lj-nav-link" aria-expanded="false" aria-controls="lj-menu-resources">Resources ${icon("chevronDown", "lj-nav-caret")}</button>
@@ -444,6 +470,7 @@ ${consentUi(opts)}`;
 }
 
 module.exports = {
+  NAV_SOLUTIONS,
   SITE_URL,
   BLOG_URL,
   PHONE,

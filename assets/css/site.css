@@ -173,6 +173,8 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
 .lj-menu--wide { top: calc(100% + 1px); border-radius: 0 0 18px 18px; width: min(1040px, calc(100vw - 48px)); padding: 22px; }
 .lj-menu-grid { display: grid; grid-template-columns: 1.75fr 1fr 0.95fr; gap: 26px; }
 .lj-menu--res { width: 580px; padding: 18px; }
+.lj-menu--sol { top: calc(100% + 1px); border-radius: 0 0 18px 18px; width: min(900px, calc(100vw - 48px)); padding: 20px; }
+.lj-menu-list--3col { grid-template-columns: repeat(3, 1fr); column-gap: 8px; }
 .lj-menu-grid--2 { grid-template-columns: 1fr 1fr; gap: 10px; }
 .lj-menu-title { font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 4px 10px 10px; }
 .lj-menu-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
@@ -226,7 +228,7 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
   .lj-menu, .lj-menu--wide { position: static; display: none; width: auto; min-width: 0; padding: 0 0 16px; border: 0; box-shadow: none; opacity: 1; visibility: visible; transform: none; transition: none; }
   .lj-has-menu.is-open > .lj-menu { display: block; transform: none; }
   .lj-menu-grid { grid-template-columns: 1fr; gap: 18px; }
-  .lj-menu-list--2col { grid-template-columns: 1fr; }
+  .lj-menu-list--2col, .lj-menu-list--3col { grid-template-columns: 1fr; }
   .lj-menu-title { margin-left: 4px; }
   .lj-menu-link { padding: 8px 4px; }
   .lj-nav-mobile-cta { display: grid; gap: 10px; margin-top: 24px; }
