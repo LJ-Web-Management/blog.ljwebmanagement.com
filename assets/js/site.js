@@ -381,11 +381,11 @@
     }, { once: true });
   });
 
-  /* ---------- Privacy choices: cookie banner and settings ---------- */
-  // Analytics stay off until the visitor accepts them. The choice is stored
-  // in a first-party cookie shared by www and the blog; a Global Privacy
-  // Control or Do Not Track signal counts as "no" unless the visitor turns
-  // analytics on themselves. The loader itself lives in chrome.analytics().
+  /* ---------- Privacy choices: cookie notice and settings ---------- */
+  // Analytics run unless the visitor opts out. The choice is stored in a
+  // first-party cookie shared by www and the blog; a Global Privacy Control
+  // or Do Not Track signal counts as an opt-out unless the visitor turns
+  // analytics back on themselves. The loader lives in chrome.analytics().
   var banner = $('#lj-consent');
   var panel = $('#lj-consent-panel');
   if (banner && panel && typeof panel.showModal === 'function') {
@@ -395,7 +395,7 @@
     var signal = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1';
     var shared = /(^|\.)ljwebmanagement\.com$/.test(window.location.hostname) ? '; Domain=.ljwebmanagement.com' : '';
 
-    // true = analytics allowed, false = declined, null = no valid choice yet.
+    // true = analytics allowed, false = opted out, null = no choice yet.
     var readChoice = function () {
       var m = doc.cookie.match(new RegExp('(?:^|;\\s*)' + NAME + '=([^;]*)'));
       if (!m) return null;
@@ -415,9 +415,6 @@
         });
       });
     };
-    var placeBanner = function () {
-      doc.documentElement.style.setProperty('--lj-consent-h', banner.hidden ? '0px' : banner.offsetHeight + 12 + 'px');
-    };
     var showBanner = function (show) {
       // Keyboard and screen reader users reach the banner right after the
       // skip link instead of at the very end of the page.
@@ -426,13 +423,16 @@
         doc.body.insertBefore(banner, skip ? skip.nextSibling : doc.body.firstChild);
       }
       banner.hidden = !show;
-      placeBanner();
+    };
+    var analyticsOn = function () {
+      var choice = readChoice();
+      return choice === null ? !signal : choice;
     };
     var renderStatus = function () {
       var choice = readChoice();
-      var text = choice === true ? 'Optional analytics are on. You can turn them off at any time.'
-        : signal && choice !== false ? 'Optional analytics are off because your browser sent a Global Privacy Control or Do Not Track signal.'
-          : choice === false ? 'Optional analytics are off.' : 'You have not made a choice yet, so optional analytics are off.';
+      var text = choice === false ? 'You have opted out of analytics.'
+        : choice === null && signal ? 'Analytics are off because your browser sent a Global Privacy Control or Do Not Track signal.'
+          : 'Analytics are on. You can opt out at any time.';
       $$('[data-lj-consent-status]').forEach(function (el) { el.textContent = text; });
     };
     var applyChoice = function (on) {
@@ -450,9 +450,8 @@
       }
     };
     var openPanel = function () {
-      var choice = readChoice();
-      toggle.checked = choice === true;
-      $('[data-lj-consent-signal]', panel).hidden = !(signal && choice !== true);
+      toggle.checked = analyticsOn();
+      $('[data-lj-consent-signal]', panel).hidden = !(signal && readChoice() === null);
       panel.showModal();
     };
 
@@ -463,7 +462,6 @@
       if (e.target.closest('[data-lj-consent-save]')) { applyChoice(toggle.checked); return; }
       if (e.target.closest('[data-lj-consent-close]') || e.target === panel) panel.close();
     });
-    window.addEventListener('resize', function () { if (!banner.hidden) placeBanner(); });
 
     if (readChoice() === null && !signal) showBanner(true);
     renderStatus();
