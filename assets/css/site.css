@@ -37,6 +37,8 @@
   --font-display: 'Sora', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --container: 1200px;
   --header-h: 72px;
+  --header-gap: 0px;
+  --header-space: calc(var(--header-h) + var(--header-gap));
 }
 
 /* ---------- Base ---------- */
@@ -140,28 +142,33 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
 .lj-tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
 
 /* ---------- Header ---------- */
-.lj-header { position: sticky; top: 0; z-index: 100; background: rgba(255, 255, 255, 0.86); -webkit-backdrop-filter: saturate(180%) blur(14px); backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid transparent; transition: border-color 0.2s, box-shadow 0.2s; }
-.lj-header.is-scrolled { border-bottom-color: var(--line); box-shadow: 0 6px 24px -18px rgba(15, 37, 68, 0.4); }
-.lj-header-bar { position: relative; display: flex; align-items: center; gap: 20px; height: var(--header-h); }
+.lj-header { position: sticky; top: 0; z-index: 100; margin-bottom: calc(-1 * var(--header-space)); background: var(--white); -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px); border-bottom: 1px solid rgba(15, 37, 68, 0.08); transition: box-shadow 0.2s; }
+.lj-header.is-scrolled { box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px -16px rgba(15, 37, 68, 0.28); }
+/* The header sits over the top of the page: the first section takes the header's height as a
+   transparent top border, so its own background runs up behind the bar. */
+#main > :first-child { border-top: var(--header-space) solid transparent; background-origin: border-box; }
+.lj-header-bar { position: relative; display: flex; align-items: center; gap: 24px; height: var(--header-h); }
 .lj-brand { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; color: var(--ink); }
 .lj-brand:hover { color: var(--ink); }
-.lj-brand img { width: 40px; height: 40px; display: block; }
-.lj-brand-text { font-family: var(--font-display); font-weight: 700; font-size: 16.5px; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; }
+.lj-brand img { width: 38px; height: 38px; display: block; }
+.lj-brand-text { font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; }
 .lj-brand-text span { color: var(--cyan-ink); }
 .lj-brand--light, .lj-brand--light:hover { color: #fff; }
 .lj-brand--light .lj-brand-text span { color: var(--cyan-300); }
-.lj-nav { flex: 1; display: flex; justify-content: center; }
+.lj-nav { flex: 1; display: flex; justify-content: flex-start; }
 .lj-nav-list { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 2px; }
 .lj-nav-item { position: relative; }
 .lj-has-menu--wide { position: static; }
-.lj-nav-link { display: inline-flex; align-items: center; gap: 4px; padding: 9px 13px; border-radius: 10px; border: 0; background: transparent; color: var(--ink); font-size: 15px; font-weight: 500; line-height: 1.3; transition: background-color 0.2s, color 0.2s; }
-.lj-nav-link:hover, .lj-has-menu.is-open > .lj-nav-link { background: var(--mist-2); color: var(--navy); }
-.lj-nav-item.is-current > .lj-nav-link { color: var(--cyan-ink); }
+.lj-nav-link { position: relative; display: inline-flex; align-items: center; gap: 4px; padding: 8px 13px; border-radius: 8px; border: 0; background: transparent; color: var(--body); font-size: 15px; font-weight: 500; letter-spacing: -0.005em; line-height: 1.3; white-space: nowrap; transition: background-color 0.15s, color 0.15s; }
+.lj-nav-link:hover, .lj-has-menu.is-open > .lj-nav-link { color: var(--ink); background: var(--mist); }
+.lj-nav-item.is-current > .lj-nav-link { color: var(--ink); font-weight: 600; }
+/* Current section: an accent bar on the bottom edge of the header, as on app tab bars. */
+.lj-nav-item.is-current > .lj-nav-link::after { content: ""; position: absolute; left: 13px; right: 13px; bottom: calc((var(--header-h) - 100%) / -2 - 1px); height: 2px; border-radius: 2px 2px 0 0; background: var(--cyan); }
 .lj-nav-caret { width: 16px; height: 16px; transition: transform 0.2s; }
 .lj-has-menu.is-open .lj-nav-caret { transform: rotate(180deg); }
 .lj-menu { position: absolute; top: calc(100% + 8px); left: 50%; z-index: 120; min-width: 340px; padding: 14px; background: var(--white); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transform: translate(-50%, 6px); transition: opacity 0.18s, transform 0.18s, visibility 0.18s; }
 .lj-has-menu.is-open > .lj-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
-.lj-menu--wide { top: calc(100% - 6px); width: min(1040px, calc(100vw - 48px)); padding: 22px; }
+.lj-menu--wide { top: calc(100% + 1px); border-radius: 0 0 18px 18px; width: min(1040px, calc(100vw - 48px)); padding: 22px; }
 .lj-menu-grid { display: grid; grid-template-columns: 1.75fr 1fr 0.95fr; gap: 26px; }
 .lj-menu--res { width: 580px; padding: 18px; }
 .lj-menu-grid--2 { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -185,10 +192,12 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
 .lj-menu-feature-cta { display: inline-flex; align-items: center; gap: 6px; margin-top: auto; padding-top: 12px; color: var(--cyan-300); font-weight: 600; font-family: var(--font-display); }
 .lj-menu-feature-cta .lj-icon { width: 16px; height: 16px; }
 .lj-nav-mobile-cta { display: none; }
-.lj-header-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
-.lj-search-trigger { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 8px 0 12px; border: 1px solid var(--line-strong); border-radius: 10px; background: var(--white); color: var(--muted); font-size: 14px; transition: border-color 0.2s, color 0.2s; }
-.lj-search-trigger:hover { border-color: var(--navy); color: var(--ink); }
-.lj-search-trigger .lj-icon { width: 18px; height: 18px; }
+.lj-header-actions { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.lj-header-cta { height: 42px; padding: 0 20px; border-radius: 10px; font-size: 14.5px; box-shadow: 0 1px 2px rgba(16, 24, 40, 0.08); }
+.lj-search-trigger { display: inline-flex; align-items: center; gap: 8px; width: 172px; height: 42px; padding: 0 8px 0 14px; border: 1px solid transparent; border-radius: 10px; background: var(--mist); color: var(--muted); font-size: 14px; text-align: left; transition: border-color 0.15s, background-color 0.15s, color 0.15s; }
+.lj-search-trigger:hover { border-color: var(--line-strong); background: var(--white); color: var(--ink); }
+.lj-search-trigger .lj-icon { width: 17px; height: 17px; }
+.lj-search-trigger-text { flex: 1; }
 .lj-burger { display: none; width: 42px; height: 42px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--white); align-items: center; justify-content: center; flex-direction: column; gap: 4px; padding: 0; }
 .lj-burger span { display: block; width: 18px; height: 2px; border-radius: 2px; background: var(--ink); transition: transform 0.2s, opacity 0.2s; }
 .lj-burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
@@ -197,15 +206,17 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
 
 @media (max-width: 1180px) {
   .lj-search-trigger-text, .lj-search-trigger kbd { display: none; }
-  .lj-search-trigger { width: 40px; padding: 0; justify-content: center; }
-  .lj-nav-link { padding: 9px 10px; }
+  .lj-search-trigger { width: 42px; padding: 0; justify-content: center; }
+  .lj-header-bar { gap: 16px; }
+  .lj-nav-link { padding: 8px 10px; }
+  .lj-nav-item.is-current > .lj-nav-link::after { left: 10px; right: 10px; }
 }
 @media (max-width: 1040px) {
   .lj-burger { display: inline-flex; }
-  /* The header's backdrop-filter makes it the containing block, so size the panel explicitly. */
-  .lj-nav { display: none; position: fixed; top: 100%; left: 0; right: 0; height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h)); z-index: 99; background: var(--white); overflow-y: auto; padding: 8px 24px 40px; flex-direction: column; justify-content: flex-start; border-top: 1px solid var(--line); }
+  /* The header's backdrop-filter makes it the containing block, so the panel opens as a sheet under it. */
+  .lj-nav { display: none; position: fixed; top: calc(100% + 1px); left: 0; right: 0; height: calc(100vh - var(--header-h) - 1px); height: calc(100dvh - var(--header-h) - 1px); z-index: 99; background: var(--white); overflow-y: auto; padding: 8px 24px 32px; flex-direction: column; justify-content: flex-start; }
   .lj-header.is-nav-open .lj-nav { display: flex; }
-  .lj-header.is-nav-open { background: var(--white); }
+  .lj-nav-item.is-current > .lj-nav-link::after { display: none; }
   .lj-nav-list { flex-direction: column; align-items: stretch; gap: 0; }
   .lj-nav-item, .lj-has-menu--wide { position: static; border-bottom: 1px solid var(--line); }
   .lj-nav-link { width: 100%; justify-content: space-between; padding: 16px 4px; font-size: 17px; font-weight: 600; font-family: var(--font-display); border-radius: 0; }
@@ -220,7 +231,8 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
   body.lj-nav-open { overflow: hidden; }
 }
 @media (max-width: 640px) {
-  :root { --header-h: 64px; }
+  :root { --header-h: 62px; }
+  .lj-header-bar { gap: 10px; }
   .lj-header-cta { display: none; }
   .lj-container { padding-inline: 16px; }
   .lj-nav { padding-inline: 16px; }
@@ -269,6 +281,9 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
 .lj-hero-search > .lj-icon { width: 20px; height: 20px; color: var(--muted); }
 .lj-hero-search-text { flex: 1; color: var(--muted); font-size: 16px; padding: 10px 0; }
 .lj-hero-search .lj-btn { pointer-events: none; }
+.lj-hero-call { margin: 0 0 18px; font-size: 15px; color: rgba(255, 255, 255, 0.72); }
+.lj-hero-call a { color: #fff; font-weight: 600; white-space: nowrap; }
+.lj-hero-call a:hover { color: var(--cyan-300); }
 .lj-hero-quick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 16px; font-size: 13.5px; }
 .lj-hero-quick a { color: rgba(255, 255, 255, 0.85); padding: 5px 11px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.04); transition: border-color 0.2s, background-color 0.2s; }
 .lj-hero-quick a:hover { border-color: var(--cyan-300); color: #fff; background: rgba(30, 180, 230, 0.1); }
