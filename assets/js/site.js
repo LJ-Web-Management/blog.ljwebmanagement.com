@@ -21,9 +21,30 @@
   var desktop = window.matchMedia('(min-width: 1041px)');
 
   if (header) {
-    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    // The header slides out of view while scrolling down and comes back once
+    // the visitor scrolls up a little, as in most mobile apps. It always shows
+    // near the top of the page and while a menu, the mobile nav, or keyboard
+    // focus is inside it.
+    var lastY = window.scrollY;
+    var upDistance = 0;
+    var REVEAL_AFTER = 40;
+    var setHidden = function (hide) { header.classList.toggle('is-hidden', hide); };
+    var onScroll = function () {
+      var y = Math.max(0, window.scrollY);
+      var delta = y - lastY;
+      lastY = y;
+      header.classList.toggle('is-scrolled', y > 8);
+      var busy = header.classList.contains('is-nav-open') || $('.lj-has-menu.is-open', header) || header.contains(doc.activeElement);
+      if (busy || y <= header.offsetHeight) { upDistance = 0; setHidden(false); return; }
+      if (delta > 0) { upDistance = 0; setHidden(true); }
+      else if (delta < 0) {
+        upDistance -= delta;
+        if (upDistance >= REVEAL_AFTER) setHidden(false);
+      }
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+    header.addEventListener('focusin', function () { setHidden(false); });
 
     var menus = $$('.lj-has-menu', header);
     var closeTimer = null;

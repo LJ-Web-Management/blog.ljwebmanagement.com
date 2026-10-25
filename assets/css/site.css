@@ -142,7 +142,9 @@ a.lj-tag:hover { background: var(--navy); color: #fff; }
 .lj-tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
 
 /* ---------- Header ---------- */
-.lj-header { position: sticky; top: 0; z-index: 100; margin-bottom: calc(-1 * var(--header-space)); background: var(--white); -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px); border-bottom: 1px solid rgba(15, 37, 68, 0.08); transition: box-shadow 0.2s; }
+.lj-header { position: sticky; top: 0; z-index: 100; margin-bottom: calc(-1 * var(--header-space)); background: var(--white); -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px); border-bottom: 1px solid rgba(15, 37, 68, 0.08); transition: transform 0.3s ease, box-shadow 0.2s; }
+/* Slid out of view while scrolling down; site.js brings it back on scroll up. */
+.lj-header.is-hidden { transform: translateY(calc(-100% - 24px)); }
 .lj-header.is-scrolled { box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px -16px rgba(15, 37, 68, 0.28); }
 /* The header sits over the top of the page: the first section takes the header's height as a
    transparent top border, so its own background runs up behind the bar. */
