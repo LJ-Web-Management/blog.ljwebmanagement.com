@@ -27,6 +27,7 @@
 
     var menus = $$('.lj-has-menu', header);
     var closeTimer = null;
+    var hovered = null;
 
     var setMenu = function (item, open) {
       item.classList.toggle('is-open', open);
@@ -39,19 +40,25 @@
 
     menus.forEach(function (item) {
       var btn = $('.lj-nav-link', item);
-      btn.addEventListener('click', function () {
-        var open = !item.classList.contains('is-open');
+      btn.addEventListener('click', function (e) {
+        // A mouse hovering the item has already opened its menu, so a click
+        // keeps it open instead of toggling it shut. Keyboard activation
+        // (detail 0) and touch still toggle.
+        var keepOpen = desktop.matches && e.detail > 0 && hovered === item;
+        var open = keepOpen || !item.classList.contains('is-open');
         closeAll(item);
         setMenu(item, open);
       });
       item.addEventListener('pointerenter', function (e) {
         if (e.pointerType !== 'mouse' || !desktop.matches) return;
+        hovered = item;
         clearTimeout(closeTimer);
         closeAll(item);
         setMenu(item, true);
       });
       item.addEventListener('pointerleave', function (e) {
         if (e.pointerType !== 'mouse' || !desktop.matches) return;
+        if (hovered === item) hovered = null;
         closeTimer = setTimeout(function () { setMenu(item, false); }, 140);
       });
       item.addEventListener('focusout', function (e) {
@@ -101,7 +108,7 @@
     var loading = false;
     var active = -1;
     var current = [];
-    var TYPE_BOOST = { Category: 7, Industry: 6, Guide: 5, Tool: 4, Page: 4, Article: 1, Automation: 0 };
+    var TYPE_BOOST = { Category: 7, Industry: 6, Course: 6, Guide: 5, Quiz: 5, Calculator: 5, Term: 5, Tool: 4, Page: 4, Lesson: 4, Article: 1, Automation: 0 };
 
     var loadIndex = function () {
       if (index || loading) return;

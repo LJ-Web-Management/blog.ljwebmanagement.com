@@ -45,27 +45,27 @@ function jsonLd(nodes) {
 
 const TOPICS = [
   { slug: "learn", name: "Tech Skills for Beginners", test: /beginner|first web page|first react|learning to code|first tech skill|first no-code|python basics|neural networks|prompt engineering|first ai workflow|repetitive task before you automate/i,
-    practice: ["/automations/", "Browse 1,000+ done-for-you automations"], guide: ["/guides/what-to-automate-first/", "What should you automate first?"] },
+    practice: ["/automations/", "Browse 1,000+ done-for-you automations"], guide: ["/guides/how-to-automate-your-business/", "How to automate your business"] },
   { slug: "governance", name: "AI Strategy & Governance", test: /governance|govern |automation change|automation telemetry|automation sunset|automation portfolio|automation readiness|automation control room|test workflow automations|change impact review|data pipeline ownership|definition drift|data refresh failure|change freeze/i,
-    practice: ["/automations/category/compliance-documents/", "Compliance, documents & deadlines automations"], guide: ["/guides/ai-agents-vs-workflow-automation/", "AI agents vs. workflow automation"] },
+    practice: ["/automations/category/compliance-documents/", "Compliance, documents & deadlines automations"], guide: ["/guides/ai-vs-automation/", "AI vs. automation: when to use each"] },
   { slug: "field-service", name: "Field Service", test: /field service|dispatch|truck roll|work order|field audit|service estimate|service visits|service parts|field scheduling|field teams|technician|job cost|change order|facilities|equipment|calibration/i,
     practice: ["/automations/category/scheduling-dispatch/", "Scheduling, reminders & dispatch automations"], guide: ["/guides/reduce-no-shows-appointment-reminders/", "How to reduce no-shows"] },
   { slug: "people", name: "HR & Team", test: /employee|new-hire|new hire|hire |interview|training expirations|timesheet|payroll|workforce|travel approval|offboarding/i,
     practice: ["/automations/category/hr-team/", "HR, hiring & team automations"], guide: ["/guides/employee-onboarding-automation/", "Employee onboarding automation checklist"] },
   { slug: "compliance", name: "Compliance & Data", test: /compliance|audit|consent|data retention|data deletion|policy|regulatory|contract|certificate|insurance renewals|access review|access exception|privacy|identity conflicts|master data|merge review|address change|document expiration|tax exemption|nexus|returned mail|customer data|asset registry|accessibility/i,
-    practice: ["/automations/category/compliance-documents/", "Compliance, documents & deadlines automations"], guide: ["/guides/client-onboarding-automation/", "Client onboarding automation"] },
+    practice: ["/automations/category/compliance-documents/", "Compliance, documents & deadlines automations"], guide: ["/guides/document-workflow-automation/", "Document workflow automation"] },
   { slug: "finance", name: "Finance & Billing", test: /invoice|cash|collection|receivable|payable|expense|payment|billing|credit memo|credit limit|credit approval|revenue recognition|month-end|finance|purchase card|refund|spend|budget|margin|warranty reserve|supplier payments|profitability|sla credit|subscription waste|entitlements/i,
     practice: ["/automations/category/billing-finance/", "Billing, payments & finance automations"], guide: ["/guides/automate-invoicing-payment-reminders/", "How to automate invoicing and payment reminders"] },
   { slug: "reporting", name: "Reporting & Leadership", test: /executive reporting|executive forecasts|board ready|kpi|briefing|reporting|dashboard|meeting decisions|meeting follow-up|narrative|calendar capacity|risk radar|status updates/i,
-    practice: ["/automations/category/reporting-analytics/", "Reporting & analytics automations"], guide: ["/guides/automation-roi/", "How to calculate automation ROI"] },
+    practice: ["/automations/category/reporting-analytics/", "Reporting & analytics automations"], guide: ["/guides/how-to-automate-reports/", "How to automate reports and dashboards"] },
   { slug: "marketing", name: "Marketing & Website", test: /website|marketing|campaign|content|seo|conversion|heatmap|form |search logs|pricing page|chat transcripts|attribution/i,
     practice: ["/automations/category/marketing-retention/", "Marketing & customer retention automations"], guide: ["/guides/automate-review-requests/", "How to automate review requests"] },
   { slug: "sales", name: "Sales & CRM", test: /sales|crm|lead|pipeline|quote|proposal|deal|forecast|territory|win loss|bid no-bid|pricing|price change|demo|referral|prospect|order promise/i,
     practice: ["/automations/category/lead-follow-up-sales/", "Lead follow-up & sales automations"], guide: ["/guides/automate-lead-follow-up/", "How to automate lead follow-up"] },
   { slug: "customer-experience", name: "Customer Experience", test: /customer|support|escalation|onboarding|renewal|retention|cancellation|portal|chatbot|knowledge|help desk|macro|adoption|health score|implementation|warranty|service recovery|reviews/i,
-    practice: ["/automations/category/customer-communication/", "Customer service & communication automations"], guide: ["/guides/missed-call-text-back/", "Missed-call text-back"] },
+    practice: ["/automations/category/customer-communication/", "Customer service & communication automations"], guide: ["/guides/how-to-automate-customer-support/", "How to automate customer support"] },
   { slug: "operations", name: "Operations & Supply Chain", test: /./,
-    practice: ["/automations/category/operations-inventory/", "Operations, inventory & vendor automations"], guide: ["/guides/what-to-automate-first/", "What should you automate first?"] },
+    practice: ["/automations/category/operations-inventory/", "Operations, inventory & vendor automations"], guide: ["/guides/business-process-automation/", "Business process automation (BPA)"] },
 ];
 const TOPIC_BY_SLUG = Object.fromEntries(TOPICS.map((t) => [t.slug, t]));
 
@@ -410,7 +410,7 @@ ${body.html}
     </article>
     <aside class="lj-article-aside" aria-label="On this page">
       ${body.toc.length > 1 ? '<nav class="lj-toc" aria-label="Table of contents"><p>On this page</p><ol>' + body.toc.map(([id, t]) => '<li><a href="#' + id + '">' + escapeHtml(t) + "</a></li>").join("") + "</ol></nav>" : ""}
-      <div class="lj-aside-cta"><strong>Put this into practice</strong>See it as a done-for-you automation, with a flat, upfront quote.<a class="lj-btn lj-btn-accent lj-btn-sm" href="${main(topic.practice[0])}">Explore automations</a><a class="lj-aside-link" href="${main(topic.guide[0])}">Guide: ${escapeHtml(topic.guide[1])}</a></div>
+      <div class="lj-aside-cta"><strong>Put this into practice</strong>See it as a done-for-you automation, with a flat, upfront quote.<a class="lj-btn lj-btn-accent lj-btn-sm" href="${main(topic.practice[0])}">Explore automations</a><a class="lj-aside-link" href="${main(topic.guide[0])}">Guide: ${escapeHtml(topic.guide[1])}</a><a class="lj-aside-link" href="${main("/resources/")}">Free courses, quizzes, and calculators</a></div>
     </aside>
   </div>
 </div>
