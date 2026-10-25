@@ -96,6 +96,17 @@ const ICONS = {
   file: '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/>',
   linkedin: '<path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>',
   instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+  school: '<path d="M2.5 9L12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.5c0 1.4 2.5 3 5.5 3s5.5-1.6 5.5-3V11"/><path d="M21.5 9v5"/>',
+  listCheck: '<path d="M4 6.5l1.5 1.5L8.5 5"/><path d="M4 12.5l1.5 1.5 3-3"/><path d="M4 18.5l1.5 1.5 3-3"/><path d="M11.5 7h8.5"/><path d="M11.5 13h8.5"/><path d="M11.5 19h8.5"/>',
+  bookOpen: '<path d="M12 6.5C10.3 5 7.8 4.5 3.5 4.5v14c4.3 0 6.8.5 8.5 2 1.7-1.5 4.2-2 8.5-2v-14c-4.3 0-6.8.5-8.5 2z"/><path d="M12 6.5v14"/>',
+  award: '<circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.3L7 21l5-2.5 5 2.5-1.5-7.7"/>',
+  copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/>',
+  bot: '<rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4.5"/><circle cx="12" cy="3.5" r="1"/><path d="M9 13.5h.01"/><path d="M15 13.5h.01"/><path d="M9.5 17h5"/>',
+  grid: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/>',
+  dollar: '<circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.4-.9-1.5-1.6-2.8-1.6-1.6 0-2.8.9-2.8 2.1 0 2.9 5.8 1.5 5.8 4.4 0 1.2-1.3 2.2-3 2.2-1.4 0-2.6-.7-3-1.7"/><path d="M12 6v1.6"/><path d="M12 16.3V18"/>',
+  trend: '<path d="M3.5 17l6-6 4 4 7-7.5"/><path d="M15 7.5h5.5V13"/>',
+  lightbulb: '<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/>',
+  calendarX: '<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M3.5 10h17"/><path d="M10 13.5l4 4"/><path d="M14 13.5l-4 4"/>',
   xlogo: '<path fill="currentColor" stroke="none" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>',
 };
 
@@ -232,14 +243,27 @@ function header(opts) {
         <li class="lj-nav-item${curCls("how")}"><a class="lj-nav-link" href="${main("/how-it-works/")}"${cur("how")}>How It Works</a></li>
         <li class="lj-nav-item lj-has-menu${curCls("resources")}">
           <button type="button" class="lj-nav-link" aria-expanded="false" aria-controls="lj-menu-resources">Resources ${icon("chevronDown", "lj-nav-caret")}</button>
-          <div class="lj-menu" id="lj-menu-resources">
-            <ul class="lj-menu-list">
-              ${resource(main("/guides/"), "book", "Automation Guides", "Step-by-step playbooks for common workflows")}
-              ${resource(blog("/"), "pen", "Blog", "Fresh AI and automation ideas, published daily")}
-              ${resource(main("/roi-calculator/"), "calculator", "ROI Calculator", "See what manual work is costing you")}
-              ${resource(main("/quiz/"), "compass", "Automation Match Quiz", "Find the right fit in three questions")}
-              ${resource(main("/faq/"), "help", "Automation FAQ", "Pricing, timelines, and how it works")}
-            </ul>
+          <div class="lj-menu lj-menu--res" id="lj-menu-resources">
+            <div class="lj-menu-grid lj-menu-grid--2">
+              <div class="lj-menu-col">
+                <p class="lj-menu-title">Learn</p>
+                <ul class="lj-menu-list">
+                  ${resource(main("/resources/"), "grid", "Resource Center", "Every free guide, course, and tool")}
+                  ${resource(main("/guides/"), "book", "Automation Guides", "How to automate, step by step")}
+                  ${resource(main("/learn/"), "school", "Free Courses", "Automation 101 and AI at Work")}
+                  ${resource(main("/glossary/"), "bookOpen", "Glossary", "Automation and AI terms explained")}
+                </ul>
+              </div>
+              <div class="lj-menu-col">
+                <p class="lj-menu-title">Try</p>
+                <ul class="lj-menu-list">
+                  ${resource(main("/tools/"), "calculator", "Calculators &amp; Tools", "ROI, time savings, AI cost, and more")}
+                  ${resource(main("/quizzes/"), "listCheck", "Quizzes &amp; Assessments", "AI readiness and automation IQ")}
+                  ${resource(main("/tools/ai-prompt-library/"), "message", "AI Prompt Library", "Copy-ready prompts for business")}
+                  ${resource(blog("/"), "pen", "Blog", "Fresh AI and automation ideas daily")}
+                </ul>
+              </div>
+            </div>
           </div>
         </li>
         <li class="lj-nav-item${curCls("blog")}"><a class="lj-nav-link" href="${blog("/")}"${cur("blog")}>Blog</a></li>
@@ -275,8 +299,8 @@ function header(opts) {
           <button type="button" class="lj-chip" data-lj-q="missed call">Missed call text-back</button>
           <button type="button" class="lj-chip" data-lj-q="appointment reminder">Appointment reminders</button>
           <button type="button" class="lj-chip" data-lj-q="invoice">Invoicing</button>
-          <button type="button" class="lj-chip" data-lj-q="review request">Review requests</button>
-          <button type="button" class="lj-chip" data-lj-q="onboarding">Onboarding</button>
+          <button type="button" class="lj-chip" data-lj-q="how to automate">How to automate</button>
+          <button type="button" class="lj-chip" data-lj-q="ai agent">AI agents</button>
           <button type="button" class="lj-chip" data-lj-q="quickbooks">QuickBooks</button>
         </div>
       </div>
@@ -335,15 +359,18 @@ function footer(opts) {
         [main("/automations/#industries"), "All 57 Industries"],
       ])}
       ${col("Resources", [
+        [main("/resources/"), "Resource Center"],
         [main("/guides/"), "Automation Guides"],
+        [main("/learn/"), "Free Courses"],
+        [main("/tools/"), "Calculators &amp; Tools"],
+        [main("/quizzes/"), "Quizzes &amp; Assessments"],
+        [main("/glossary/"), "Automation Glossary"],
         [blog("/"), "Blog"],
-        [main("/roi-calculator/"), "ROI Calculator"],
-        [main("/quiz/"), "Automation Match Quiz"],
-        [main("/faq/"), "Automation FAQ"],
       ])}
       ${col("Company", [
         [main("/how-it-works/"), "How It Works"],
         [main("/solutions/"), "Platform Solutions"],
+        [main("/faq/"), "Automation FAQ"],
         [main("/appointment/"), "Book a Consultation"],
         [main("/contactus/"), "Contact Us"],
       ])}

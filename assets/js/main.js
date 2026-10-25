@@ -222,3 +222,94 @@
     status.textContent = initialTotal + 1 + ' articles';
   }
 })();
+
+// Newsletter popup. Opens once each time the blog home is loaded, unless the
+// visitor has joined (clicked a Join button, which opens the Typeform) or
+// ticked "Don't show this again"; both are remembered in localStorage.
+(function () {
+  'use strict';
+
+  var KEY = 'lj-newsletter';
+  var FORM_ID = 'CwiRULXe';
+  var DELAY_MS = 2500;
+  var dialog = document.getElementById('lj-newsletter');
+  var joins = Array.prototype.slice.call(document.querySelectorAll('[data-lj-newsletter-join]'));
+  var never = document.querySelector('[data-lj-popup-never]');
+
+  function remembered() {
+    try { return window.localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function remember(value) {
+    try {
+      if (value) window.localStorage.setItem(KEY, value);
+      else window.localStorage.removeItem(KEY);
+    } catch (e) {}
+  }
+
+  // The Typeform embed library is only loaded when it is about to be needed.
+  var typeform = null;
+  function loadTypeform() {
+    if (typeform) return typeform;
+    typeform = new Promise(function (resolve, reject) {
+      if (window.tf && window.tf.createPopup) return resolve(window.tf);
+      var css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = 'https://embed.typeform.com/next/css/popup.css';
+      document.head.appendChild(css);
+      var js = document.createElement('script');
+      js.src = 'https://embed.typeform.com/next/embed.js';
+      js.async = true;
+      js.onload = function () { window.tf && window.tf.createPopup ? resolve(window.tf) : reject(new Error('Typeform unavailable')); };
+      js.onerror = reject;
+      document.head.appendChild(js);
+    });
+    typeform.catch(function () { typeform = null; });
+    return typeform;
+  }
+
+  function openForm() {
+    loadTypeform().then(function (tf) {
+      tf.createPopup(FORM_ID, {
+        size: 100,
+        opacity: 100,
+        medium: 'snippet',
+        transitiveSearchParams: true,
+        iframeProps: { title: 'Newsletter - Subscribe' }
+      }).open();
+    }).catch(function () {
+      window.location.href = 'https://form.typeform.com/to/' + FORM_ID;
+    });
+  }
+
+  joins.forEach(function (btn) {
+    btn.addEventListener('pointerenter', loadTypeform, { once: true });
+    btn.addEventListener('click', function () {
+      remember('joined');
+      if (dialog && dialog.open) dialog.close();
+      openForm();
+    });
+  });
+
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+
+  if (never) {
+    never.addEventListener('change', function () { remember(never.checked ? 'hidden' : null); });
+  }
+  dialog.addEventListener('click', function (e) {
+    if (e.target === dialog || e.target.closest('[data-lj-popup-close]')) dialog.close();
+  });
+
+  function show() {
+    if (remembered() || dialog.open) return;
+    // Never stack on top of another open dialog (such as site search).
+    var other = document.querySelector('dialog[open]');
+    if (other) {
+      other.addEventListener('close', function () { setTimeout(show, 600); }, { once: true });
+      return;
+    }
+    dialog.showModal();
+    loadTypeform();
+  }
+
+  if (!remembered()) setTimeout(show, DELAY_MS);
+})();
