@@ -401,19 +401,16 @@ ${body.html}
 <!-- post-body:end -->
       </div>
       <div class="lj-article-footer">
-        <div class="lj-cta-band"><div><h2>Put this into practice</h2><p>We build done-for-you automations like this around the tools you already use. Explore real workflows, or book a free consultation for a flat, upfront quote.</p></div><div class="lj-btn-row"><a class="lj-btn lj-btn-accent" href="${main("/appointment/")}">Book a Free Consultation</a><a class="lj-btn lj-btn-light" href="${main(topic.practice[0])}">See Example Automations</a></div></div>
         <div class="lj-share"><span>Share this article</span>
           <a href="https://www.linkedin.com/sharing/share-offsite/?url=${share}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">${icon("linkedin")}</a>
           <a href="https://x.com/intent/post?url=${share}&amp;text=${shareTitle}" target="_blank" rel="noopener" aria-label="Share on X">${icon("xlogo")}</a>
           <a href="mailto:?subject=${shareTitle}&amp;body=${share}" aria-label="Share by email">${icon("mail")}</a>
         </div>
-        <div class="lj-author-box"><img src="${LOGO}" width="52" height="52" alt="" loading="lazy"><div><strong>Written by the LJ Web Management team</strong><p>We build done-for-you automation systems for small and mid-sized businesses across 57 industries. Read our <a href="${main("/guides/")}">automation guides</a> or <a href="${main("/automations/")}">browse the automation catalog</a>.</p></div></div>
       </div>
     </article>
     <aside class="lj-article-aside" aria-label="On this page">
       ${body.toc.length > 1 ? '<nav class="lj-toc" aria-label="Table of contents"><p>On this page</p><ol>' + body.toc.map(([id, t]) => '<li><a href="#' + id + '">' + escapeHtml(t) + "</a></li>").join("") + "</ol></nav>" : ""}
-      <div class="lj-aside-cta"><strong>${escapeHtml(topic.practice[1])}</strong>See how this works as a done-for-you automation, with a flat, upfront quote.<a class="lj-btn lj-btn-accent lj-btn-sm" href="${main(topic.practice[0])}">Explore automations</a></div>
-      <a class="lj-card lj-card--link" href="${main(topic.guide[0])}" style="padding:18px"><span class="lj-eyebrow" style="margin-bottom:6px">Related guide</span><strong style="color:var(--ink);font-family:var(--font-display);line-height:1.35">${escapeHtml(topic.guide[1])}</strong></a>
+      <div class="lj-aside-cta"><strong>Put this into practice</strong>See it as a done-for-you automation, with a flat, upfront quote.<a class="lj-btn lj-btn-accent lj-btn-sm" href="${main(topic.practice[0])}">Explore automations</a><a class="lj-aside-link" href="${main(topic.guide[0])}">Guide: ${escapeHtml(topic.guide[1])}</a></div>
     </aside>
   </div>
 </div>
@@ -473,7 +470,7 @@ function buildIndexPage(posts) {
   });
 
   const featuredHtml = featured
-    ? `<a class="lj-card lj-post-card lj-post-card--featured" href="/posts/${encodeURIComponent(featured.slug)}.html">
+    ? `<a class="lj-card lj-post-card lj-post-card--featured lj-blog-featured" href="/posts/${encodeURIComponent(featured.slug)}.html">
       ${fImg ? `<span class="lj-post-card-media"><img src="${fImg.src}"${fImg.srcset ? ` srcset="${fImg.srcset}" sizes="${featuredSizes}"` : ""} width="1280" height="720" alt="" fetchpriority="high" decoding="async"></span>` : ""}
       <span class="lj-post-card-body">
         <span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">Latest</span><span class="lj-tag">${escapeHtml(featured.category)}</span><time datetime="${featured.date}">${escapeHtml(featured.dateDisplay)}</time></span>
@@ -493,19 +490,14 @@ function buildIndexPage(posts) {
     <span class="lj-eyebrow lj-eyebrow--pill">AI &amp; automation blog</span>
     <h1>Automation ideas you can <span class="lj-gradient-text--ink">use this week</span></h1>
     <p class="lj-lead">Practical playbooks for growing businesses: workflows worth automating, how AI fits into real operations, and beginner tech skills. New articles every day.</p>
-    <div class="lj-btn-row"><a class="lj-btn lj-btn-primary" href="#articles">Browse ${sorted.length} articles ${icon("arrowRight")}</a><a class="lj-btn lj-btn-ghost" href="${main("/guides/")}">Read the Guides</a><a class="lj-btn lj-btn-ghost" href="/feed.xml">${icon("rss")}RSS</a></div>
+    <div class="lj-btn-row"><button type="button" class="lj-btn lj-btn-primary" data-lj-newsletter-join>${icon("mail")}Join the Newsletter</button><a class="lj-btn lj-btn-ghost" href="${main("/resources/")}">Resource Center</a><a class="lj-btn lj-btn-ghost" href="/feed.xml">${icon("rss")}RSS</a></div>
   </div>
 </section>
 
-<section class="lj-section">
+<section class="lj-section" id="articles" aria-labelledby="articles-title">
   <div class="lj-container">
     ${featuredHtml}
-  </div>
-</section>
-
-<section class="lj-section lj-section--mist" id="articles" aria-labelledby="articles-title">
-  <div class="lj-container">
-    <div class="lj-section-head lj-section-head--split"><div><span class="lj-eyebrow">All articles</span><h2 id="articles-title">Browse by topic</h2></div></div>
+    <h2 id="articles-title" class="lj-blog-title">Browse by topic</h2>
     <div class="lj-blog-controls">
       <div class="lj-input-wrap">${icon("search")}<label class="lj-sr-only" for="search-input">Search articles</label><input type="search" id="search-input" class="lj-input" placeholder="Search articles&hellip;" autocomplete="off"></div>
       <label class="lj-sr-only" for="sort-select">Sort articles</label>
@@ -519,25 +511,28 @@ function buildIndexPage(posts) {
     <div class="lj-filter-chips" role="group" aria-label="Filter by topic" id="topic-chips">
       <button type="button" class="lj-chip" data-topic="" aria-pressed="true">All topics <span class="lj-chip-count">${sorted.length}</span></button>${chips}
     </div>
-    <p id="posts-status" class="lj-filter-status" role="status" aria-live="polite" style="margin:18px 0 0"></p>
-    <div id="posts-list" class="lj-grid lj-grid-3 lj-mt-lg" data-total="${rest.length}" data-page-size="${PAGE_SIZE}">
+    <p id="posts-status" class="lj-filter-status" role="status" aria-live="polite" style="margin:14px 0 0"></p>
+    <div id="posts-list" class="lj-grid lj-grid-3" style="margin-top:18px" data-total="${rest.length}" data-page-size="${PAGE_SIZE}">
 ${first.map((p, i) => "      " + postCard(p, { eager: i === 0 })).join("\n")}
     </div>
     <nav id="pagination" class="lj-pagination" aria-label="Blog pagination"${rest.length > PAGE_SIZE ? "" : " hidden"}></nav>
   </div>
 </section>
 
-<section class="lj-section">
-  <div class="lj-container">
-    <div class="lj-newsletter">
-      <div><h2>Get new automation ideas in your inbox</h2><p>One practical workflow at a time, from the team that builds them. Subscribe from the button in the corner of this page, or follow along by RSS.</p></div>
-      <div class="lj-btn-row"><a class="lj-btn lj-btn-primary" href="/feed.xml">${icon("rss")}Subscribe by RSS</a><a class="lj-btn lj-btn-ghost" href="${main("/automations/")}">Browse Automations</a></div>
-    </div>
+<dialog class="lj-popup" id="lj-newsletter" aria-labelledby="lj-newsletter-title" aria-describedby="lj-newsletter-desc">
+  <div class="lj-popup-head">
+    <button type="button" class="lj-popup-close" data-lj-popup-close aria-label="Close">${icon("close")}</button>
+    <span class="lj-card-icon">${icon("mail")}</span>
+    <h2 id="lj-newsletter-title">Automation ideas, straight to your inbox</h2>
+    <p id="lj-newsletter-desc">Practical workflows, AI tips, and new guides from the team that builds them. Free, and you can unsubscribe anytime.</p>
   </div>
-</section>
-<div class="lj-newsletter-corner"><div data-tf-live="01KZAMHRP7TNX59ZZ7J2GXR8E1"></div></div>`;
+  <div class="lj-popup-body">
+    <button type="button" class="lj-btn lj-btn-primary lj-btn-block" data-lj-newsletter-join autofocus>Join the Newsletter ${icon("arrowRight")}</button>
+    <label class="lj-popup-check"><input type="checkbox" data-lj-popup-never> Don't show this again</label>
+  </div>
+</dialog>`;
 
-  return page(headHtml, mainHtml, '<script src="https://embed.typeform.com/next/embed.js" defer></script>');
+  return page(headHtml, mainHtml);
 }
 
 // ---------------------------------------------------------------------------
