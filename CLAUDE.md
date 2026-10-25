@@ -42,9 +42,9 @@ site embeds `assets/js/latest-posts.js` to show the newest posts.
 
 ## Privacy and accessibility rules
 
-Analytics, session recording, and live chat are consent-gated by the shared
-`scripts/chrome.js` (copied from the main site). Never add tracking scripts
-directly to templates; see "Privacy and accessibility rules" in the main site
+Analytics, session recording, and live chat load only through the shared
+`scripts/chrome.js` (copied from the main site), which honors visitors' opt-out
+choices. Never add tracking scripts directly to templates; see "Privacy and accessibility rules" in the main site
 repo's CLAUDE.md. Forms that collect personal information need a short notice
 at collection linking to the Privacy Policy, like the newsletter pop-up and
 unsubscribe page.
