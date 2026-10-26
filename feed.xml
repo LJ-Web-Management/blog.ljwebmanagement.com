@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Beginner Cybersecurity Home Lab: Three Safe Exercises for Learning by Doing</title>
+      <link>https://blog.ljwebmanagement.com/posts/beginner-cybersecurity-home-lab-three-safe-exercises-for-learning-by-doing.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/beginner-cybersecurity-home-lab-three-safe-exercises-for-learning-by-doing.html</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Cybersecurity can feel abstract when a course only presents definitions, attack names, and long lists of warnings. A beginner home lab turns those ideas…</description>
+    </item>
+    <item>
       <title>Command Line Basics for Beginners: Navigate Files and Run Your First Tools</title>
       <link>https://blog.ljwebmanagement.com/posts/command-line-basics-for-beginners-navigate-files-and-run-your-first-tools.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/command-line-basics-for-beginners-navigate-files-and-run-your-first-tools.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <category>Compliance &amp; Data</category>
       <description>Returned mail looks small because each individual envelope, postcard, invoice, renewal notice, tax form, welcome packet, product catalog, statement, or…</description>
-    </item>
-    <item>
-      <title>Automate CRM Meeting Note Quality Checks Before Pipeline Signals Get Noisy</title>
-      <link>https://blog.ljwebmanagement.com/posts/automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/automate-crm-meeting-note-quality-checks-before-pipeline-signals-get-noisy.html</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Sales &amp; CRM</category>
-      <description>CRM meeting notes are supposed to help teams understand buyer intent, next steps, blockers, urgency, and relationship context. In practice, notes often…</description>
     </item>
   </channel>
 </rss>

@@ -3364,5 +3364,16 @@
     "excerpt": "Many beginners meet the command line as a black window full of unfamiliar symbols, then decide it belongs to advanced developers. That reaction is…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Beginner Cybersecurity Home Lab: Three Safe Exercises for Learning by Doing",
+    "slug": "beginner-cybersecurity-home-lab-three-safe-exercises-for-learning-by-doing",
+    "image": "assets/img/posts/beginner-cybersecurity-home-lab-three-safe-exercises-for-learning-by-doing.png",
+    "webp": true,
+    "date": "2026-10-26",
+    "dateDisplay": "October 26, 2026",
+    "excerpt": "Cybersecurity can feel abstract when a course only presents definitions, attack names, and long lists of warnings. A beginner home lab turns those ideas…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
