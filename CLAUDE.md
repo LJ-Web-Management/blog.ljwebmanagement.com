@@ -13,7 +13,12 @@ Posts are published by uploading a .docx, .txt, or .zip (document plus
 featured image) to `uploads/`. The "Convert Word Docs to Blog Posts" workflow
 runs `scripts/convert.js`, which writes `posts/<slug>.html`, updates
 `posts.json`, and regenerates the blog home, `feed.xml`, `sitemap.xml`,
-`404.html` and `assets/js/latest-posts.js`.
+`llms.txt`, `404.html` and `assets/js/latest-posts.js`.
+
+The converter commits with the built-in `GITHUB_TOKEN`, and pushes made with
+that token never start other workflows. So `deploy.yml` ignores pushes that
+only touch `uploads/` and instead deploys when the converter finishes
+(`workflow_run`). Keep that trigger if you rename the converter workflow.
 
 `npm run rebuild` re-renders every existing post and listing page with the
 current templates. Run it after changing `scripts/templates.js`,

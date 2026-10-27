@@ -623,6 +623,37 @@ function buildSitemap(posts) {
   );
 }
 
+// llms.txt: a plain-text index of every post for AI systems and answer
+// engines, grouped by topic with the newest posts first.
+function buildLlms(posts) {
+  const sorted = sortPosts(posts);
+  const topics = [];
+  sorted.forEach((p) => {
+    let t = topics.find((x) => x.name === p.category);
+    if (!t) topics.push((t = { name: p.category || "General", posts: [] }));
+    t.posts.push(p);
+  });
+  const line = (p) => "- [" + p.title + "](" + postUrl(p.slug) + "): " + (p.excerpt || "").replace(/\s+/g, " ").trim();
+  return (
+    [
+      "# " + BLOG_NAME,
+      "",
+      "> Practical articles on AI and business automation for small and midsize businesses, published by LJ Web Management (" + MAIN_URL + "). " + sorted.length + " posts, newest published " + sorted[0].date + ".",
+      "",
+      "- [Blog home](" + BLOG_HOME + ")",
+      "- [RSS feed](" + SITE_URL + "/feed.xml)",
+      "- [Sitemap](" + SITE_URL + "/sitemap.xml)",
+      "- [Main site and services](" + MAIN_URL + "/llms.txt)",
+      "",
+      "## Latest posts",
+      "",
+    ]
+      .concat(sorted.slice(0, 10).map(line))
+      .concat(topics.reduce((out, t) => out.concat(["", "## " + t.name + " (" + t.posts.length + ")", ""], t.posts.map(line)), []))
+      .join("\n") + "\n"
+  );
+}
+
 // Script loaded by www.ljwebmanagement.com (home page and guides hub) to show
 // the newest posts. It fills every [data-lj-latest-posts] element.
 function buildLatestPostsScript(posts) {
@@ -658,6 +689,7 @@ function buildLatestPostsScript(posts) {
 }
 
 module.exports = {
+  buildLlms,
   SITE_URL,
   PAGE_SIZE,
   TOPICS,

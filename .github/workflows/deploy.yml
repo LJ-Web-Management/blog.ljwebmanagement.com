@@ -4,14 +4,34 @@ on:
   push:
     branches:
       - main  # Trigger pipeline on push to main branch
+    # A push that only adds files to uploads/ is deployed by the
+    # workflow_run trigger below once the post has been generated.
+    paths-ignore:
+      - "uploads/**"
+  # The converter commits new posts with the built-in GITHUB_TOKEN, and pushes
+  # made with that token never start other workflows. Deploy when it finishes
+  # instead, so each new post, the sitemap, feed and llms.txt go live right away.
+  workflow_run:
+    workflows: ["Convert Word Docs to Blog Posts"]
+    types: [completed]
+    branches: [main]
+
+# One deploy at a time, so an older checkout can never finish last and
+# remove newer files with --delete.
+concurrency:
+  group: deploy-blog
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: main  # after a conversion, deploy the commit the converter just pushed
 
     # --- UNCOMMENT & ADJUST IF USING A BUILD STEP (React, Vue, Vite, etc.) ---
     # - name: Setup Node.js

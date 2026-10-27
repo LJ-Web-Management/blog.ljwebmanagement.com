@@ -462,12 +462,13 @@ function uniqueSlug(baseSlug, existingSlugs) {
 }
 
 // Writes everything that lists posts: the blog home, the RSS feed, the
-// sitemap, the 404 page and the latest-posts script the main site embeds.
+// sitemap, llms.txt, the 404 page and the latest-posts script the main site embeds.
 function writeIndex(posts) {
   templates.assignTopics(posts);
   fs.writeFileSync(INDEX_HTML, templates.buildIndexPage(posts));
   fs.writeFileSync(path.join(ROOT, "feed.xml"), templates.buildFeed(posts));
   fs.writeFileSync(path.join(ROOT, "sitemap.xml"), templates.buildSitemap(posts));
+  fs.writeFileSync(path.join(ROOT, "llms.txt"), templates.buildLlms(posts));
   fs.writeFileSync(path.join(ROOT, "404.html"), templates.buildNotFoundPage());
   fs.writeFileSync(path.join(ROOT, "assets", "js", "latest-posts.js"), templates.buildLatestPostsScript(posts));
 }
