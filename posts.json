@@ -3375,5 +3375,16 @@
     "excerpt": "Cybersecurity can feel abstract when a course only presents definitions, attack names, and long lists of warnings. A beginner home lab turns those ideas…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "AI Classification for Beginners: Turn Messy Requests Into Useful Categories",
+    "slug": "ai-classification-for-beginners-turn-messy-requests-into-useful-categories",
+    "image": "assets/img/posts/ai-classification-for-beginners-turn-messy-requests-into-useful-categories.png",
+    "webp": true,
+    "date": "2026-10-27",
+    "dateDisplay": "October 27, 2026",
+    "excerpt": "Many people hear “AI classification” and picture a complicated machine-learning lab. In practice, classification is one of the clearest ways to…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

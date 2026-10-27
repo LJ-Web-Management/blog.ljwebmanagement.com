@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>AI Classification for Beginners: Turn Messy Requests Into Useful Categories</title>
+      <link>https://blog.ljwebmanagement.com/posts/ai-classification-for-beginners-turn-messy-requests-into-useful-categories.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-classification-for-beginners-turn-messy-requests-into-useful-categories.html</guid>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people hear “AI classification” and picture a complicated machine-learning lab. In practice, classification is one of the clearest ways to…</description>
+    </item>
+    <item>
       <title>Beginner Cybersecurity Home Lab: Three Safe Exercises for Learning by Doing</title>
       <link>https://blog.ljwebmanagement.com/posts/beginner-cybersecurity-home-lab-three-safe-exercises-for-learning-by-doing.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/beginner-cybersecurity-home-lab-three-safe-exercises-for-learning-by-doing.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <category>Customer Experience</category>
       <description>Customer requirements rarely stay still after the first order, project kickoff, or signed scope. A buyer asks for a packaging change. An engineer…</description>
-    </item>
-    <item>
-      <title>Create an AI Returned Mail Recovery Workflow Before Bad Addresses Drain Revenue</title>
-      <link>https://blog.ljwebmanagement.com/posts/create-an-ai-returned-mail-recovery-workflow-before-bad-addresses-drain-revenue.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/create-an-ai-returned-mail-recovery-workflow-before-bad-addresses-drain-revenue.html</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Compliance &amp; Data</category>
-      <description>Returned mail looks small because each individual envelope, postcard, invoice, renewal notice, tax form, welcome packet, product catalog, statement, or…</description>
     </item>
   </channel>
 </rss>
