@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>CSS Responsive Design for Beginners: Make One Page Work on Phones and Desktops</title>
+      <link>https://blog.ljwebmanagement.com/posts/css-responsive-design-for-beginners-make-one-page-work-on-phones-and-desktops.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/css-responsive-design-for-beginners-make-one-page-work-on-phones-and-desktops.html</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>A page can look polished on a laptop and still become frustrating on a phone. Text may run beyond the screen, buttons may become too small to tap, images…</description>
+    </item>
+    <item>
       <title>AI Classification for Beginners: Turn Messy Requests Into Useful Categories</title>
       <link>https://blog.ljwebmanagement.com/posts/ai-classification-for-beginners-turn-messy-requests-into-useful-categories.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-classification-for-beginners-turn-messy-requests-into-useful-categories.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
       <category>Operations &amp; Supply Chain</category>
       <description>Delivery instructions have become more complicated than the simple notes many companies still treat them as. A customer may need a liftgate, a delivery…</description>
-    </item>
-    <item>
-      <title>Automate Customer Specification Change Intake Before Teams Build From Old Requirements</title>
-      <link>https://blog.ljwebmanagement.com/posts/automate-customer-specification-change-intake-before-teams-build-from-old-requirements.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/automate-customer-specification-change-intake-before-teams-build-from-old-requirements.html</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Customer Experience</category>
-      <description>Customer requirements rarely stay still after the first order, project kickoff, or signed scope. A buyer asks for a packaging change. An engineer…</description>
     </item>
   </channel>
 </rss>

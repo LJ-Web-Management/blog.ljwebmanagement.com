@@ -3386,5 +3386,16 @@
     "excerpt": "Many people hear “AI classification” and picture a complicated machine-learning lab. In practice, classification is one of the clearest ways to…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "CSS Responsive Design for Beginners: Make One Page Work on Phones and Desktops",
+    "slug": "css-responsive-design-for-beginners-make-one-page-work-on-phones-and-desktops",
+    "image": "assets/img/posts/css-responsive-design-for-beginners-make-one-page-work-on-phones-and-desktops.png",
+    "webp": true,
+    "date": "2026-10-28",
+    "dateDisplay": "October 28, 2026",
+    "excerpt": "A page can look polished on a laptop and still become frustrating on a phone. Text may run beyond the screen, buttons may become too small to tap, images…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
