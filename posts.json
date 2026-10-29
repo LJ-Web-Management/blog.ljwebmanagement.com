@@ -3397,5 +3397,16 @@
     "excerpt": "A page can look polished on a laptop and still become frustrating on a phone. Text may run beyond the screen, buttons may become too small to tap, images…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "HTML Tables for Beginners: Turn a Small Data List Into a Clear Web Page",
+    "slug": "html-tables-for-beginners-turn-a-small-data-list-into-a-clear-web-page",
+    "image": "assets/img/posts/html-tables-for-beginners-turn-a-small-data-list-into-a-clear-web-page.png",
+    "webp": true,
+    "date": "2026-10-29",
+    "dateDisplay": "October 29, 2026",
+    "excerpt": "When beginners learn HTML, they often start with headings, paragraphs, links, and images. Those elements are important, but many first websites still…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

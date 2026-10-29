@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>HTML Tables for Beginners: Turn a Small Data List Into a Clear Web Page</title>
+      <link>https://blog.ljwebmanagement.com/posts/html-tables-for-beginners-turn-a-small-data-list-into-a-clear-web-page.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/html-tables-for-beginners-turn-a-small-data-list-into-a-clear-web-page.html</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>When beginners learn HTML, they often start with headings, paragraphs, links, and images. Those elements are important, but many first websites still…</description>
+    </item>
+    <item>
       <title>CSS Responsive Design for Beginners: Make One Page Work on Phones and Desktops</title>
       <link>https://blog.ljwebmanagement.com/posts/css-responsive-design-for-beginners-make-one-page-work-on-phones-and-desktops.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/css-responsive-design-for-beginners-make-one-page-work-on-phones-and-desktops.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
       <category>Finance &amp; Billing</category>
       <description>Sales sample requests usually begin with good intent. A prospect wants to test a product, a distributor wants a display set, an account manager wants to…</description>
-    </item>
-    <item>
-      <title>Create an AI Delivery Instruction Verification Workflow Before Orders Leave the Dock</title>
-      <link>https://blog.ljwebmanagement.com/posts/create-an-ai-delivery-instruction-verification-workflow-before-orders-leave-the-dock.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/create-an-ai-delivery-instruction-verification-workflow-before-orders-leave-the-dock.html</guid>
-      <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Operations &amp; Supply Chain</category>
-      <description>Delivery instructions have become more complicated than the simple notes many companies still treat them as. A customer may need a liftgate, a delivery…</description>
     </item>
   </channel>
 </rss>
