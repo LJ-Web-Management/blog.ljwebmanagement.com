@@ -3408,5 +3408,16 @@
     "excerpt": "When beginners learn HTML, they often start with headings, paragraphs, links, and images. Those elements are important, but many first websites still…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "JSON for Beginners: Read Structured Data Before You Build an API-Connected App",
+    "slug": "json-for-beginners-read-structured-data-before-you-build-an-api-connected-app",
+    "image": "assets/img/posts/json-for-beginners-read-structured-data-before-you-build-an-api-connected-app.png",
+    "webp": true,
+    "date": "2026-10-30",
+    "dateDisplay": "October 30, 2026",
+    "excerpt": "Many beginners can follow a tutorial that displays information on a web page, but the first encounter with structured data can still feel confusing…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>JSON for Beginners: Read Structured Data Before You Build an API-Connected App</title>
+      <link>https://blog.ljwebmanagement.com/posts/json-for-beginners-read-structured-data-before-you-build-an-api-connected-app.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/json-for-beginners-read-structured-data-before-you-build-an-api-connected-app.html</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners can follow a tutorial that displays information on a web page, but the first encounter with structured data can still feel confusing…</description>
+    </item>
+    <item>
       <title>HTML Tables for Beginners: Turn a Small Data List Into a Clear Web Page</title>
       <link>https://blog.ljwebmanagement.com/posts/html-tables-for-beginners-turn-a-small-data-list-into-a-clear-web-page.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/html-tables-for-beginners-turn-a-small-data-list-into-a-clear-web-page.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
       <category>Finance &amp; Billing</category>
       <description>Recurring revenue depends on a quiet promise: when the next billing date arrives, the customer is ready, the payment method works, the invoice is…</description>
-    </item>
-    <item>
-      <title>Automate Sales Sample Request Reviews Before Free Product Drains Margin</title>
-      <link>https://blog.ljwebmanagement.com/posts/automate-sales-sample-request-reviews-before-free-product-drains-margin.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/automate-sales-sample-request-reviews-before-free-product-drains-margin.html</guid>
-      <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Finance &amp; Billing</category>
-      <description>Sales sample requests usually begin with good intent. A prospect wants to test a product, a distributor wants a display set, an account manager wants to…</description>
     </item>
   </channel>
 </rss>
