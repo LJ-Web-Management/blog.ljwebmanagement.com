@@ -3419,5 +3419,16 @@
     "excerpt": "Many beginners can follow a tutorial that displays information on a web page, but the first encounter with structured data can still feel confusing…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Spreadsheet Automation for Beginners: Turn a Repeated Weekly Report Into a Reliable Workflow",
+    "slug": "spreadsheet-automation-for-beginners-turn-a-repeated-weekly-report-into-a-reliable-workflow",
+    "image": "assets/img/posts/spreadsheet-automation-for-beginners-turn-a-repeated-weekly-report-into-a-reliable-workflow.png",
+    "webp": true,
+    "date": "2026-10-31",
+    "dateDisplay": "October 31, 2026",
+    "excerpt": "Many beginners think automation starts when they choose a tool. In practice, it starts when they notice the same spreadsheet work happening every week…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

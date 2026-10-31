@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Spreadsheet Automation for Beginners: Turn a Repeated Weekly Report Into a Reliable Workflow</title>
+      <link>https://blog.ljwebmanagement.com/posts/spreadsheet-automation-for-beginners-turn-a-repeated-weekly-report-into-a-reliable-workflow.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/spreadsheet-automation-for-beginners-turn-a-repeated-weekly-report-into-a-reliable-workflow.html</guid>
+      <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners think automation starts when they choose a tool. In practice, it starts when they notice the same spreadsheet work happening every week…</description>
+    </item>
+    <item>
       <title>JSON for Beginners: Read Structured Data Before You Build an API-Connected App</title>
       <link>https://blog.ljwebmanagement.com/posts/json-for-beginners-read-structured-data-before-you-build-an-api-connected-app.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/json-for-beginners-read-structured-data-before-you-build-an-api-connected-app.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
       <category>HR &amp; Team</category>
       <description>Payroll usually looks simple until the final review window opens. A few missed punches, late approvals, duplicate shift notes, and overtime questions can…</description>
-    </item>
-    <item>
-      <title>Create an AI Payment Method Readiness Workflow Before Recurring Revenue Gets Interrupted</title>
-      <link>https://blog.ljwebmanagement.com/posts/create-an-ai-payment-method-readiness-workflow-before-recurring-revenue-gets-interrupted.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/create-an-ai-payment-method-readiness-workflow-before-recurring-revenue-gets-interrupted.html</guid>
-      <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Finance &amp; Billing</category>
-      <description>Recurring revenue depends on a quiet promise: when the next billing date arrives, the customer is ready, the payment method works, the invoice is…</description>
     </item>
   </channel>
 </rss>
