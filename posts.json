@@ -3430,5 +3430,16 @@
     "excerpt": "Many beginners think automation starts when they choose a tool. In practice, it starts when they notice the same spreadsheet work happening every week…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "AI Data Safety for Beginners: Practice a Simple Redaction Check Before You Share Work",
+    "slug": "ai-data-safety-for-beginners-practice-a-simple-redaction-check-before-you-share-work",
+    "image": "assets/img/posts/ai-data-safety-for-beginners-practice-a-simple-redaction-check-before-you-share-work.png",
+    "webp": true,
+    "date": "2026-11-01",
+    "dateDisplay": "November 1, 2026",
+    "excerpt": "AI tools can help summarize notes, rewrite messages, compare options, and turn rough information into a useful first draft. For a beginner, the difficult…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
