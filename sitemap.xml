@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.ljwebmanagement.com/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.ljwebmanagement.com/posts/javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blog.ljwebmanagement.com/posts/ai-data-safety-for-beginners-practice-a-simple-redaction-check-before-you-share-work.html</loc>

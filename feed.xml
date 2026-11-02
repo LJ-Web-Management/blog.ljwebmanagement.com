@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>JavaScript Arrays for Beginners: Store Lists and Build a Useful To-Do Feature</title>
+      <link>https://blog.ljwebmanagement.com/posts/javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature.html</guid>
+      <pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people learning JavaScript understand variables, buttons, and simple conditions, then feel stuck when a project needs to handle more than one thing…</description>
+    </item>
+    <item>
       <title>AI Data Safety for Beginners: Practice a Simple Redaction Check Before You Share Work</title>
       <link>https://blog.ljwebmanagement.com/posts/ai-data-safety-for-beginners-practice-a-simple-redaction-check-before-you-share-work.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-data-safety-for-beginners-practice-a-simple-redaction-check-before-you-share-work.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
       <category>HR &amp; Team</category>
       <description>Employee offboarding often looks complete because HR closed the personnel record, IT disabled the email account, and the manager collected a laptop. The…</description>
-    </item>
-    <item>
-      <title>Vendor Master Data Change Review With AI That Catches Payment Risk Before Records Update</title>
-      <link>https://blog.ljwebmanagement.com/posts/vendor-master-data-change-review-with-ai-that-catches-payment-risk-before-records-update.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/vendor-master-data-change-review-with-ai-that-catches-payment-risk-before-records-update.html</guid>
-      <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Compliance &amp; Data</category>
-      <description>Vendor master data changes look routine until one bad update redirects money, breaks tax reporting, or slows a supplier that the business depends on. A…</description>
     </item>
   </channel>
 </rss>

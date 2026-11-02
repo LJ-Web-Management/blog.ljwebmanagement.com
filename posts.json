@@ -3441,5 +3441,16 @@
     "excerpt": "AI tools can help summarize notes, rewrite messages, compare options, and turn rough information into a useful first draft. For a beginner, the difficult…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "JavaScript Arrays for Beginners: Store Lists and Build a Useful To-Do Feature",
+    "slug": "javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature",
+    "image": "assets/img/posts/javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature.png",
+    "webp": true,
+    "date": "2026-11-02",
+    "dateDisplay": "November 2, 2026",
+    "excerpt": "Many people learning JavaScript understand variables, buttons, and simple conditions, then feel stuck when a project needs to handle more than one thing…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
