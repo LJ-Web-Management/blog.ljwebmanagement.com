@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>What You Learn in a Neural Networks Basics Course: From Inputs to Predictions</title>
+      <link>https://blog.ljwebmanagement.com/posts/what-you-learn-in-a-neural-networks-basics-course-from-inputs-to-predictions.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-you-learn-in-a-neural-networks-basics-course-from-inputs-to-predictions.html</guid>
+      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>When people hear “neural network,” they often imagine advanced mathematics, enormous data centers, or a subject reserved for machine learning engineers…</description>
+    </item>
+    <item>
       <title>JavaScript Arrays for Beginners: Store Lists and Build a Useful To-Do Feature</title>
       <link>https://blog.ljwebmanagement.com/posts/javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-arrays-for-beginners-store-lists-and-build-a-useful-to-do-feature.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
       <category>Customer Experience</category>
       <description>Support macros are supposed to make customer service faster, more consistent, and easier to coach. They give agents approved language for common…</description>
-    </item>
-    <item>
-      <title>SaaS Offboarding Access Checklist That Finds Permission Gaps After Employees Leave</title>
-      <link>https://blog.ljwebmanagement.com/posts/saas-offboarding-access-checklist-that-finds-permission-gaps-after-employees-leave.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/saas-offboarding-access-checklist-that-finds-permission-gaps-after-employees-leave.html</guid>
-      <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
-      <category>HR &amp; Team</category>
-      <description>Employee offboarding often looks complete because HR closed the personnel record, IT disabled the email account, and the manager collected a laptop. The…</description>
     </item>
   </channel>
 </rss>

@@ -3452,5 +3452,16 @@
     "excerpt": "Many people learning JavaScript understand variables, buttons, and simple conditions, then feel stuck when a project needs to handle more than one thing…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "What You Learn in a Neural Networks Basics Course: From Inputs to Predictions",
+    "slug": "what-you-learn-in-a-neural-networks-basics-course-from-inputs-to-predictions",
+    "image": "assets/img/posts/what-you-learn-in-a-neural-networks-basics-course-from-inputs-to-predictions.png",
+    "webp": true,
+    "date": "2026-11-03",
+    "dateDisplay": "November 3, 2026",
+    "excerpt": "When people hear “neural network,” they often imagine advanced mathematics, enormous data centers, or a subject reserved for machine learning engineers…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
