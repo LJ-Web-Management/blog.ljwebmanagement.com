@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Prompt Engineering Practice for Beginners: Improve One Work Task in Three Passes</title>
+      <link>https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-for-beginners-improve-one-work-task-in-three-passes.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-for-beginners-improve-one-work-task-in-three-passes.html</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many people try an AI assistant once, receive a vague or incomplete answer, and decide that the tool is unreliable. Often the problem is not the person…</description>
+    </item>
+    <item>
       <title>What You Learn in a Neural Networks Basics Course: From Inputs to Predictions</title>
       <link>https://blog.ljwebmanagement.com/posts/what-you-learn-in-a-neural-networks-basics-course-from-inputs-to-predictions.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-you-learn-in-a-neural-networks-basics-course-from-inputs-to-predictions.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Many people try AI tools once or twice, get a vague answer, and assume the tool is either overrated or too advanced for them. The real issue is often…</description>
-    </item>
-    <item>
-      <title>Support Macro Drift Scorecard for Finding Bad Answers Before Customers Escalate</title>
-      <link>https://blog.ljwebmanagement.com/posts/support-macro-drift-scorecard-for-finding-bad-answers-before-customers-escalate.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/support-macro-drift-scorecard-for-finding-bad-answers-before-customers-escalate.html</guid>
-      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Customer Experience</category>
-      <description>Support macros are supposed to make customer service faster, more consistent, and easier to coach. They give agents approved language for common…</description>
     </item>
   </channel>
 </rss>

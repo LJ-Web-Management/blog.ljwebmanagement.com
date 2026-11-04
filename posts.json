@@ -3463,5 +3463,16 @@
     "excerpt": "When people hear “neural network,” they often imagine advanced mathematics, enormous data centers, or a subject reserved for machine learning engineers…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Prompt Engineering Practice for Beginners: Improve One Work Task in Three Passes",
+    "slug": "prompt-engineering-practice-for-beginners-improve-one-work-task-in-three-passes",
+    "image": "assets/img/posts/prompt-engineering-practice-for-beginners-improve-one-work-task-in-three-passes.png",
+    "webp": true,
+    "date": "2026-11-04",
+    "dateDisplay": "November 4, 2026",
+    "excerpt": "Many people try an AI assistant once, receive a vague or incomplete answer, and decide that the tool is unreliable. Often the problem is not the person…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
