@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>AI, Coding, or Automation? A Beginner&apos;s Guide to Choosing Your First Course</title>
+      <link>https://blog.ljwebmanagement.com/posts/ai-coding-or-automation-a-beginner-s-guide-to-choosing-your-first-course.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-coding-or-automation-a-beginner-s-guide-to-choosing-your-first-course.html</guid>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Choosing a first technology course can feel harder than taking the course itself. AI, coding, and automation all sound useful, but they lead to different…</description>
+    </item>
+    <item>
       <title>Prompt Engineering Practice for Beginners: Improve One Work Task in Three Passes</title>
       <link>https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-for-beginners-improve-one-work-task-in-three-passes.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-for-beginners-improve-one-work-task-in-three-passes.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
       <category>Reporting &amp; Leadership</category>
       <description>Monthly KPI meetings often get pulled into the wrong work. Leaders spend the first half of the meeting asking what changed, the second half debating…</description>
-    </item>
-    <item>
-      <title>Prompt Engineering Practice Exercises for Beginners Who Want Better AI Answers</title>
-      <link>https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-exercises-for-beginners-who-want-better-ai-answers.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/prompt-engineering-practice-exercises-for-beginners-who-want-better-ai-answers.html</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>Many people try AI tools once or twice, get a vague answer, and assume the tool is either overrated or too advanced for them. The real issue is often…</description>
     </item>
   </channel>
 </rss>

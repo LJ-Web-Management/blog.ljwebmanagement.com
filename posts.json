@@ -3474,5 +3474,16 @@
     "excerpt": "Many people try an AI assistant once, receive a vague or incomplete answer, and decide that the tool is unreliable. Often the problem is not the person…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "AI, Coding, or Automation? A Beginner's Guide to Choosing Your First Course",
+    "slug": "ai-coding-or-automation-a-beginner-s-guide-to-choosing-your-first-course",
+    "image": "assets/img/posts/ai-coding-or-automation-a-beginner-s-guide-to-choosing-your-first-course.png",
+    "webp": true,
+    "date": "2026-11-05",
+    "dateDisplay": "November 5, 2026",
+    "excerpt": "Choosing a first technology course can feel harder than taking the course itself. AI, coding, and automation all sound useful, but they lead to different…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
