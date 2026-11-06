@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Publish Your First Static Website: A Beginner GitHub Pages Project</title>
+      <link>https://blog.ljwebmanagement.com/posts/publish-your-first-static-website-a-beginner-github-pages-project.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/publish-your-first-static-website-a-beginner-github-pages-project.html</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners learn HTML and CSS in a code editor but stop before they publish a page that someone else can open. The missing step is often not advanced…</description>
+    </item>
+    <item>
       <title>AI, Coding, or Automation? A Beginner&apos;s Guide to Choosing Your First Course</title>
       <link>https://blog.ljwebmanagement.com/posts/ai-coding-or-automation-a-beginner-s-guide-to-choosing-your-first-course.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/ai-coding-or-automation-a-beginner-s-guide-to-choosing-your-first-course.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
       <category>Marketing &amp; Website</category>
       <description>Lead source attribution looks tidy until the campaign ROI report reaches the owner, CFO, or sales leader who has to decide where the next dollar goes. A…</description>
-    </item>
-    <item>
-      <title>Monthly KPI Exception Briefs With AI: How to Find the Variances Leaders Should Discuss</title>
-      <link>https://blog.ljwebmanagement.com/posts/monthly-kpi-exception-briefs-with-ai-how-to-find-the-variances-leaders-should-discuss.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/monthly-kpi-exception-briefs-with-ai-how-to-find-the-variances-leaders-should-discuss.html</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Reporting &amp; Leadership</category>
-      <description>Monthly KPI meetings often get pulled into the wrong work. Leaders spend the first half of the meeting asking what changed, the second half debating…</description>
     </item>
   </channel>
 </rss>

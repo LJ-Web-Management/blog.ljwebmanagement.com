@@ -3485,5 +3485,16 @@
     "excerpt": "Choosing a first technology course can feel harder than taking the course itself. AI, coding, and automation all sound useful, but they lead to different…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Publish Your First Static Website: A Beginner GitHub Pages Project",
+    "slug": "publish-your-first-static-website-a-beginner-github-pages-project",
+    "image": "assets/img/posts/publish-your-first-static-website-a-beginner-github-pages-project.png",
+    "webp": true,
+    "date": "2026-11-06",
+    "dateDisplay": "November 6, 2026",
+    "excerpt": "Many beginners learn HTML and CSS in a code editor but stop before they publish a page that someone else can open. The missing step is often not advanced…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
