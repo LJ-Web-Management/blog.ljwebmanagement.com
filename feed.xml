@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Phishing Checks for Beginners: Five Clues to Review Before You Click</title>
+      <link>https://blog.ljwebmanagement.com/posts/phishing-checks-for-beginners-five-clues-to-review-before-you-click.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/phishing-checks-for-beginners-five-clues-to-review-before-you-click.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Phishing is not only a problem for security specialists. It is a practical reading and decision-making problem that can affect anyone who opens email…</description>
+    </item>
+    <item>
       <title>Publish Your First Static Website: A Beginner GitHub Pages Project</title>
       <link>https://blog.ljwebmanagement.com/posts/publish-your-first-static-website-a-beginner-github-pages-project.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/publish-your-first-static-website-a-beginner-github-pages-project.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
       <category>Field Service</category>
       <description>Field service teams lose money when a technician leaves for a job before the required part is actually available, reserved, and matched to the work…</description>
-    </item>
-    <item>
-      <title>Five Signs Your Lead Source Attribution Needs AI Review Before Campaign ROI Reports</title>
-      <link>https://blog.ljwebmanagement.com/posts/five-signs-your-lead-source-attribution-needs-ai-review-before-campaign-roi-reports.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/five-signs-your-lead-source-attribution-needs-ai-review-before-campaign-roi-reports.html</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Marketing &amp; Website</category>
-      <description>Lead source attribution looks tidy until the campaign ROI report reaches the owner, CFO, or sales leader who has to decide where the next dollar goes. A…</description>
     </item>
   </channel>
 </rss>

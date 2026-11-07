@@ -3496,5 +3496,16 @@
     "excerpt": "Many beginners learn HTML and CSS in a code editor but stop before they publish a page that someone else can open. The missing step is often not advanced…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Phishing Checks for Beginners: Five Clues to Review Before You Click",
+    "slug": "phishing-checks-for-beginners-five-clues-to-review-before-you-click",
+    "image": "assets/img/posts/phishing-checks-for-beginners-five-clues-to-review-before-you-click.png",
+    "webp": true,
+    "date": "2026-11-07",
+    "dateDisplay": "November 7, 2026",
+    "excerpt": "Phishing is not only a problem for security specialists. It is a practical reading and decision-making problem that can affect anyone who opens email…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
