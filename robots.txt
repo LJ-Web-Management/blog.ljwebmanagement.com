@@ -5,4 +5,3 @@ Disallow: /uploads/
 Disallow: /scripts/
 
 Sitemap: https://blog.ljwebmanagement.com/sitemap.xml
-Sitemap: https://www.ljwebmanagement.com/sitemap.xml
