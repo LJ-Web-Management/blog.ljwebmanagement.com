@@ -3507,5 +3507,16 @@
     "excerpt": "Phishing is not only a problem for security specialists. It is a practical reading and decision-making problem that can affect anyone who opens email…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "JavaScript Event Handling for Beginners: Make a Button Respond to a User Action",
+    "slug": "javascript-event-handling-for-beginners-make-a-button-respond-to-a-user-action",
+    "image": "assets/img/posts/javascript-event-handling-for-beginners-make-a-button-respond-to-a-user-action.png",
+    "webp": true,
+    "date": "2026-11-08",
+    "dateDisplay": "November 8, 2026",
+    "excerpt": "JavaScript becomes useful when a web page can respond to something a person does. A visitor clicks a button, types into a field, selects an option, or…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

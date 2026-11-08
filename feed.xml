@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>JavaScript Event Handling for Beginners: Make a Button Respond to a User Action</title>
+      <link>https://blog.ljwebmanagement.com/posts/javascript-event-handling-for-beginners-make-a-button-respond-to-a-user-action.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-event-handling-for-beginners-make-a-button-respond-to-a-user-action.html</guid>
+      <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>JavaScript becomes useful when a web page can respond to something a person does. A visitor clicks a button, types into a field, selects an option, or…</description>
+    </item>
+    <item>
       <title>Phishing Checks for Beginners: Five Clues to Review Before You Click</title>
       <link>https://blog.ljwebmanagement.com/posts/phishing-checks-for-beginners-five-clues-to-review-before-you-click.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/phishing-checks-for-beginners-five-clues-to-review-before-you-click.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
       <category>Sales &amp; CRM</category>
       <description>A CRM next-step aging review helps sales teams find deals that look active in the pipeline but have not had a meaningful buyer action, seller follow-up…</description>
-    </item>
-    <item>
-      <title>Field Service Parts Reservation Review That Stops Truck Rolls Before Inventory Is Confirmed</title>
-      <link>https://blog.ljwebmanagement.com/posts/field-service-parts-reservation-review-that-stops-truck-rolls-before-inventory-is-confirmed.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/field-service-parts-reservation-review-that-stops-truck-rolls-before-inventory-is-confirmed.html</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Field Service</category>
-      <description>Field service teams lose money when a technician leaves for a job before the required part is actually available, reserved, and matched to the work…</description>
     </item>
   </channel>
 </rss>
