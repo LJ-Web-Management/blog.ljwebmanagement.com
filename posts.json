@@ -3518,5 +3518,16 @@
     "excerpt": "JavaScript becomes useful when a web page can respond to something a person does. A visitor clicks a button, types into a field, selects an option, or…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "No-Code Automation Practice: Build a Form-to-Email Workflow in One Afternoon",
+    "slug": "no-code-automation-practice-build-a-form-to-email-workflow-in-one-afternoon",
+    "image": "assets/img/posts/no-code-automation-practice-build-a-form-to-email-workflow-in-one-afternoon.png",
+    "webp": true,
+    "date": "2026-11-09",
+    "dateDisplay": "November 9, 2026",
+    "excerpt": "Many beginners understand that automation can save time, but the first real project often feels too large. A form-to-email workflow is a better starting…",
+    "categorySlug": "operations",
+    "category": "Operations & Supply Chain"
   }
 ]

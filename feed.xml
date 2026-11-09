@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>No-Code Automation Practice: Build a Form-to-Email Workflow in One Afternoon</title>
+      <link>https://blog.ljwebmanagement.com/posts/no-code-automation-practice-build-a-form-to-email-workflow-in-one-afternoon.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/no-code-automation-practice-build-a-form-to-email-workflow-in-one-afternoon.html</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Operations &amp; Supply Chain</category>
+      <description>Many beginners understand that automation can save time, but the first real project often feels too large. A form-to-email workflow is a better starting…</description>
+    </item>
+    <item>
       <title>JavaScript Event Handling for Beginners: Make a Button Respond to a User Action</title>
       <link>https://blog.ljwebmanagement.com/posts/javascript-event-handling-for-beginners-make-a-button-respond-to-a-user-action.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-event-handling-for-beginners-make-a-button-respond-to-a-user-action.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Mon, 21 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>A lot of beginners want to learn automation, but they get stuck before they build their first workflow because the tools look more complicated than the…</description>
-    </item>
-    <item>
-      <title>CRM Next-Step Aging Review With AI That Finds Stalled Deals Before Forecast Meetings</title>
-      <link>https://blog.ljwebmanagement.com/posts/crm-next-step-aging-review-with-ai-that-finds-stalled-deals-before-forecast-meetings.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/crm-next-step-aging-review-with-ai-that-finds-stalled-deals-before-forecast-meetings.html</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Sales &amp; CRM</category>
-      <description>A CRM next-step aging review helps sales teams find deals that look active in the pipeline but have not had a meaningful buyer action, seller follow-up…</description>
     </item>
   </channel>
 </rss>
