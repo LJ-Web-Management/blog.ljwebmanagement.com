@@ -3529,5 +3529,16 @@
     "excerpt": "Many beginners understand that automation can save time, but the first real project often feels too large. A form-to-email workflow is a better starting…",
     "categorySlug": "operations",
     "category": "Operations & Supply Chain"
+  },
+  {
+    "title": "CSS Variables for Beginners: Change a Site Theme Without Editing Every Rule",
+    "slug": "css-variables-for-beginners-change-a-site-theme-without-editing-every-rule",
+    "image": "assets/img/posts/css-variables-for-beginners-change-a-site-theme-without-editing-every-rule.png",
+    "webp": true,
+    "date": "2026-11-10",
+    "dateDisplay": "November 10, 2026",
+    "excerpt": "Changing the colors of a small website often starts as a simple request and turns into a search through dozens of CSS rules. A beginner changes one blue…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

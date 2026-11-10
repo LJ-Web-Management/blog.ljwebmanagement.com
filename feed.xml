@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>CSS Variables for Beginners: Change a Site Theme Without Editing Every Rule</title>
+      <link>https://blog.ljwebmanagement.com/posts/css-variables-for-beginners-change-a-site-theme-without-editing-every-rule.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/css-variables-for-beginners-change-a-site-theme-without-editing-every-rule.html</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Changing the colors of a small website often starts as a simple request and turns into a search through dozens of CSS rules. A beginner changes one blue…</description>
+    </item>
+    <item>
       <title>No-Code Automation Practice: Build a Form-to-Email Workflow in One Afternoon</title>
       <link>https://blog.ljwebmanagement.com/posts/no-code-automation-practice-build-a-form-to-email-workflow-in-one-afternoon.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/no-code-automation-practice-build-a-form-to-email-workflow-in-one-afternoon.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Many people know they should be more careful online, but they do not know which cybersecurity basics to learn first. This beginner guide focuses on…</description>
-    </item>
-    <item>
-      <title>Your First No-Code Automation Workflow: A Beginner Guide to Connecting Apps</title>
-      <link>https://blog.ljwebmanagement.com/posts/your-first-no-code-automation-workflow-a-beginner-guide-to-connecting-apps.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/your-first-no-code-automation-workflow-a-beginner-guide-to-connecting-apps.html</guid>
-      <pubDate>Mon, 21 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>A lot of beginners want to learn automation, but they get stuck before they build their first workflow because the tools look more complicated than the…</description>
     </item>
   </channel>
 </rss>
