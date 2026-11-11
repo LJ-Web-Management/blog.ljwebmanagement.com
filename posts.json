@@ -3540,5 +3540,16 @@
     "excerpt": "Changing the colors of a small website often starts as a simple request and turns into a search through dozens of CSS rules. A beginner changes one blue…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "HTML Semantics for Beginners: Build a Page That Is Clear to People and Browsers",
+    "slug": "html-semantics-for-beginners-build-a-page-that-is-clear-to-people-and-browsers",
+    "image": "assets/img/posts/html-semantics-for-beginners-build-a-page-that-is-clear-to-people-and-browsers.png",
+    "webp": true,
+    "date": "2026-11-11",
+    "dateDisplay": "November 11, 2026",
+    "excerpt": "Many beginners can make text appear on a web page but still feel unsure about the structure underneath it. They may use a generic div for every part of a…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
