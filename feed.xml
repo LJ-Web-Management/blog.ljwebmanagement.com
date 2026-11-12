@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Python Functions for Beginners: Turn Repeated Steps Into Reusable Code</title>
+      <link>https://blog.ljwebmanagement.com/posts/python-functions-for-beginners-turn-repeated-steps-into-reusable-code.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/python-functions-for-beginners-turn-repeated-steps-into-reusable-code.html</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many new coders can follow a Python example once, then feel stuck when the same work appears in a second part of a program. They copy and edit the same…</description>
+    </item>
+    <item>
       <title>HTML Semantics for Beginners: Build a Page That Is Clear to People and Browsers</title>
       <link>https://blog.ljwebmanagement.com/posts/html-semantics-for-beginners-build-a-page-that-is-clear-to-people-and-browsers.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/html-semantics-for-beginners-build-a-page-that-is-clear-to-people-and-browsers.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Thu, 24 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>React can feel confusing when you first hear words like component, prop, state, and render, but the fastest way to understand it is to build one small…</description>
-    </item>
-    <item>
-      <title>What You Learn Building Your First Web Page With HTML, CSS, and JavaScript</title>
-      <link>https://blog.ljwebmanagement.com/posts/what-you-learn-building-your-first-web-page-with-html-css-and-javascript.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-you-learn-building-your-first-web-page-with-html-css-and-javascript.html</guid>
-      <pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>Many beginners want to learn coding, but they are not always sure where to start or what a first project should actually teach them. Building a simple…</description>
     </item>
   </channel>
 </rss>

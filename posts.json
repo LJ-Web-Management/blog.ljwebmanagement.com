@@ -3551,5 +3551,16 @@
     "excerpt": "Many beginners can make text appear on a web page but still feel unsure about the structure underneath it. They may use a generic div for every part of a…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Python Functions for Beginners: Turn Repeated Steps Into Reusable Code",
+    "slug": "python-functions-for-beginners-turn-repeated-steps-into-reusable-code",
+    "image": "assets/img/posts/python-functions-for-beginners-turn-repeated-steps-into-reusable-code.png",
+    "webp": true,
+    "date": "2026-11-12",
+    "dateDisplay": "November 12, 2026",
+    "excerpt": "Many new coders can follow a Python example once, then feel stuck when the same work appears in a second part of a program. They copy and edit the same…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
