@@ -3562,5 +3562,16 @@
     "excerpt": "Many new coders can follow a Python example once, then feel stuck when the same work appears in a second part of a program. They copy and edit the same…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "React Components for Beginners: Build a Reusable Profile Card From Scratch",
+    "slug": "react-components-for-beginners-build-a-reusable-profile-card-from-scratch",
+    "image": "assets/img/posts/react-components-for-beginners-build-a-reusable-profile-card-from-scratch.png",
+    "webp": true,
+    "date": "2026-11-13",
+    "dateDisplay": "November 13, 2026",
+    "excerpt": "React can feel abstract when a beginner sees components, props, state, and files before building anything visible. A small profile card project turns…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

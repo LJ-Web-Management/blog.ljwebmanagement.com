@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>React Components for Beginners: Build a Reusable Profile Card From Scratch</title>
+      <link>https://blog.ljwebmanagement.com/posts/react-components-for-beginners-build-a-reusable-profile-card-from-scratch.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/react-components-for-beginners-build-a-reusable-profile-card-from-scratch.html</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>React can feel abstract when a beginner sees components, props, state, and files before building anything visible. A small profile card project turns…</description>
+    </item>
+    <item>
       <title>Python Functions for Beginners: Turn Repeated Steps Into Reusable Code</title>
       <link>https://blog.ljwebmanagement.com/posts/python-functions-for-beginners-turn-repeated-steps-into-reusable-code.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/python-functions-for-beginners-turn-repeated-steps-into-reusable-code.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Fri, 25 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Neural networks are one of the ideas behind many AI tools, yet the phrase can make beginner learning feel more technical than it needs to be. A neural…</description>
-    </item>
-    <item>
-      <title>Build Your First React Component: A Small Project for Frontend Beginners</title>
-      <link>https://blog.ljwebmanagement.com/posts/build-your-first-react-component-a-small-project-for-frontend-beginners.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/build-your-first-react-component-a-small-project-for-frontend-beginners.html</guid>
-      <pubDate>Thu, 24 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>React can feel confusing when you first hear words like component, prop, state, and render, but the fastest way to understand it is to build one small…</description>
     </item>
   </channel>
 </rss>
