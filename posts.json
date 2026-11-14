@@ -3573,5 +3573,16 @@
     "excerpt": "React can feel abstract when a beginner sees components, props, state, and files before building anything visible. A small profile card project turns…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "JavaScript Objects for Beginners: Organize Related Data in a Small App",
+    "slug": "javascript-objects-for-beginners-organize-related-data-in-a-small-app",
+    "image": "assets/img/posts/javascript-objects-for-beginners-organize-related-data-in-a-small-app.png",
+    "webp": true,
+    "date": "2026-11-14",
+    "dateDisplay": "November 14, 2026",
+    "excerpt": "Many beginners learn JavaScript variables and arrays, then reach a small project where a single item has several facts: a name, a price, a status, and a…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

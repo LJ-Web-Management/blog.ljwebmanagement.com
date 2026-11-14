@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>JavaScript Objects for Beginners: Organize Related Data in a Small App</title>
+      <link>https://blog.ljwebmanagement.com/posts/javascript-objects-for-beginners-organize-related-data-in-a-small-app.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-objects-for-beginners-organize-related-data-in-a-small-app.html</guid>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners learn JavaScript variables and arrays, then reach a small project where a single item has several facts: a name, a price, a status, and a…</description>
+    </item>
+    <item>
       <title>React Components for Beginners: Build a Reusable Profile Card From Scratch</title>
       <link>https://blog.ljwebmanagement.com/posts/react-components-for-beginners-build-a-reusable-profile-card-from-scratch.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/react-components-for-beginners-build-a-reusable-profile-card-from-scratch.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>JavaScript debugging is the skill of finding out why a page does not behave as you expected, then making one small, testable change at a time. For…</description>
-    </item>
-    <item>
-      <title>Neural Networks for Beginners: The Plain Language Concepts Behind Modern AI</title>
-      <link>https://blog.ljwebmanagement.com/posts/neural-networks-for-beginners-the-plain-language-concepts-behind-modern-ai.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/neural-networks-for-beginners-the-plain-language-concepts-behind-modern-ai.html</guid>
-      <pubDate>Fri, 25 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>Neural networks are one of the ideas behind many AI tools, yet the phrase can make beginner learning feel more technical than it needs to be. A neural…</description>
     </item>
   </channel>
 </rss>
