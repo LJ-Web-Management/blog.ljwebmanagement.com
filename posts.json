@@ -3584,5 +3584,16 @@
     "excerpt": "Many beginners learn JavaScript variables and arrays, then reach a small project where a single item has several facts: a name, a price, a status, and a…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "First JavaScript Form Validation Project: Check User Input Before It Reaches Your App",
+    "slug": "first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app",
+    "image": "assets/img/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.png",
+    "webp": true,
+    "date": "2026-11-15",
+    "dateDisplay": "November 15, 2026",
+    "excerpt": "A contact form can look finished long before it behaves like a useful part of a website. A visitor can leave a required field empty, enter an invalid…",
+    "categorySlug": "marketing",
+    "category": "Marketing & Website"
   }
 ]

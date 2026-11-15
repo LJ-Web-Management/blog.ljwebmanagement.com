@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>First JavaScript Form Validation Project: Check User Input Before It Reaches Your App</title>
+      <link>https://blog.ljwebmanagement.com/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.html</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Marketing &amp; Website</category>
+      <description>A contact form can look finished long before it behaves like a useful part of a website. A visitor can leave a required field empty, enter an invalid…</description>
+    </item>
+    <item>
       <title>JavaScript Objects for Beginners: Organize Related Data in a Small App</title>
       <link>https://blog.ljwebmanagement.com/posts/javascript-objects-for-beginners-organize-related-data-in-a-small-app.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/javascript-objects-for-beginners-organize-related-data-in-a-small-app.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Many people who want to learn coding begin with a difficult question: what should the first real program actually do? A blank editor can make programming…</description>
-    </item>
-    <item>
-      <title>How to Debug Beginner JavaScript: A Practical Workflow for Finding Errors</title>
-      <link>https://blog.ljwebmanagement.com/posts/how-to-debug-beginner-javascript-a-practical-workflow-for-finding-errors.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/how-to-debug-beginner-javascript-a-practical-workflow-for-finding-errors.html</guid>
-      <pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>JavaScript debugging is the skill of finding out why a page does not behave as you expected, then making one small, testable change at a time. For…</description>
     </item>
   </channel>
 </rss>
