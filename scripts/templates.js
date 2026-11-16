@@ -134,7 +134,7 @@ function head(opts) {
     '<meta property="og:title" content="' + title + '">',
     '<meta property="og:description" content="' + description + '">'
   );
-  if (opts.canonical) lines.push('<meta property="og:url" content="' + opts.canonical + '">');
+  if (opts.ogUrl || opts.canonical) lines.push('<meta property="og:url" content="' + (opts.ogUrl || opts.canonical) + '">');
   lines.push(
     '<meta property="og:image" content="' + escapeHtml(ogImage) + '">',
     '<meta name="twitter:card" content="summary_large_image">',
@@ -297,6 +297,28 @@ function postUrl(slug) {
   return SITE_URL + "/posts/" + slug + ".html";
 }
 
+// A post that is a near-copy of another post names that post in
+// posts.json (`canonicalSlug`). Its page stays online and in the listings,
+// but its <link rel="canonical"> points at the other post and it is left out
+// of the sitemap, so search engines index one page per set of near-copies.
+function canonicalUrl(post) {
+  return postUrl(post.canonicalSlug || post.slug);
+}
+
+// Fails the build on a canonicalSlug that names a missing post, the post
+// itself, or a post that points somewhere else in turn.
+function checkCanonicals(posts) {
+  const bySlug = {};
+  posts.forEach((p) => (bySlug[p.slug] = p));
+  posts.forEach((p) => {
+    if (!p.canonicalSlug) return;
+    const target = bySlug[p.canonicalSlug];
+    if (!target || target === p || target.canonicalSlug) {
+      throw new Error('posts.json: canonicalSlug of "' + p.slug + '" must name another post that has no canonicalSlug of its own');
+    }
+  });
+}
+
 function slugifyHeading(text) {
   return text.toLowerCase().replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
@@ -354,7 +376,8 @@ function buildPostPage(post, allPosts) {
   const headHtml = head({
     title: title + " | " + BLOG_NAME,
     description: post.description,
-    canonical,
+    canonical: canonicalUrl(post),
+    ogUrl: canonical,
     ogType: "article",
     ogImage: shareImage,
     extraMeta: `<meta property="article:published_time" content="${post.date}"><meta property="article:section" content="${escapeHtml(topic.name)}">`,
@@ -613,8 +636,9 @@ function buildFeed(posts) {
 }
 
 function buildSitemap(posts) {
+  checkCanonicals(posts);
   const urls = [{ loc: BLOG_HOME, lastmod: sortPosts(posts)[0].date, freq: "daily", pri: "1.0" }].concat(
-    sortPosts(posts).map((p) => ({ loc: postUrl(p.slug), lastmod: p.date, freq: "monthly", pri: "0.7" }))
+    sortPosts(posts).filter((p) => !p.canonicalSlug).map((p) => ({ loc: postUrl(p.slug), lastmod: p.date, freq: "monthly", pri: "0.7" }))
   );
   return (
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
@@ -704,4 +728,6 @@ module.exports = {
   buildSitemap,
   buildLatestPostsScript,
   postUrl,
+  canonicalUrl,
+  checkCanonicals,
 };

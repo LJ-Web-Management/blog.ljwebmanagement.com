@@ -8,7 +8,8 @@
     "excerpt": "Many businesses already own the data needed to make AI-assisted deal-desk workflows work, but the information is usually scattered across systems and…",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "from-spreadsheet-chase-to-decision-rhythm-ai-automation-for-weekly-executive-reporting"
   },
   {
     "title": "Automate CRM Lead Handoff Quality Checks Before Follow-Up Slips",
@@ -19,7 +20,8 @@
     "excerpt": "Lead handoff is often described as a marketing problem or a sales discipline problem. In practice it is a data-quality and timing problem. A prospect can…",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "build-an-ai-assisted-invoice-exception-queue-that-protects-cash-flow"
   },
   {
     "title": "Automate Customer Onboarding Handoffs Before Early Momentum Fades",
@@ -30,7 +32,8 @@
     "excerpt": "The period immediately after a sale is often when a customer decides whether a provider feels organized. Yet onboarding begins with information scattered…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "build-an-explainable-ai-lead-routing-audit-for-your-crm"
   },
   {
     "title": "Automate Expense Receipt Reviews Before Policy Exceptions Pile Up",
@@ -41,7 +44,8 @@
     "excerpt": "Expense receipt reviews often looks straightforward until it is handled at scale. Information arrives through several channels, each participant sees…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "make-interview-scheduling-more-reliable-with-an-ai-coordination-workflow"
   },
   {
     "title": "Automate Month-End Evidence Collection Without Chasing Spreadsheets",
@@ -63,7 +67,8 @@
     "excerpt": "The important shift is from a passive queue to an active workflow. Instead of asking employees to discover work by repeatedly checking a shared inbox…",
     "webp": true,
     "categorySlug": "people",
-    "category": "HR & Team"
+    "category": "HR & Team",
+    "canonicalSlug": "prioritize-facilities-maintenance-work-orders-with-ai-and-automation"
   },
   {
     "title": "Automate Proposal Risk Review Without Slowing Down Sales",
@@ -118,7 +123,8 @@
     "excerpt": "Customer Service Quality Assurance is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "use-ai-to-turn-cash-application-exceptions-into-a-daily-recovery-queue"
   },
   {
     "title": "Build an AI Review Queue for Website Accessibility Issues",
@@ -206,7 +212,8 @@
     "excerpt": "Payment disputes rarely begin as a clean case. A customer may reply to a reminder with a short objection, an account manager may forward a call summary…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "build-an-explainable-ai-lead-routing-audit-for-your-crm"
   },
   {
     "title": "Close the Cash Application Gap With AI-Assisted Remittance Matching",
@@ -228,7 +235,8 @@
     "excerpt": "Many businesses already own the data needed to make customer-service context workflows work, but the information is usually scattered across systems and…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "from-spreadsheet-chase-to-decision-rhythm-ai-automation-for-weekly-executive-reporting"
   },
   {
     "title": "Create a Maintenance Parts Reorder Workflow Before a Repair Becomes a Delay",
@@ -261,7 +269,8 @@
     "excerpt": "Most organizations do not lack data about supplier performance management. They lack a dependable way to turn that data into a decision while there is…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "use-ai-to-turn-workforce-scheduling-into-a-proactive-operations-system"
   },
   {
     "title": "Create an AI Inventory Exception Desk Before Small Variances Become Stockouts",
@@ -272,7 +281,8 @@
     "excerpt": "Inventory Exception Management is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "use-ai-to-turn-cash-application-exceptions-into-a-daily-recovery-queue"
   },
   {
     "title": "Create an AI Knowledge Review Loop That Keeps Internal Procedures Current",
@@ -283,7 +293,8 @@
     "excerpt": "Internal guidance becomes unreliable quietly. A workflow changes, a system screen is redesigned, or a policy receives an exception, and the old article…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "build-an-ai-assisted-invoice-exception-queue-that-protects-cash-flow"
   },
   {
     "title": "Create an AI-Assisted Travel Approval Workflow That Balances Cost, Policy, and Employee Experience",
@@ -338,7 +349,8 @@
     "excerpt": "Many businesses already own the data needed to make accounts payable exception queues work, but the information is usually scattered across systems and…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "from-spreadsheet-chase-to-decision-rhythm-ai-automation-for-weekly-executive-reporting"
   },
   {
     "title": "Improve Warehouse Cycle Count Accuracy With an AI-Guided Workflow",
@@ -393,7 +405,8 @@
     "excerpt": "Most organizations do not lack data about executive forecasting. They lack a dependable way to turn that data into a decision while there is still time…",
     "webp": true,
     "categorySlug": "reporting",
-    "category": "Reporting & Leadership"
+    "category": "Reporting & Leadership",
+    "canonicalSlug": "use-ai-to-turn-workforce-scheduling-into-a-proactive-operations-system"
   },
   {
     "title": "Make Field Service Dispatch More Predictable With AI Scheduling",
@@ -415,7 +428,8 @@
     "excerpt": "Dispatch reliability is built before a vehicle leaves the yard. A work order can look scheduled and still be unready: the asset history may be…",
     "webp": true,
     "categorySlug": "field-service",
-    "category": "Field Service"
+    "category": "Field Service",
+    "canonicalSlug": "build-an-ai-assisted-invoice-exception-queue-that-protects-cash-flow"
   },
   {
     "title": "Make Interview Scheduling More Reliable With an AI Coordination Workflow",
@@ -448,7 +462,8 @@
     "excerpt": "Many businesses already own the data needed to make small-business AI governance work, but the information is usually scattered across systems and…",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "from-spreadsheet-chase-to-decision-rhythm-ai-automation-for-weekly-executive-reporting"
   },
   {
     "title": "Prioritize Facilities Maintenance Work Orders With AI and Automation",
@@ -470,7 +485,8 @@
     "excerpt": "Facilities work-request routing often looks straightforward until it is handled at scale. Information arrives through several channels, each participant…",
     "webp": true,
     "categorySlug": "field-service",
-    "category": "Field Service"
+    "category": "Field Service",
+    "canonicalSlug": "make-interview-scheduling-more-reliable-with-an-ai-coordination-workflow"
   },
   {
     "title": "Stop Duplicate Supplier Payments With an AI-Assisted Control Workflow",
@@ -481,7 +497,8 @@
     "excerpt": "For accounts payable leaders, AI is useful here when it is treated as a disciplined operations layer rather than a replacement for judgment. It can…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "prioritize-facilities-maintenance-work-orders-with-ai-and-automation"
   },
   {
     "title": "Turn Customer Call Summaries Into a Retention Early Warning System",
@@ -525,7 +542,8 @@
     "excerpt": "Field Service Dispatch is often described as a process problem, but the deeper issue is a decision problem. Teams receive a steady stream of late…",
     "webp": true,
     "categorySlug": "field-service",
-    "category": "Field Service"
+    "category": "Field Service",
+    "canonicalSlug": "use-ai-to-turn-cash-application-exceptions-into-a-daily-recovery-queue"
   },
   {
     "title": "Turn Invoice Exceptions Into a Faster, More Controlled Workflow",
@@ -547,7 +565,8 @@
     "excerpt": "Manufacturing shift handovers often looks straightforward until it is handled at scale. Information arrives through several channels, each participant…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "make-interview-scheduling-more-reliable-with-an-ai-coordination-workflow"
   },
   {
     "title": "Turn Meeting Decisions Into an AI-Assisted Action Ownership Workflow",
@@ -558,7 +577,8 @@
     "excerpt": "Businesses rarely lose control of meeting decision and action ownership because people do not care. They lose control because the evidence needed for a…",
     "webp": true,
     "categorySlug": "reporting",
-    "category": "Reporting & Leadership"
+    "category": "Reporting & Leadership",
+    "canonicalSlug": "govern-ai-assisted-executive-reporting-with-a-trusted-metric-workflow"
   },
   {
     "title": "Turn Recurring Support Signals Into Proactive Product Alerts",
@@ -580,7 +600,8 @@
     "excerpt": "A business website form is both a front door and an operational queue. Genuine inquiries may arrive alongside automated spam, incomplete submissions…",
     "webp": true,
     "categorySlug": "marketing",
-    "category": "Marketing & Website"
+    "category": "Marketing & Website",
+    "canonicalSlug": "build-an-explainable-ai-lead-routing-audit-for-your-crm"
   },
   {
     "title": "Turn Website Form Submissions Into Qualified Sales Conversations With AI Routing",
@@ -591,7 +612,8 @@
     "excerpt": "Many organizations are discovering that website lead enrichment and routing is not a software feature to switch on. It is an operating discipline. Teams…",
     "webp": true,
     "categorySlug": "marketing",
-    "category": "Marketing & Website"
+    "category": "Marketing & Website",
+    "canonicalSlug": "use-ai-to-detect-customer-service-intent-drift-before-queues-overflow"
   },
   {
     "title": "Use AI to Create Seamless Customer Service Handoffs Across Teams",
@@ -602,7 +624,8 @@
     "excerpt": "Businesses rarely lose control of cross-functional customer service handoffs because people do not care. They lose control because the evidence needed…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "govern-ai-assisted-executive-reporting-with-a-trusted-metric-workflow"
   },
   {
     "title": "Use AI to Detect Customer-Service Intent Drift Before Queues Overflow",
@@ -624,7 +647,8 @@
     "excerpt": "Many organizations are discovering that CRM contact-data decay is not a software feature to switch on. It is an operating discipline. Teams often have…",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "use-ai-to-detect-customer-service-intent-drift-before-queues-overflow"
   },
   {
     "title": "Use AI to Govern Price Change Requests Without Slowing Commercial Teams",
@@ -646,7 +670,8 @@
     "excerpt": "For distribution operations leaders, AI is useful here when it is treated as a disciplined operations layer rather than a replacement for judgment. It…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "prioritize-facilities-maintenance-work-orders-with-ai-and-automation"
   },
   {
     "title": "Use AI to Make Employee Onboarding a Coordinated Operating Workflow",
@@ -668,7 +693,8 @@
     "excerpt": "Field service work creates valuable evidence at the edge of the business. A technician may record an arrival time, parts used, customer approval, photos…",
     "webp": true,
     "categorySlug": "field-service",
-    "category": "Field Service"
+    "category": "Field Service",
+    "canonicalSlug": "build-an-explainable-ai-lead-routing-audit-for-your-crm"
   },
   {
     "title": "Use AI to Review Expense Policy Exceptions Without Slowing Employees Down",
@@ -679,7 +705,8 @@
     "excerpt": "A expense policy exception review process rarely fails because people do not care. It fails because the decision arrives in fragments: a record in one…",
     "webp": true,
     "categorySlug": "people",
-    "category": "HR & Team"
+    "category": "HR & Team",
+    "canonicalSlug": "prioritize-facilities-maintenance-work-orders-with-ai-and-automation"
   },
   {
     "title": "Use AI to Turn Cash Application Exceptions Into a Daily Recovery Queue",
@@ -800,7 +827,8 @@
     "excerpt": "Detect Post-Sale Implementation Risk With AI Before Projects Stall. Many business teams have reached the point where basic automation is no longer the…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "build-an-ai-order-promise-workflow-that-sales-can-trust"
   },
   {
     "title": "Monitor Purchase Requisitions With AI Before Approval Thresholds Become Surprises",
@@ -811,7 +839,8 @@
     "excerpt": "Monitor Purchase Requisitions With AI Before Approval Thresholds Become Surprises. Many business teams have reached the point where basic automation is…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "build-an-ai-order-promise-workflow-that-sales-can-trust"
   },
   {
     "title": "Turn Website Chat Transcripts Into Actionable Sales and Service Work",
@@ -822,7 +851,8 @@
     "excerpt": "Turn Website Chat Transcripts Into Actionable Sales and Service Work. Many business teams have reached the point where basic automation is no longer the…",
     "webp": true,
     "categorySlug": "marketing",
-    "category": "Marketing & Website"
+    "category": "Marketing & Website",
+    "canonicalSlug": "build-an-ai-order-promise-workflow-that-sales-can-trust"
   },
   {
     "title": "Use AI to Review Customer Credit Limits Before Risk Reaches Receivables",
@@ -833,7 +863,8 @@
     "excerpt": "Use AI to Review Customer Credit Limits Before Risk Reaches Receivables. Many business teams have reached the point where basic automation is no longer…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "build-an-ai-order-promise-workflow-that-sales-can-trust"
   },
   {
     "title": "Build a Customer Portal Deflection Loop That Keeps Support Personal",
@@ -844,7 +875,8 @@
     "excerpt": "Customer portals are often launched as a self-service promise, but many businesses discover that the portal becomes another place where customers get…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "create-an-ai-governance-evidence-log-before-automation-questions-become-audit-problems"
   },
   {
     "title": "Create an AI Governance Evidence Log Before Automation Questions Become Audit Problems",
@@ -866,7 +898,8 @@
     "excerpt": "Service businesses lose margin when completed work does not turn into accurate billing. The leak may be a missing part, an unbilled trip charge…",
     "webp": true,
     "categorySlug": "field-service",
-    "category": "Field Service"
+    "category": "Field Service",
+    "canonicalSlug": "create-an-ai-governance-evidence-log-before-automation-questions-become-audit-problems"
   },
   {
     "title": "Turn Project Status Updates Into Early Risk Narratives With AI",
@@ -877,7 +910,8 @@
     "excerpt": "Project status updates can create the illusion of control while still leaving leaders surprised by delays. Teams may submit updates on time, but the risk…",
     "webp": true,
     "categorySlug": "reporting",
-    "category": "Reporting & Leadership"
+    "category": "Reporting & Leadership",
+    "canonicalSlug": "create-an-ai-governance-evidence-log-before-automation-questions-become-audit-problems"
   },
   {
     "title": "Use AI to Catch Purchase Order Acknowledgment Gaps Before Delivery Risk Spreads",
@@ -888,7 +922,8 @@
     "excerpt": "Purchase order acknowledgments are one of the quiet control points in operations, because a missing or mismatched acknowledgment can create trouble long…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "create-an-ai-governance-evidence-log-before-automation-questions-become-audit-problems"
   },
   {
     "title": "Automate Contract Obligation Monitoring Before Small Misses Become Expensive",
@@ -1009,7 +1044,8 @@
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around website…",
     "webp": true,
     "categorySlug": "marketing",
-    "category": "Marketing & Website"
+    "category": "Marketing & Website",
+    "canonicalSlug": "turn-support-backlog-aging-into-an-ai-prioritization-workflow"
   },
   {
     "title": "Build a Customer Health Score Review That Turns Signals Into Retention Actions",
@@ -1053,7 +1089,8 @@
     "excerpt": "Many businesses have invested in CRM systems, help desks, accounting platforms, website tools, and shared inboxes, but the daily work around quote…",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "turn-support-backlog-aging-into-an-ai-prioritization-workflow"
   },
   {
     "title": "Automate Warranty Claim Intake With AI Evidence Review",
@@ -1064,7 +1101,8 @@
     "excerpt": "Service, distribution, and manufacturing companies that receive warranty claims from customers, dealers, and field teams are entering a different…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "turn-project-status-updates-into-an-executive-risk-radar-with-ai"
   },
   {
     "title": "Build an AI Renewal Readiness Workflow for Customer Success Teams",
@@ -1075,7 +1113,8 @@
     "excerpt": "Customer success teams that need to protect renewals months before the contract date arrives are entering a different operating environment. AI is no…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "turn-project-status-updates-into-an-executive-risk-radar-with-ai"
   },
   {
     "title": "Build an AI SOP Drift Monitor for Multi-Location Operations",
@@ -1086,7 +1125,8 @@
     "excerpt": "Multi-location businesses that need local teams to follow the same critical process without making every site feel overmanaged are entering a different…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "turn-project-status-updates-into-an-executive-risk-radar-with-ai"
   },
   {
     "title": "Turn Project Status Updates Into an Executive Risk Radar With AI",
@@ -1108,7 +1148,8 @@
     "excerpt": "Service companies that quote work carefully but lose margin through small delivery changes after the sale are entering a different operating environment…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "turn-project-status-updates-into-an-executive-risk-radar-with-ai"
   },
   {
     "title": "Build an AI Exception Command Center for Revenue Operations Teams",
@@ -1119,7 +1160,8 @@
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and revenue operations exception management is a strong example of that…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "create-an-ai-automation-readiness-scorecard-before-buying-new-tools"
   },
   {
     "title": "Create an AI Automation Readiness Scorecard Before Buying New Tools",
@@ -1141,7 +1183,8 @@
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and operations capacity planning with workload intelligence is a strong…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "create-an-ai-automation-readiness-scorecard-before-buying-new-tools"
   },
   {
     "title": "Turn Customer Implementation Milestones Into an AI-Guided Delivery Workflow",
@@ -1152,7 +1195,8 @@
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and customer implementation milestone management is a strong example of that…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "create-an-ai-automation-readiness-scorecard-before-buying-new-tools"
   },
   {
     "title": "Use AI to Convert Policy Questions Into Measurable Compliance Workflows",
@@ -1163,7 +1207,8 @@
     "excerpt": "Businesses are moving from broad AI curiosity to practical workflow design, and policy question intake and compliance routing is a strong example of that…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "create-an-ai-automation-readiness-scorecard-before-buying-new-tools"
   },
   {
     "title": "Connect Marketing Attribution to Sales Follow-Up With AI Workflow Signals",
@@ -1240,7 +1285,8 @@
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and field service territory balancing is a clear example…",
     "webp": true,
     "categorySlug": "field-service",
-    "category": "Field Service"
+    "category": "Field Service",
+    "canonicalSlug": "automate-tax-exemption-certificate-reviews-before-billing-errors-spread"
   },
   {
     "title": "Build an AI Data Retention Review Queue Before Storage Becomes Risk",
@@ -1251,7 +1297,8 @@
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and data retention is a clear example. The work is not…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "automate-tax-exemption-certificate-reviews-before-billing-errors-spread"
   },
   {
     "title": "Turn Customer Portal Friction Into an AI-Guided Adoption Workflow",
@@ -1262,7 +1309,8 @@
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and customer portal adoption is a clear example. The work…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "automate-tax-exemption-certificate-reviews-before-billing-errors-spread"
   },
   {
     "title": "Use AI to Triage Contract Redlines Before Approval Work Stalls",
@@ -1273,7 +1321,8 @@
     "excerpt": "Business teams are creating more operational data than their existing review habits can absorb, and contract redline intake is a clear example. The work…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "automate-tax-exemption-certificate-reviews-before-billing-errors-spread"
   },
   {
     "title": "Build an AI Customer Credit Approval Narrative Before Discounts Hide the Real Cost",
@@ -1295,7 +1344,8 @@
     "excerpt": "Backorders rarely damage a relationship because one shipment is late. They damage trust when the company sounds uncertain and waits too long to explain…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "build-an-ai-customer-credit-approval-narrative-before-discounts-hide-the-real-cost"
   },
   {
     "title": "Create an AI Inventory Obsolescence Review Before Working Capital Gets Trapped",
@@ -1306,7 +1356,8 @@
     "excerpt": "Inventory obsolescence is often discovered late, after slow-moving items have already consumed cash, warehouse space, and management attention.",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "build-an-ai-customer-credit-approval-narrative-before-discounts-hide-the-real-cost"
   },
   {
     "title": "Turn Pricing Page Behavior Into AI-Guided Sales Priorities",
@@ -1317,7 +1368,8 @@
     "excerpt": "A pricing page is one of the clearest places where buyer intent becomes visible, yet many companies leave those signals outside the sales workflow.",
     "webp": true,
     "categorySlug": "marketing",
-    "category": "Marketing & Website"
+    "category": "Marketing & Website",
+    "canonicalSlug": "build-an-ai-customer-credit-approval-narrative-before-discounts-hide-the-real-cost"
   },
   {
     "title": "Use AI to Turn System Access Reviews Into a Continuous Control Workflow",
@@ -1394,7 +1446,8 @@
     "excerpt": "Marketing campaigns can move faster than the operating readiness behind them. A landing page may promise a simple package, a promotion may imply quick…",
     "webp": true,
     "categorySlug": "marketing",
-    "category": "Marketing & Website"
+    "category": "Marketing & Website",
+    "canonicalSlug": "convert-internal-help-desk-questions-into-self-service-improvements-with-ai"
   },
   {
     "title": "Build a Location Request Intake Workflow That Turns Store Needs Into Planned Work",
@@ -1405,7 +1458,8 @@
     "excerpt": "Multi-location businesses receive a steady stream of requests from branches, stores, clinics, offices, and field teams. Those requests may involve…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "convert-internal-help-desk-questions-into-self-service-improvements-with-ai"
   },
   {
     "title": "Convert Internal Help Desk Questions Into Self-Service Improvements With AI",
@@ -1427,7 +1481,8 @@
     "excerpt": "Customer onboarding often slows down because required documents, forms, confirmations, or technical details arrive through fragmented channels. The…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "convert-internal-help-desk-questions-into-self-service-improvements-with-ai"
   },
   {
     "title": "Use AI to Prioritize Stale Purchase Orders Before Supplier Delays Spread",
@@ -1438,7 +1493,8 @@
     "excerpt": "Every purchasing team has open purchase orders that look harmless until supplier silence starts affecting delivery promises. A missing acknowledgment, a…",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "convert-internal-help-desk-questions-into-self-service-improvements-with-ai"
   },
   {
     "title": "Detect Customer Renewal Risk With AI Before Accounts Go Quiet",
@@ -1526,7 +1582,8 @@
     "excerpt": "Inventory substitutions are often treated as last-minute exceptions, but they can become a planned service workflow when AI watches demand, availability…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "automate-customer-data-correction-intake-across-crm-billing-and-support"
   },
   {
     "title": "Turn Partner Referrals Into Qualified Pipeline With AI Routing",
@@ -1537,7 +1594,8 @@
     "excerpt": "Partner referrals are valuable because they arrive with context, trust, and timing, but many organizations still handle them like ordinary web leads…",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "automate-customer-data-correction-intake-across-crm-billing-and-support"
   },
   {
     "title": "Turn Policy Exception Reports Into Measurable Management Actions With AI",
@@ -1548,7 +1606,8 @@
     "excerpt": "Policy exceptions are useful signals, but many organizations review them as isolated incidents instead of treating them as management intelligence. Many…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "automate-customer-data-correction-intake-across-crm-billing-and-support"
   },
   {
     "title": "Automate Job Cost Variance Reviews Before Project Margins Drift",
@@ -1669,7 +1728,8 @@
     "excerpt": "Customer data deletion request operations is a strong practical use case for AI because",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers"
   },
   {
     "title": "Balance Sales Territory Capacity With AI Before Pipeline Coverage Becomes Uneven",
@@ -1680,7 +1740,8 @@
     "excerpt": "Sales territory capacity balancing is a strong practical use case for AI because the",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers"
   },
   {
     "title": "Build Finance Approval Evidence Packs With AI Before Spending Decisions Stall",
@@ -1691,7 +1752,8 @@
     "excerpt": "Finance approval evidence preparation is a strong practical use case for AI because the",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers"
   },
   {
     "title": "Turn Vendor Contract Obligations Into an AI Follow-Up Workflow Before Commitments Slip",
@@ -1702,7 +1764,8 @@
     "excerpt": "Vendor contract obligation management is a strong practical use case for AI because the",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "use-ai-to-find-knowledge-base-gaps-before-support-teams-rewrite-answers"
   },
   {
     "title": "Use AI to Find Knowledge Base Gaps Before Support Teams Rewrite Answers",
@@ -1900,7 +1963,8 @@
     "excerpt": "Many companies have moved past the question of whether AI can help with change impact review for live automations. The harder question is whether the…",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "build-ai-assisted-website-lead-enrichment-that-keeps-crm-records-actionable"
   },
   {
     "title": "Create an Automation Control Room for Daily Exception Follow Through",
@@ -1911,7 +1975,8 @@
     "excerpt": "Many companies have moved past the question of whether AI can help with daily exception follow through across teams. The harder question is whether the…",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "build-ai-assisted-website-lead-enrichment-that-keeps-crm-records-actionable"
   },
   {
     "title": "Turn Customer Document Intake Into an AI Completeness Control Before Work Begins",
@@ -1922,7 +1987,8 @@
     "excerpt": "Many companies have moved past the question of whether AI can help with customer document intake readiness. The harder question is whether the work…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "build-ai-assisted-website-lead-enrichment-that-keeps-crm-records-actionable"
   },
   {
     "title": "Use AI to Reconcile Sales Promotions With Billing Rules Before Margin Leaks",
@@ -1933,7 +1999,8 @@
     "excerpt": "Many companies have moved past the question of whether AI can help with promotion to billing rule reconciliation. The harder question is whether the work…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "build-ai-assisted-website-lead-enrichment-that-keeps-crm-records-actionable"
   },
   {
     "title": "Automate Vendor Dispute Evidence Before Supplier Trust Breaks Down",
@@ -1944,7 +2011,8 @@
     "excerpt": "Vendor dispute evidence collection used to be handled through meetings, inbox follow ups,",
     "webp": true,
     "categorySlug": "operations",
-    "category": "Operations & Supply Chain"
+    "category": "Operations & Supply Chain",
+    "canonicalSlug": "use-ai-to-retire-stale-website-pages-without-losing-customer-trust"
   },
   {
     "title": "Build an AI Renewal Risk Handoff Before Account Signals Scatter",
@@ -1955,7 +2023,8 @@
     "excerpt": "Renewal risk handoffs used to be handled through meetings, inbox follow ups, and personal",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "use-ai-to-retire-stale-website-pages-without-losing-customer-trust"
   },
   {
     "title": "Create an AI Escalation Readiness Pack Before Customer Issues Reach Executives",
@@ -1966,7 +2035,8 @@
     "excerpt": "Customer escalation readiness used to be handled through meetings, inbox follow ups, and",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "use-ai-to-retire-stale-website-pages-without-losing-customer-trust"
   },
   {
     "title": "Turn Quote-to-Cash Exceptions Into an AI Follow-Through Workflow",
@@ -1977,7 +2047,8 @@
     "excerpt": "Quote-to-cash exception follow-through used to be handled through meetings, inbox follow",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "use-ai-to-retire-stale-website-pages-without-losing-customer-trust"
   },
   {
     "title": "Use AI to Retire Stale Website Pages Without Losing Customer Trust",
@@ -2340,7 +2411,8 @@
     "excerpt": "Most companies discover customer identity resolution problems through daily friction, not through a formal audit. The issue begins with duplicate and…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "review-automation-telemetry-with-ai-before-workflow-drift-becomes-invisible"
   },
   {
     "title": "Retire Outdated Service Knowledge With AI Before Bad Guidance Reaches Customers",
@@ -2373,7 +2445,8 @@
     "excerpt": "Most companies discover workflow simulation before automation launch problems through daily friction, not through a formal audit. The issue begins with…",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "review-automation-telemetry-with-ai-before-workflow-drift-becomes-invisible"
   },
   {
     "title": "Automate Customer Credit Memo Reviews Before Revenue Leakage Hides in Adjustments",
@@ -2384,7 +2457,8 @@
     "excerpt": "Business teams are getting more comfortable using AI to summarize work, classify requests,",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "build-an-ai-demand-signal-review-workflow-before-inventory-buys-outrun-reality"
   },
   {
     "title": "Automate Customer-Specific Pricing Reviews Before Special Terms Create Margin Confusion",
@@ -2428,7 +2502,8 @@
     "excerpt": "Automate Vendor Contract Renewal Budget Alerts Before Spend Surprises Finance. Business teams are getting more comfortable using AI to summarize work…",
     "webp": true,
     "categorySlug": "compliance",
-    "category": "Compliance & Data"
+    "category": "Compliance & Data",
+    "canonicalSlug": "build-an-ai-demand-signal-review-workflow-before-inventory-buys-outrun-reality"
   },
   {
     "title": "Automate Website Content Ownership Reviews Before Pages Become Orphaned",
@@ -2538,7 +2613,8 @@
     "excerpt": "Create an AI Data Refresh Failure Monitor Before Dashboards Mislead Leaders. Business teams are getting more comfortable using AI to summarize work…",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "build-an-ai-demand-signal-review-workflow-before-inventory-buys-outrun-reality"
   },
   {
     "title": "Create an AI Maintenance Parts Readiness Workflow Before Service Visits Stall",
@@ -2648,7 +2724,8 @@
     "excerpt": "Use AI to Turn Sales Call Objections Into Enablement Repair Work. Business teams are getting more comfortable using AI to summarize work, classify…",
     "webp": true,
     "categorySlug": "sales",
-    "category": "Sales & CRM"
+    "category": "Sales & CRM",
+    "canonicalSlug": "build-an-ai-demand-signal-review-workflow-before-inventory-buys-outrun-reality"
   },
   {
     "title": "Assign AI Data Pipeline Ownership Before Broken Integrations Damage Reporting",
@@ -2659,7 +2736,8 @@
     "excerpt": "Dashboards do not fail only when a chart goes blank. They also fail when an integration changes, a field stops syncing, a nightly refresh partially…",
     "webp": true,
     "categorySlug": "governance",
-    "category": "AI Strategy & Governance"
+    "category": "AI Strategy & Governance",
+    "canonicalSlug": "create-an-ai-automation-sunset-review-before-legacy-workflows-keep-running-unchecked"
   },
   {
     "title": "Automate Internal Approval Queue Aging Before Work Stalls Between Managers",
@@ -2681,7 +2759,8 @@
     "excerpt": "Purchase card programs are designed for speed. They help employees solve small business needs without turning every transaction into a formal procurement…",
     "webp": true,
     "categorySlug": "finance",
-    "category": "Finance & Billing"
+    "category": "Finance & Billing",
+    "canonicalSlug": "create-an-ai-automation-sunset-review-before-legacy-workflows-keep-running-unchecked"
   },
   {
     "title": "Build an AI CRM Stage Hygiene Review Before Forecast Meetings Start",
@@ -2703,7 +2782,8 @@
     "excerpt": "Many teams do not notice meeting overload until customer work starts slipping. Calendars fill gradually, then sales follow-up slows, support updates…",
     "webp": true,
     "categorySlug": "reporting",
-    "category": "Reporting & Leadership"
+    "category": "Reporting & Leadership",
+    "canonicalSlug": "create-an-ai-automation-sunset-review-before-legacy-workflows-keep-running-unchecked"
   },
   {
     "title": "Build an AI Website Personalization Governance Workflow Before Experiments Confuse Buyers",
@@ -2747,7 +2827,8 @@
     "excerpt": "Customer onboarding often begins with energy, then slows when ownership becomes fuzzy. Sales assumes implementation has the latest promise…",
     "webp": true,
     "categorySlug": "customer-experience",
-    "category": "Customer Experience"
+    "category": "Customer Experience",
+    "canonicalSlug": "create-an-ai-automation-sunset-review-before-legacy-workflows-keep-running-unchecked"
   },
   {
     "title": "Use AI to Turn Supplier Email Promises Into Delivery Risk Signals",

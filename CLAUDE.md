@@ -28,6 +28,19 @@ Each post is filed under a topic (`category` / `categorySlug` in
 `posts.json`), chosen from its title by the rules in `TOPICS` in
 `scripts/templates.js` the first time it is published.
 
+## Near-duplicate posts
+
+The daily batches from July and August 2026 were written from one template,
+so the five posts published together share most of their text. Google
+indexes one page from each set and reports the rest as duplicates. Each of
+those posts has a `canonicalSlug` in `posts.json` naming the post from its
+batch that search engines should index. `scripts/templates.js` then points
+that page's `<link rel="canonical">` at the named post and leaves the page
+out of `sitemap.xml`; the page itself, the blog home, the feed and
+`llms.txt` still list it. To give a post back its own canonical, rewrite it
+so it no longer repeats its batch, remove its `canonicalSlug`, and run
+`npm run rebuild`.
+
 ## Shared with the main site
 
 The blog is meant to feel like part of www.ljwebmanagement.com, so it uses
