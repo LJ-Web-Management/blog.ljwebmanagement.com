@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>What to Put in a Beginner Coding Portfolio: Three Projects You Can Finish and Explain</title>
+      <link>https://blog.ljwebmanagement.com/posts/what-to-put-in-a-beginner-coding-portfolio-three-projects-you-can-finish-and-explain.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/what-to-put-in-a-beginner-coding-portfolio-three-projects-you-can-finish-and-explain.html</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners think a coding portfolio has to contain a large app, a polished startup idea, or a long list of technologies. That belief can make…</description>
+    </item>
+    <item>
       <title>First JavaScript Form Validation Project: Check User Input Before It Reaches Your App</title>
       <link>https://blog.ljwebmanagement.com/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Many people want to learn AI automation, but the first project often feels larger than it needs to be. They imagine connecting several business apps…</description>
-    </item>
-    <item>
-      <title>Python Basics for Beginners: Three Small Programs That Build Coding Confidence</title>
-      <link>https://blog.ljwebmanagement.com/posts/python-basics-for-beginners-three-small-programs-that-build-coding-confidence.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/python-basics-for-beginners-three-small-programs-that-build-coding-confidence.html</guid>
-      <pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>Many people who want to learn coding begin with a difficult question: what should the first real program actually do? A blank editor can make programming…</description>
     </item>
   </channel>
 </rss>

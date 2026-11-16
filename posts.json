@@ -3595,5 +3595,16 @@
     "excerpt": "A contact form can look finished long before it behaves like a useful part of a website. A visitor can leave a required field empty, enter an invalid…",
     "categorySlug": "marketing",
     "category": "Marketing & Website"
+  },
+  {
+    "title": "What to Put in a Beginner Coding Portfolio: Three Projects You Can Finish and Explain",
+    "slug": "what-to-put-in-a-beginner-coding-portfolio-three-projects-you-can-finish-and-explain",
+    "image": "assets/img/posts/what-to-put-in-a-beginner-coding-portfolio-three-projects-you-can-finish-and-explain.png",
+    "webp": true,
+    "date": "2026-11-16",
+    "dateDisplay": "November 16, 2026",
+    "excerpt": "Many beginners think a coding portfolio has to contain a large app, a polished startup idea, or a long list of technologies. That belief can make…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
