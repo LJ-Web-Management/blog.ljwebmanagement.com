@@ -3687,5 +3687,16 @@
     "excerpt": "Many beginners think a coding portfolio has to contain a large app, a polished startup idea, or a long list of technologies. That belief can make…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "AI Output Review for Beginners: Check an Answer Before You Use It at Work",
+    "slug": "ai-output-review-for-beginners-check-an-answer-before-you-use-it-at-work",
+    "image": "assets/img/posts/ai-output-review-for-beginners-check-an-answer-before-you-use-it-at-work.png",
+    "webp": true,
+    "date": "2026-11-17",
+    "dateDisplay": "November 17, 2026",
+    "excerpt": "AI can produce a useful first draft in seconds, but a fast answer is not automatically a reliable answer. Beginners and busy professionals need a simple…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
