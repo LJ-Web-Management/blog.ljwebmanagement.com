@@ -170,8 +170,10 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 
 /* ---------- Header ---------- */
 .lj-header { position: sticky; top: 0; z-index: 100; margin-bottom: calc(-1 * var(--header-space)); background: rgba(5, 8, 15, 0.88); -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px); border-bottom: 1px solid var(--night-line); transition: transform 0.3s ease, box-shadow 0.2s; }
-/* Slid out of view while scrolling down; site.js brings it back on scroll up. */
+/* Out of view while the homepage hero fills the screen (site.js); elsewhere the header stays put. */
 .lj-header.is-hidden { transform: translateY(calc(-100% - 24px)); }
+/* The homepage starts with the header out of view, before the site script decides, so it never flashes in on load. */
+.lj-js .lj-page-home .lj-header:not(.is-ready) { transform: translateY(calc(-100% - 24px)); transition: none; }
 .lj-header.is-scrolled { box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.6); }
 /* The header sits over the top of the page: the first section takes the header's height as a
    transparent top border, so its own background runs up behind the bar. */
