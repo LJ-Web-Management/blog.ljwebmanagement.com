@@ -539,6 +539,22 @@ a.lj-card--dark:hover h3 { color: #fff; }
 /* Home: the first step leads, the rest sit back. */
 .lj-steps--focus > li:not(:first-child)::before { background: #c4cad4; }
 .lj-steps--focus > li:not(:first-child) .lj-steps-label, .lj-steps--focus > li:not(:first-child) p { color: var(--muted); }
+/* As the visitor scrolls, the emphasis follows: each step lights up while it crosses a band
+   just above the middle of the screen. The first step stays lit before the band reaches it and
+   the last stays lit after. Without scroll-driven animations the first step simply stays lit. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .lj-steps--focus > li { view-timeline: --lj-step block; view-timeline-inset: 40% 50%; }
+    .lj-steps--focus > li::before, .lj-steps--focus > li .lj-steps-label, .lj-steps--focus > li p { animation: lj-step-mid linear both; animation-timeline: --lj-step; }
+    .lj-steps--focus > li:first-child::before, .lj-steps--focus > li:first-child .lj-steps-label, .lj-steps--focus > li:first-child p { animation-name: lj-step-first; }
+    .lj-steps--focus > li:last-child::before, .lj-steps--focus > li:last-child .lj-steps-label, .lj-steps--focus > li:last-child p { animation-name: lj-step-last; }
+    .lj-steps--focus > li::before { --on: #fff; --off: #fff; --on-bg: var(--ink); --off-bg: #c4cad4; }
+    .lj-steps--focus > li .lj-steps-label, .lj-steps--focus > li p { --on: var(--ink); --off: var(--muted); }
+    @keyframes lj-step-first { 0%, 80% { color: var(--on); background-color: var(--on-bg, transparent); } 100% { color: var(--off); background-color: var(--off-bg, transparent); } }
+    @keyframes lj-step-mid { 0% { color: var(--off); background-color: var(--off-bg, transparent); } 20%, 80% { color: var(--on); background-color: var(--on-bg, transparent); } 100% { color: var(--off); background-color: var(--off-bg, transparent); } }
+    @keyframes lj-step-last { 0% { color: var(--off); background-color: var(--off-bg, transparent); } 20%, 100% { color: var(--on); background-color: var(--on-bg, transparent); } }
+  }
+}
 
 .lj-process-step { position: relative; padding: 26px 0 0; border-top: 1px solid var(--line); }
 .lj-process-step h3 { font-size: 18px; margin-bottom: 6px; }
