@@ -348,7 +348,7 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 .lj-hero-title .lj-hero-l3 { color: #fff; white-space: nowrap; }
 .lj-hero-ic { display: inline-flex; vertical-align: -0.06em; width: 0.72em; height: 0.72em; margin: 0 0.04em; color: #fff; }
 .lj-hero-ic svg { width: 100%; height: 100%; stroke-width: 1.4; }
-.lj-hero-bolt { width: 0.86em; height: 0.86em; margin: 0 0.12em; color: var(--cyan); filter: drop-shadow(0 0 18px rgba(30, 180, 230, 0.6)); }
+.lj-hero-plus { margin: 0 0.06em; color: var(--cyan); text-shadow: 0 0 24px rgba(30, 180, 230, 0.6); }
 .lj-hero--home .lj-lead { max-width: 540px; margin: 0 auto 34px; font-size: 17px; line-height: 1.65; }
 .lj-hero--home .lj-hero-actions { justify-content: center; margin-top: 0; }
 .lj-hero-assure { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; font-size: 13.5px; color: var(--night-text); }
