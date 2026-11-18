@@ -337,25 +337,56 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 @keyframes lj-step-in { to { opacity: 1; transform: none; } }
 @keyframes lj-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 
-/* Home hero: a centered statement that fades from gray to white, with inline icons. */
+/* Home hero: one statement, revealed a line at a time as the visitor scrolls.
+   By default (no scroll-driven animations, or reduced motion) all three lines show at once. */
 .lj-hero--home { text-align: center; }
-.lj-hero-kicker { margin: 0 0 28px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: var(--night-text); }
-.lj-hero-kicker span { color: var(--cyan); }
-.lj-hero-title { font-size: clamp(2.6rem, 7.4vw, 5.9rem); line-height: 1.02; letter-spacing: -0.05em; margin: 0 auto 30px; }
+.lj-hero-stage { position: relative; }
+.lj-hero-title { font-size: clamp(2.6rem, 7.4vw, 5.9rem); line-height: 1.02; letter-spacing: -0.05em; margin: 0 auto; }
 .lj-hero-title > span { display: block; }
+.lj-hero-title > span > span { display: inline-block; }
 .lj-hero-title .lj-hero-l1 { color: #8a8f99; }
 .lj-hero-title .lj-hero-l2 { color: #b5b9c1; }
 .lj-hero-title .lj-hero-l3 { color: #fff; white-space: nowrap; }
 .lj-hero-ic { display: inline-flex; vertical-align: -0.06em; width: 0.72em; height: 0.72em; margin: 0 0.04em; color: #fff; }
 .lj-hero-ic svg { width: 100%; height: 100%; stroke-width: 1.4; }
 .lj-hero-plus { margin: 0 0.06em; color: var(--cyan); text-shadow: 0 0 24px rgba(30, 180, 230, 0.6); }
-.lj-hero--home .lj-lead { max-width: 540px; margin: 0 auto 34px; font-size: 17px; line-height: 1.65; }
-.lj-hero--home .lj-hero-actions { justify-content: center; margin-top: 0; }
-.lj-hero-assure { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; font-size: 13.5px; color: var(--night-text); }
-.lj-hero-assure li + li::before { content: "\00b7"; margin-right: 10px; color: #4b5563; }
-.lj-hero-assure a { color: #c8ced8; }
-.lj-hero-assure a:hover { color: #fff; }
-@media (max-width: 640px) { .lj-hero-title { font-size: 7.8vw; } .lj-hero-assure { flex-direction: column; align-items: center; } .lj-hero-assure li + li::before { display: none; } }
+.lj-hero-cue { display: none; }
+/* A quiet first-screen route to booking, for visitors who do not scroll. */
+.lj-hero-book { display: inline-flex; align-items: center; gap: 8px; margin-top: 40px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: #c8ced8; }
+.lj-hero-book .lj-icon { width: 17px; height: 17px; color: var(--cyan); transition: transform 0.2s; }
+.lj-hero-book:hover { color: #fff; }
+.lj-hero-book:hover .lj-icon { transform: translateX(3px); }
+/* The first line eases in on load. */
+.lj-hero-l1 > span { animation: lj-line-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s both; }
+@keyframes lj-line-in { from { opacity: 0; transform: translateY(24px); filter: blur(6px); } }
+@media (max-width: 640px) { .lj-hero-title { font-size: 7.8vw; } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    /* The hero is tall and its stage stays pinned while the lines arrive. */
+    .lj-hero--home { overflow: clip; height: 230vh; padding: 0; view-timeline-name: --lj-hero; }
+    .lj-hero--home .lj-hero-stage { position: sticky; top: 0; height: 100vh; height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: var(--header-space); }
+    .lj-hero-l2, .lj-hero-l3 { animation: lj-line-show linear both; animation-timeline: --lj-hero; }
+    .lj-hero-l2 { animation-range: contain 10% contain 36%; }
+    .lj-hero-l3 { animation-range: contain 42% contain 70%; }
+    @keyframes lj-line-show { from { opacity: 0; transform: translateY(40px); filter: blur(8px); } }
+    .lj-hero-book { position: absolute; left: 50%; bottom: calc(var(--sheet-r) + 104px); transform: translateX(-50%); margin: 0; white-space: nowrap; }
+    .lj-hero-cue { position: absolute; left: 50%; bottom: calc(var(--sheet-r) + 28px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 12.5px; letter-spacing: 0.04em; color: var(--night-text); animation: lj-cue-hide linear both; animation-timeline: --lj-hero; animation-range: contain 0% contain 10%; }
+    .lj-hero-cue::after { content: ""; width: 1px; height: 40px; background: linear-gradient(var(--night-text), transparent); }
+    @keyframes lj-cue-hide { to { opacity: 0; } }
+  }
+}
+
+/* Home intro, just under the hero: what we do, the pitch, and the first call to action. */
+.lj-intro { text-align: center; padding-bottom: clamp(24px, 3vw, 40px); }
+.lj-intro-kicker { margin: 0 0 18px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: var(--muted); }
+.lj-intro-kicker span { color: var(--cyan-ink); }
+.lj-intro-lead { max-width: 720px; margin: 0 auto 32px; font-family: var(--font-display); font-size: clamp(1.35rem, 2.4vw, 1.85rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.35; color: var(--ink); }
+.lj-intro .lj-btn-row { justify-content: center; }
+.lj-hero-assure { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; font-size: 13.5px; color: var(--muted); }
+.lj-hero-assure li + li::before { content: "\00b7"; margin-right: 10px; color: var(--line-strong); }
+.lj-hero-assure a { color: var(--ink); font-weight: 500; }
+.lj-hero-assure a:hover { color: var(--cyan-ink); }
+@media (max-width: 640px) { .lj-hero-assure { flex-direction: column; align-items: center; } .lj-hero-assure li + li::before { display: none; } }
 
 /* Home: one automation, step by step, on a single line. */
 .lj-timeline-head { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 0 40px; font-size: 13.5px; font-weight: 500; color: var(--muted); }
@@ -1074,6 +1105,7 @@ main p a:not([class]) { text-decoration: underline; text-decoration-thickness: 1
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   .lj-js .lj-reveal { opacity: 1; transform: none; }
+  .lj-hero-l1 > span { animation: none; }
   .lj-marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
   .lj-marquee { -webkit-mask-image: none; mask-image: none; }
 }
