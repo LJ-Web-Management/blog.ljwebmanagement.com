@@ -351,11 +351,6 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 .lj-hero-ic svg { width: 100%; height: 100%; stroke-width: 1.4; }
 .lj-hero-plus { margin: 0 0.06em; color: var(--cyan); text-shadow: 0 0 24px rgba(30, 180, 230, 0.6); }
 .lj-hero-cue { display: none; }
-/* A quiet first-screen route to booking, for visitors who do not scroll. */
-.lj-hero-book { display: inline-flex; align-items: center; gap: 8px; margin-top: 40px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: #c8ced8; }
-.lj-hero-book .lj-icon { width: 17px; height: 17px; color: var(--cyan); transition: transform 0.2s; }
-.lj-hero-book:hover { color: #fff; }
-.lj-hero-book:hover .lj-icon { transform: translateX(3px); }
 /* The first line eases in on load. */
 .lj-hero-l1 > span { animation: lj-line-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s both; }
 @keyframes lj-line-in { from { opacity: 0; transform: translateY(24px); filter: blur(6px); } }
@@ -369,7 +364,6 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
     .lj-hero-l2 { animation-range: contain 10% contain 36%; }
     .lj-hero-l3 { animation-range: contain 42% contain 70%; }
     @keyframes lj-line-show { from { opacity: 0; transform: translateY(40px); filter: blur(8px); } }
-    .lj-hero-book { position: absolute; left: 50%; bottom: calc(var(--sheet-r) + 104px); transform: translateX(-50%); margin: 0; white-space: nowrap; }
     .lj-hero-cue { position: absolute; left: 50%; bottom: calc(var(--sheet-r) + 28px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 12.5px; letter-spacing: 0.04em; color: var(--night-text); animation: lj-cue-hide linear both; animation-timeline: --lj-hero; animation-range: contain 0% contain 10%; }
     .lj-hero-cue::after { content: ""; width: 1px; height: 40px; background: linear-gradient(var(--night-text), transparent); }
     @keyframes lj-cue-hide { to { opacity: 0; } }
@@ -377,7 +371,9 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 }
 
 /* Home intro, just under the hero: what we do, the pitch, and the first call to action. */
-.lj-intro { text-align: center; padding-bottom: clamp(24px, 3vw, 40px); }
+.lj-intro { text-align: center; padding-block: clamp(36px, 4.5vw, 56px) clamp(64px, 8vw, 104px); }
+/* The tools strip after the intro gets room below it before the next story. */
+.lj-intro + .lj-section--tight { padding-bottom: clamp(72px, 9vw, 128px); }
 .lj-intro-kicker { margin: 0 0 18px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: var(--muted); }
 .lj-intro-kicker span { color: var(--cyan-ink); }
 .lj-intro-lead { max-width: 720px; margin: 0 auto 32px; font-family: var(--font-display); font-size: clamp(1.35rem, 2.4vw, 1.85rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.35; color: var(--ink); }
