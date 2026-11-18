@@ -21,30 +21,23 @@
   var desktop = window.matchMedia('(min-width: 1041px)');
 
   if (header) {
-    // The header slides out of view while scrolling down and comes back once
-    // the visitor scrolls up a little, as in most mobile apps. It always shows
-    // near the top of the page and while a menu, the mobile nav, or keyboard
-    // focus is inside it.
-    var lastY = window.scrollY;
-    var upDistance = 0;
-    var REVEAL_AFTER = 40;
+    // The header stays locked at the top. The one exception is the homepage
+    // hero: the header is hidden while the hero fills the screen and slides in
+    // once the content below reaches the top. It always shows while a menu,
+    // the mobile nav, or keyboard focus is inside it.
+    var homeHero = $('.lj-hero--home');
     var setHidden = function (hide) { header.classList.toggle('is-hidden', hide); };
     var onScroll = function () {
-      var y = Math.max(0, window.scrollY);
-      var delta = y - lastY;
-      lastY = y;
-      header.classList.toggle('is-scrolled', y > 8);
+      header.classList.toggle('is-scrolled', window.scrollY > 8);
       var busy = header.classList.contains('is-nav-open') || $('.lj-has-menu.is-open', header) || header.contains(doc.activeElement);
-      if (busy || y <= header.offsetHeight) { upDistance = 0; setHidden(false); return; }
-      if (delta > 0) { upDistance = 0; setHidden(true); }
-      else if (delta < 0) {
-        upDistance -= delta;
-        if (upDistance >= REVEAL_AFTER) setHidden(false);
-      }
+      setHidden(!!homeHero && !busy && homeHero.getBoundingClientRect().bottom > header.offsetHeight);
+      header.classList.add('is-ready');
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
     header.addEventListener('focusin', function () { setHidden(false); });
+    header.addEventListener('focusout', function () { setTimeout(onScroll, 0); });
 
     var menus = $$('.lj-has-menu', header);
     var closeTimer = null;
