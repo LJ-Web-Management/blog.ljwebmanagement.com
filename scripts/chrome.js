@@ -395,7 +395,7 @@ function header(opts) {
     <div class="lj-search-field">
       ${icon("search")}
       <input type="search" id="lj-search-input" placeholder="Search automations, industries, guides&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="lj-search-results">
-      <button type="button" class="lj-search-close" data-lj-search-close aria-label="Close search">Esc</button>
+      <button type="button" class="lj-search-close" data-lj-search-close aria-label="Close search"><span class="lj-search-close-key">Esc</span>${icon("close")}</button>
     </div>
     <div class="lj-search-body">
       <ul class="lj-search-results" id="lj-search-results" aria-label="Search results"></ul>
