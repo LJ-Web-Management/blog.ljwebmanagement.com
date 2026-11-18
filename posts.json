@@ -3698,5 +3698,16 @@
     "excerpt": "AI can produce a useful first draft in seconds, but a fast answer is not automatically a reliable answer. Beginners and busy professionals need a simple…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "Password Managers for Beginners: Practice Safer Login Habits Without Memorizing Every Password",
+    "slug": "password-managers-for-beginners-practice-safer-login-habits-without-memorizing-every-password",
+    "image": "assets/img/posts/password-managers-for-beginners-practice-safer-login-habits-without-memorizing-every-password.png",
+    "webp": true,
+    "date": "2026-11-18",
+    "dateDisplay": "November 18, 2026",
+    "excerpt": "Many beginners know they should use stronger passwords, but the practical question is harder: how can you create a different login for every important…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]
