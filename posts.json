@@ -3709,5 +3709,16 @@
     "excerpt": "Many beginners know they should use stronger passwords, but the practical question is harder: how can you create a different login for every important…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "APIs for Beginners: Connect a Web Page to Useful Data",
+    "slug": "apis-for-beginners-connect-a-web-page-to-useful-data",
+    "image": "assets/img/posts/apis-for-beginners-connect-a-web-page-to-useful-data.png",
+    "webp": true,
+    "date": "2026-11-19",
+    "dateDisplay": "November 19, 2026",
+    "excerpt": "Many beginners can build a page that displays a heading, a button, and a few hard-coded cards, then feel stuck when the page needs information that…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

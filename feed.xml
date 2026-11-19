@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>APIs for Beginners: Connect a Web Page to Useful Data</title>
+      <link>https://blog.ljwebmanagement.com/posts/apis-for-beginners-connect-a-web-page-to-useful-data.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/apis-for-beginners-connect-a-web-page-to-useful-data.html</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners can build a page that displays a heading, a button, and a few hard-coded cards, then feel stuck when the page needs information that…</description>
+    </item>
+    <item>
       <title>Password Managers for Beginners: Practice Safer Login Habits Without Memorizing Every Password</title>
       <link>https://blog.ljwebmanagement.com/posts/password-managers-for-beginners-practice-safer-login-habits-without-memorizing-every-password.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/password-managers-for-beginners-practice-safer-login-habits-without-memorizing-every-password.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…</description>
-    </item>
-    <item>
-      <title>No-Code Automation Mistakes Beginners Make When Connecting Apps</title>
-      <link>https://blog.ljwebmanagement.com/posts/no-code-automation-mistakes-beginners-make-when-connecting-apps.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/no-code-automation-mistakes-beginners-make-when-connecting-apps.html</guid>
-      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>No-code automation can make a small team feel larger by moving information between the apps people already use. A form response can become a task, a…</description>
     </item>
   </channel>
 </rss>

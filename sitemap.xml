@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.ljwebmanagement.com/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.ljwebmanagement.com/posts/apis-for-beginners-connect-a-web-page-to-useful-data.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blog.ljwebmanagement.com/posts/password-managers-for-beginners-practice-safer-login-habits-without-memorizing-every-password.html</loc>
