@@ -3720,5 +3720,16 @@
     "excerpt": "Many beginners can build a page that displays a heading, a button, and a few hard-coded cards, then feel stuck when the page needs information that…",
     "categorySlug": "learn",
     "category": "Tech Skills for Beginners"
+  },
+  {
+    "title": "CSS Grid for Beginners: Build a Responsive Course Card Layout",
+    "slug": "css-grid-for-beginners-build-a-responsive-course-card-layout",
+    "image": "assets/img/posts/css-grid-for-beginners-build-a-responsive-course-card-layout.png",
+    "webp": true,
+    "date": "2026-11-20",
+    "dateDisplay": "November 20, 2026",
+    "excerpt": "Many beginners can write a heading, a paragraph, and a button, but their first page becomes difficult to control when several cards need to sit in a neat…",
+    "categorySlug": "learn",
+    "category": "Tech Skills for Beginners"
   }
 ]

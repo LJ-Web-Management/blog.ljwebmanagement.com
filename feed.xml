@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://blog.ljwebmanagement.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>CSS Grid for Beginners: Build a Responsive Course Card Layout</title>
+      <link>https://blog.ljwebmanagement.com/posts/css-grid-for-beginners-build-a-responsive-course-card-layout.html</link>
+      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/css-grid-for-beginners-build-a-responsive-course-card-layout.html</guid>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Tech Skills for Beginners</category>
+      <description>Many beginners can write a heading, a paragraph, and a button, but their first page becomes difficult to control when several cards need to sit in a neat…</description>
+    </item>
+    <item>
       <title>APIs for Beginners: Connect a Web Page to Useful Data</title>
       <link>https://blog.ljwebmanagement.com/posts/apis-for-beginners-connect-a-web-page-to-useful-data.html</link>
       <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/apis-for-beginners-connect-a-web-page-to-useful-data.html</guid>
@@ -397,14 +405,6 @@
       <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
       <category>Tech Skills for Beginners</category>
       <description>Many people want to use AI at work, but the first step is often unclear. Should you ask it to write an email, summarize a meeting, analyze a spreadsheet…</description>
-    </item>
-    <item>
-      <title>Portfolio Project Practice for Beginners: Turn HTML, CSS, and JavaScript Into Proof You Can Build</title>
-      <link>https://blog.ljwebmanagement.com/posts/portfolio-project-practice-for-beginners-turn-html-css-and-javascript-into-proof-you-can-build.html</link>
-      <guid isPermaLink="true">https://blog.ljwebmanagement.com/posts/portfolio-project-practice-for-beginners-turn-html-css-and-javascript-into-proof-you-can-build.html</guid>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <category>Tech Skills for Beginners</category>
-      <description>Many beginners study HTML, CSS, and JavaScript as separate lessons and still feel unsure when someone asks, “What can you build?” A small portfolio…</description>
     </item>
   </channel>
 </rss>
